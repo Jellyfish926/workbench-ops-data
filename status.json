@@ -71,13 +71,13 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-03T04:45:22.841381+00:00",
+ "generated_at": "2026-11-03T05:00:29.583472+00:00",
  "counts": {
   "待处理": 0,
   "执行中": 0,
   "会诊中": 0,
   "需你决定": 0,
-  "今日完成": 5,
+  "今日完成": 0,
   "累计完成": 43
  },
  "providers": [
@@ -85,8 +85,8 @@
    "name": "DeepSeek",
    "status": "空闲",
    "running": 0,
-   "today_runs": 1,
-   "today_ok": 1,
+   "today_runs": 0,
+   "today_ok": 0,
    "today_fail": 0,
    "only_levels": null
   },
@@ -94,9 +94,9 @@
    "name": "Claude(中转)",
    "status": "空闲",
    "running": 0,
-   "today_runs": 4,
-   "today_ok": 3,
-   "today_fail": 1,
+   "today_runs": 0,
+   "today_ok": 0,
+   "today_fail": 0,
    "only_levels": null
   },
   {
@@ -112,9 +112,9 @@
    "name": "Claude Code",
    "status": "冷却中",
    "running": 0,
-   "today_runs": 2,
-   "today_ok": 1,
-   "today_fail": 1,
+   "today_runs": 0,
+   "today_ok": 0,
+   "today_fail": 0,
    "only_levels": [
     "困难"
    ]
