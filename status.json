@@ -30,7 +30,7 @@
     ],
     "next_at": "2026-11-04T01:47:00+08:00",
     "business_date": "2026-11-03",
-    "status": "待步骤",
+    "status": "步骤执行中",
     "task_id": 51,
     "test_status": "尚未测试",
     "test_task_id": null
@@ -44,10 +44,10 @@
     "fallbacks": [
      "Claude Code"
     ],
-    "next_at": "2026-11-03T10:00:00+08:00",
-    "business_date": "2026-11-03",
-    "status": "已完成",
-    "task_id": 50,
+    "next_at": "2026-11-04T10:00:00+08:00",
+    "business_date": "2026-11-04",
+    "status": "待步骤",
+    "task_id": 54,
     "test_status": "尚未测试",
     "test_task_id": null
    },
@@ -62,7 +62,7 @@
     ],
     "next_at": "2026-11-04T03:17:00+08:00",
     "business_date": "2026-11-03",
-    "status": "待步骤",
+    "status": "步骤执行中",
     "task_id": 52,
     "test_status": "尚未测试",
     "test_task_id": null
@@ -71,9 +71,9 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-03T01:56:31.248107+00:00",
+ "generated_at": "2026-11-03T02:00:38.516935+00:00",
  "counts": {
-  "待处理": 3,
+  "待处理": 4,
   "执行中": 0,
   "会诊中": 0,
   "需你决定": 0,
@@ -92,8 +92,8 @@
   },
   {
    "name": "Claude(中转)",
-   "status": "空闲",
-   "running": 0,
+   "status": "忙碌",
+   "running": 1,
    "today_runs": 0,
    "today_ok": 0,
    "today_fail": 0,
@@ -121,6 +121,43 @@
   }
  ],
  "tasks": [
+  {
+   "id": 54,
+   "title": "每日定时：每日热词雷达 + 游戏机会表同步（2026-11-03）",
+   "level": "困难",
+   "status": "待步骤",
+   "attempts": 0,
+   "created_at": "2026-11-02T21:00:04",
+   "updated_at": "2026-11-02T21:00:04",
+   "finished_at": null,
+   "summary": null,
+   "path": [],
+   "steps": [
+    {
+     "title": "步骤 1",
+     "ai": "GPT",
+     "model": "gpt-6.1-sol",
+     "status": "等待"
+    }
+   ],
+   "redo_rounds": 0,
+   "detail": {
+    "result": null,
+    "runs": [],
+    "events": [
+     {
+      "at": "2026-11-02T21:00:04",
+      "kind": "daily_schedule",
+      "label": "流程进度更新"
+     }
+    ],
+    "recovery": {
+     "cycles": 0,
+     "next_at": null,
+     "status": null
+    }
+   }
+  },
   {
    "id": 53,
    "title": "每日定时：LootWiki 每日巡检与自查自纠（2026-11-03）",
@@ -199,10 +236,10 @@
    "id": 51,
    "title": "每日定时：每日总站自动上架（2026-11-02）",
    "level": "困难",
-   "status": "待步骤",
-   "attempts": 1,
+   "status": "步骤执行中",
+   "attempts": 2,
    "created_at": "2026-11-02T12:47:05",
-   "updated_at": "2026-11-02T12:47:14",
+   "updated_at": "2026-11-02T21:00:38",
    "finished_at": null,
    "summary": null,
    "path": [
@@ -212,14 +249,21 @@
      "model": "sonnet",
      "status": "rate_limited",
      "rejected": false
+    },
+    {
+     "kind": "step",
+     "ai": "Claude(中转)",
+     "model": "claude-sonnet-4-6",
+     "status": "running",
+     "rejected": false
     }
    ],
    "steps": [
     {
      "title": "步骤 1",
-     "ai": "Claude Code",
-     "model": "sonnet",
-     "status": "等待"
+     "ai": "Claude(中转)",
+     "model": "claude-sonnet-4-6",
+     "status": "执行中"
     }
    ],
    "redo_rounds": 0,
@@ -235,6 +279,16 @@
       "started_at": "2026-11-02T12:47:05",
       "ended_at": "2026-11-02T12:47:14",
       "duration_s": 8.715
+     },
+     {
+      "kind": "step",
+      "ai": "Claude(中转)",
+      "model": "claude-sonnet-4-6",
+      "status": "running",
+      "rejected": false,
+      "started_at": "2026-11-02T21:00:38",
+      "ended_at": null,
+      "duration_s": null
      }
     ],
     "events": [
@@ -257,6 +311,11 @@
       "at": "2026-11-02T12:47:14",
       "kind": "step_rate_limited",
       "label": "已遇限流，接续其他可用AI或等待恢复"
+     },
+     {
+      "at": "2026-11-02T21:00:38",
+      "kind": "step",
+      "label": "流程进度更新"
      }
     ],
     "recovery": {
@@ -4198,293 +4257,6 @@
     ],
     "recovery": {
      "cycles": 0,
-     "next_at": null,
-     "status": null
-    }
-   }
-  },
-  {
-   "id": 14,
-   "title": "接管测试：LootWiki 每日巡检与自查自纠（2026-10-28）",
-   "level": "困难",
-   "status": "已放弃",
-   "attempts": 4,
-   "created_at": "2026-10-28T01:44:17",
-   "updated_at": "2026-10-28T03:47:02",
-   "finished_at": "2026-10-28T03:47:02",
-   "summary": null,
-   "path": [
-    {
-     "kind": "step",
-     "ai": "GPT",
-     "model": "gpt-6.1-sol",
-     "status": "ok",
-     "rejected": false
-    },
-    {
-     "kind": "synthesize",
-     "ai": "GPT",
-     "model": "gpt-6-astra",
-     "status": "ok",
-     "rejected": true
-    },
-    {
-     "kind": "step",
-     "ai": "GPT",
-     "model": "gpt-6.1-sol",
-     "status": "rate_limited",
-     "rejected": false
-    },
-    {
-     "kind": "step",
-     "ai": "GPT",
-     "model": "gpt-6.1-sol",
-     "status": "ok",
-     "rejected": false
-    },
-    {
-     "kind": "synthesize",
-     "ai": "GPT",
-     "model": "gpt-6-astra",
-     "status": "timeout",
-     "rejected": false
-    },
-    {
-     "kind": "synthesize",
-     "ai": "GPT",
-     "model": "gpt-6-astra",
-     "status": "timeout",
-     "rejected": false
-    },
-    {
-     "kind": "diagnose",
-     "ai": "GPT",
-     "model": "gpt-6-astra",
-     "status": "ok",
-     "rejected": false
-    },
-    {
-     "kind": "step",
-     "ai": "GPT",
-     "model": "gpt-6-astra",
-     "status": "ok",
-     "rejected": false
-    },
-    {
-     "kind": "synthesize",
-     "ai": "GPT",
-     "model": "gpt-6-astra",
-     "status": "ok",
-     "rejected": false
-    }
-   ],
-   "steps": [
-    {
-     "title": "步骤 1",
-     "ai": "GPT",
-     "model": "gpt-6-astra",
-     "status": "完成"
-    }
-   ],
-   "redo_rounds": 1,
-   "detail": {
-    "result": null,
-    "runs": [
-     {
-      "kind": "step",
-      "ai": "GPT",
-      "model": "gpt-6.1-sol",
-      "status": "ok",
-      "rejected": false,
-      "started_at": "2026-10-28T01:44:17",
-      "ended_at": "2026-10-28T01:47:22",
-      "duration_s": 185.437
-     },
-     {
-      "kind": "synthesize",
-      "ai": "GPT",
-      "model": "gpt-6-astra",
-      "status": "ok",
-      "rejected": true,
-      "started_at": "2026-10-28T01:47:22",
-      "ended_at": "2026-10-28T01:48:27",
-      "duration_s": 64.846
-     },
-     {
-      "kind": "step",
-      "ai": "GPT",
-      "model": "gpt-6.1-sol",
-      "status": "rate_limited",
-      "rejected": false,
-      "started_at": "2026-10-28T01:48:27",
-      "ended_at": "2026-10-28T01:50:00",
-      "duration_s": 92.822
-     },
-     {
-      "kind": "step",
-      "ai": "GPT",
-      "model": "gpt-6.1-sol",
-      "status": "ok",
-      "rejected": false,
-      "started_at": "2026-10-28T03:30:38",
-      "ended_at": "2026-10-28T03:35:53",
-      "duration_s": 315.467
-     },
-     {
-      "kind": "synthesize",
-      "ai": "GPT",
-      "model": "gpt-6-astra",
-      "status": "timeout",
-      "rejected": false,
-      "started_at": "2026-10-28T03:35:53",
-      "ended_at": "2026-10-28T03:37:54",
-      "duration_s": 120.04
-     },
-     {
-      "kind": "synthesize",
-      "ai": "GPT",
-      "model": "gpt-6-astra",
-      "status": "timeout",
-      "rejected": false,
-      "started_at": "2026-10-28T03:37:54",
-      "ended_at": "2026-10-28T03:39:54",
-      "duration_s": 120.042
-     },
-     {
-      "kind": "diagnose",
-      "ai": "GPT",
-      "model": "gpt-6-astra",
-      "status": "ok",
-      "rejected": false,
-      "started_at": "2026-10-28T03:40:09",
-      "ended_at": "2026-10-28T03:41:49",
-      "duration_s": 100.061
-     },
-     {
-      "kind": "step",
-      "ai": "GPT",
-      "model": "gpt-6-astra",
-      "status": "ok",
-      "rejected": false,
-      "started_at": "2026-10-28T03:41:49",
-      "ended_at": "2026-10-28T03:46:52",
-      "duration_s": 303.509
-     },
-     {
-      "kind": "synthesize",
-      "ai": "GPT",
-      "model": "gpt-6-astra",
-      "status": "ok",
-      "rejected": false,
-      "started_at": "2026-10-28T03:46:52",
-      "ended_at": "2026-10-28T03:48:13",
-      "duration_s": 81.264
-     }
-    ],
-    "events": [
-     {
-      "at": "2026-10-28T01:44:17",
-      "kind": "daily_schedule",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-10-28T01:44:17",
-      "kind": "step",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-10-28T01:47:22",
-      "kind": "director_handoff",
-      "label": "总指挥已交接"
-     },
-     {
-      "at": "2026-10-28T01:47:22",
-      "kind": "synthesize",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-10-28T01:48:27",
-      "kind": "redo",
-      "label": "正在修复并复验"
-     },
-     {
-      "at": "2026-10-28T01:48:27",
-      "kind": "step",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-10-28T01:50:00",
-      "kind": "step_rate_limited",
-      "label": "已遇限流，接续其他可用AI或等待恢复"
-     },
-     {
-      "at": "2026-10-28T03:30:38",
-      "kind": "step",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-10-28T03:35:53",
-      "kind": "director_handoff",
-      "label": "总指挥已交接"
-     },
-     {
-      "at": "2026-10-28T03:35:53",
-      "kind": "synthesize",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-10-28T03:37:54",
-      "kind": "director_handoff",
-      "label": "总指挥已交接"
-     },
-     {
-      "at": "2026-10-28T03:37:54",
-      "kind": "synthesize",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-10-28T03:39:54",
-      "kind": "auto_recovery",
-      "label": "进入自动恢复队列"
-     },
-     {
-      "at": "2026-10-28T03:40:09",
-      "kind": "director_handoff",
-      "label": "总指挥已交接"
-     },
-     {
-      "at": "2026-10-28T03:40:09",
-      "kind": "diagnose",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-10-28T03:41:49",
-      "kind": "repair_plan",
-      "label": "已诊断并生成修复方案"
-     },
-     {
-      "at": "2026-10-28T03:41:49",
-      "kind": "step",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-10-28T03:46:52",
-      "kind": "director_handoff",
-      "label": "总指挥已交接"
-     },
-     {
-      "at": "2026-10-28T03:46:52",
-      "kind": "synthesize",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-10-28T03:47:02",
-      "kind": "manual",
-      "label": "流程进度更新"
-     }
-    ],
-    "recovery": {
-     "cycles": 1,
      "next_at": null,
      "status": null
     }
