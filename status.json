@@ -71,13 +71,13 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-04T04:58:46.383137+00:00",
+ "generated_at": "2026-11-04T05:03:52.378079+00:00",
  "counts": {
   "待处理": 0,
   "执行中": 0,
   "会诊中": 0,
   "需你决定": 0,
-  "今日完成": 4,
+  "今日完成": 0,
   "累计完成": 47
  },
  "providers": [
@@ -94,9 +94,9 @@
    "name": "Claude(中转)",
    "status": "空闲",
    "running": 0,
-   "today_runs": 5,
-   "today_ok": 4,
-   "today_fail": 1,
+   "today_runs": 0,
+   "today_ok": 0,
+   "today_fail": 0,
    "only_levels": null
   },
   {
