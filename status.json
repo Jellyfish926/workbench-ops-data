@@ -71,7 +71,7 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-05T23:30:49.257867+00:00",
+ "generated_at": "2026-11-05T23:36:56.737968+00:00",
  "counts": {
   "待处理": 0,
   "执行中": 0,
@@ -6016,7 +6016,7 @@
   }
  ],
  "gamesites": {
-  "generated_at": "2026-11-05T23:06:23.410574+00:00",
+  "generated_at": "2026-11-05T23:36:44.199105+00:00",
   "scale": {
    "independent_sites": 5,
    "independent_online": 5,
