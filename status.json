@@ -71,7 +71,7 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-05T17:58:21.331271+00:00",
+ "generated_at": "2026-11-05T18:03:28.062837+00:00",
  "counts": {
   "待处理": 0,
   "执行中": 1,
@@ -5959,7 +5959,7 @@
   }
  ],
  "gamesites": {
-  "generated_at": "2026-11-05T17:32:35.418640+00:00",
+  "generated_at": "2026-11-05T18:02:56.730847+00:00",
   "scale": {
    "independent_sites": 5,
    "independent_online": 5,
@@ -6023,20 +6023,20 @@
    {
     "id": "shangjia",
     "name": "上架",
-    "status": "已完成",
-    "last_run": "2026-11-04T13:26:44",
+    "status": "步骤执行中",
+    "last_run": "2026-11-05T12:47:03",
     "alert": false,
-    "output": "✅ 今天上架了 1 款游戏，额度未用满属正常情况。",
-    "task_id": 59
+    "output": null,
+    "task_id": 63
    },
    {
     "id": "hesi",
     "name": "上线核实",
-    "status": "已完成",
-    "last_run": "2026-11-04T13:26:44",
+    "status": "步骤执行中",
+    "last_run": "2026-11-05T12:47:03",
     "alert": false,
-    "output": "逐页截图检查通过",
-    "task_id": 59
+    "output": "未检查",
+    "task_id": 63
    },
    {
     "id": "liuliang",
