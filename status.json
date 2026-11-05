@@ -12,8 +12,8 @@
     "fallbacks": [
      "Claude Code"
     ],
-    "next_at": "2026-11-05T09:00:00+08:00",
-    "business_date": "2026-11-05",
+    "next_at": "2026-11-06T09:00:00+08:00",
+    "business_date": "2026-11-06",
     "status": "已完成",
     "task_id": 57,
     "test_status": "已放弃",
@@ -71,7 +71,7 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-05T00:52:07.052730+00:00",
+ "generated_at": "2026-11-05T01:00:13.609582+00:00",
  "counts": {
   "待处理": 0,
   "执行中": 0,
@@ -110,7 +110,7 @@
   },
   {
    "name": "Claude Code",
-   "status": "冷却中",
+   "status": "空闲",
    "running": 0,
    "today_runs": 0,
    "today_ok": 0,
