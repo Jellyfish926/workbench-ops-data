@@ -71,14 +71,14 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-05T02:27:20.747572+00:00",
+ "generated_at": "2026-11-05T02:32:28.648708+00:00",
  "counts": {
   "待处理": 0,
-  "执行中": 0,
+  "执行中": 2,
   "会诊中": 0,
   "需你决定": 0,
   "今日完成": 4,
-  "累计完成": 51
+  "累计完成": 49
  },
  "providers": [
   {
@@ -101,8 +101,8 @@
   },
   {
    "name": "GPT",
-   "status": "空闲",
-   "running": 0,
+   "status": "忙碌",
+   "running": 1,
    "today_runs": 2,
    "today_ok": 0,
    "today_fail": 2,
@@ -110,8 +110,8 @@
   },
   {
    "name": "Claude Code",
-   "status": "空闲",
-   "running": 0,
+   "status": "忙碌",
+   "running": 1,
    "today_runs": 2,
    "today_ok": 2,
    "today_fail": 0,
@@ -2828,18 +2828,25 @@
    "id": 46,
    "title": "每日定时：每日总站自动上架（2026-11-01）",
    "level": "困难",
-   "status": "已完成",
-   "attempts": 1,
+   "status": "步骤执行中",
+   "attempts": 2,
    "created_at": "2026-11-01T12:47:08",
-   "updated_at": "2026-11-04T21:21:54",
-   "finished_at": "2026-11-01T13:16:36",
-   "summary": "业务日 2026-11-01 的总站上架已完成：两款已上线，并已在正式域名 lootwiki.com 上逐页核对。 **上架（额度 2 款用满）** - `+1 Spider Arm`：[链接] 页，0 个 draft。 - `Create A Disaster`：[链接] 页，0 个 draft。它的内容偏薄，但 8 页都有一手来源；昨天它因偏薄被排到今天，今天重测抢注站仍是 2 个。 - 开工时同业务日没有其他执行者的产出。 - 两款在 Roblox 官方描述里都没有兑换码，所以没建 codes 页。 **淘汰的候选** - 因同名抢注站过多，不上：Ride A Pet（15 个）、Pra…",
+   "updated_at": "2026-11-04T21:31:47",
+   "finished_at": null,
+   "summary": null,
    "path": [
     {
      "kind": "step",
      "ai": "Claude Code",
      "model": "sonnet",
      "status": "ok",
+     "rejected": false
+    },
+    {
+     "kind": "step",
+     "ai": "Claude Code",
+     "model": "sonnet",
+     "status": "running",
      "rejected": false
     }
    ],
@@ -2848,7 +2855,7 @@
      "title": "步骤 1",
      "ai": "Claude Code",
      "model": "sonnet",
-     "status": "完成"
+     "status": "执行中"
     }
    ],
    "redo_rounds": 0,
@@ -2864,6 +2871,16 @@
       "started_at": "2026-11-01T12:47:08",
       "ended_at": "2026-11-01T13:16:36",
       "duration_s": 1767.306
+     },
+     {
+      "kind": "step",
+      "ai": "Claude Code",
+      "model": "sonnet",
+      "status": "running",
+      "rejected": false,
+      "started_at": "2026-11-04T21:31:47",
+      "ended_at": null,
+      "duration_s": null
      }
     ],
     "events": [
@@ -2925,6 +2942,16 @@
      {
       "at": "2026-11-04T21:21:54",
       "kind": "visual",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-04T21:31:47",
+      "kind": "postcheck",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-04T21:31:47",
+      "kind": "step",
       "label": "流程进度更新"
      }
     ],
@@ -3180,7 +3207,7 @@
    "status": "已完成",
    "attempts": 1,
    "created_at": "2026-10-31T13:47:06",
-   "updated_at": "2026-11-04T21:21:57",
+   "updated_at": "2026-11-04T21:31:46",
    "finished_at": "2026-10-31T14:03:19",
    "summary": "2026-10-31 的总站上架完成：Raise The Biggest Family 和 Clean the Moon 两款已上线，每款 9 页，当天 2 款额度用满。 **选款** - 雷达 10-31 快照完整，开工时同业务日没有其他执行者的产出。 - Throw Food For Animals 被淘汰（76 分、同名抢注站 ●7）。Ragdoll Playground 和 Say Cheese 沿用 10-30 的淘汰结论。 - Create A Disaster 与 Clean the Moon 同为 65 分，Create A Disaster 在线人数更高，本应先上。但它的通行…",
    "path": [
@@ -3273,6 +3300,11 @@
      },
      {
       "at": "2026-11-04T21:21:57",
+      "kind": "visual",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-04T21:31:46",
       "kind": "visual",
       "label": "流程进度更新"
      }
@@ -3586,7 +3618,7 @@
    "status": "已完成",
    "attempts": 2,
    "created_at": "2026-10-30T13:47:09",
-   "updated_at": "2026-11-04T21:21:59",
+   "updated_at": "2026-11-04T21:32:16",
    "finished_at": "2026-10-30T14:17:27",
    "summary": "两款已上线：Realistic Car Destruction 和 Teach Your Sister How To Drive，每款 10 页，都已在 lootwiki.com 逐页核对。飞书写表和浏览器截图按规则交给 feishu-sync 和工作台，本任务没做。 **选款** - 雷达快照 2026-10-30 完整；同业务日没有其他执行者的产出，当天额度 2 款全部用完。 - 淘汰的候选： - Anime Eyes 借用动漫 IP。 - Ragdoll Playground 同名抢注站有 5 个。 - Farming Incremental 是纯挂机玩法。 - Say Cheese 官…",
    "path": [
@@ -3711,6 +3743,11 @@
      },
      {
       "at": "2026-11-04T21:21:59",
+      "kind": "visual",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-04T21:32:16",
       "kind": "visual",
       "label": "流程进度更新"
      }
@@ -4678,12 +4715,12 @@
    "id": 31,
    "title": "每日定时：每日总站自动上架（2026-10-29）",
    "level": "困难",
-   "status": "已完成",
-   "attempts": 3,
+   "status": "步骤执行中",
+   "attempts": 4,
    "created_at": "2026-10-29T13:47:05",
-   "updated_at": "2026-11-04T21:22:02",
-   "finished_at": "2026-10-29T21:34:44",
-   "summary": "核心产出工作台已核验通过。还有 2 项没做完，重试也补不了，不再弹窗问你，已记入「待改进」：飞书主表判断和变更日志未同步；浏览器逐页检查及截图未完成（没能用浏览器逐页检查和截图）。 本次仅补缺项，未新增上架或重复发卡；同业务日仍为 1 款。 - 已完成独立内容复验、修正及部署，提交 `4846ef4`；远端门禁通过，线上 10 页回读均为 200，修正文案已生效。 - 回执与证据已推送至 `cd4a63f`，远端回读一致。[查看回执]([本机路径])。 - 飞书补同步被 GitHub 工作流权限拒绝，未写表；浏览器受系统沙箱限制，逐页 DOM 与截图验收未完成。 【回执状态】部分完成：飞书主表…",
+   "updated_at": "2026-11-04T21:28:35",
+   "finished_at": null,
+   "summary": null,
    "path": [
     {
      "kind": "step",
@@ -4705,6 +4742,13 @@
      "model": "gpt-6.1-sol",
      "status": "ok",
      "rejected": false
+    },
+    {
+     "kind": "step",
+     "ai": "GPT",
+     "model": "gpt-6.1-sol",
+     "status": "running",
+     "rejected": false
     }
    ],
    "steps": [
@@ -4712,7 +4756,7 @@
      "title": "步骤 1",
      "ai": "GPT",
      "model": "gpt-6.1-sol",
-     "status": "完成"
+     "status": "执行中"
     }
    ],
    "redo_rounds": 0,
@@ -4748,6 +4792,16 @@
       "started_at": "2026-10-29T20:41:26",
       "ended_at": "2026-10-29T20:57:29",
       "duration_s": 963.698
+     },
+     {
+      "kind": "step",
+      "ai": "GPT",
+      "model": "gpt-6.1-sol",
+      "status": "running",
+      "rejected": false,
+      "started_at": "2026-11-04T21:28:35",
+      "ended_at": null,
+      "duration_s": null
      }
     ],
     "events": [
@@ -4869,6 +4923,16 @@
      {
       "at": "2026-11-04T21:22:02",
       "kind": "visual",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-04T21:28:35",
+      "kind": "postcheck",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-04T21:28:35",
+      "kind": "step",
       "label": "流程进度更新"
      }
     ],
