@@ -60,10 +60,10 @@
     "fallbacks": [
      "Claude Code"
     ],
-    "next_at": "2026-11-06T03:17:00+08:00",
-    "business_date": "2026-11-05",
-    "status": "已完成",
-    "task_id": 60,
+    "next_at": "2026-11-07T03:17:00+08:00",
+    "business_date": "2026-11-06",
+    "status": "步骤执行中",
+    "task_id": 64,
     "test_status": "尚未测试",
     "test_task_id": null
    }
@@ -71,10 +71,10 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-05T19:09:31.075984+00:00",
+ "generated_at": "2026-11-05T19:17:40.112482+00:00",
  "counts": {
   "待处理": 0,
-  "执行中": 1,
+  "执行中": 2,
   "会诊中": 0,
   "需你决定": 0,
   "今日完成": 0,
@@ -103,15 +103,15 @@
    "name": "GPT",
    "status": "忙碌",
    "running": 1,
-   "today_runs": 0,
+   "today_runs": 1,
    "today_ok": 0,
-   "today_fail": 0,
+   "today_fail": 1,
    "only_levels": null
   },
   {
    "name": "Claude Code",
-   "status": "空闲",
-   "running": 0,
+   "status": "忙碌",
+   "running": 1,
    "today_runs": 0,
    "today_ok": 0,
    "today_fail": 0,
@@ -131,13 +131,74 @@
  ],
  "tasks": [
   {
+   "id": 64,
+   "title": "每日定时：每日工作记忆备份到 GitHub（2026-11-05）",
+   "level": "困难",
+   "status": "步骤执行中",
+   "attempts": 1,
+   "created_at": "2026-11-05T14:17:14",
+   "updated_at": "2026-11-05T14:17:14",
+   "finished_at": null,
+   "summary": null,
+   "path": [
+    {
+     "kind": "step",
+     "ai": "Claude Code",
+     "model": "sonnet",
+     "status": "running",
+     "rejected": false
+    }
+   ],
+   "steps": [
+    {
+     "title": "步骤 1",
+     "ai": "Claude Code",
+     "model": "sonnet",
+     "status": "执行中"
+    }
+   ],
+   "redo_rounds": 0,
+   "detail": {
+    "result": null,
+    "runs": [
+     {
+      "kind": "step",
+      "ai": "Claude Code",
+      "model": "sonnet",
+      "status": "running",
+      "rejected": false,
+      "started_at": "2026-11-05T14:17:14",
+      "ended_at": null,
+      "duration_s": null
+     }
+    ],
+    "events": [
+     {
+      "at": "2026-11-05T14:17:14",
+      "kind": "daily_schedule",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-05T14:17:14",
+      "kind": "step",
+      "label": "流程进度更新"
+     }
+    ],
+    "recovery": {
+     "cycles": 0,
+     "next_at": null,
+     "status": null
+    }
+   }
+  },
+  {
    "id": 63,
    "title": "每日定时：每日总站自动上架（2026-11-05）",
    "level": "困难",
    "status": "步骤执行中",
-   "attempts": 1,
+   "attempts": 2,
    "created_at": "2026-11-05T12:47:03",
-   "updated_at": "2026-11-05T12:47:03",
+   "updated_at": "2026-11-05T14:17:04",
    "finished_at": null,
    "summary": null,
    "path": [
@@ -145,6 +206,13 @@
      "kind": "step",
      "ai": "GPT",
      "model": "gpt-6.1-sol",
+     "status": "timeout",
+     "rejected": false
+    },
+    {
+     "kind": "step",
+     "ai": "GPT",
+     "model": "gpt-6-astra",
      "status": "running",
      "rejected": false
     }
@@ -153,7 +221,7 @@
     {
      "title": "步骤 1",
      "ai": "GPT",
-     "model": "gpt-6.1-sol",
+     "model": "gpt-6-astra",
      "status": "执行中"
     }
    ],
@@ -165,9 +233,19 @@
       "kind": "step",
       "ai": "GPT",
       "model": "gpt-6.1-sol",
-      "status": "running",
+      "status": "timeout",
       "rejected": false,
       "started_at": "2026-11-05T12:47:03",
+      "ended_at": "2026-11-05T14:17:04",
+      "duration_s": 5400.189
+     },
+     {
+      "kind": "step",
+      "ai": "GPT",
+      "model": "gpt-6-astra",
+      "status": "running",
+      "rejected": false,
+      "started_at": "2026-11-05T14:17:04",
       "ended_at": null,
       "duration_s": null
      }
@@ -180,6 +258,31 @@
      },
      {
       "at": "2026-11-05T12:47:03",
+      "kind": "step",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-05T14:17:04",
+      "kind": "file_audit",
+      "label": "已核对实际文件变更"
+     },
+     {
+      "at": "2026-11-05T14:17:04",
+      "kind": "write_timeout",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-05T14:17:04",
+      "kind": "step_failure",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-05T14:17:04",
+      "kind": "auto_resume",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-05T14:17:04",
       "kind": "step",
       "label": "流程进度更新"
      }
@@ -5828,124 +5931,6 @@
      },
      {
       "at": "2026-10-29T11:35:32",
-      "kind": "cleanup",
-      "label": "流程进度更新"
-     }
-    ],
-    "recovery": {
-     "cycles": 0,
-     "next_at": null,
-     "status": null
-    }
-   }
-  },
-  {
-   "id": 24,
-   "title": "每日定时：每日热词雷达 + 游戏机会表同步（2026-10-29）",
-   "level": "困难",
-   "status": "已完成",
-   "attempts": 2,
-   "created_at": "2026-10-28T23:22:07",
-   "updated_at": "2026-10-29T00:21:55",
-   "finished_at": "2026-10-29T00:21:55",
-   "summary": "热词雷达和三张机会表的同步都做完了，群卡没发，所以整体算部分完成。 **已完成** - **雷达产物**：已推送 `snapshots/2026-10-29.json` 和 `reports/2026-10-29.md`，对应 seo-hotwords 提交 `2ab3041`。采集到 Steam 三榜各 100 条、Roblox 五榜共 464 条、Trends 10 条，候选 469 个，评分后 387 个。 - **表格同步**：seo-hotwords 的 feishu-sync Actions（run `40816735453`）成功，回执 `runs/2026-10-29-game…",
-   "path": [
-    {
-     "kind": "step",
-     "ai": "GPT",
-     "model": "gpt-6.1-sol",
-     "status": "rate_limited",
-     "rejected": false
-    },
-    {
-     "kind": "step",
-     "ai": "Claude Code",
-     "model": "sonnet",
-     "status": "ok",
-     "rejected": false
-    }
-   ],
-   "steps": [
-    {
-     "title": "步骤 1",
-     "ai": "Claude Code",
-     "model": "sonnet",
-     "status": "完成"
-    }
-   ],
-   "redo_rounds": 0,
-   "detail": {
-    "result": "热词雷达和三张机会表的同步都做完了，群卡没发，所以整体算部分完成。\n\n**已完成**\n- **雷达产物**：已推送 `snapshots/2026-10-29.json` 和 `reports/2026-10-29.md`，对应 seo-hotwords 提交 `2ab3041`。采集到 Steam 三榜各 100 条、Roblox 五榜共 464 条、Trends 10 条，候选 469 个，评分后 387 个。\n- **表格同步**：seo-hotwords 的 feishu-sync Actions（run `40816735453`）成功，回执 `runs/2026-10-29-game-sync.json` 为 complete（提交 `68f4347`），run_id 是 `2026-10-29-radar-and-game-sync-v2`。我没有直接写表。\n- **回读结果**：\n - 游戏主表更新 239 行，回读一致 239。\n - 每日观测写入 412 条，回读 412。\n - 变更日志预期 0 条，实际 0 条。\n - 三张表都没有失败项。\n- **本业务日回执**：已存到 claude-skills 的 `memory/coordination/runs/2026-10-29/10-00-claude.json`（提交 `775e594`）。\n\n**未完成**\n- **群卡**：没有发送。既有群推送渠道读取不到，我没有改用其他地址。这一项留待处理。\n- **上架交接**：昨晚的上架交接 JSON 和 Markdown 都返回 404，卡片材料里要注明“未获取”，不能当作零上架。\n\n**需要注意**\n- Steam 的详情、评论和在线数接口有部分超时，246 个候选的详情标为“未获取”，不是零。\n- 对比基线是 10-24，相隔 5 天，不能当作日增长。\n- 主表里 `roblox:10495391267` 找不到对应行，按规则没有新建。\n\n【工作台文件核对】最多扫描2000个文件；发生新增、修改或删除的相对路径：[\"claude-skills/memory/coordination/runs/2026-10-29/10-00-claude.json\", \"claude-skills/seo-jianzhan/references/steam-research.md\", \"claude-skills/seo-jianzhan/references/three-layer.md\", \"evidence/radar-2026-10-29-run2.log\"]",
-    "runs": [
-     {
-      "kind": "step",
-      "ai": "GPT",
-      "model": "gpt-6.1-sol",
-      "status": "rate_limited",
-      "rejected": false,
-      "started_at": "2026-10-28T23:22:07",
-      "ended_at": "2026-10-28T23:43:45",
-      "duration_s": 1297.822
-     },
-     {
-      "kind": "step",
-      "ai": "Claude Code",
-      "model": "sonnet",
-      "status": "ok",
-      "rejected": false,
-      "started_at": "2026-10-28T23:43:45",
-      "ended_at": "2026-10-29T00:21:55",
-      "duration_s": 2290.169
-     }
-    ],
-    "events": [
-     {
-      "at": "2026-10-28T23:22:07",
-      "kind": "daily_schedule",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-10-28T23:22:07",
-      "kind": "step",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-10-28T23:43:45",
-      "kind": "file_audit",
-      "label": "已核对实际文件变更"
-     },
-     {
-      "at": "2026-10-28T23:43:45",
-      "kind": "step_rate_limited",
-      "label": "已遇限流，接续其他可用AI或等待恢复"
-     },
-     {
-      "at": "2026-10-28T23:43:45",
-      "kind": "step",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-10-29T00:21:55",
-      "kind": "file_audit",
-      "label": "已核对实际文件变更"
-     },
-     {
-      "at": "2026-10-29T00:21:55",
-      "kind": "done",
-      "label": "已完成验收"
-     },
-     {
-      "at": "2026-10-29T02:49:12",
-      "kind": "cleanup",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-10-29T12:35:35",
-      "kind": "cleanup",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-10-29T12:35:35",
       "kind": "cleanup",
       "label": "流程进度更新"
      }
