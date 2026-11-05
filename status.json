@@ -71,14 +71,14 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-05T03:16:58.763738+00:00",
+ "generated_at": "2026-11-05T03:28:06.036915+00:00",
  "counts": {
   "待处理": 0,
-  "执行中": 1,
+  "执行中": 0,
   "会诊中": 0,
   "需你决定": 0,
-  "今日完成": 6,
-  "累计完成": 50
+  "今日完成": 7,
+  "累计完成": 51
  },
  "providers": [
   {
@@ -101,10 +101,10 @@
   },
   {
    "name": "GPT",
-   "status": "忙碌",
-   "running": 1,
-   "today_runs": 3,
-   "today_ok": 1,
+   "status": "空闲",
+   "running": 0,
+   "today_runs": 4,
+   "today_ok": 2,
    "today_fail": 2,
    "only_levels": null
   },
@@ -3229,12 +3229,12 @@
    "id": 42,
    "title": "每日定时：每日总站自动上架（2026-10-31）",
    "level": "困难",
-   "status": "步骤执行中",
+   "status": "已完成",
    "attempts": 2,
    "created_at": "2026-10-31T13:47:06",
-   "updated_at": "2026-11-04T22:16:07",
-   "finished_at": null,
-   "summary": null,
+   "updated_at": "2026-11-04T22:28:03",
+   "finished_at": "2026-11-04T22:28:03",
+   "summary": "已部署本轮加载加固：两个问题页的配图改为站内资源，提交 `c3bf70a`。 - 构建、远端门禁、部署及独立 HTTP/SEO 验收通过；页面和图片均返回 200，与构建一致。 - 回执与证据已推送并回读，归档提交 `b09c796`。 - 未新增游戏、发卡或写飞书表。 历史 45 秒超时未复现，根因仍未证实；浏览器复查由工作台承接。 【回执状态】完成 【工作台文件核对】最多扫描2000个文件；发生新增、修改或删除的相对路径：[\"handoff/2026-10-31-hub-autopublish-repair-remote-readback.json\", \"handoff/2026-10-3…",
    "path": [
     {
      "kind": "step",
@@ -3247,7 +3247,7 @@
      "kind": "step",
      "ai": "GPT",
      "model": "gpt-6.1-sol",
-     "status": "running",
+     "status": "ok",
      "rejected": false
     }
    ],
@@ -3256,12 +3256,12 @@
      "title": "步骤 1",
      "ai": "GPT",
      "model": "gpt-6.1-sol",
-     "status": "执行中"
+     "status": "完成"
     }
    ],
    "redo_rounds": 0,
    "detail": {
-    "result": "2026-10-31 的总站上架完成：Raise The Biggest Family 和 Clean the Moon 两款已上线，每款 9 页，当天 2 款额度用满。\n\n**选款**\n- 雷达 10-31 快照完整，开工时同业务日没有其他执行者的产出。\n- Throw Food For Animals 被淘汰（76 分、同名抢注站 ●7）。Ragdoll Playground 和 Say Cheese 沿用 10-30 的淘汰结论。\n- Create A Disaster 与 Clean the Moon 同为 65 分，Create A Disaster 在线人数更高，本应先上。但它的通行证没有描述、商品只有 8 条、没有徽章，写不出 8 页有来源的内容，所以改上 Clean the Moon，Create A Disaster 排到明天优先。\n- 本环境没有子代理工具，硬门筛选和独立复验都由我自己执行，没有另派独立验收员。\n\n**远端证据**\n- lootlore 提交 `dec5eb3`（作者用 noreply 邮箱）：Vercel 状态 success，gates 工作流 41227168386 success；按 gates.yml 在本地也全部复现通过。\n- 页面价格核验：重新请求 Roblox 接口，对 79 个价格单元格逐项比对，0 处不符。\n- 正式域名 lootwiki.com 上两个栏目共 18 页全部返回 200，sitemap 含 18 条。\n- 页面标题、description 长度、canonical、H1、JSON-LD、og:image、alt、GA4 和 Adsterra 检查均通过。两款都没有兑换码页，访问 `/updates/`、`/codes/` 返回 404，首页已链到两个新栏目。\n- seo-hotwords `built-sites.json` 已登记（提交 `87ada55`），回读确认。\n- 运行记录和交接文件已推送（提交 `8f139e4`），远端回读确认：`status=published`、`published=2`、`queued=23`、`feishu=\"delegated-to-feishu-sync\"`。运行记录同时放在 `data/workspace/task-42/handoff/2026-10-31-hub-autopublish.md`。\n\n**未做（按规则属于交接分工，不算缺项）**\n- 飞书主表「已建站」和变更日志由 feishu-sync 写。\n- 浏览器逐页截图和视觉检查由工作台在交接后自动做。\n\n**数据缺口**\n- Steam 和 Fandom 接口本机不可达，相关候选记「未获取」。搜索量按规则也不查。\n- 两款的通行证或商品描述缺失处，页面都明说「未发布」，推断部分标了「我们的理解」。\n\n【回执状态】完成\n\n【工作台文件核对】最多扫描2000个文件；发生新增、修改或删除的相对路径：[\"cs/automations/runs/2026-09-22-game-sync.csv\", \"cs/automations/runs/2026-09-24-game-sync.csv\", \"cs/automations/runs/2026-09-25-game-sync.csv\", \"cs/automations/runs/2026-09-26-game-sync.csv\", \"cs/automations/runs/2026-09-27-game-sync.csv\", \"cs/automations/runs/2026-09-28-game-sync.csv\", \"cs/automations/runs/2026-09-28-xuanci-判断表.md\", \"cs/automations/runs/2026-09-28-xuanci-验收.md\", \"cs/automations/runs/2026-09-30-hub-autopublish.md\", \"cs/automations/runs/2026-10-01-hub-autopublish.md\", \"cs/automations/runs/2026-10-02-hub-autopublish.md\", \"cs/automations/runs/2026-10-08-hub-autopublish.md\", \"cs/automations/runs/2026-10-09-hub-autopublish.json\", \"cs/automations/runs/2026-10-09-hub-autopublish.md\", \"cs/automations/runs/2026-10-10-hub-autopublish.json\", \"cs/automations/runs/2026-10-10-hub-autopublish.md\", \"cs/automations/runs/2026-10-10-weekend-notes/README.md\", \"cs/automations/runs/2026-10-10-weekend-notes/b1-bongo-cat-旧页问题清单.md\", \"cs/automations/runs/2026-10-10-weekend-notes/b1-bongo-cat-页面矩阵.md\", \"cs/automations/runs/2026-10-10-weekend-notes/b1-market-prices-取数步骤.md\", \"cs/automations/runs/2026-10-10-weekend-notes/b1-market-prices-未完成草稿.md\", \"cs/automations/runs/2026-10-10-weekend-notes/b2-deep-fishing-旧页问题清单.md\", \"cs/automations/runs/2026-10-10-weekend-notes/b2-deep-fishing-页面矩阵.md\", \"cs/automations/runs/2026-10-10-weekend-notes/b3-stone-skipping-页面矩阵与旧页待修.md\", \"cs/automations/runs/2026-10-10-weekend-notes/b4-blockspin-页面矩阵.md\", \"cs/automations/runs/2026-10-10-weekend-notes/b5-untitled-wheelie-game-页面矩阵.md\", \"cs/automations/runs/2026-10-10-weekend-notes/b6-get-your-drivers-license-页面矩阵.md\", \"cs/automations/runs/2026-10-10-weekend-notes/d1-总站-DOM检查分诊.md\", \"cs/automations/runs/2026-10-10-weekend-notes/d1-总站-逐页检查报告.md\", \"cs/automations/runs/2026-10-10-weekend-notes/d2-shift-事实取证清单.md\", \"cs/automations/runs/2026-10-10-weekend-notes/d2-shift-逐页检查报告.md\", \"cs/automations/runs/2026-10-10-weekend-notes/lootlore-写页与接入规范摘要.md\", \"cs/automations/runs/2026-10-10-weekend-notes/selfcheck.py\", \"cs/automations/runs/2026-10-10-weekend-notes/任务书-事实核验-B4B5通用.md\", \"cs/automations/runs/2026-10-10-weekend-notes/任务书-事实核验-Roblox.md\", \"cs/automations/runs/2026-10-10-weekend-notes/任务书-事实核验.md\", \"cs/automations/runs/2026-10-10-weekend-notes/任务书-写手-B1样例.md\", \"cs/automations/runs/2026-10-10-weekend-notes/任务书-写手-B2样例-Roblox.md\", \"cs/automations/runs/2026-10-10-weekend-notes/任务书-独立验收口径-B4B5通用.md\", \"cs/automations/runs/2026-10-10-weekend-notes/任务书-独立验收口径-Roblox.md\", \"cs/automations/runs/2026-10-10-weekend-notes/任务书-独立验收口径-shift事实更正.md\", \"cs/automations/runs/2026-10-10-weekend-notes/任务书-独立验收口径-栏目过期事实.md\", \"cs/automations/runs/2026-10-10-weekend-notes/任务书-独立验收口径.md\", \"cs/automations/runs/2026-10-10-weekend-notes/任务书-页面矩阵-Roblox栏目.",
+    "result": "已部署本轮加载加固：两个问题页的配图改为站内资源，提交 `c3bf70a`。\n\n- 构建、远端门禁、部署及独立 HTTP/SEO 验收通过；页面和图片均返回 200，与构建一致。\n- 回执与证据已推送并回读，归档提交 `b09c796`。\n- 未新增游戏、发卡或写飞书表。\n\n历史 45 秒超时未复现，根因仍未证实；浏览器复查由工作台承接。\n\n【回执状态】完成\n【工作台文件核对】最多扫描2000个文件；发生新增、修改或删除的相对路径：[\"handoff/2026-10-31-hub-autopublish-repair-remote-readback.json\", \"handoff/2026-10-31-hub-autopublish-repair.json\", \"handoff/2026-10-31-hub-autopublish-repair.md\", \"repair/claude-skills/.gitignore\", \"repair/claude-skills/AGENTS.md\", \"repair/claude-skills/CLAUDE.md\", \"repair/claude-skills/README.md\", \"repair/claude-skills/automations/README.md\", \"repair/claude-skills/automations/SECRETS.md\", \"repair/claude-skills/automations/hotword-radar.md\", \"repair/claude-skills/automations/hub-autopublish.md\", \"repair/claude-skills/automations/monday-report.md\", \"repair/claude-skills/automations/no-traffic-pages.json\", \"repair/claude-skills/automations/runs/2026-09-22-game-sync.csv\", \"repair/claude-skills/automations/runs/2026-09-24-game-sync.csv\", \"repair/claude-skills/automations/runs/2026-09-25-game-sync.csv\", \"repair/claude-skills/automations/runs/2026-09-26-game-sync.csv\", \"repair/claude-skills/automations/runs/2026-09-27-game-sync.csv\", \"repair/claude-skills/automations/runs/2026-09-28-game-sync.csv\", \"repair/claude-skills/automations/runs/2026-09-28-xuanci-判断表.md\", \"repair/claude-skills/automations/runs/2026-09-28-xuanci-验收.md\", \"repair/claude-skills/automations/runs/2026-09-30-hub-autopublish.md\", \"repair/claude-skills/automations/runs/2026-10-01-hub-autopublish.md\", \"repair/claude-skills/automations/runs/2026-10-02-hub-autopublish.md\", \"repair/claude-skills/automations/runs/2026-10-08-hub-autopublish.md\", \"repair/claude-skills/automations/runs/2026-10-09-hub-autopublish.json\", \"repair/claude-skills/automations/runs/2026-10-09-hub-autopublish.md\", \"repair/claude-skills/automations/runs/2026-10-10-hub-autopublish.json\", \"repair/claude-skills/automations/runs/2026-10-10-hub-autopublish.md\", \"repair/claude-skills/automations/runs/2026-10-10-weekend-notes/README.md\", \"repair/claude-skills/automations/runs/2026-10-10-weekend-notes/b1-bongo-cat-旧页问题清单.md\", \"repair/claude-skills/automations/runs/2026-10-10-weekend-notes/b1-bongo-cat-页面矩阵.md\", \"repair/claude-skills/automations/runs/2026-10-10-weekend-notes/b1-market-prices-取数步骤.md\", \"repair/claude-skills/automations/runs/2026-10-10-weekend-notes/b1-market-prices-未完成草稿.md\", \"repair/claude-skills/automations/runs/2026-10-10-weekend-notes/b2-deep-fishing-旧页问题清单.md\", \"repair/claude-skills/automations/runs/2026-10-10-weekend-notes/b2-deep-fishing-页面矩阵.md\", \"repair/claude-skills/automations/runs/2026-10-10-weekend-notes/b3-stone-skipping-页面矩阵与旧页待修.md\", \"repair/claude-skills/automations/runs/2026-10-10-weekend-notes/b4-blockspin-页面矩阵.md\", \"repair/claude-skills/automations/runs/2026-10-10-weekend-notes/b5-untitled-wheelie-game-页面矩阵.md\", \"repair/claude-skills/automations/runs/2026-10-10-weekend-notes/b6-get-your-drivers-license-页面矩阵.md\", \"repair/claude-skills/automations/runs/2026-10-10-weekend-notes/d1-总站-DOM检查分诊.md\", \"repair/claude-skills/automations/runs/2026-10-10-weekend-notes/d1-总站-逐页检查报告.md\", \"repair/claude-skills/automations/runs/2026-10-10-weekend-notes/d2-shift-事实取证清单.md\", \"repair/claude-skills/automations/runs/2026-10-10-weekend-notes/d2-shift-逐页检查报告.md\", \"repair/claude-skills/automations/runs/2026-10-10-weekend-notes/lootlore-写页与接入规范摘要.md\", \"repair/claude-skills/automations/runs/2026-10-10-weekend-notes/selfcheck.py\", \"repair/claude-skills/automations/runs/2026-10-10-weekend-notes/任务书-事实核验-B4B5通用.md\", \"repair/claude-skills/automations/runs/2026-10-10-weekend-notes/任务书-事实核验-Roblox.md\", \"repair/claude-skills/automations/runs/2026-10-10-weekend-notes/任务书-事实核验.md\", \"repair/claude-skills/automations/runs/2026-10-10-weekend-notes/任务书-写手-B1样例.md\", \"repair/claude-skills/automations/runs/2026-10-10-weekend-notes/任务书-写手-B2样例-Roblox.md\", \"repair/claude-skills/automations/runs/2026-10-10-weekend-notes/任务书-独立验收口径-B4B5通用.md\", \"repair/claude-skills/automations/runs/2026-10-10-weekend-notes/任务书-独立验收口径-Roblox.md\", \"repair/claude-skills/automations/runs/2026-10-10-weekend-notes/任务书-独立验收口径-shift事实更正.md\", \"repair/claude-skills/automations/runs/2026-10-10-weekend-notes/任务书-独立验收口径-栏目过期事实.md\", \"repair/claude-skills/automations/runs/2026-10-10-weekend-notes/任务书-独立验收口径.md\", \"repair/claude-skills/automations/runs/2026-10-10-weekend-notes/任务书-页面矩阵-Roblox栏目.md\", \"repair/claude-skills/automations/runs/2026-10-10-weekend-patches/README.md\", \"repair/claude-skills/automations/runs/2026-10-10-weekend-patches/lootlore-A5-老页补链126条-未推.patch\", \"repair/claude-skills/automations/runs/2026-10-10-weekend-patches/shift-at-midnight-wiki-A9-补链11条-未推.patch\", \"repair/claude-skills/automations/runs/2026-10-10-weekend-sites.md\", \"repair/claude-skills/automations/runs/2026-10-11-hub-autopublish.json\", \"repair/claude-skills/automations/runs/2026-10-11-hub-autopublish.md\", \"repair/claude-skills/automations/runs/2026-10-14-game-sync.csv\", \"repair/claude-skills/automations/runs/2026-10-14-hub-autopublish.json\", \"repair/claude-skills/automations/runs/2026-10-14-hub-autopublish.md\", \"repair/claude-skills/automations/runs/2026-10-15-game-sync-changelog.csv\", \"repair/claude-skills/automations/runs/2026-10-15-game-sync.csv\", \"repair/claude-skills/automations/runs/2026-10-15-game-sync.json\", \"repair/claude-skills/automations/runs/2026-10-15-hub-autopublish.json\", \"repair/claude-skills/automations/runs/2026-10-15-hub-autopublish.md\", \"repair/claude-skills/automations/runs/2026-10-16-game-sync-changelog.csv\", \"repair/claude-skills/automations/runs/2026-10-16-game-sync.csv\", \"repair/claude-skills/automations/runs/2026-10-16-game-sync.json\", \"repair/claude-skills/automations/runs/2026-10-17-game-sync-changelog.csv\", \"repair/claude-skills/automations/runs/2026-10-17-game-sync.csv\", \"repair/claude-skills/automations/runs/2026-10-17-game-sync.json\", \"repair/claude-skills/automations/runs/2026-10-18-game-sync-changelog.csv\", \"repair/claude-skills/automations/runs/2026-10-18-game-sync.csv\", \"repair/claude-skills/automations/runs/2026-10-18-game-sync.json\", \"repair/claude-skills/automations/runs/2026-10-18-hub-autopublish.json\", \"repair/claude-skills/automations/runs/2026-10-18-hub-autopublish.md\", \"repair/claude-skills/automations/runs/2026-10-22-game-sync.json\", \"repair/claude-skills/automations/runs/2026-10-22-hub-autopublish.json\", \"repair/claude-skills/automations/runs/2026-10-22-hub-autopublish.md\", \"repair/claude-skills/automations/runs/2026-10-23-game-sync.json\", \"repair/claude-skills/automations/runs/2026-10-23-hub-autopublish.json\", \"repair/claude-skills/automations/runs/2026-10-23-hub-autopublish.md\", \"repair/claude-skills/automations/runs/2026-10-24-game-sync.json\", \"repair/claude-skills/automations/runs/2026-10-28-hub-autopublish.json\", \"repair/claude-skills/automations/runs/2026-10-28-hub-autopublish.md\", \"repair/claude-skills/automations/runs/2026-10-29-hub-autopublish-browser-repair-evidence/badge-preservation.json\", \"repair/claude-skills/automations/runs/2026-10-29-hub-autopublish-browser-repair-evidence/build.log\", \"repair/claude-skills/automations/runs/2026-10-29-hub-autopublish-browser-repair-evidence/deploy-status.json\", \"repair/claude-skills/automations/runs/2026-10-29-hub-autopublish-browser-repair-evidence/http-before.json\", \"repair/claude-skills/automations/runs/2026-10-29-hub-autopublish-browser-repair-evidence/local-gates.json\", \"repair/claude-skills/automations/runs/2026-10-29-hub-autopublish-browser-repair-evidence/local-image-provenance.json\", \"repair/claude-skills/automations/runs/2026-10-29-hub-autopublish-browser-repair-evidence/production-readback.json\", \"repair/claude-skills/automations/runs/2026-10-29-hub-autopublish-browser-repair-evidence/rebuild-consistency.json\", \"repair/claude-skills/automations/runs/2026-10-29-hub-autopublish-browser-repair-evidence/remote-gates-watch.log\"]",
     "runs": [
      {
       "kind": "step",
@@ -3277,11 +3277,11 @@
       "kind": "step",
       "ai": "GPT",
       "model": "gpt-6.1-sol",
-      "status": "running",
+      "status": "ok",
       "rejected": false,
       "started_at": "2026-11-04T22:16:07",
-      "ended_at": null,
-      "duration_s": null
+      "ended_at": "2026-11-04T22:28:03",
+      "duration_s": 715.585
      }
     ],
     "events": [
@@ -3369,6 +3369,16 @@
       "at": "2026-11-04T22:16:07",
       "kind": "step",
       "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-04T22:28:03",
+      "kind": "file_audit",
+      "label": "已核对实际文件变更"
+     },
+     {
+      "at": "2026-11-04T22:28:03",
+      "kind": "done",
+      "label": "已完成验收"
      }
     ],
     "recovery": {
