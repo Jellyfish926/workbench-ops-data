@@ -14,7 +14,7 @@
     ],
     "next_at": "2026-11-06T09:00:00+08:00",
     "business_date": "2026-11-06",
-    "status": "步骤执行中",
+    "status": "已完成",
     "task_id": 61,
     "test_status": "已放弃",
     "test_task_id": 14
@@ -71,14 +71,14 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-05T01:20:37.957855+00:00",
+ "generated_at": "2026-11-05T01:34:45.377098+00:00",
  "counts": {
   "待处理": 0,
-  "执行中": 1,
+  "执行中": 0,
   "会诊中": 0,
   "需你决定": 0,
-  "今日完成": 2,
-  "累计完成": 49
+  "今日完成": 3,
+  "累计完成": 50
  },
  "providers": [
   {
@@ -110,10 +110,10 @@
   },
   {
    "name": "Claude Code",
-   "status": "忙碌",
-   "running": 1,
-   "today_runs": 0,
-   "today_ok": 0,
+   "status": "空闲",
+   "running": 0,
+   "today_runs": 1,
+   "today_ok": 1,
    "today_fail": 0,
    "only_levels": [
     "困难"
@@ -125,12 +125,12 @@
    "id": 61,
    "title": "每日定时：LootWiki 每日巡检与自查自纠（2026-11-05）",
    "level": "困难",
-   "status": "步骤执行中",
+   "status": "已完成",
    "attempts": 2,
    "created_at": "2026-11-04T20:02:35",
-   "updated_at": "2026-11-04T20:09:53",
-   "finished_at": null,
-   "summary": null,
+   "updated_at": "2026-11-04T20:34:24",
+   "finished_at": "2026-11-04T20:33:56",
+   "summary": "🔴 Google 流量仍接近归零：6 个主力页面仍被挡在搜索结果外，网站本身正常 **一句话结论：** 异常。最直接的原因是 Google 抓取了主力页面，却没有放进搜索结果；网站技术没有故障。今天修好并上线了商店页的一处算错的结论。 **发生了什么** 10 月 10 日以前，每天约 140 次从 Google 点进网站（点击）。最近 7 天一共只点进约 1 次，前一周约 3 次。Google 把网页给搜索用户看的次数（展示）这周 19 次，前一周 26 次。基数太小，不代表新一轮下跌；最近一天是 0，可能还没入库。 网站访问统计后台（GA4）这周访问 564 次，其中 353 次来自 Bi…",
    "path": [
     {
      "kind": "step",
@@ -143,7 +143,7 @@
      "kind": "step",
      "ai": "Claude Code",
      "model": "opus",
-     "status": "running",
+     "status": "ok",
      "rejected": false
     }
    ],
@@ -152,12 +152,12 @@
      "title": "步骤 1",
      "ai": "Claude Code",
      "model": "opus",
-     "status": "执行中"
+     "status": "完成"
     }
    ],
    "redo_rounds": 0,
    "detail": {
-    "result": null,
+    "result": "🔴 Google 流量仍接近归零：6 个主力页面仍被挡在搜索结果外，网站本身正常\n\n**一句话结论：** 异常。最直接的原因是 Google 抓取了主力页面，却没有放进搜索结果；网站技术没有故障。今天修好并上线了商店页的一处算错的结论。\n\n**发生了什么**\n10 月 10 日以前，每天约 140 次从 Google 点进网站（点击）。最近 7 天一共只点进约 1 次，前一周约 3 次。Google 把网页给搜索用户看的次数（展示）这周 19 次，前一周 26 次。基数太小，不代表新一轮下跌；最近一天是 0，可能还没入库。\n网站访问统计后台（GA4）这周访问 564 次，其中 353 次来自 Bing 等搜索。约 180 次\"直接访问\"平均只停留 7 秒，约 100 次新加坡访问几乎没有互动（两组可能重叠），这部分访问可能不是真人，不能当作增长。\n\n**为什么**\n- **已经确认（高）：** 抽查 10 页，7 页是\"已抓取、尚未收录\"（收录＝页面有资格出现在 Google 搜索结果），包括近 90 天点击最多的 6 页。\n- **最可能（中低，未证实）：** Google 对这些页面或全站的质量评价没有恢复。10-09 还有 146 次点击，10-11 只剩 1 次，不像需求自然下降，但触发原因仍没有证据。\n- **已经排除（高）：** 网站打不开、禁止抓取、标准网址（canonical＝页面声明的标准网址）冲突、页面被标成\"不要收录\"、站点地图读取失败。\n- **尚未排除：** Google 人工处罚和安全问题，没有官方接口。\n\n**会造成什么影响**\nDeep Fishing、Bongo Cat、Untitled Wheelie Game 等主力栏目基本收不到 Google 带来的新访客，广告收入机会随之减少；具体收入今天没有获取。\n\n**我做了什么**\n- **已上线：** 商店页原写\"需要 37 个以上普通强化石（Ultra 27 个以上）时一包 50 个最划算\"，漏了上限：超过 50 个一包不够。已改为\"37–50 个 / 27–50 个\"，并按官方接口重核价格。\n- **已上线：** 修了构建日期问题，避免巡检时重建把站点地图日期改回前一天。\n- **已核对：** 自动同步、首页轮播、门禁最近都成功，无需重跑。\n- **未做 / 未获取：** 今天没有加厚内容页；收录总表、人工处罚、安全问题没有接口，页面速度接口今天配额用完。\n\n**需要你拍板**\n1. 是否在 Google 后台对这 3 页点\"请求编入索引\"（只能你操作）。选项：做 / 暂不做。建议做，它们都是 Google 上次抓取后更新过的，其余主力页先不点；请求收录不等于已收录。进后台时建议顺便看\"人工处置\"和\"安全问题\"。\n - [链接]\n - [链接]\n - [链接]\n\n**正常项：** 站点地图 927 个网址全部能打开，HTTPS 有效，没有死链，抽查页面没有占位词、乱码或控制台报错。\n\n---\n\n**数据依据（给需要细看的人）**\n\n**Search Console（工作台文件生成于 2026-11-05 01:00 UTC，数据截止 2026-11-02，比业务日早 3 天，未超限）**\n- 最近两个完整日：11-01 为 0 点击 / 4 展示；11-02 为 0 点击 / 0 展示（可能还没入库）。\n- 近 7 天（10-27 至 11-02）：1 点击、19 展示、点击率 5.3%、平均排名 3.1、23 个页面有展示。前 7 天（10-20 至 10-26）：3 点击、26 展示、点击率 11.5%、排名 5.5、18 个页面有展示。点击 −67%（基数极小），展示 −27%。\n- 断崖：10-02 至 10-09 日均约 141 点击 / 2,291 展示；10-09 为 146 / 2,358，10-10 为 19 / 292，10-11 为 1 / 34。\n- 近 28 天对前 28 天：580 点击 / 9,244 展示 对 1,033 / 27,415（点击 −44%，展示 −66%；当前窗口含断崖前 4 天）。\n- 7 天拆分（样本极小，只看排行）：页面只有首页有点击（3→1）；国家：荷兰 3→0、美国 0→1；设备：手机 3→0、电脑 0→1；查询只返回 1 条，无点击；搜索呈现无数据。\n- 28 天掉量前 10 页（点击，前→后）：orc-problem 5-2（35→0）、deep-fishing/rarity（104→69）、bongo-cat/events（54→21）、untitled-wheelie-game/community（42→11）、sephiria damage-types（18→0）、sephiria hard-mode（18→0）、animal-daycare（21→5）、sephiria all-weapons（20→7）、deep-fishing/how-to-play（19→8）、deep-fishing/gear（59→48）。实测均为 200、标准网址指向自己、没有 noindex、都在站点地图里。\n- 收录检查（抽样 10 页）：已抓取未收录 7 页：deep-fishing/beginner（最后抓取 10-24）、shop、gear（10-22）、rarity、bongo-cat/events（10-22）、untitled-wheelie-game/community（10-01）、deep-fishing/rods（09-29）。已收录 3 页：首页（10-26）、blockspin/mansion-upgrades、beast-of-reincarnation/es/kunai-and-kirin-boss-guide。10 页中 Google 认定的标准网址都与页面声明一致。这是抽样，不代表全站比例。\n- 站点地图：Google 最后读取 11-03 07:30 UTC，0 错误 0 警告，当时读到 901 条。接口里的 \"indexed 0\" 是统计口径，不能当收录证据。\n- 未获取：收录总表、核心网页指标、人工处置、安全问题（无官方接口）。PageSpeed 接口返回 429（当日配额用尽）。\n\n**GA4（10-29 至 11-04 对比 10-22 至 10-28，最后 1–2 天可能未入库完）**\n- 访问 564 对 501（+13%），用户 487 对 432，互动率 40.4% 对 42.9%，每次访问 1.33 页对 1.15 页（低于 1.5，内链偏少）。\n- 渠道：自然搜索 353 对 318（bing 158 对 124、cn.bing 148 对 161、yahoo 19 对 12、duckduckgo 9 对 4、Google 1 对 6）；直接访问 184 对 160，互动率 10.9%，平均 7 秒；AI 助手 24 对 18。\n- 国家：中国 175 对 191、美国 136 对 88、新加坡 102 对 93（互动率 2.9%）。设备：电脑 483 对 450、手机 75 对 45。\n- 主要落地页：valheim/zh/traders 27、blind-but-dangerous/codes 26、首页 21。\"(not set)\" 29 次。\n- 疑似机器人只是按低互动判断，没有来源×国家交叉表和日志证据，不能写成确认。\n\n**技术巡检（2026-11-05 01:05–01:35 UTC 实测）**\n- 商店页修改前，旧写法可能让玩家买不够或多花；51 个普通石实际要 1,548 Robux、51 个 Ultra 石要 4,698 Robux。\n- robots.txt 200，允许抓取并声明站点地图。sitemap.xml 200，927 条，比上次巡检多 9 条（新上架的 Scrubs to Surgeon）；lastmod 为今天的 33 条（32 条来自自动同步，1 条是商店页）。\n- 全站 HTTP：站点地图 927 条全部 200；抽查页额外站内链接 7 条、页面资源 101 个全部 200；构建产物全站死链门禁 0。http 和 www 308 跳到正式网址，不带斜杠 308 跳到带斜杠，不存在的网址返回 404。HTTPS 证书到 2026-12-20。\n- 重点抽查 21 页（首页、掉量页、收录检查页、最近更新页、主要模板）：200、标准网址指向自己、无 noindex、结构化数据可解析、没有占位词或乱码。`scrubs-to-surgeon/how-to-play/` 的 404 是我猜测的网址，不在站点地图也无站内链接，不算死链。\n- 响应时间：逐个请求约 2.2–2.5 秒，GitHub、Google 同机对照约 1.9–2.3 秒，主要是本机到外网的开销。16 线程并发时中位 9.3 秒，是压测条件下的数字，不代表用户体验。\n- 浏览器控制台（首页、商店、活动、valheim/zh/traders、Scrubs to Surgeon、guides 共 6 页，系统 Chrome 无头）：0 个 error/warning，0 张坏图。每页只有 1 条统计请求 ERR_ABORTED，发生在检查脚本关页时，不判为网站问题。\n- 技术审计（只报告）：标题过长 106、描述过长 171、过短 5；可索引页 927 内 noindex 0。\"路径不符 1\" 是 404.html，本来就标 noindex。\n- 停维护清单已读（lootwiki.com stop 453 页、observe 164 页）。保鲜审计列出的 6 页（含 3 个兑换码页）都在 stop 里，只查 HTTP，不算缺项；今天改的页面不在 stop 里。\n- Actions：sync-sources 41945648295 成功（11-05 01:01 UTC）；refresh-homepage-spotlight 41792891799 成功（11-04 07:31 UTC）；gates 无失败遗留。\n\n**修复证据**\n- 官方依据（2026-11-05 01:11 UTC 实测）：developer-products 接口翻完 2 页共 124 条、描述全空；普通石 49/129/399/1,499，Ultra 199/549/1,649/4,499；最新商品仍是 11-02 的 4 档 Dino Egg。game-passes 10 个。games 接口显示游戏最近发布 2026-11-04T17:17 UTC，所以页面版本从 \"2026-11-01 update\" 改为 \"2026-11-04 update\"。\n- 算术复算：对 1–51 个需求枚举所有组合。普通 37–50、Ultra 27–50 时单个 x50 最便宜；36 个 1,455、26 个 Ultra 4,396、51 个 1,548 / 4,698，与页面一致。\n- 对抗验证：上次尝试中由独立验收方完成（记录在工作目录 evidence/independent-verification.md）。旧的\"37 个以上最划算\"被反例推翻；新范围确认。Search Console 与 GA4 相关命题因只有同一官方数据源，标 UNVERIFIED；\"疑似机器人\"只作疑似。收录根因未验证。本次重试环境没有派子代理的工具，页面版本号和价格由我重新取官方接口核对，不算独立验证。\n- 提交：lootlore 44d46ed（商店页）、46cff9b（构建日期改用 UTC），均为普通推送、无 force。gates 41947830141、41948546083 均成功；Vercel 两次均为 \"Deployment has completed\"。本地重建后 11 项阻塞门禁全过，2 项只报告的审计正常结束。\n- 线上回读（正式域名）：商店、装备、新手、Deep Fishing 栏目页、首页、updates、guides、sitemap.xml 共 8 个网址与构建产物逐字节一致。商店页有 \"37–50 regular\"、\"27–50 Ultra\"、\"one x50 is not enough\"、\"1,548\"、\"4,698\"、\"Last reviewed 2026-11-05\"，不再有 \"37 or more\" / \"27 or more\"；sitemap 中商店页 lastmod 为 2026-11-05。\n- 完整报告：[链接] 033c660，API 回读与本地逐字节一致）\n\n**本次重试的过程说明**\n- 上次尝试的全站 HTTP 检查没跑完。这次第一次重跑时，我停克隆进程时误杀了它，又重跑一次才完成，结果以完整跑完的那次为准。\n- 克隆太慢，我停掉后改用本地干净 worktree 提交，基线与 origin/main 一致。\n- 工作台限制文件工具只能读工作目录，任务指定的技能文件和 Google 数据是用只读命令读取的。\n\n【回执状态】完成\n\n【工作台文件核对】最多扫描2000个文件；发生新增、修改或删除的相对路径：[\".browser/.links/[密钥]\", \"clean-wt/.git\", \"clean-wt/.github/workflows/freshness.yml\", \"clean-wt/.gitignore\", \"clean-wt/AGENTS.md\", \"clean-wt/README.md\", \"clean-wt/build-stamp.json\", \"clean-wt/build.py\", \"clean-wt/built-sites.md\", \"clean-wt/config/hub.json\", \"clean-wt/config/i18n/de.json\", \"clean-wt/config/i18n/en.json\", \"clean-wt/config/i18n/es.json\", \"clean-wt/config/i18n/fr.json\", \"clean-wt/config/i18n/it.json\", \"clean-wt/config/i18n/ja.json\", \"clean-wt/config/i18n/zh-CN.json\", \"clean-wt/config/sources.json\", \"clean-wt/content/american-plains-mudding/_images.json\", \"clean-wt/content/american-plains-mudding/en/author.md\", \"clean-wt/content/american-plains-mudding/en/badges.md\", \"clean-wt/content/american-plains-mudding/en/community.md\", \"clean-wt/content/american-plains-mudding/en/gamepasses.md\", \"clean-wt/content/american-plains-mudding/en/guides.md\", \"clean-wt/content/american-plains-mudding/en/how-to-play.md\", \"clean-wt/content/american-plains-mudding/en/index.md\", \"clean-wt/content/american-plains-mudding/en/limited-vehicles.md\", \"clean-wt/content/american-plains-mudding/en/private-servers.md\", \"clean-wt/content/american-plains-mudding/en/spawning.md\", \"clean-wt/content/american-plains-mudding/en/updates.md\", \"clean-wt/content/american-plains-mudding/en/vehicles.md\", \"clean-wt/content/animal-daycare/_images.json\", \"clean-wt/content/animal-daycare/en/author.md\", \"clean-wt/content/animal-daycare/en/badges.md\", \"clean-wt/content/animal-daycare/en/game-info.md\", \"clean-wt/content/animal-daycare/en/guides.md\", \"clean-wt/content/animal-daycare/en/how-to-play.md\", \"clean-wt/content/animal-daycare/en/impostors.md\", \"clean-wt/content/animal-daycare/en/index.md\", \"clean-wt/content/animal-daycare/en/night-events.md\", \"clean-wt/content/animal-daycare/en/shop.md\", \"clean-wt/content/blind-but-dangerous/_images.json\", \"clean-wt/content/blind-but-dangerous/en/author.md\", \"clean-wt/content/blind-but-dangerous/en/badges.md\", \"clean-wt/content/blind-but-dangerous/en/codes.md\", \"clean-wt/content/blind-but-dangerous/en/game-passes.md\", \"clean-wt/content/blind-but-dangerous/en/guides.md\", \"clean-wt/content/blind-but-dangerous/en/how-to-play.md\", \"clean-wt/content/blind-but-dangerous/en/index.md\", \"clean-wt/content/blind-but-dangerous/en/robux-shop.md\", \"clean-wt/content/blind-but-dangerous/en/updates.md\", \"clean-wt/content/blockspin/_images.json\", \"clean-wt/content/blockspin/en/author.md\", \"clean-wt/content/blockspin/en/beginner.md\", \"clean-wt/content/blockspin/en/cheats-bans.md\", \"clean-wt/content/blockspin/en/codes.md\", \"clean-wt/content/blockspin/en/game-info.md\", \"clean-wt/content/blockspin/en/getting-started.md\", \"clean-wt/content/blockspin/en/index.md\", \"clean-wt/content/blockspin/en/jobs.md\", \"clean-wt/content/blockspin/en/mansion-upgrades.md\", \"clean-wt/content/blockspin/en/map-locations.md\", \"clean-wt/content/blockspin/en/money-gear.md\", \"clean-wt/content/blockspin/en/robux-shop.md\", \"clean-wt/content/blockspin/en/vehicles.md\", \"clean-wt/content/blockspin/en/weapon-packs.md\", \"clean-wt/content/blockspin/en/weapons.md\", \"clean-wt/content/bongo-cat/_images.json\", \"clean-wt/content/bongo-cat/en/achievements.md\", \"clean-wt/content/bongo-cat/en/author.md\", \"clean-wt/content/bongo-cat/en/auto-clicker.md\", \"clean-wt/content/bongo-cat/en/collection.md\", \"clean-wt/content/bongo-cat/en/emotes.md\", \"clean-wt/content/bongo-cat/en/events.md\", \"clean-wt/content/bongo-cat/en/exchange-trading.md\", \"clean-wt/content/bongo-cat/en/free-items.md\", \"clean-wt/content/bongo-cat/en/getting-started.md\", \"clean-wt/content/bongo-cat/en/halloween.md\", \"clean-wt/content/bongo-cat/en/hats-skins.md\", \"clean-wt/content/bongo-cat/en/how-to-play.md\", \"clean-wt/content/bongo-cat/en/index.md\", \"clean-wt/content/bongo-cat/en/is-it-safe.md\", \"clean-wt/content/bongo-cat/en/legendary-odds.md\", \"clean-wt/content/bongo-cat/en/mac-linux-steam-deck.md\", \"clean-wt/content/bongo-cat/en/multiplayer.md\", \"clean-wt/content/bongo-cat/en/paw-pass.md\", \"clean-wt/content/bongo-cat/en/steam-error.md\", \"clean-wt/content/can-you-pass-a-driving-test/_images.json\", \"clean-wt/content/can-you-pass-a-driving-test/en/author.md\", \"clean-wt/content/can-you-pass-a-driving-test/en/badges.md\", \"clean-wt/content/can-you-pass-a-driving-test/en/game-passes.md\", \"clean-wt/content/can-you-pass-a-driving-test/en/guides.md\", \"clean-wt/content/can-you-pass-a-driving-test/en/how-to-play.md\", \"clean-wt/content/can-you-pass-a-driving-test/en/index.md\", \"clean-wt/content/can-you-pass-a-driving-test/en/licenses.md\", \"clean-wt/content/can-you-pass-a-driving-test/en/robux-shop.md\", \"clean-wt/content/can-you-pass-a-driving-test/en/updates.md\", \"clean-wt/content/clean-all-the-balls/_images.json\", \"clean-wt/content/clean-all-the-balls/en/author.md\", \"clean-wt/content/clean-all-the-balls/en/gamepasses.md\"]",
     "runs": [
      {
       "kind": "step",
@@ -173,11 +173,11 @@
       "kind": "step",
       "ai": "Claude Code",
       "model": "opus",
-      "status": "running",
+      "status": "ok",
       "rejected": false,
       "started_at": "2026-11-04T20:09:53",
-      "ended_at": null,
-      "duration_s": null
+      "ended_at": "2026-11-04T20:33:56",
+      "duration_s": 1443.688
      }
     ],
     "events": [
@@ -204,6 +204,26 @@
      {
       "at": "2026-11-04T20:09:53",
       "kind": "step",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-04T20:33:56",
+      "kind": "file_audit",
+      "label": "已核对实际文件变更"
+     },
+     {
+      "at": "2026-11-04T20:33:56",
+      "kind": "done",
+      "label": "已完成验收"
+     },
+     {
+      "at": "2026-11-04T20:34:08",
+      "kind": "postcheck",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-04T20:34:24",
+      "kind": "postcheck",
       "label": "流程进度更新"
      }
     ],
