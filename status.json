@@ -71,7 +71,7 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-05T08:31:49.330018+00:00",
+ "generated_at": "2026-11-05T08:37:40.996480+00:00",
  "counts": {
   "待处理": 0,
   "执行中": 0,
@@ -527,7 +527,7 @@
    "status": "已完成",
    "attempts": 3,
    "created_at": "2026-11-04T12:47:03",
-   "updated_at": "2026-11-05T01:27:00",
+   "updated_at": "2026-11-05T03:31:53",
    "finished_at": "2026-11-04T13:26:44",
    "summary": "【给人看的结果】 ✅ 今天上架了 1 款游戏，额度未用满属正常情况。 **做了什么** - 上架了 Scrubs to Surgeon，共 10 个页面，现已在线：[链接] - 其余 3 款候选均未通过审核：Realistic Street Soccer 和 Doodle Basketball 借用了别家 IP，REALISTIC HOME DEFENSE 同名抢占站已达淘汰线。 - 今日 2 款的上架额度只用了 1 款，剩余 19 款候选明天继续自动复核。 **有没有问题** 没有问题。 **需要你做什么** 不需要，工作台会接着自动跑。 **关键数字**（数据截至 2026-11-04）…",
    "path": [
@@ -597,11 +597,6 @@
      }
     ],
     "events": [
-     {
-      "at": "2026-11-04T13:20:01",
-      "kind": "tool",
-      "label": "流程进度更新"
-     },
      {
       "at": "2026-11-04T13:20:13",
       "kind": "tool",
@@ -745,6 +740,11 @@
      {
       "at": "2026-11-05T01:26:46",
       "kind": "cleanup",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-05T03:31:53",
+      "kind": "postcheck",
       "label": "流程进度更新"
      }
     ],
@@ -5976,7 +5976,7 @@
   }
  ],
  "gamesites": {
-  "generated_at": "2026-11-05T08:30:37.040141+00:00",
+  "generated_at": "2026-11-05T08:32:20.949419+00:00",
   "scale": {
    "independent_sites": 5,
    "independent_online": 5,
@@ -6068,9 +6068,9 @@
  },
  "radar": {
   "status": "正常",
-  "checked_at": "2026-11-05T08:30:03.742242+00:00",
-  "last_scan_at": "2026-11-05T08:26:41.869000+00:00",
-  "last_scan_age_min": 3.3,
+  "checked_at": "2026-11-05T08:31:55.558205+00:00",
+  "last_scan_at": "2026-11-05T08:31:40.070000+00:00",
+  "last_scan_age_min": 0.2,
   "venues": 12,
   "live_venues": 12,
   "down_venues": [],
