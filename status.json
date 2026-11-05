@@ -71,7 +71,7 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-05T08:04:16.464809+00:00",
+ "generated_at": "2026-11-05T08:09:59.796501+00:00",
  "counts": {
   "待处理": 0,
   "执行中": 0,
@@ -5976,7 +5976,7 @@
   }
  ],
  "gamesites": {
-  "generated_at": "2026-11-05T07:59:04.559322+00:00",
+  "generated_at": "2026-11-05T08:04:46.433238+00:00",
   "scale": {
    "independent_sites": 5,
    "independent_online": 5,
@@ -6065,5 +6065,18 @@
    }
   ],
   "note": "公开页只显示曝光（Google 展示次数）；点击等其他流量数字只在站主本机看板。"
+ },
+ "radar": {
+  "status": "正常",
+  "checked_at": "2026-11-05T08:04:26.937231+00:00",
+  "last_scan_at": "2026-11-05T08:01:41.347000+00:00",
+  "last_scan_age_min": 2.7,
+  "venues": 12,
+  "live_venues": 12,
+  "down_venues": [],
+  "coins": 1252,
+  "pairs": 1722,
+  "qualified": 5,
+  "page_url": "radar/"
  }
 }
