@@ -71,7 +71,7 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-05T07:15:29.589054+00:00",
+ "generated_at": "2026-11-05T07:16:38.707102+00:00",
  "counts": {
   "待处理": 0,
   "执行中": 0,
@@ -5974,5 +5974,96 @@
     }
    }
   }
- ]
+ ],
+ "gamesites": {
+  "generated_at": "2026-11-05T07:15:54.554682+00:00",
+  "scale": {
+   "independent_sites": 5,
+   "independent_online": 5,
+   "hub_games": 42,
+   "hub_new_7d": null
+  },
+  "impressions": {
+   "status": "ok",
+   "data_end": "2026-11-02",
+   "latest_day": {
+    "start": null,
+    "end": null,
+    "date": "2026-11-02",
+    "impressions": 0
+   },
+   "month_to_date": {
+    "start": "2026-11-01",
+    "end": "2026-11-02",
+    "date": null,
+    "impressions": 4
+   },
+   "last_7": {
+    "current": {
+     "start": "2026-10-27",
+     "end": "2026-11-02",
+     "date": null,
+     "impressions": 19
+    },
+    "previous": {
+     "start": "2026-10-20",
+     "end": "2026-10-26",
+     "date": null,
+     "impressions": 26
+    }
+   },
+   "last_28": {
+    "current": {
+     "start": "2026-10-06",
+     "end": "2026-11-02",
+     "date": null,
+     "impressions": 9244
+    },
+    "previous": {
+     "start": "2026-09-08",
+     "end": "2026-10-05",
+     "date": null,
+     "impressions": 27415
+    }
+   }
+  },
+  "stages": [
+   {
+    "id": "xuanci",
+    "name": "选词",
+    "status": "已完成",
+    "last_run": "2026-11-04T21:12:33",
+    "alert": false
+   },
+   {
+    "id": "shangjia",
+    "name": "上架",
+    "status": "已完成",
+    "last_run": "2026-11-04T13:26:44",
+    "alert": false
+   },
+   {
+    "id": "hesi",
+    "name": "上线核实",
+    "status": "已完成",
+    "last_run": "2026-11-04T13:26:44",
+    "alert": false
+   },
+   {
+    "id": "liuliang",
+    "name": "流量与收录",
+    "status": "已完成",
+    "last_run": "2026-11-04T20:33:56",
+    "alert": false
+   },
+   {
+    "id": "tinggeng",
+    "name": "停更判定",
+    "status": "已完成",
+    "last_run": "2026-10-30",
+    "alert": null
+   }
+  ],
+  "note": "公开页只显示曝光（Google 展示次数）；点击等其他流量数字只在站主本机看板。"
+ }
 }
