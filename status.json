@@ -71,7 +71,7 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-05T06:00:43.070678+00:00",
+ "generated_at": "2026-11-05T06:24:53.458944+00:00",
  "counts": {
   "待处理": 0,
   "执行中": 0,
@@ -118,6 +118,15 @@
    "only_levels": [
     "困难"
    ]
+  },
+  {
+   "name": "Gemini",
+   "status": "空闲",
+   "running": 0,
+   "today_runs": 0,
+   "today_ok": 0,
+   "today_fail": 0,
+   "only_levels": null
   }
  ],
  "tasks": [
