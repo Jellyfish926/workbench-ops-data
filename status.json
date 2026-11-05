@@ -44,10 +44,10 @@
     "fallbacks": [
      "Claude Code"
     ],
-    "next_at": "2026-11-05T10:00:00+08:00",
-    "business_date": "2026-11-05",
-    "status": "已完成",
-    "task_id": 58,
+    "next_at": "2026-11-06T10:00:00+08:00",
+    "business_date": "2026-11-06",
+    "status": "步骤执行中",
+    "task_id": 62,
     "test_status": "尚未测试",
     "test_task_id": null
    },
@@ -71,10 +71,10 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-05T01:59:47.000404+00:00",
+ "generated_at": "2026-11-05T02:05:03.885594+00:00",
  "counts": {
   "待处理": 0,
-  "执行中": 0,
+  "执行中": 1,
   "会诊中": 0,
   "需你决定": 0,
   "今日完成": 3,
@@ -110,8 +110,8 @@
   },
   {
    "name": "Claude Code",
-   "status": "空闲",
-   "running": 0,
+   "status": "忙碌",
+   "running": 1,
    "today_runs": 1,
    "today_ok": 1,
    "today_fail": 0,
@@ -121,6 +121,67 @@
   }
  ],
  "tasks": [
+  {
+   "id": 62,
+   "title": "每日定时：每日热词雷达 + 游戏机会表同步（2026-11-05）",
+   "level": "困难",
+   "status": "步骤执行中",
+   "attempts": 1,
+   "created_at": "2026-11-04T21:00:12",
+   "updated_at": "2026-11-04T21:00:12",
+   "finished_at": null,
+   "summary": null,
+   "path": [
+    {
+     "kind": "step",
+     "ai": "Claude Code",
+     "model": "sonnet",
+     "status": "running",
+     "rejected": false
+    }
+   ],
+   "steps": [
+    {
+     "title": "步骤 1",
+     "ai": "Claude Code",
+     "model": "sonnet",
+     "status": "执行中"
+    }
+   ],
+   "redo_rounds": 0,
+   "detail": {
+    "result": null,
+    "runs": [
+     {
+      "kind": "step",
+      "ai": "Claude Code",
+      "model": "sonnet",
+      "status": "running",
+      "rejected": false,
+      "started_at": "2026-11-04T21:00:12",
+      "ended_at": null,
+      "duration_s": null
+     }
+    ],
+    "events": [
+     {
+      "at": "2026-11-04T21:00:12",
+      "kind": "daily_schedule",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-04T21:00:12",
+      "kind": "step",
+      "label": "流程进度更新"
+     }
+    ],
+    "recovery": {
+     "cycles": 0,
+     "next_at": null,
+     "status": null
+    }
+   }
+  },
   {
    "id": 61,
    "title": "每日定时：LootWiki 每日巡检与自查自纠（2026-11-05）",
@@ -5644,72 +5705,6 @@
       "at": "2026-10-28T22:53:06",
       "kind": "done",
       "label": "已完成验收"
-     }
-    ],
-    "recovery": {
-     "cycles": 0,
-     "next_at": null,
-     "status": null
-    }
-   }
-  },
-  {
-   "id": 22,
-   "title": "接管测试：每日工作记忆备份到 GitHub（2026-10-29）",
-   "level": "困难",
-   "status": "已完成",
-   "attempts": 0,
-   "created_at": "2026-10-28T22:12:02",
-   "updated_at": "2026-10-28T22:12:06",
-   "finished_at": "2026-10-28T22:12:06",
-   "summary": "执行条件检查已结束，用时 3.7 秒；未调用AI。 结论：基础检查通过，业务验收仍待完成。 通过：必要命令 — Git、Python及本任务必要命令均可定位 通过：本机规则资料 — 入口资料存在；这是本机快照，不代表远端最新版 通过：固定AI登录与已知额度 — Logged in using ChatGPT；仅确认登录状态，未调用模型，也未验证模型额度 通过：备选AI登录 — Claude Code已登录；尚未验证模型额度 通过：GitHub目标访问 — {\"default_branch\":\"main\",\"private\":true,\"repository\":\"Jellyfish926/cla…",
-   "path": [
-    {
-     "kind": "preflight",
-     "ai": "workbench",
-     "model": "本机检查",
-     "status": "ok",
-     "rejected": false
-    }
-   ],
-   "steps": [
-    {
-     "title": "步骤 1",
-     "ai": "workbench",
-     "model": "本机检查",
-     "status": "完成"
-    }
-   ],
-   "redo_rounds": 0,
-   "detail": {
-    "result": "执行条件检查已结束，用时 3.7 秒；未调用AI。\n结论：基础检查通过，业务验收仍待完成。\n通过：必要命令 — Git、Python及本任务必要命令均可定位\n通过：本机规则资料 — 入口资料存在；这是本机快照，不代表远端最新版\n通过：固定AI登录与已知额度 — Logged in using ChatGPT；仅确认登录状态，未调用模型，也未验证模型额度\n通过：备选AI登录 — Claude Code已登录；尚未验证模型额度\n通过：GitHub目标访问 — {\"default_branch\":\"main\",\"private\":true,\"repository\":\"Jellyfish926/claude-skills\"}\n通过：工作记忆仓库隐私 — 私有仓库已确认\n尚未验证：实际模型调用与当前剩余额度；远端规则版本；其他平台正在执行的任务；GSC/GA4/Vercel业务权限及真实业务产出\n仅检查本机执行条件、登录与仓库只读访问；未调用模型，未运行巡检、发布、写表、备份或通知。",
-    "runs": [
-     {
-      "kind": "preflight",
-      "ai": "workbench",
-      "model": "本机检查",
-      "status": "ok",
-      "rejected": false,
-      "started_at": "2026-10-28T22:12:02",
-      "ended_at": "2026-10-28T22:12:06",
-      "duration_s": 3.689
-     }
-    ],
-    "events": [
-     {
-      "at": "2026-10-28T22:12:02",
-      "kind": "daily_schedule",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-10-28T22:12:02",
-      "kind": "preflight",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-10-28T22:12:06",
-      "kind": "preflight_done",
-      "label": "流程进度更新"
      }
     ],
     "recovery": {
