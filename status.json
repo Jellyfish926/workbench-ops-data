@@ -46,7 +46,7 @@
     ],
     "next_at": "2026-11-06T10:00:00+08:00",
     "business_date": "2026-11-06",
-    "status": "步骤执行中",
+    "status": "已完成",
     "task_id": 62,
     "test_status": "尚未测试",
     "test_task_id": null
@@ -71,14 +71,14 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-05T02:05:03.885594+00:00",
+ "generated_at": "2026-11-05T02:13:19.464345+00:00",
  "counts": {
   "待处理": 0,
-  "执行中": 1,
+  "执行中": 0,
   "会诊中": 0,
   "需你决定": 0,
-  "今日完成": 3,
-  "累计完成": 50
+  "今日完成": 4,
+  "累计完成": 51
  },
  "providers": [
   {
@@ -110,10 +110,10 @@
   },
   {
    "name": "Claude Code",
-   "status": "忙碌",
-   "running": 1,
-   "today_runs": 1,
-   "today_ok": 1,
+   "status": "空闲",
+   "running": 0,
+   "today_runs": 2,
+   "today_ok": 2,
    "today_fail": 0,
    "only_levels": [
     "困难"
@@ -125,18 +125,18 @@
    "id": 62,
    "title": "每日定时：每日热词雷达 + 游戏机会表同步（2026-11-05）",
    "level": "困难",
-   "status": "步骤执行中",
+   "status": "已完成",
    "attempts": 1,
    "created_at": "2026-11-04T21:00:12",
-   "updated_at": "2026-11-04T21:00:12",
-   "finished_at": null,
-   "summary": null,
+   "updated_at": "2026-11-04T21:13:03",
+   "finished_at": "2026-11-04T21:12:33",
+   "summary": "【回执】2026-11-05 热词雷达 + 游戏机会表同步 **已完成** - `radar.yml` 存在。触发前这一天的快照、日报、同步记录都是 404,也没有别的 run 在跑。 - 云端 radar run `41952321106` 成功,用时约 5 分钟。 - 随后 feishu-sync run `41952956882` 成功。 - 没有在本机运行 `hotwords.py`,一次通过,没有重试。 **产出读回(seo-hotwords 远端)** - `snapshots/2026-11-05.json`:1,111,919 字节,`replay=false`,生成于 202…",
    "path": [
     {
      "kind": "step",
      "ai": "Claude Code",
      "model": "sonnet",
-     "status": "running",
+     "status": "ok",
      "rejected": false
     }
    ],
@@ -145,22 +145,22 @@
      "title": "步骤 1",
      "ai": "Claude Code",
      "model": "sonnet",
-     "status": "执行中"
+     "status": "完成"
     }
    ],
    "redo_rounds": 0,
    "detail": {
-    "result": null,
+    "result": "【回执】2026-11-05 热词雷达 + 游戏机会表同步\n\n**已完成**\n- `radar.yml` 存在。触发前这一天的快照、日报、同步记录都是 404,也没有别的 run 在跑。\n- 云端 radar run `41952321106` 成功,用时约 5 分钟。\n- 随后 feishu-sync run `41952956882` 成功。\n- 没有在本机运行 `hotwords.py`,一次通过,没有重试。\n\n**产出读回(seo-hotwords 远端)**\n- `snapshots/2026-11-05.json`:1,111,919 字节,`replay=false`,生成于 2026-11-05T02:04Z。候选 480、`scores` 377、`watched_scores` 37。\n- `reports/2026-11-05.md`:16,411 字节。\n- `runs/2026-11-05-game-sync.json`:`status=complete`,`errors=[]`。\n - 主表更新 256 行,读回 256 行一致。\n - 新建 2 行,读回 2 行一致。\n - 表内行数从 996 变为 998。\n - 每日表新增 414 行,读回 414 行,无失败、无重复。\n - 已建站标记 1 个(Scrubs to Surgeon),读回一致。\n - `roblox:10495391267` 在表里没有对应行,同步记录列为 `watched_not_created`,没有创建。\n\n**说明**\n- 我没读 `hotword-radar.md` 和交接文件的全文,只读了技能文件开头。本步只需触发云端采集并核对产出,所以没有影响结论。\n- 我没运行 `bin/radar-card` 或 `bin/feishu-card`。群卡由工作台入仓核验后发送,不列为缺项。\n- 飞书表只由 feishu-sync 写入,我没有直接写表。\n\n【回执状态】完成\n\n【工作台文件核对】最多扫描2000个文件；发生新增、修改或删除的相对路径：[]",
     "runs": [
      {
       "kind": "step",
       "ai": "Claude Code",
       "model": "sonnet",
-      "status": "running",
+      "status": "ok",
       "rejected": false,
       "started_at": "2026-11-04T21:00:12",
-      "ended_at": null,
-      "duration_s": null
+      "ended_at": "2026-11-04T21:12:33",
+      "duration_s": 741.732
      }
     ],
     "events": [
@@ -172,6 +172,21 @@
      {
       "at": "2026-11-04T21:00:12",
       "kind": "step",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-04T21:12:33",
+      "kind": "file_audit",
+      "label": "已核对实际文件变更"
+     },
+     {
+      "at": "2026-11-04T21:12:33",
+      "kind": "done",
+      "label": "已完成验收"
+     },
+     {
+      "at": "2026-11-04T21:13:03",
+      "kind": "postcheck",
       "label": "流程进度更新"
      }
     ],
