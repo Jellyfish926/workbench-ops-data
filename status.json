@@ -71,7 +71,7 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-06T18:55:42.611786+00:00",
+ "generated_at": "2026-11-06T19:00:50.046097+00:00",
  "counts": {
   "待处理": 0,
   "执行中": 0,
@@ -6292,11 +6292,11 @@
   }
  ],
  "gamesites": {
-  "generated_at": "2026-11-06T18:27:46.206789+00:00",
+  "generated_at": "2026-11-06T18:58:07.198703+00:00",
   "scale": {
    "independent_sites": 5,
    "independent_online": 5,
-   "hub_games": 44,
+   "hub_games": 45,
    "hub_new_7d": null
   },
   "impressions": {
@@ -6356,19 +6356,19 @@
    {
     "id": "shangjia",
     "name": "上架",
-    "status": "步骤执行中",
-    "last_run": "2026-11-06T12:47:12",
+    "status": "已完成",
+    "last_run": "2026-11-06T13:39:53",
     "alert": false,
-    "output": "正在执行（上次结果作废，等这次做完）",
+    "output": "🟡 完成上架，但有未核对项。",
     "task_id": 67
    },
    {
     "id": "hesi",
     "name": "上线核实",
-    "status": "等待上架完成",
-    "last_run": "2026-11-06T12:47:12",
+    "status": "已完成",
+    "last_run": "2026-11-06T13:39:53",
     "alert": false,
-    "output": "上架做完后工作台自动逐页检查",
+    "output": "逐页截图检查通过",
     "task_id": 67
    },
    {
