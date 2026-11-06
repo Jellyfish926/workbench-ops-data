@@ -71,7 +71,7 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-06T11:31:53.585544+00:00",
+ "generated_at": "2026-11-06T11:42:02.917591+00:00",
  "counts": {
   "待处理": 0,
   "执行中": 0,
@@ -6414,9 +6414,9 @@
  },
  "radar": {
   "status": "正常",
-  "checked_at": "2026-11-06T11:30:57.107466+00:00",
-  "last_scan_at": "2026-11-06T11:26:43.684000+00:00",
-  "last_scan_age_min": 4.2,
+  "checked_at": "2026-11-06T11:41:01.741435+00:00",
+  "last_scan_at": "2026-11-06T11:36:42.657000+00:00",
+  "last_scan_age_min": 4.3,
   "venues": 12,
   "live_venues": 11,
   "down_venues": [
