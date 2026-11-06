@@ -71,7 +71,7 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-06T06:13:35.687332+00:00",
+ "generated_at": "2026-11-06T06:19:03.647702+00:00",
  "counts": {
   "待处理": 0,
   "执行中": 0,
@@ -641,16 +641,6 @@
     "events": [
      {
       "at": "2026-11-05T21:23:58",
-      "kind": "file_audit",
-      "label": "已核对实际文件变更"
-     },
-     {
-      "at": "2026-11-05T21:23:58",
-      "kind": "step_rate_limited",
-      "label": "已遇限流，接续其他可用AI或等待恢复"
-     },
-     {
-      "at": "2026-11-05T21:23:58",
       "kind": "step",
       "label": "流程进度更新"
      },
@@ -787,6 +777,16 @@
      {
       "at": "2026-11-05T21:36:15",
       "kind": "manual",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-06T01:13:37",
+      "kind": "postcheck",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-06T01:13:37",
+      "kind": "postcheck",
       "label": "流程进度更新"
      }
     ],
@@ -6307,7 +6307,7 @@
   }
  ],
  "gamesites": {
-  "generated_at": "2026-11-06T05:46:43.351451+00:00",
+  "generated_at": "2026-11-06T06:13:59.668875+00:00",
   "scale": {
    "independent_sites": 5,
    "independent_online": 5,
@@ -6409,15 +6409,15 @@
  },
  "radar": {
   "status": "正常",
-  "checked_at": "2026-11-06T06:05:09.081532+00:00",
-  "last_scan_at": "2026-11-06T06:01:41.658000+00:00",
-  "last_scan_age_min": 3.4,
+  "checked_at": "2026-11-06T06:13:39.972224+00:00",
+  "last_scan_at": "2026-11-06T06:11:40.449000+00:00",
+  "last_scan_age_min": 2.0,
   "venues": 12,
   "live_venues": 12,
   "down_venues": [],
   "coins": 1252,
   "pairs": 1732,
-  "qualified": 13,
+  "qualified": 14,
   "page_url": "radar/"
  },
  "orchestrator": {
