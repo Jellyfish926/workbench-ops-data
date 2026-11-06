@@ -44,10 +44,10 @@
     "fallbacks": [
      "Claude Code"
     ],
-    "next_at": "2026-11-06T10:00:00+08:00",
-    "business_date": "2026-11-06",
-    "status": "已完成",
-    "task_id": 62,
+    "next_at": "2026-11-07T10:00:00+08:00",
+    "business_date": "2026-11-07",
+    "status": "步骤执行中",
+    "task_id": 66,
     "test_status": "尚未测试",
     "test_task_id": null
    },
@@ -71,10 +71,10 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-06T01:54:12.793690+00:00",
+ "generated_at": "2026-11-06T02:00:21.304978+00:00",
  "counts": {
   "待处理": 0,
-  "执行中": 1,
+  "执行中": 2,
   "会诊中": 0,
   "需你决定": 0,
   "今日完成": 2,
@@ -111,7 +111,7 @@
   {
    "name": "Claude Code",
    "status": "忙碌",
-   "running": 1,
+   "running": 2,
    "today_runs": 7,
    "today_ok": 2,
    "today_fail": 5,
@@ -130,6 +130,67 @@
   }
  ],
  "tasks": [
+  {
+   "id": 66,
+   "title": "每日定时：每日热词雷达 + 游戏机会表同步（2026-11-06）",
+   "level": "困难",
+   "status": "步骤执行中",
+   "attempts": 1,
+   "created_at": "2026-11-05T21:00:05",
+   "updated_at": "2026-11-05T21:00:05",
+   "finished_at": null,
+   "summary": null,
+   "path": [
+    {
+     "kind": "step",
+     "ai": "Claude Code",
+     "model": "sonnet",
+     "status": "running",
+     "rejected": false
+    }
+   ],
+   "steps": [
+    {
+     "title": "步骤 1",
+     "ai": "Claude Code",
+     "model": "sonnet",
+     "status": "执行中"
+    }
+   ],
+   "redo_rounds": 0,
+   "detail": {
+    "result": null,
+    "runs": [
+     {
+      "kind": "step",
+      "ai": "Claude Code",
+      "model": "sonnet",
+      "status": "running",
+      "rejected": false,
+      "started_at": "2026-11-05T21:00:05",
+      "ended_at": null,
+      "duration_s": null
+     }
+    ],
+    "events": [
+     {
+      "at": "2026-11-05T21:00:05",
+      "kind": "daily_schedule",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-05T21:00:05",
+      "kind": "step",
+      "label": "流程进度更新"
+     }
+    ],
+    "recovery": {
+     "cycles": 0,
+     "next_at": null,
+     "status": null
+    }
+   }
+  },
   {
    "id": 65,
    "title": "每日定时：LootWiki 每日巡检与自查自纠（2026-11-06）",
@@ -6135,70 +6196,6 @@
       "at": "2026-10-29T15:35:42",
       "kind": "cleanup",
       "label": "流程进度更新"
-     }
-    ],
-    "recovery": {
-     "cycles": 0,
-     "next_at": null,
-     "status": null
-    }
-   }
-  },
-  {
-   "id": 26,
-   "title": "工作台提速验收：用一句话解释什么是 sitemap",
-   "level": "简单",
-   "status": "已完成",
-   "attempts": 0,
-   "created_at": "2026-10-28T23:22:47",
-   "updated_at": "2026-10-28T23:22:55",
-   "finished_at": "2026-10-28T23:22:55",
-   "summary": "已完成：已用一句话解释网站的 sitemap。 还没完成：无。 需要你做：无。 网站的 sitemap 就像一张列着网站里所有房间（页面）的导览图，让搜索引擎能按图快速找到并收录每个页面。",
-   "path": [
-    {
-     "kind": "plan",
-     "ai": "DeepSeek",
-     "model": "deepseek-v4-pro",
-     "status": "ok",
-     "rejected": false
-    }
-   ],
-   "steps": [],
-   "redo_rounds": 0,
-   "detail": {
-    "result": "已完成：已用一句话解释网站的 sitemap。\n还没完成：无。\n需要你做：无。\n\n网站的 sitemap 就像一张列着网站里所有房间（页面）的导览图，让搜索引擎能按图快速找到并收录每个页面。",
-    "runs": [
-     {
-      "kind": "plan",
-      "ai": "DeepSeek",
-      "model": "deepseek-v4-pro",
-      "status": "ok",
-      "rejected": false,
-      "started_at": "2026-10-28T23:22:47",
-      "ended_at": "2026-10-28T23:22:55",
-      "duration_s": 8.145
-     }
-    ],
-    "events": [
-     {
-      "at": "2026-10-28T23:22:47",
-      "kind": "submit",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-10-28T23:22:47",
-      "kind": "director_handoff",
-      "label": "总指挥已交接"
-     },
-     {
-      "at": "2026-10-28T23:22:47",
-      "kind": "plan",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-10-28T23:22:55",
-      "kind": "done",
-      "label": "已完成验收"
      }
     ],
     "recovery": {
