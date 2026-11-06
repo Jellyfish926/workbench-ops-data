@@ -71,7 +71,7 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-06T20:45:47.670754+00:00",
+ "generated_at": "2026-11-06T20:50:54.757692+00:00",
  "counts": {
   "待处理": 0,
   "执行中": 0,
@@ -101,7 +101,7 @@
   },
   {
    "name": "GPT",
-   "status": "冷却中",
+   "status": "空闲",
    "running": 0,
    "today_runs": 1,
    "today_ok": 0,
