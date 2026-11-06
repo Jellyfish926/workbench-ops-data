@@ -71,7 +71,7 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-06T02:13:46.256388+00:00",
+ "generated_at": "2026-11-06T02:19:12.462217+00:00",
  "counts": {
   "待处理": 0,
   "执行中": 0,
@@ -127,6 +127,15 @@
    "today_ok": 0,
    "today_fail": 0,
    "only_levels": null
+  },
+  {
+   "name": "第二台 Mac",
+   "status": "空闲",
+   "running": 0,
+   "today_runs": 0,
+   "today_ok": 0,
+   "today_fail": 0,
+   "only_levels": null
   }
  ],
  "tasks": [
@@ -137,9 +146,9 @@
    "status": "已完成",
    "attempts": 1,
    "created_at": "2026-11-05T21:00:05",
-   "updated_at": "2026-11-05T21:13:28",
+   "updated_at": "2026-11-05T21:14:08",
    "finished_at": "2026-11-05T21:13:08",
-   "summary": "2026-11-06 的热词雷达和游戏机会表同步已完成，云端一次通过，没有在本机运行 `hotwords.py`。 **触发前核对** - `radar.yml` 存在。 - 这一天的快照、日报、回执都是 404，也没有别的 run 在跑。 **云端采集和同步** - radar run `42147547274` 成功，用时 5 分 42 秒。 - feishu-sync run `42148171248` 成功。 **产出核对**(从 seo-hotwords 远端读回) - `snapshots/2026-11-06.json` 已入仓，1,133,991 字节。生成时间 2026-11…",
+   "summary": "【给人看的结果】 ✅ 正常完成，热词雷达和游戏机会表同步已完成。 **做了什么** - 今天收集到 484 个候选游戏，评分 386 个，关注榜评分 39 个。 - 游戏主表更新 249 个，新增 10 行，现共 1009 行。 - 每日观测和变更日志同步成功；911 Dispatch、Escape Prison with a Toothpick 改为已建站，Roblox Stock Exchange 2 自动新建。 **有没有问题** - 没有问题 **需要你做什么** - 不需要，工作台会接着自动跑 **关键数字**（数据截至 2026-11-06） - 候选游戏 484 个 - 游戏主表…",
    "path": [
     {
      "kind": "step",
@@ -159,7 +168,7 @@
    ],
    "redo_rounds": 0,
    "detail": {
-    "result": "2026-11-06 的热词雷达和游戏机会表同步已完成，云端一次通过，没有在本机运行 `hotwords.py`。\n\n**触发前核对**\n- `radar.yml` 存在。\n- 这一天的快照、日报、回执都是 404，也没有别的 run 在跑。\n\n**云端采集和同步**\n- radar run `42147547274` 成功，用时 5 分 42 秒。\n- feishu-sync run `42148171248` 成功。\n\n**产出核对**(从 seo-hotwords 远端读回)\n- `snapshots/2026-11-06.json` 已入仓，1,133,991 字节。生成时间 2026-11-06T02:04Z，`replay=false`，不是历史回放。\n- 快照里候选 484 个，评分 386 个，关注榜评分 39 个。\n- `reports/2026-11-06.md` 已入仓，16,661 字节。\n- `runs/2026-11-06-game-sync.json` 的 status 是 complete，`errors` 为空，`field_issues` 为空。\n- 回执的 run_id 是 `2026-11-06-radar-and-game-sync-v2`。\n\n**三张表**\n- **游戏主表：**更新 249 个，回读一致 249 个。新增 10 行，回读一致 10 行。写入后共 1009 行。\n- **每日观测：**写入 425 条，回读 425 条，失败 0。\n- **变更日志：**写入 13 条，回读 13 条，失败 0。\n- **已建站标记：**标了 3 个，回读 3 个，主表缺行为 0。\n - 911 Dispatch 和 Escape Prison with a Toothpick 由「待复核」改为已建站。\n - Roblox Stock Exchange 2 之前主表没有这一行，已自动新建。\n\n**没做的事**\n- 我没有运行 `bin/radar-card` 或 `bin/feishu-card`，群卡由工作台核验后自己发。\n- 我没有直接写飞书表，三张表都是 feishu-sync 写的。\n- 本机的 `hotwords.py` 没跑，因为不需要。\n\n没有未完成项。\n\n【回执状态】完成\n\n【工作台文件核对】最多扫描2000个文件；发生新增、修改或删除的相对路径：[]",
+    "result": "【给人看的结果】\n✅ 正常完成，热词雷达和游戏机会表同步已完成。\n**做了什么**\n- 今天收集到 484 个候选游戏，评分 386 个，关注榜评分 39 个。\n- 游戏主表更新 249 个，新增 10 行，现共 1009 行。\n- 每日观测和变更日志同步成功；911 Dispatch、Escape Prison with a Toothpick 改为已建站，Roblox Stock Exchange 2 自动新建。\n**有没有问题**\n- 没有问题\n**需要你做什么**\n- 不需要，工作台会接着自动跑\n**关键数字**（数据截至 2026-11-06）\n- 候选游戏 484 个\n- 游戏主表更新 249 个，新增 10 行，共 1009 行\n- 每日观测 425 条，变更日志 13 条\n- 已建站标记 3 个\n\n## 技术详情（原始回执，供排查用）\n2026-11-06 的热词雷达和游戏机会表同步已完成，云端一次通过，没有在本机运行 `hotwords.py`。\n\n**触发前核对**\n- `radar.yml` 存在。\n- 这一天的快照、日报、回执都是 404，也没有别的 run 在跑。\n\n**云端采集和同步**\n- radar run `42147547274` 成功，用时 5 分 42 秒。\n- feishu-sync run `42148171248` 成功。\n\n**产出核对**(从 seo-hotwords 远端读回)\n- `snapshots/2026-11-06.json` 已入仓，1,133,991 字节。生成时间 2026-11-06T02:04Z，`replay=false`，不是历史回放。\n- 快照里候选 484 个，评分 386 个，关注榜评分 39 个。\n- `reports/2026-11-06.md` 已入仓，16,661 字节。\n- `runs/2026-11-06-game-sync.json` 的 status 是 complete，`errors` 为空，`field_issues` 为空。\n- 回执的 run_id 是 `2026-11-06-radar-and-game-sync-v2`。\n\n**三张表**\n- **游戏主表：**更新 249 个，回读一致 249 个。新增 10 行，回读一致 10 行。写入后共 1009 行。\n- **每日观测：**写入 425 条，回读 425 条，失败 0。\n- **变更日志：**写入 13 条，回读 13 条，失败 0。\n- **已建站标记：**标了 3 个，回读 3 个，主表缺行为 0。\n - 911 Dispatch 和 Escape Prison with a Toothpick 由「待复核」改为已建站。\n - Roblox Stock Exchange 2 之前主表没有这一行，已自动新建。\n\n**没做的事**\n- 我没有运行 `bin/radar-card` 或 `bin/feishu-card`，群卡由工作台核验后自己发。\n- 我没有直接写飞书表，三张表都是 feishu-sync 写的。\n- 本机的 `hotwords.py` 没跑，因为不需要。\n\n没有未完成项。\n\n【回执状态】完成\n\n【工作台文件核对】最多扫描2000个文件；发生新增、修改或删除的相对路径：[]",
     "runs": [
      {
       "kind": "step",
@@ -407,7 +416,7 @@
    "status": "已完成",
    "attempts": 4,
    "created_at": "2026-11-05T12:47:03",
-   "updated_at": "2026-11-05T21:09:16",
+   "updated_at": "2026-11-05T21:14:09",
    "finished_at": "2026-11-05T21:01:54",
    "summary": "【给人看的结果】 ✅ 正常完成：两款游戏已上架并核对无误 **做了什么** - 上架了 Escape Prison with a Toothpick 和 911 Dispatch，两款各 12 页且无草稿。 - 两款正式网址、页面信息、图片说明和网站统计抽查均核对合格。 - 当天 17 个候选里只有这两款通过审核，2 款上架额度全部用完。 **有没有问题** - 没有问题 **需要你做什么** - 不需要，工作台会接着自动跑 **关键数字**（数据截至 2026-11-05） - 上架 2 款 - 每款 12 页 - 当天候选 17 个 - 排队 19 个 ## 技术详情（原始回执，供排查用）…",
    "path": [
@@ -581,16 +590,6 @@
     "events": [
      {
       "at": "2026-11-05T14:17:04",
-      "kind": "write_timeout",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-05T14:17:04",
-      "kind": "step_failure",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-05T14:17:04",
       "kind": "auto_resume",
       "label": "流程进度更新"
      },
@@ -727,6 +726,16 @@
      {
       "at": "2026-11-05T21:09:16",
       "kind": "postcheck",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-05T21:14:08",
+      "kind": "postcheck",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-05T21:14:09",
+      "kind": "visual",
       "label": "流程进度更新"
      }
     ],
@@ -4346,7 +4355,7 @@
    "status": "已完成",
    "attempts": 2,
    "created_at": "2026-10-30T13:47:09",
-   "updated_at": "2026-11-04T22:15:19",
+   "updated_at": "2026-11-05T21:14:12",
    "finished_at": "2026-10-30T14:17:27",
    "summary": "两款已上线：Realistic Car Destruction 和 Teach Your Sister How To Drive，每款 10 页，都已在 lootwiki.com 逐页核对。飞书写表和浏览器截图按规则交给 feishu-sync 和工作台，本任务没做。 **选款** - 雷达快照 2026-10-30 完整；同业务日没有其他执行者的产出，当天额度 2 款全部用完。 - 淘汰的候选： - Anime Eyes 借用动漫 IP。 - Ragdoll Playground 同名抢注站有 5 个。 - Farming Incremental 是纯挂机玩法。 - Say Cheese 官…",
    "path": [
@@ -4491,6 +4500,11 @@
      },
      {
       "at": "2026-11-04T22:15:19",
+      "kind": "visual",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-05T21:14:12",
       "kind": "visual",
       "label": "流程进度更新"
      }
@@ -6237,7 +6251,7 @@
   }
  ],
  "gamesites": {
-  "generated_at": "2026-11-06T02:04:14.402821+00:00",
+  "generated_at": "2026-11-06T02:14:07.120067+00:00",
   "scale": {
    "independent_sites": 5,
    "independent_online": 5,
@@ -6292,10 +6306,10 @@
    {
     "id": "xuanci",
     "name": "选词",
-    "status": "步骤执行中",
-    "last_run": "2026-11-05T21:00:05",
+    "status": "已完成",
+    "last_run": "2026-11-05T21:13:08",
     "alert": false,
-    "output": "11-05：≥50 分 6 个",
+    "output": "11-06：≥50 分 15 个",
     "task_id": 66
    },
    {
@@ -6310,10 +6324,10 @@
    {
     "id": "hesi",
     "name": "上线核实",
-    "status": "执行中",
+    "status": "已完成",
     "last_run": "2026-11-05T21:01:54",
     "alert": false,
-    "output": "正在检查",
+    "output": "截图目检没做成：全部 2 个 key 都失败；最后一个: 余额不足（HTTP 402）: {\"error\":\"余额不足，请前往 [链接] 充值 (request_id: req_1793930920282_c25e9f7e)\"}",
     "task_id": 63
    },
    {
@@ -6331,7 +6345,7 @@
     "status": "已完成",
     "last_run": "2026-10-30",
     "alert": null,
-    "output": "停更 890 页（2026-10-01 至 2026-10-28）",
+    "output": "停更 453 页（2026-10-01 至 2026-10-28）",
     "task_id": null
    }
   ],
@@ -6339,14 +6353,14 @@
  },
  "radar": {
   "status": "正常",
-  "checked_at": "2026-11-06T02:03:46.138197+00:00",
-  "last_scan_at": "2026-11-06T02:01:41.058000+00:00",
+  "checked_at": "2026-11-06T02:13:50.354422+00:00",
+  "last_scan_at": "2026-11-06T02:11:40.953000+00:00",
   "last_scan_age_min": 2.1,
   "venues": 12,
   "live_venues": 12,
   "down_venues": [],
   "coins": 1252,
-  "pairs": 1731,
+  "pairs": 1728,
   "qualified": 7,
   "page_url": "radar/"
  },
