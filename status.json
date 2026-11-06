@@ -71,7 +71,7 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-06T01:20:55.328764+00:00",
+ "generated_at": "2026-11-06T01:26:02.979120+00:00",
  "counts": {
   "待处理": 0,
   "执行中": 1,
@@ -112,9 +112,9 @@
    "name": "Claude Code",
    "status": "忙碌",
    "running": 1,
-   "today_runs": 1,
+   "today_runs": 6,
    "today_ok": 1,
-   "today_fail": 0,
+   "today_fail": 5,
    "only_levels": [
     "困难"
    ]
@@ -311,7 +311,7 @@
    "status": "需你决定",
    "attempts": 3,
    "created_at": "2026-11-05T12:47:03",
-   "updated_at": "2026-11-05T14:21:28",
+   "updated_at": "2026-11-05T20:25:05",
    "finished_at": null,
    "summary": null,
    "path": [
@@ -334,6 +334,41 @@
      "ai": "GPT",
      "model": "gpt-6-astra",
      "status": "ok",
+     "rejected": false
+    },
+    {
+     "kind": "synthesize",
+     "ai": "Claude Code",
+     "model": "sonnet",
+     "status": "failed",
+     "rejected": false
+    },
+    {
+     "kind": "synthesize",
+     "ai": "Claude Code",
+     "model": "sonnet",
+     "status": "failed",
+     "rejected": false
+    },
+    {
+     "kind": "diagnose",
+     "ai": "Claude Code",
+     "model": "opus",
+     "status": "failed",
+     "rejected": false
+    },
+    {
+     "kind": "diagnose",
+     "ai": "Claude Code",
+     "model": "opus",
+     "status": "failed",
+     "rejected": false
+    },
+    {
+     "kind": "diagnose",
+     "ai": "Claude Code",
+     "model": "opus",
+     "status": "failed",
      "rejected": false
     }
    ],
@@ -378,6 +413,56 @@
       "started_at": "2026-11-05T14:19:26",
       "ended_at": "2026-11-05T14:21:21",
       "duration_s": 114.753
+     },
+     {
+      "kind": "synthesize",
+      "ai": "Claude Code",
+      "model": "sonnet",
+      "status": "failed",
+      "rejected": false,
+      "started_at": "2026-11-05T20:21:30",
+      "ended_at": "2026-11-05T20:21:47",
+      "duration_s": 17.263
+     },
+     {
+      "kind": "synthesize",
+      "ai": "Claude Code",
+      "model": "sonnet",
+      "status": "failed",
+      "rejected": false,
+      "started_at": "2026-11-05T20:21:47",
+      "ended_at": "2026-11-05T20:22:19",
+      "duration_s": 32.011
+     },
+     {
+      "kind": "diagnose",
+      "ai": "Claude Code",
+      "model": "opus",
+      "status": "failed",
+      "rejected": false,
+      "started_at": "2026-11-05T20:22:34",
+      "ended_at": "2026-11-05T20:22:48",
+      "duration_s": 13.072
+     },
+     {
+      "kind": "diagnose",
+      "ai": "Claude Code",
+      "model": "opus",
+      "status": "failed",
+      "rejected": false,
+      "started_at": "2026-11-05T20:23:18",
+      "ended_at": "2026-11-05T20:23:47",
+      "duration_s": 28.957
+     },
+     {
+      "kind": "diagnose",
+      "ai": "Claude Code",
+      "model": "opus",
+      "status": "failed",
+      "rejected": false,
+      "started_at": "2026-11-05T20:24:47",
+      "ended_at": "2026-11-05T20:25:05",
+      "duration_s": 18.765
      }
     ],
     "events": [
@@ -450,10 +535,65 @@
       "at": "2026-11-05T14:21:28",
       "kind": "postcheck",
       "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-05T20:21:30",
+      "kind": "user_note",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-05T20:21:30",
+      "kind": "manual",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-05T20:21:30",
+      "kind": "synthesize",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-05T20:21:47",
+      "kind": "synthesize",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-05T20:22:19",
+      "kind": "auto_recovery",
+      "label": "进入自动恢复队列"
+     },
+     {
+      "at": "2026-11-05T20:22:34",
+      "kind": "diagnose",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-05T20:22:48",
+      "kind": "auto_recovery",
+      "label": "进入自动恢复队列"
+     },
+     {
+      "at": "2026-11-05T20:23:18",
+      "kind": "diagnose",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-05T20:23:47",
+      "kind": "auto_recovery",
+      "label": "进入自动恢复队列"
+     },
+     {
+      "at": "2026-11-05T20:24:47",
+      "kind": "diagnose",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-05T20:25:05",
+      "kind": "limit",
+      "label": "流程进度更新"
      }
     ],
     "recovery": {
-     "cycles": 0,
+     "cycles": 3,
      "next_at": null,
      "status": null
     }
