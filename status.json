@@ -30,7 +30,7 @@
     ],
     "next_at": "2026-11-07T01:47:00+08:00",
     "business_date": "2026-11-06",
-    "status": "已完成",
+    "status": "步骤执行中",
     "task_id": 63,
     "test_status": "尚未测试",
     "test_task_id": null
@@ -71,20 +71,20 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-06T02:19:12.462217+00:00",
+ "generated_at": "2026-11-06T02:24:19.590505+00:00",
  "counts": {
   "待处理": 0,
-  "执行中": 0,
+  "执行中": 1,
   "会诊中": 0,
   "需你决定": 0,
-  "今日完成": 4,
-  "累计完成": 55
+  "今日完成": 3,
+  "累计完成": 54
  },
  "providers": [
   {
    "name": "DeepSeek",
-   "status": "空闲",
-   "running": 0,
+   "status": "忙碌",
+   "running": 1,
    "today_runs": 0,
    "today_ok": 0,
    "today_fail": 0,
@@ -92,11 +92,11 @@
   },
   {
    "name": "Claude(中转)",
-   "status": "空闲",
+   "status": "冷却中",
    "running": 0,
-   "today_runs": 0,
+   "today_runs": 1,
    "today_ok": 0,
-   "today_fail": 0,
+   "today_fail": 1,
    "only_levels": null
   },
   {
@@ -110,11 +110,11 @@
   },
   {
    "name": "Claude Code",
-   "status": "空闲",
+   "status": "冷却中",
    "running": 0,
-   "today_runs": 9,
+   "today_runs": 10,
    "today_ok": 4,
-   "today_fail": 5,
+   "today_fail": 6,
    "only_levels": [
     "困难"
    ]
@@ -413,12 +413,12 @@
    "id": 63,
    "title": "每日定时：每日总站自动上架（2026-11-05）",
    "level": "困难",
-   "status": "已完成",
-   "attempts": 4,
+   "status": "步骤执行中",
+   "attempts": 7,
    "created_at": "2026-11-05T12:47:03",
-   "updated_at": "2026-11-05T21:14:09",
-   "finished_at": "2026-11-05T21:01:54",
-   "summary": "【给人看的结果】 ✅ 正常完成：两款游戏已上架并核对无误 **做了什么** - 上架了 Escape Prison with a Toothpick 和 911 Dispatch，两款各 12 页且无草稿。 - 两款正式网址、页面信息、图片说明和网站统计抽查均核对合格。 - 当天 17 个候选里只有这两款通过审核，2 款上架额度全部用完。 **有没有问题** - 没有问题 **需要你做什么** - 不需要，工作台会接着自动跑 **关键数字**（数据截至 2026-11-05） - 上架 2 款 - 每款 12 页 - 当天候选 17 个 - 排队 19 个 ## 技术详情（原始回执，供排查用）…",
+   "updated_at": "2026-11-05T21:24:02",
+   "finished_at": null,
+   "summary": null,
    "path": [
     {
      "kind": "step",
@@ -482,14 +482,35 @@
      "model": "opus",
      "status": "ok",
      "rejected": false
+    },
+    {
+     "kind": "step",
+     "ai": "Claude Code",
+     "model": "opus",
+     "status": "rate_limited",
+     "rejected": false
+    },
+    {
+     "kind": "step",
+     "ai": "Claude(中转)",
+     "model": "claude-opus-5-5",
+     "status": "rate_limited",
+     "rejected": false
+    },
+    {
+     "kind": "step",
+     "ai": "DeepSeek",
+     "model": "deepseek-v4-pro",
+     "status": "running",
+     "rejected": false
     }
    ],
    "steps": [
     {
      "title": "步骤 1",
-     "ai": "Claude Code",
-     "model": "opus",
-     "status": "完成"
+     "ai": "DeepSeek",
+     "model": "deepseek-v4-pro",
+     "status": "执行中"
     }
    ],
    "redo_rounds": 0,
@@ -585,74 +606,39 @@
       "started_at": "2026-11-05T20:33:48",
       "ended_at": "2026-11-05T21:01:54",
       "duration_s": 1685.687
+     },
+     {
+      "kind": "step",
+      "ai": "Claude Code",
+      "model": "opus",
+      "status": "rate_limited",
+      "rejected": false,
+      "started_at": "2026-11-05T21:23:48",
+      "ended_at": "2026-11-05T21:23:58",
+      "duration_s": 9.688
+     },
+     {
+      "kind": "step",
+      "ai": "Claude(中转)",
+      "model": "claude-opus-5-5",
+      "status": "rate_limited",
+      "rejected": false,
+      "started_at": "2026-11-05T21:23:58",
+      "ended_at": "2026-11-05T21:24:02",
+      "duration_s": 3.761
+     },
+     {
+      "kind": "step",
+      "ai": "DeepSeek",
+      "model": "deepseek-v4-pro",
+      "status": "running",
+      "rejected": false,
+      "started_at": "2026-11-05T21:24:02",
+      "ended_at": null,
+      "duration_s": null
      }
     ],
     "events": [
-     {
-      "at": "2026-11-05T14:17:04",
-      "kind": "auto_resume",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-05T14:17:04",
-      "kind": "step",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-05T14:19:00",
-      "kind": "file_audit",
-      "label": "已核对实际文件变更"
-     },
-     {
-      "at": "2026-11-05T14:19:00",
-      "kind": "receipt",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-05T14:19:26",
-      "kind": "postcheck",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-05T14:19:26",
-      "kind": "step",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-05T14:21:21",
-      "kind": "file_audit",
-      "label": "已核对实际文件变更"
-     },
-     {
-      "at": "2026-11-05T14:21:21",
-      "kind": "receipt",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-05T14:21:28",
-      "kind": "postcheck",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-05T20:21:30",
-      "kind": "user_note",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-05T20:21:30",
-      "kind": "manual",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-05T20:21:30",
-      "kind": "synthesize",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-05T20:21:47",
-      "kind": "synthesize",
-      "label": "流程进度更新"
-     },
      {
       "at": "2026-11-05T20:22:19",
       "kind": "auto_recovery",
@@ -736,6 +722,71 @@
      {
       "at": "2026-11-05T21:14:09",
       "kind": "visual",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-05T21:23:48",
+      "kind": "postcheck",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-05T21:23:48",
+      "kind": "step",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-05T21:23:58",
+      "kind": "file_audit",
+      "label": "已核对实际文件变更"
+     },
+     {
+      "at": "2026-11-05T21:23:58",
+      "kind": "step_rate_limited",
+      "label": "已遇限流，接续其他可用AI或等待恢复"
+     },
+     {
+      "at": "2026-11-05T21:23:58",
+      "kind": "step",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-05T21:23:58",
+      "kind": "standby",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-05T21:24:02",
+      "kind": "file_audit",
+      "label": "已核对实际文件变更"
+     },
+     {
+      "at": "2026-11-05T21:24:02",
+      "kind": "step_rate_limited",
+      "label": "已遇限流，接续其他可用AI或等待恢复"
+     },
+     {
+      "at": "2026-11-05T21:24:02",
+      "kind": "step",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-05T21:24:02",
+      "kind": "standby",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-05T21:24:14",
+      "kind": "tool",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-05T21:24:14",
+      "kind": "tool",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-05T21:24:14",
+      "kind": "tool",
       "label": "流程进度更新"
      }
     ],
@@ -4355,7 +4406,7 @@
    "status": "已完成",
    "attempts": 2,
    "created_at": "2026-10-30T13:47:09",
-   "updated_at": "2026-11-05T21:14:12",
+   "updated_at": "2026-11-05T21:24:15",
    "finished_at": "2026-10-30T14:17:27",
    "summary": "两款已上线：Realistic Car Destruction 和 Teach Your Sister How To Drive，每款 10 页，都已在 lootwiki.com 逐页核对。飞书写表和浏览器截图按规则交给 feishu-sync 和工作台，本任务没做。 **选款** - 雷达快照 2026-10-30 完整；同业务日没有其他执行者的产出，当天额度 2 款全部用完。 - 淘汰的候选： - Anime Eyes 借用动漫 IP。 - Ragdoll Playground 同名抢注站有 5 个。 - Farming Incremental 是纯挂机玩法。 - Say Cheese 官…",
    "path": [
@@ -4505,6 +4556,11 @@
      },
      {
       "at": "2026-11-05T21:14:12",
+      "kind": "visual",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-05T21:24:15",
       "kind": "visual",
       "label": "流程进度更新"
      }
@@ -6353,15 +6409,15 @@
  },
  "radar": {
   "status": "正常",
-  "checked_at": "2026-11-06T02:13:50.354422+00:00",
-  "last_scan_at": "2026-11-06T02:11:40.953000+00:00",
-  "last_scan_age_min": 2.1,
+  "checked_at": "2026-11-06T02:23:53.614753+00:00",
+  "last_scan_at": "2026-11-06T02:21:40.855000+00:00",
+  "last_scan_age_min": 2.2,
   "venues": 12,
   "live_venues": 12,
   "down_venues": [],
   "coins": 1252,
-  "pairs": 1728,
-  "qualified": 7,
+  "pairs": 1730,
+  "qualified": 6,
   "page_url": "radar/"
  },
  "orchestrator": {
