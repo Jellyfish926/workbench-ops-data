@@ -71,7 +71,7 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-06T01:15:42.370014+00:00",
+ "generated_at": "2026-11-06T01:20:55.328764+00:00",
  "counts": {
   "待处理": 0,
   "执行中": 1,
@@ -101,7 +101,7 @@
   },
   {
    "name": "GPT",
-   "status": "空闲",
+   "status": "冷却中",
    "running": 0,
    "today_runs": 4,
    "today_ok": 2,
@@ -6125,15 +6125,15 @@
  },
  "radar": {
   "status": "正常",
-  "checked_at": "2026-11-06T01:10:25.381064+00:00",
-  "last_scan_at": "2026-11-06T01:06:42.453000+00:00",
+  "checked_at": "2026-11-06T01:20:28.349675+00:00",
+  "last_scan_at": "2026-11-06T01:16:42.554000+00:00",
   "last_scan_age_min": 3.7,
   "venues": 12,
   "live_venues": 11,
   "down_venues": [
    "OKX"
   ],
-  "coins": 1209,
+  "coins": 1210,
   "pairs": 1428,
   "qualified": 0,
   "page_url": "radar/"
