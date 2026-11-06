@@ -71,7 +71,7 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-06T06:05:58.000052+00:00",
+ "generated_at": "2026-11-06T06:11:05.768641+00:00",
  "counts": {
   "待处理": 0,
   "执行中": 0,
@@ -110,7 +110,7 @@
   },
   {
    "name": "Claude Code",
-   "status": "冷却中",
+   "status": "空闲",
    "running": 0,
    "today_runs": 0,
    "today_ok": 0,
