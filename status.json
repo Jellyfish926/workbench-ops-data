@@ -71,7 +71,7 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-06T02:41:14.380705+00:00",
+ "generated_at": "2026-11-06T02:46:39.173593+00:00",
  "counts": {
   "待处理": 0,
   "执行中": 0,
@@ -6307,7 +6307,7 @@
   }
  ],
  "gamesites": {
-  "generated_at": "2026-11-06T02:14:07.120067+00:00",
+  "generated_at": "2026-11-06T02:44:30.297508+00:00",
   "scale": {
    "independent_sites": 5,
    "independent_online": 5,
@@ -6371,19 +6371,19 @@
    {
     "id": "shangjia",
     "name": "上架",
-    "status": "已完成",
-    "last_run": "2026-11-05T21:01:54",
+    "status": "已放弃",
+    "last_run": "2026-11-05T21:36:15",
     "alert": false,
-    "output": "✅ 正常完成：两款游戏已上架并核对无误",
+    "output": "✅ 正常完成：两款游戏已上线并核对无误",
     "task_id": 63
    },
    {
     "id": "hesi",
     "name": "上线核实",
-    "status": "已完成",
-    "last_run": "2026-11-05T21:01:54",
+    "status": "已放弃",
+    "last_run": "2026-11-05T21:36:15",
     "alert": false,
-    "output": "截图目检没做成：全部 2 个 key 都失败；最后一个: 余额不足（HTTP 402）: {\"error\":\"余额不足，请前往 [链接] 充值 (request_id: req_1793930920282_c25e9f7e)\"}",
+    "output": "检查没过，已退回修改",
     "task_id": 63
    },
    {
@@ -6409,15 +6409,15 @@
  },
  "radar": {
   "status": "正常",
-  "checked_at": "2026-11-06T02:33:56.918142+00:00",
-  "last_scan_at": "2026-11-06T02:31:40.473000+00:00",
-  "last_scan_age_min": 2.2,
+  "checked_at": "2026-11-06T02:44:00.231861+00:00",
+  "last_scan_at": "2026-11-06T02:41:41.146000+00:00",
+  "last_scan_age_min": 2.3,
   "venues": 12,
   "live_venues": 12,
   "down_venues": [],
   "coins": 1252,
   "pairs": 1730,
-  "qualified": 6,
+  "qualified": 5,
   "page_url": "radar/"
  },
  "orchestrator": {
