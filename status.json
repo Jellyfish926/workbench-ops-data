@@ -71,7 +71,7 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-06T06:19:03.647702+00:00",
+ "generated_at": "2026-11-06T06:24:10.543301+00:00",
  "counts": {
   "待处理": 0,
   "执行中": 0,
@@ -101,7 +101,7 @@
   },
   {
    "name": "GPT",
-   "status": "冷却中",
+   "status": "空闲",
    "running": 0,
    "today_runs": 0,
    "today_ok": 0,
@@ -6409,8 +6409,8 @@
  },
  "radar": {
   "status": "正常",
-  "checked_at": "2026-11-06T06:13:39.972224+00:00",
-  "last_scan_at": "2026-11-06T06:11:40.449000+00:00",
+  "checked_at": "2026-11-06T06:23:43.356627+00:00",
+  "last_scan_at": "2026-11-06T06:21:39.747000+00:00",
   "last_scan_age_min": 2.0,
   "venues": 12,
   "live_venues": 12,
