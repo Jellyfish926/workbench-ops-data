@@ -71,7 +71,7 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-06T08:24:37.927362+00:00",
+ "generated_at": "2026-11-06T08:34:47.069924+00:00",
  "counts": {
   "待处理": 0,
   "执行中": 0,
@@ -130,7 +130,7 @@
   },
   {
    "name": "第二台 Mac",
-   "status": "空闲",
+   "status": "离线",
    "running": 0,
    "today_runs": 0,
    "today_ok": 0,
@@ -6414,9 +6414,9 @@
  },
  "radar": {
   "status": "正常",
-  "checked_at": "2026-11-06T08:24:27.353309+00:00",
-  "last_scan_at": "2026-11-06T08:21:41.065000+00:00",
-  "last_scan_age_min": 2.7,
+  "checked_at": "2026-11-06T08:34:31.003685+00:00",
+  "last_scan_at": "2026-11-06T08:31:41.058000+00:00",
+  "last_scan_age_min": 2.8,
   "venues": 12,
   "live_venues": 12,
   "down_venues": [],
