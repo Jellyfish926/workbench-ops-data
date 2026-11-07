@@ -46,7 +46,7 @@
     ],
     "next_at": "2026-11-08T10:00:00+08:00",
     "business_date": "2026-11-08",
-    "status": "步骤执行中",
+    "status": "已完成",
     "task_id": 70,
     "test_status": "尚未测试",
     "test_task_id": null
@@ -71,14 +71,14 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-07T02:06:32.881952+00:00",
+ "generated_at": "2026-11-07T02:13:40.094750+00:00",
  "counts": {
   "待处理": 0,
-  "执行中": 1,
+  "执行中": 0,
   "会诊中": 0,
   "需你决定": 0,
-  "今日完成": 3,
-  "累计完成": 57
+  "今日完成": 4,
+  "累计完成": 58
  },
  "providers": [
   {
@@ -92,7 +92,7 @@
   },
   {
    "name": "Claude(中转)",
-   "status": "冷却中",
+   "status": "空闲",
    "running": 0,
    "today_runs": 0,
    "today_ok": 0,
@@ -110,10 +110,10 @@
   },
   {
    "name": "Claude Code",
-   "status": "忙碌",
-   "running": 1,
-   "today_runs": 3,
-   "today_ok": 3,
+   "status": "空闲",
+   "running": 0,
+   "today_runs": 4,
+   "today_ok": 4,
    "today_fail": 0,
    "only_levels": [
     "困难"
@@ -143,18 +143,18 @@
    "id": 70,
    "title": "每日定时：每日热词雷达 + 游戏机会表同步（2026-11-07）",
    "level": "困难",
-   "status": "步骤执行中",
+   "status": "已完成",
    "attempts": 1,
    "created_at": "2026-11-06T21:00:10",
-   "updated_at": "2026-11-06T21:00:10",
-   "finished_at": null,
-   "summary": null,
+   "updated_at": "2026-11-06T21:13:25",
+   "finished_at": "2026-11-06T21:13:07",
+   "summary": "2026-11-07 的热词雷达和游戏机会表同步已完成。我没有在本机运行 `hotwords.py`，也没有运行 `bin/radar-card` 或 `bin/feishu-card`。 **回执** - **触发前核对**:`radar.yml` 存在。触发前 2026-11-07 的快照、日报、回执都是 404,也没有别的 run 在跑,所以没有重复。 - **云端采集**:我触发了 radar run `42327053298`,用时 5 分 35 秒,一次通过,我用 `gh run watch` 等到它结束。 - **写表同步**:随后 feishu-sync run `423275…",
    "path": [
     {
      "kind": "step",
      "ai": "Claude Code",
      "model": "sonnet",
-     "status": "running",
+     "status": "ok",
      "rejected": false
     }
    ],
@@ -163,22 +163,22 @@
      "title": "步骤 1",
      "ai": "Claude Code",
      "model": "sonnet",
-     "status": "执行中"
+     "status": "完成"
     }
    ],
    "redo_rounds": 0,
    "detail": {
-    "result": null,
+    "result": "2026-11-07 的热词雷达和游戏机会表同步已完成。我没有在本机运行 `hotwords.py`，也没有运行 `bin/radar-card` 或 `bin/feishu-card`。\n\n**回执**\n- **触发前核对**:`radar.yml` 存在。触发前 2026-11-07 的快照、日报、回执都是 404,也没有别的 run 在跑,所以没有重复。\n- **云端采集**:我触发了 radar run `42327053298`,用时 5 分 35 秒,一次通过,我用 `gh run watch` 等到它结束。\n- **写表同步**:随后 feishu-sync run `42327543801` 成功,同样用 `gh run watch` 等到结束。\n- **快照**:`snapshots/2026-11-07.json` 已入仓,1,136,543 字节。\n - 生成时间 2026-11-07T02:04Z,`replay=false`,不是历史回放。\n - 评分 381 个,关注榜评分 42 个。\n - Steam 的 top、popularnew、new 各 100 条,Roblox 五榜共 472 条,Trends 10 条,没有来源缺口。\n- **日报**:`reports/2026-11-07.md` 已入仓,16,587 字节。\n- **回执**:`runs/2026-11-07-game-sync.json` 的 status 是 complete,errors 为空,`tables_verified=true`。\n - 游戏主表更新 254、新增 14,回读一致(268 条,表共 1023 行)。\n - 每日观测写入 423,回读 423/423,失败 0。\n - 变更日志写入 15,回读 15/15。\n - 已建站标记 1 条(Sweep The Moon),回读一致;`missing_rows` 为空。\n- **可选字段**:回执里「快照链接」「运行ID/run_id」两个可选字段仍缺,这是主表一直没有的字段,不影响 complete。\n- **工作流提示**:radar 运行里只有两个「只测速」步骤是 skipped。\n\n**未完成**:无。群卡由工作台核验快照后自己发,我没发,也不列为缺项。飞书表只由 feishu-sync 写入,我没有直接写表。\n\n【回执状态】完成\n\n【工作台文件核对】最多扫描2000个文件；发生新增、修改或删除的相对路径：[]",
     "runs": [
      {
       "kind": "step",
       "ai": "Claude Code",
       "model": "sonnet",
-      "status": "running",
+      "status": "ok",
       "rejected": false,
       "started_at": "2026-11-06T21:00:10",
-      "ended_at": null,
-      "duration_s": null
+      "ended_at": "2026-11-06T21:13:07",
+      "duration_s": 776.345
      }
     ],
     "events": [
@@ -190,6 +190,21 @@
      {
       "at": "2026-11-06T21:00:10",
       "kind": "step",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-06T21:13:07",
+      "kind": "file_audit",
+      "label": "已核对实际文件变更"
+     },
+     {
+      "at": "2026-11-06T21:13:07",
+      "kind": "done",
+      "label": "已完成验收"
+     },
+     {
+      "at": "2026-11-06T21:13:25",
+      "kind": "postcheck",
       "label": "流程进度更新"
      }
     ],
