@@ -28,10 +28,10 @@
     "fallbacks": [
      "Claude Code"
     ],
-    "next_at": "2026-11-08T01:47:00+08:00",
-    "business_date": "2026-11-07",
-    "status": "已完成",
-    "task_id": 67,
+    "next_at": "2026-11-09T01:47:00+08:00",
+    "business_date": "2026-11-08",
+    "status": "步骤执行中",
+    "task_id": 71,
     "test_status": "尚未测试",
     "test_task_id": null
    },
@@ -71,10 +71,10 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-07T17:42:58.617762+00:00",
+ "generated_at": "2026-11-07T17:48:05.822605+00:00",
  "counts": {
   "待处理": 0,
-  "执行中": 0,
+  "执行中": 1,
   "会诊中": 0,
   "需你决定": 0,
   "今日完成": 0,
@@ -110,8 +110,8 @@
   },
   {
    "name": "Claude Code",
-   "status": "空闲",
-   "running": 0,
+   "status": "忙碌",
+   "running": 1,
    "today_runs": 0,
    "today_ok": 0,
    "today_fail": 0,
@@ -139,6 +139,67 @@
   }
  ],
  "tasks": [
+  {
+   "id": 71,
+   "title": "每日定时：每日总站自动上架（2026-11-07）",
+   "level": "困难",
+   "status": "步骤执行中",
+   "attempts": 1,
+   "created_at": "2026-11-07T12:47:02",
+   "updated_at": "2026-11-07T12:47:02",
+   "finished_at": null,
+   "summary": null,
+   "path": [
+    {
+     "kind": "step",
+     "ai": "Claude Code",
+     "model": "sonnet",
+     "status": "running",
+     "rejected": false
+    }
+   ],
+   "steps": [
+    {
+     "title": "步骤 1",
+     "ai": "Claude Code",
+     "model": "sonnet",
+     "status": "执行中"
+    }
+   ],
+   "redo_rounds": 0,
+   "detail": {
+    "result": null,
+    "runs": [
+     {
+      "kind": "step",
+      "ai": "Claude Code",
+      "model": "sonnet",
+      "status": "running",
+      "rejected": false,
+      "started_at": "2026-11-07T12:47:02",
+      "ended_at": null,
+      "duration_s": null
+     }
+    ],
+    "events": [
+     {
+      "at": "2026-11-07T12:47:02",
+      "kind": "daily_schedule",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-07T12:47:02",
+      "kind": "step",
+      "label": "流程进度更新"
+     }
+    ],
+    "recovery": {
+     "cycles": 0,
+     "next_at": null,
+     "status": null
+    }
+   }
+  },
   {
    "id": 70,
    "title": "每日定时：每日热词雷达 + 游戏机会表同步（2026-11-07）",
@@ -5961,262 +6022,10 @@
      "status": null
     }
    }
-  },
-  {
-   "id": 31,
-   "title": "每日定时：每日总站自动上架（2026-10-29）",
-   "level": "困难",
-   "status": "已完成",
-   "attempts": 4,
-   "created_at": "2026-10-29T13:47:05",
-   "updated_at": "2026-11-04T21:45:02",
-   "finished_at": "2026-11-04T21:40:37",
-   "summary": "核心产出工作台已核验通过。还有 2 项没做完，重试也补不了，不再弹窗问你，已记入「待改进」：独立验收未能启动；加载超时根因未确认（这一步做太久，被工作台叫停了）。 已部署修复 `a1f2a5a`：徽章宽表拆分，两页首图改由本站提供。构建与远端门禁通过，线上 17 项回读均为 200，与构建一致。未新增游戏、发卡或写飞书表。 [回执与证据]([链接] 【回执状态】部分完成：独立验收未能启动；加载超时根因未确认 【工作台文件核对】最多扫描2000个文件；发生新增、修改或删除的相对路径：[\"evidence/badge-preservation.json\", \"evidence/before-0.j…",
-   "path": [
-    {
-     "kind": "step",
-     "ai": "GPT",
-     "model": "gpt-6.1-sol",
-     "status": "rate_limited",
-     "rejected": false
-    },
-    {
-     "kind": "step",
-     "ai": "Claude Code",
-     "model": "sonnet",
-     "status": "ok",
-     "rejected": false
-    },
-    {
-     "kind": "step",
-     "ai": "GPT",
-     "model": "gpt-6.1-sol",
-     "status": "ok",
-     "rejected": false
-    },
-    {
-     "kind": "step",
-     "ai": "GPT",
-     "model": "gpt-6.1-sol",
-     "status": "ok",
-     "rejected": false
-    }
-   ],
-   "steps": [
-    {
-     "title": "步骤 1",
-     "ai": "GPT",
-     "model": "gpt-6.1-sol",
-     "status": "完成"
-    }
-   ],
-   "redo_rounds": 0,
-   "detail": {
-    "result": "核心产出工作台已核验通过。还有 2 项没做完，重试也补不了，不再弹窗问你，已记入「待改进」：独立验收未能启动；加载超时根因未确认（这一步做太久，被工作台叫停了）。\n\n已部署修复 `a1f2a5a`：徽章宽表拆分，两页首图改由本站提供。构建与远端门禁通过，线上 17 项回读均为 200，与构建一致。未新增游戏、发卡或写飞书表。\n\n[回执与证据]([链接]\n\n【回执状态】部分完成：独立验收未能启动；加载超时根因未确认\n【工作台文件核对】最多扫描2000个文件；发生新增、修改或删除的相对路径：[\"evidence/badge-preservation.json\", \"evidence/before-0.json\", \"evidence/before-1.json\", \"evidence/before-2.json\", \"evidence/before-3.json\", \"evidence/before-badges.headers\", \"evidence/before-badges.html\", \"evidence/before-codes.headers\", \"evidence/before-codes.html\", \"evidence/before-decorations.headers\", \"evidence/before-decorations.html\", \"evidence/before-valheim.headers\", \"evidence/before-valheim.html\", \"evidence/build.log\", \"evidence/deploy-status.json\", \"evidence/gate-0.log\", \"evidence/gate-1.log\", \"evidence/gate-10.log\", \"evidence/gate-11.log\", \"evidence/gate-2.log\", \"evidence/gate-3.log\", \"evidence/gate-4.log\", \"evidence/gate-5.log\", \"evidence/gate-6.log\", \"evidence/gate-7.log\", \"evidence/gate-8.log\", \"evidence/gate-9.log\", \"evidence/http-before.json\", \"evidence/live-run-your-own-farmstead\", \"evidence/live-run-your-own-farmstead.headers\", \"evidence/live-run-your-own-farmstead__all\", \"evidence/live-run-your-own-farmstead__all.headers\", \"evidence/live-run-your-own-farmstead__assets__art01-480_png\", \"evidence/live-run-your-own-farmstead__assets__art01-480_png.headers\", \"evidence/live-run-your-own-farmstead__assets__art01-768_png\", \"evidence/live-run-your-own-farmstead__assets__art01-768_png.headers\", \"evidence/live-run-your-own-farmstead__assets__art02-480_png\", \"evidence/live-run-your-own-farmstead__assets__art02-480_png.headers\", \"evidence/live-run-your-own-farmstead__assets__art02-768_png\", \"evidence/live-run-your-own-farmstead__assets__art02-768_png.headers\", \"evidence/live-run-your-own-farmstead__author\", \"evidence/live-run-your-own-farmstead__author.headers\", \"evidence/live-run-your-own-farmstead__badges\", \"evidence/live-run-your-own-farmstead__badges.headers\", \"evidence/live-run-your-own-farmstead__codes\", \"evidence/live-run-your-own-farmstead__codes.headers\", \"evidence/live-run-your-own-farmstead__decorations\", \"evidence/live-run-your-own-farmstead__decorations.headers\", \"evidence/live-run-your-own-farmstead__gamepasses\", \"evidence/live-run-your-own-farmstead__gamepasses.headers\", \"evidence/live-run-your-own-farmstead__guides\", \"evidence/live-run-your-own-farmstead__guides.headers\", \"evidence/live-run-your-own-farmstead__halloween\", \"evidence/live-run-your-own-farmstead__halloween.headers\", \"evidence/live-run-your-own-farmstead__how-to-play\", \"evidence/live-run-your-own-farmstead__how-to-play.headers\", \"evidence/live-run-your-own-farmstead__shop\", \"evidence/live-run-your-own-farmstead__shop.headers\", \"evidence/live-sitemap_xml\", \"evidence/live-sitemap_xml.headers\", \"evidence/live-valheim\", \"evidence/live-valheim.headers\", \"evidence/local-gates.json\", \"evidence/local-image-provenance.json\", \"evidence/prior-coordination.json\", \"evidence/production-readback.json\", \"evidence/rebuild-consistency.json\", \"evidence/remote-gates-watch.log\", \"evidence/remote-gates.json\", \"evidence/resource-before.json\", \"evidence/site-commit.json\", \"evidence/verify_live.py\", \"handoff/2026-10-29-browser-repair-remote-readback.json\", \"handoff/2026-10-29-hub-autopublish-browser-repair.json\", \"handoff/2026-10-29-hub-autopublish-browser-repair.md\", \"handoff/remote/.gitignore\", \"handoff/remote/AGENTS.md\", \"handoff/remote/CLAUDE.md\", \"handoff/remote/README.md\", \"handoff/remote/automations/README.md\", \"handoff/remote/automations/SECRETS.md\", \"handoff/remote/automations/hotword-radar.md\", \"handoff/remote/automations/hub-autopublish.md\", \"handoff/remote/automations/monday-report.md\", \"handoff/remote/automations/no-traffic-pages.json\", \"handoff/remote/automations/runs/2026-09-22-game-sync.csv\", \"handoff/remote/automations/runs/2026-09-24-game-sync.csv\", \"handoff/remote/automati",
-    "runs": [
-     {
-      "kind": "step",
-      "ai": "GPT",
-      "model": "gpt-6.1-sol",
-      "status": "rate_limited",
-      "rejected": false,
-      "started_at": "2026-10-29T13:47:05",
-      "ended_at": "2026-10-29T14:02:43",
-      "duration_s": 937.647
-     },
-     {
-      "kind": "step",
-      "ai": "Claude Code",
-      "model": "sonnet",
-      "status": "ok",
-      "rejected": false,
-      "started_at": "2026-10-29T14:02:43",
-      "ended_at": "2026-10-29T15:24:32",
-      "duration_s": 4909.566
-     },
-     {
-      "kind": "step",
-      "ai": "GPT",
-      "model": "gpt-6.1-sol",
-      "status": "ok",
-      "rejected": false,
-      "started_at": "2026-10-29T20:41:26",
-      "ended_at": "2026-10-29T20:57:29",
-      "duration_s": 963.698
-     },
-     {
-      "kind": "step",
-      "ai": "GPT",
-      "model": "gpt-6.1-sol",
-      "status": "ok",
-      "rejected": false,
-      "started_at": "2026-11-04T21:28:35",
-      "ended_at": "2026-11-04T21:40:34",
-      "duration_s": 718.391
-     }
-    ],
-    "events": [
-     {
-      "at": "2026-10-29T15:24:41",
-      "kind": "alert",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-10-29T20:41:26",
-      "kind": "postcheck",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-10-29T20:41:26",
-      "kind": "step",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-10-29T20:57:29",
-      "kind": "file_audit",
-      "label": "已核对实际文件变更"
-     },
-     {
-      "at": "2026-10-29T20:57:29",
-      "kind": "receipt",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-10-29T20:57:34",
-      "kind": "alert",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-10-29T21:34:44",
-      "kind": "postcheck",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-10-29T21:37:32",
-      "kind": "chat",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-10-29T22:32:54",
-      "kind": "visual",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-10-29T22:34:57",
-      "kind": "visual",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-10-29T22:37:32",
-      "kind": "visual",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-10-30T04:16:17",
-      "kind": "chat",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-04T20:54:40",
-      "kind": "chat",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-04T20:55:52",
-      "kind": "chat",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-04T21:21:51",
-      "kind": "visual",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-04T21:21:51",
-      "kind": "postcheck",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-04T21:22:02",
-      "kind": "visual",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-04T21:28:35",
-      "kind": "postcheck",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-04T21:28:35",
-      "kind": "step",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-04T21:40:34",
-      "kind": "file_audit",
-      "label": "已核对实际文件变更"
-     },
-     {
-      "at": "2026-11-04T21:40:34",
-      "kind": "receipt",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-04T21:40:37",
-      "kind": "postcheck",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-04T21:40:54",
-      "kind": "visual",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-04T21:45:02",
-      "kind": "visual",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-04T21:45:03",
-      "kind": "postcheck",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-04T21:45:03",
-      "kind": "postcheck",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-04T22:06:22",
-      "kind": "postcheck",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-04T22:06:22",
-      "kind": "postcheck",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-05T09:55:11",
-      "kind": "cleanup",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-05T09:55:11",
-      "kind": "cleanup",
-      "label": "流程进度更新"
-     }
-    ],
-    "recovery": {
-     "cycles": 0,
-     "next_at": null,
-     "status": null
-    }
-   }
   }
  ],
  "gamesites": {
-  "generated_at": "2026-11-07T17:15:17.068575+00:00",
+  "generated_at": "2026-11-07T17:45:39.555422+00:00",
   "scale": {
    "independent_sites": 5,
    "independent_online": 5,
