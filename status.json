@@ -14,8 +14,8 @@
     ],
     "next_at": "2026-11-08T09:00:00+08:00",
     "business_date": "2026-11-08",
-    "status": "已完成",
-    "task_id": 65,
+    "status": "步骤执行中",
+    "task_id": 69,
     "test_status": "已放弃",
     "test_task_id": 14
    },
@@ -71,10 +71,10 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-07T01:01:15.809835+00:00",
+ "generated_at": "2026-11-07T01:06:22.305886+00:00",
  "counts": {
   "待处理": 0,
-  "执行中": 0,
+  "执行中": 1,
   "会诊中": 0,
   "需你决定": 0,
   "今日完成": 2,
@@ -101,17 +101,17 @@
   },
   {
    "name": "GPT",
-   "status": "空闲",
+   "status": "冷却中",
    "running": 0,
-   "today_runs": 1,
+   "today_runs": 2,
    "today_ok": 0,
-   "today_fail": 1,
+   "today_fail": 2,
    "only_levels": null
   },
   {
    "name": "Claude Code",
-   "status": "空闲",
-   "running": 0,
+   "status": "忙碌",
+   "running": 1,
    "today_runs": 2,
    "today_ok": 2,
    "today_fail": 0,
@@ -139,6 +139,99 @@
   }
  ],
  "tasks": [
+  {
+   "id": 69,
+   "title": "每日定时：LootWiki 每日巡检与自查自纠（2026-11-07）",
+   "level": "困难",
+   "status": "步骤执行中",
+   "attempts": 2,
+   "created_at": "2026-11-06T20:02:32",
+   "updated_at": "2026-11-06T20:03:02",
+   "finished_at": null,
+   "summary": null,
+   "path": [
+    {
+     "kind": "step",
+     "ai": "GPT",
+     "model": "gpt-6-astra",
+     "status": "rate_limited",
+     "rejected": false
+    },
+    {
+     "kind": "step",
+     "ai": "Claude Code",
+     "model": "opus",
+     "status": "running",
+     "rejected": false
+    }
+   ],
+   "steps": [
+    {
+     "title": "步骤 1",
+     "ai": "Claude Code",
+     "model": "opus",
+     "status": "执行中"
+    }
+   ],
+   "redo_rounds": 0,
+   "detail": {
+    "result": null,
+    "runs": [
+     {
+      "kind": "step",
+      "ai": "GPT",
+      "model": "gpt-6-astra",
+      "status": "rate_limited",
+      "rejected": false,
+      "started_at": "2026-11-06T20:02:32",
+      "ended_at": "2026-11-06T20:03:02",
+      "duration_s": 29.756
+     },
+     {
+      "kind": "step",
+      "ai": "Claude Code",
+      "model": "opus",
+      "status": "running",
+      "rejected": false,
+      "started_at": "2026-11-06T20:03:02",
+      "ended_at": null,
+      "duration_s": null
+     }
+    ],
+    "events": [
+     {
+      "at": "2026-11-06T20:02:32",
+      "kind": "daily_schedule",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-06T20:02:32",
+      "kind": "step",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-06T20:03:02",
+      "kind": "file_audit",
+      "label": "已核对实际文件变更"
+     },
+     {
+      "at": "2026-11-06T20:03:02",
+      "kind": "step_rate_limited",
+      "label": "已遇限流，接续其他可用AI或等待恢复"
+     },
+     {
+      "at": "2026-11-06T20:03:02",
+      "kind": "step",
+      "label": "流程进度更新"
+     }
+    ],
+    "recovery": {
+     "cycles": 0,
+     "next_at": null,
+     "status": null
+    }
+   }
+  },
   {
    "id": 68,
    "title": "每日定时：每日工作记忆备份到 GitHub（2026-11-06）",
@@ -6080,69 +6173,10 @@
      "status": null
     }
    }
-  },
-  {
-   "id": 29,
-   "title": "总指挥验收2：解释 canonical 标签",
-   "level": "简单",
-   "status": "已完成",
-   "attempts": 0,
-   "created_at": "2026-10-29T00:43:49",
-   "updated_at": "2026-10-29T00:44:00",
-   "finished_at": "2026-10-29T00:44:00",
-   "summary": "已完成：用一句话解释了 canonical 标签是什么。 还没完成：无。 需要你做：无。 详情：canonical 标签就像网页给搜索引擎留的一张“正版声明”纸条，告诉它：“如果你看到好几个内容差不多的页面，请以我指定的这个网址为准，排名和流量都算在它头上。”",
-   "path": [
-    {
-     "kind": "plan",
-     "ai": "Claude Code",
-     "model": "opus",
-     "status": "ok",
-     "rejected": false
-    }
-   ],
-   "steps": [],
-   "redo_rounds": 0,
-   "detail": {
-    "result": "已完成：用一句话解释了 canonical 标签是什么。\n还没完成：无。\n需要你做：无。\n\n详情：canonical 标签就像网页给搜索引擎留的一张“正版声明”纸条，告诉它：“如果你看到好几个内容差不多的页面，请以我指定的这个网址为准，排名和流量都算在它头上。”",
-    "runs": [
-     {
-      "kind": "plan",
-      "ai": "Claude Code",
-      "model": "opus",
-      "status": "ok",
-      "rejected": false,
-      "started_at": "2026-10-29T00:43:49",
-      "ended_at": "2026-10-29T00:44:00",
-      "duration_s": 11.147
-     }
-    ],
-    "events": [
-     {
-      "at": "2026-10-29T00:43:49",
-      "kind": "submit",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-10-29T00:43:49",
-      "kind": "plan",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-10-29T00:44:00",
-      "kind": "done",
-      "label": "已完成验收"
-     }
-    ],
-    "recovery": {
-     "cycles": 0,
-     "next_at": null,
-     "status": null
-    }
-   }
   }
  ],
  "gamesites": {
-  "generated_at": "2026-11-07T00:31:57.909236+00:00",
+  "generated_at": "2026-11-07T01:02:19.228972+00:00",
   "scale": {
    "independent_sites": 5,
    "independent_online": 5,
@@ -6244,14 +6278,14 @@
  },
  "radar": {
   "status": "正常",
-  "checked_at": "2026-11-07T00:55:49.650400+00:00",
-  "last_scan_at": "2026-11-07T00:51:41.957000+00:00",
-  "last_scan_age_min": 4.1,
+  "checked_at": "2026-11-07T01:05:52.670083+00:00",
+  "last_scan_at": "2026-11-07T01:01:41.853000+00:00",
+  "last_scan_age_min": 4.2,
   "venues": 12,
   "live_venues": 12,
   "down_venues": [],
   "coins": 1254,
-  "pairs": 1715,
+  "pairs": 1717,
   "qualified": 1,
   "page_url": "radar/"
  },
