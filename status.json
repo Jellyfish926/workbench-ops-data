@@ -44,10 +44,10 @@
     "fallbacks": [
      "Claude Code"
     ],
-    "next_at": "2026-11-07T10:00:00+08:00",
-    "business_date": "2026-11-07",
-    "status": "已完成",
-    "task_id": 66,
+    "next_at": "2026-11-08T10:00:00+08:00",
+    "business_date": "2026-11-08",
+    "status": "步骤执行中",
+    "task_id": 70,
     "test_status": "尚未测试",
     "test_task_id": null
    },
@@ -71,10 +71,10 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-07T01:56:18.528411+00:00",
+ "generated_at": "2026-11-07T02:01:24.995012+00:00",
  "counts": {
   "待处理": 0,
-  "执行中": 0,
+  "执行中": 1,
   "会诊中": 0,
   "需你决定": 0,
   "今日完成": 3,
@@ -110,8 +110,8 @@
   },
   {
    "name": "Claude Code",
-   "status": "空闲",
-   "running": 0,
+   "status": "忙碌",
+   "running": 1,
    "today_runs": 3,
    "today_ok": 3,
    "today_fail": 0,
@@ -139,6 +139,67 @@
   }
  ],
  "tasks": [
+  {
+   "id": 70,
+   "title": "每日定时：每日热词雷达 + 游戏机会表同步（2026-11-07）",
+   "level": "困难",
+   "status": "步骤执行中",
+   "attempts": 1,
+   "created_at": "2026-11-06T21:00:10",
+   "updated_at": "2026-11-06T21:00:10",
+   "finished_at": null,
+   "summary": null,
+   "path": [
+    {
+     "kind": "step",
+     "ai": "Claude Code",
+     "model": "sonnet",
+     "status": "running",
+     "rejected": false
+    }
+   ],
+   "steps": [
+    {
+     "title": "步骤 1",
+     "ai": "Claude Code",
+     "model": "sonnet",
+     "status": "执行中"
+    }
+   ],
+   "redo_rounds": 0,
+   "detail": {
+    "result": null,
+    "runs": [
+     {
+      "kind": "step",
+      "ai": "Claude Code",
+      "model": "sonnet",
+      "status": "running",
+      "rejected": false,
+      "started_at": "2026-11-06T21:00:10",
+      "ended_at": null,
+      "duration_s": null
+     }
+    ],
+    "events": [
+     {
+      "at": "2026-11-06T21:00:10",
+      "kind": "daily_schedule",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-06T21:00:10",
+      "kind": "step",
+      "label": "流程进度更新"
+     }
+    ],
+    "recovery": {
+     "cycles": 0,
+     "next_at": null,
+     "status": null
+    }
+   }
+  },
   {
    "id": 69,
    "title": "每日定时：LootWiki 每日巡检与自查自纠（2026-11-07）",
@@ -6098,92 +6159,6 @@
      {
       "at": "2026-11-05T09:55:11",
       "kind": "cleanup",
-      "label": "流程进度更新"
-     }
-    ],
-    "recovery": {
-     "cycles": 0,
-     "next_at": null,
-     "status": null
-    }
-   }
-  },
-  {
-   "id": 30,
-   "title": "每日定时：每日热词雷达 + 游戏机会表同步（2026-10-28）",
-   "level": "困难",
-   "status": "已放弃",
-   "attempts": 1,
-   "created_at": "2026-10-29T03:23:36",
-   "updated_at": "2026-10-29T03:30:53",
-   "finished_at": "2026-10-29T03:30:53",
-   "summary": null,
-   "path": [
-    {
-     "kind": "step",
-     "ai": "GPT",
-     "model": "gpt-6.1-sol",
-     "status": "ok",
-     "rejected": false
-    }
-   ],
-   "steps": [
-    {
-     "title": "步骤 1",
-     "ai": "GPT",
-     "model": "gpt-6.1-sol",
-     "status": "完成"
-    }
-   ],
-   "redo_rounds": 0,
-   "detail": {
-    "result": "已发送固定群卡，返回 `ok=true、code=0`。\n\n云端两次运行均失败：采集脚本按执行当天（10 月 29 日）取数，无法生成 10 月 28 日历史快照。最终核对当天快照、日报、同步回执均为 404，未触发写表；本机同一脚本也无法恢复历史数据，未运行。\n\n[回执已保存至 GitHub并回读一致]([链接]\n\n【回执状态】部分完成：缺10月28日快照、日报和complete同步回执\n【工作台文件核对】最多扫描2000个文件；发生新增、修改或删除的相对路径：[\".cache/gh/run-log-40835306332-1793258713.zip\", \".cache/gh/run-log-40835406659-1793258769.zip\", \"evidence/2026-10-28-card-error.txt\", \"evidence/2026-10-28-card-result.json\", \"evidence/2026-10-28-card.json\", \"evidence/claude-skills-existing-paths.json\", \"evidence/claude-skills__AGENTS.md\", \"evidence/final-artifact-check.json\", \"evidence/radar-attempt-1-failed.log\", \"evidence/radar-attempt-1.log\", \"evidence/radar-attempt-2-failed.log\", \"evidence/radar-attempt-2.json\", \"evidence/radar-attempt-2.log\", \"evidence/receipt-remote-commit.json\", \"evidence/receipt-upload.json\", \"evidence/seo-hotwords-existing-paths.json\", \"evidence/seo-hotwords__.github__workflows__feishu-sync.yml\", \"evidence/seo-hotwords__.github__workflows__radar.yml\", \"receipt-2026-10-28.json\", \"receipt-2026-10-28.md\", \"rules/automations__hotword-radar.md\", \"rules/claude-skills__automations__README.md\", \"rules/claude-skills__seo-xuanci__references__hotword-radar.md\", \"rules/memory__AUTOMATIONS.md\", \"rules/memory__CURRENT_STATE.md\", \"rules/memory__RULES_INDEX.md\", \"rules/memory__START_HERE.md\", \"rules/memory__USER_PREFERENCES.md\", \"rules/relay.md\", \"rules/seo-hotwords__feishu_sync.py\", \"rules/seo-hotwords__hotwords.py\"]",
-    "runs": [
-     {
-      "kind": "step",
-      "ai": "GPT",
-      "model": "gpt-6.1-sol",
-      "status": "ok",
-      "rejected": false,
-      "started_at": "2026-10-29T03:23:36",
-      "ended_at": "2026-10-29T03:29:19",
-      "duration_s": 342.879
-     }
-    ],
-    "events": [
-     {
-      "at": "2026-10-29T03:23:36",
-      "kind": "daily_schedule",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-10-29T03:23:36",
-      "kind": "manual",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-10-29T03:23:36",
-      "kind": "step",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-10-29T03:29:19",
-      "kind": "file_audit",
-      "label": "已核对实际文件变更"
-     },
-     {
-      "at": "2026-10-29T03:29:19",
-      "kind": "receipt",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-10-29T03:29:22",
-      "kind": "alert",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-10-29T03:30:53",
-      "kind": "manual",
       "label": "流程进度更新"
      }
     ],
