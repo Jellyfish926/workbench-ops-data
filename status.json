@@ -71,7 +71,7 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-07T02:26:54.661983+00:00",
+ "generated_at": "2026-11-07T02:34:02.990671+00:00",
  "counts": {
   "待处理": 0,
   "执行中": 0,
@@ -6186,7 +6186,7 @@
   }
  ],
  "gamesites": {
-  "generated_at": "2026-11-07T02:03:03.479499+00:00",
+  "generated_at": "2026-11-07T02:33:24.624170+00:00",
   "scale": {
    "independent_sites": 5,
    "independent_online": 5,
@@ -6241,10 +6241,10 @@
    {
     "id": "xuanci",
     "name": "选词",
-    "status": "步骤执行中",
-    "last_run": "2026-11-06T21:00:10",
+    "status": "已完成",
+    "last_run": "2026-11-06T21:13:07",
     "alert": false,
-    "output": "11-06：≥50 分 15 个",
+    "output": "11-07：≥50 分 24 个",
     "task_id": 70
    },
    {
