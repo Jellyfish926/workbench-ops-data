@@ -71,13 +71,13 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-07T04:57:45.180090+00:00",
+ "generated_at": "2026-11-07T05:02:52.707331+00:00",
  "counts": {
   "待处理": 0,
   "执行中": 0,
   "会诊中": 0,
   "需你决定": 0,
-  "今日完成": 4,
+  "今日完成": 0,
   "累计完成": 58
  },
  "providers": [
@@ -103,17 +103,17 @@
    "name": "GPT",
    "status": "冷却中",
    "running": 0,
-   "today_runs": 2,
+   "today_runs": 0,
    "today_ok": 0,
-   "today_fail": 2,
+   "today_fail": 0,
    "only_levels": null
   },
   {
    "name": "Claude Code",
    "status": "空闲",
    "running": 0,
-   "today_runs": 4,
-   "today_ok": 4,
+   "today_runs": 0,
+   "today_ok": 0,
    "today_fail": 0,
    "only_levels": [
     "困难"
