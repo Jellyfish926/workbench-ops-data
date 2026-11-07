@@ -71,7 +71,7 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-07T20:53:34.842330+00:00",
+ "generated_at": "2026-11-07T20:58:41.859529+00:00",
  "counts": {
   "待处理": 0,
   "执行中": 0,
@@ -92,7 +92,7 @@
   },
   {
    "name": "Claude(中转)",
-   "status": "空闲",
+   "status": "冷却中",
    "running": 0,
    "today_runs": 0,
    "today_ok": 0,
