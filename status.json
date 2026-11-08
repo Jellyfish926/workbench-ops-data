@@ -30,8 +30,8 @@
     ],
     "next_at": "2026-11-10T01:47:00+08:00",
     "business_date": "2026-11-09",
-    "status": "已完成",
-    "task_id": 71,
+    "status": "步骤执行中",
+    "task_id": 75,
     "test_status": "尚未测试",
     "test_task_id": null
    },
@@ -71,10 +71,10 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-08T17:47:10.844372+00:00",
+ "generated_at": "2026-11-08T17:52:18.593913+00:00",
  "counts": {
   "待处理": 0,
-  "执行中": 0,
+  "执行中": 1,
   "会诊中": 0,
   "需你决定": 1,
   "今日完成": 0,
@@ -110,8 +110,8 @@
   },
   {
    "name": "Claude Code",
-   "status": "空闲",
-   "running": 0,
+   "status": "忙碌",
+   "running": 1,
    "today_runs": 0,
    "today_ok": 0,
    "today_fail": 0,
@@ -139,6 +139,67 @@
   }
  ],
  "tasks": [
+  {
+   "id": 75,
+   "title": "每日定时：每日总站自动上架（2026-11-08）",
+   "level": "困难",
+   "status": "步骤执行中",
+   "attempts": 1,
+   "created_at": "2026-11-08T12:47:14",
+   "updated_at": "2026-11-08T12:47:14",
+   "finished_at": null,
+   "summary": null,
+   "path": [
+    {
+     "kind": "step",
+     "ai": "Claude Code",
+     "model": "sonnet",
+     "status": "running",
+     "rejected": false
+    }
+   ],
+   "steps": [
+    {
+     "title": "步骤 1",
+     "ai": "Claude Code",
+     "model": "sonnet",
+     "status": "执行中"
+    }
+   ],
+   "redo_rounds": 0,
+   "detail": {
+    "result": null,
+    "runs": [
+     {
+      "kind": "step",
+      "ai": "Claude Code",
+      "model": "sonnet",
+      "status": "running",
+      "rejected": false,
+      "started_at": "2026-11-08T12:47:14",
+      "ended_at": null,
+      "duration_s": null
+     }
+    ],
+    "events": [
+     {
+      "at": "2026-11-08T12:47:14",
+      "kind": "daily_schedule",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-08T12:47:14",
+      "kind": "step",
+      "label": "流程进度更新"
+     }
+    ],
+    "recovery": {
+     "cycles": 0,
+     "next_at": null,
+     "status": null
+    }
+   }
+  },
   {
    "id": 74,
    "title": "每日定时：每日热词雷达 + 游戏机会表同步（2026-11-08）",
@@ -5922,82 +5983,6 @@
      "status": null
     }
    }
-  },
-  {
-   "id": 35,
-   "title": "每日定时：每日热词雷达 + 游戏机会表同步（2026-10-30）",
-   "level": "困难",
-   "status": "已完成",
-   "attempts": 1,
-   "created_at": "2026-10-29T22:00:10",
-   "updated_at": "2026-10-29T22:30:20",
-   "finished_at": "2026-10-29T22:29:57",
-   "summary": "2026-10-30 的热词雷达和游戏机会表同步做完了，群卡也已发出。但快照有缺口：Steam 的两个新品/最新发售列表没采到。 **采集** - 云端 `radar.yml` 存在，我触发了两次（run 40989175194、40989665761），两次都因同一个问题失败。 - 失败原因是工作流的“提交快照与日报”一步反复报 `cannot pull with rebase: You have unstaged changes`，所以快照没有推上去。这一步失败时整个运行仍显示 success，工作流本身我没改。 - 按规则转本机运行 `hotwords.py`。第一次用了 236 秒，S…",
-   "path": [
-    {
-     "kind": "step",
-     "ai": "Claude Code",
-     "model": "sonnet",
-     "status": "ok",
-     "rejected": false
-    }
-   ],
-   "steps": [
-    {
-     "title": "步骤 1",
-     "ai": "Claude Code",
-     "model": "sonnet",
-     "status": "完成"
-    }
-   ],
-   "redo_rounds": 0,
-   "detail": {
-    "result": "2026-10-30 的热词雷达和游戏机会表同步做完了，群卡也已发出。但快照有缺口：Steam 的两个新品/最新发售列表没采到。\n\n**采集**\n- 云端 `radar.yml` 存在，我触发了两次（run 40989175194、40989665761），两次都因同一个问题失败。\n- 失败原因是工作流的“提交快照与日报”一步反复报 `cannot pull with rebase: You have unstaged changes`，所以快照没有推上去。这一步失败时整个运行仍显示 success，工作流本身我没改。\n- 按规则转本机运行 `hotwords.py`。第一次用了 236 秒，Steam 三个榜都没取到，我丢弃了。第二次用了 604 秒，取到了 Steam 在线榜，得到候选 320、评分 274。\n- 第二次仍缺两个 Steam 新品/最新发售列表（本机代理返回 503），快照里已标为“未获取”。本机没有跑 X、YouTube、Reddit、实时 SERP 的补证。\n- 本机结果已推送，提交 `seo-hotwords a7c0adb`。\n\n**产出核对（远端回读）**\n- `snapshots/2026-10-30.json` 和 `reports/2026-10-30.md` 都已在远端。\n- `runs/2026-10-30-game-sync.json` 的状态是 complete，由 feishu-sync run 40991467695 写入：\n - 游戏主表更新 198、新增 21，回读一致 219。\n - 每日观测写入 299，回读 299/299。\n - 变更日志写入 22，回读 22/22。\n - 已建站标记 1 条，回读一致。\n - 写入失败 0。\n- `roblox:10495391267` 是已有栏目，但主表里没有这一行，所以没新建，回执里已记录。\n\n**群卡**\n- 运行 `bin/radar-card 2026-10-30`，返回 `{\"ok\":true,\"code\":0,\"msg\":\"success\"}`。\n\n**回执**\n- 已保存到 [`memory/coordination/runs/2026-10-30/35-claude.json`]([链接] `cd6aec2`。\n\n数据源缺口主体已完成，按规则记为完成。后续要补的话，需要有人修 `radar.yml` 的提交步骤。\n\n【回执状态】完成\n\n【工作台文件核对】最多扫描2000个文件；发生新增、修改或删除的相对路径：[\"work/bad/2026-10-30.json\", \"work/bad/2026-10-30.md\", \"work/seo-hotwords/.github/workflows/feishu-sync.yml\", \"work/seo-hotwords/.github/workflows/radar.yml\", \"work/seo-hotwords/.gitignore\", \"work/seo-hotwords/README.md\", \"work/seo-hotwords/built-sites.json\", \"work/seo-hotwords/cache/steam-names.json\", \"work/seo-hotwords/enrich.py\", \"work/seo-hotwords/feishu_sync.py\", \"work/seo-hotwords/hotwords.py\", \"work/seo-hotwords/opportunities.py\", \"work/seo-hotwords/reports/2026-09-02.md\", \"work/seo-hotwords/reports/2026-09-03.md\", \"work/seo-hotwords/reports/2026-09-04.md\", \"work/seo-hotwords/reports/2026-09-05.md\", \"work/seo-hotwords/reports/2026-09-06.md\", \"work/seo-hotwords/reports/2026-09-07.md\", \"work/seo-hotwords/reports/2026-09-08.md\", \"work/seo-hotwords/reports/2026-09-10.md\", \"work/seo-hotwords/reports/2026-09-11.md\", \"work/seo-hotwords/reports/2026-09-17.md\", \"work/seo-hotwords/reports/2026-09-18.md\", \"work/seo-hotwords/reports/2026-09-19.md\", \"work/seo-hotwords/reports/2026-09-21.md\", \"work/seo-hotwords/reports/2026-09-22.md\", \"work/seo-hotwords/reports/2026-09-24.md\", \"work/seo-hotwords/reports/2026-09-25.md\", \"work/seo-hotwords/reports/2026-09-26.md\", \"work/seo-hotwords/reports/2026-09-27.md\", \"work/seo-hotwords/reports/2026-09-28.md\", \"work/seo-hotwords/reports/2026-09-29.md\", \"work/seo-hotwords/reports/2026-09-30.md\", \"work/seo-hotwords/reports/2026-10-01.md\", \"work/seo-hotwords/reports/2026-10-02.md\", \"work/seo-hotwords/reports/2026-10-03.md\", \"work/seo-hotwords/reports/2026-10-08.md\", \"work/seo-hotwords/reports/2026-10-09.md\", \"work/seo-hotwords/reports/2026-10-10.md\", \"work/seo-hotwords/reports/2026-10-11.md\", \"work/seo-hotwords/reports/2026-10-12.md\", \"work/seo-hotwords/reports/2026-10-14.md\", \"work/seo-hotwords/reports/2026-10-15.md\", \"work/seo-hotwords/reports/2026-10-16.md\", \"work/seo-hotwords/reports/2026-10-17.md\", \"work/seo-hotwords/reports/2026-10-18.md\", \"work/seo-hotwords/reports/2026-10-19.md\", \"work/seo-hotwords/reports/2026-10-21.md\", \"work/seo-hotwords/reports/2026-10-22.md\", \"work/seo-hotwords/reports/2026-10-23.md\", \"work/seo-hotwords/reports/2026-10-24.md\", \"work/seo-hotwords/reports/2026-10-29.md\", \"work/seo-hotwords/reports/2026-10-30.md\", \"work/seo-hotwords/runs/2026-10-22-game-sync.json\", \"work/seo-hotwords/runs/2026-10-23-game-sync.json\", \"work/seo-hotwords/runs/2026-10-24-game-sync.json\", \"work/seo-hotwords/runs/2026-10-29-game-sync.json\", \"work/seo-hotwords/snapshots/2026-09-02.json\", \"work/seo-hotwords/snapshots/2026-09-03.json\", \"work/seo-hotwords/snapshots/2026-09-04.json\", \"work/seo-hotwords/snapshots/2026-09-05.json\", \"work/seo-hotwords/snapshots/2026-09-06.json\", \"work/seo-hotwords/snapshots/2026-09-07.json\", \"work/seo-hotwords/snapshots/2026-09-08.json\", \"work/seo-hotwords/snapshots/2026-09-10.json\", \"work/seo-hotwords/sn",
-    "runs": [
-     {
-      "kind": "step",
-      "ai": "Claude Code",
-      "model": "sonnet",
-      "status": "ok",
-      "rejected": false,
-      "started_at": "2026-10-29T22:00:10",
-      "ended_at": "2026-10-29T22:29:57",
-      "duration_s": 1787.074
-     }
-    ],
-    "events": [
-     {
-      "at": "2026-10-29T22:00:10",
-      "kind": "daily_schedule",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-10-29T22:00:10",
-      "kind": "step",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-10-29T22:29:57",
-      "kind": "file_audit",
-      "label": "已核对实际文件变更"
-     },
-     {
-      "at": "2026-10-29T22:29:57",
-      "kind": "done",
-      "label": "已完成验收"
-     },
-     {
-      "at": "2026-10-29T22:30:20",
-      "kind": "postcheck",
-      "label": "流程进度更新"
-     }
-    ],
-    "recovery": {
-     "cycles": 0,
-     "next_at": null,
-     "status": null
-    }
-   }
   }
  ],
  "gamesites": {
@@ -6103,17 +6088,18 @@
  },
  "radar": {
   "status": "正常",
-  "checked_at": "2026-11-08T17:40:10.018876+00:00",
-  "last_scan_at": "2026-11-08T17:36:45.047000+00:00",
-  "last_scan_age_min": 3.4,
+  "checked_at": "2026-11-08T17:50:12.962367+00:00",
+  "last_scan_at": "2026-11-08T17:46:44.447000+00:00",
+  "last_scan_age_min": 3.5,
   "venues": 12,
-  "live_venues": 11,
+  "live_venues": 10,
   "down_venues": [
-   "OKX"
+   "OKX",
+   "Hyperliquid"
   ],
   "coins": 1210,
-  "pairs": 1434,
-  "qualified": 6,
+  "pairs": 1345,
+  "qualified": 4,
   "page_url": "radar/"
  },
  "orchestrator": {
