@@ -71,13 +71,13 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-08T04:54:57.736732+00:00",
+ "generated_at": "2026-11-08T05:00:05.564383+00:00",
  "counts": {
   "待处理": 0,
   "执行中": 0,
   "会诊中": 0,
   "需你决定": 1,
-  "今日完成": 3,
+  "今日完成": 0,
   "累计完成": 61
  },
  "providers": [
@@ -112,8 +112,8 @@
    "name": "Claude Code",
    "status": "空闲",
    "running": 0,
-   "today_runs": 5,
-   "today_ok": 5,
+   "today_runs": 0,
+   "today_ok": 0,
    "today_fail": 0,
    "only_levels": [
     "困难"
@@ -6093,14 +6093,14 @@
  },
  "radar": {
   "status": "正常",
-  "checked_at": "2026-11-08T04:45:33.039046+00:00",
-  "last_scan_at": "2026-11-08T04:41:41.864000+00:00",
-  "last_scan_age_min": 3.8,
+  "checked_at": "2026-11-08T04:55:36.200496+00:00",
+  "last_scan_at": "2026-11-08T04:51:41.455000+00:00",
+  "last_scan_age_min": 3.9,
   "venues": 12,
   "live_venues": 12,
   "down_venues": [],
   "coins": 1254,
-  "pairs": 1728,
+  "pairs": 1733,
   "qualified": 5,
   "page_url": "radar/"
  },
