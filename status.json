@@ -71,7 +71,7 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-08T01:45:15.437788+00:00",
+ "generated_at": "2026-11-08T01:52:27.312367+00:00",
  "counts": {
   "待处理": 0,
   "执行中": 0,
@@ -5998,7 +5998,7 @@
   }
  ],
  "gamesites": {
-  "generated_at": "2026-11-08T01:21:22.066120+00:00",
+  "generated_at": "2026-11-08T01:51:44.181427+00:00",
   "scale": {
    "independent_sites": 5,
    "independent_online": 5,
@@ -6080,8 +6080,8 @@
    {
     "id": "liuliang",
     "name": "流量与收录",
-    "status": "步骤执行中",
-    "last_run": "2026-11-07T20:02:36",
+    "status": "已完成",
+    "last_run": "2026-11-07T20:28:53",
     "alert": false,
     "output": "Google 数据截止 11-05",
     "task_id": 73
