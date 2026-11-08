@@ -60,10 +60,10 @@
     "fallbacks": [
      "Claude Code"
     ],
-    "next_at": "2026-11-09T03:17:00+08:00",
-    "business_date": "2026-11-08",
-    "status": "需你决定",
-    "task_id": 72,
+    "next_at": "2026-11-10T03:17:00+08:00",
+    "business_date": "2026-11-09",
+    "status": "步骤执行中",
+    "task_id": 76,
     "test_status": "尚未测试",
     "test_task_id": null
    }
@@ -71,12 +71,12 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-08T19:11:52.480001+00:00",
+ "generated_at": "2026-11-08T19:17:59.376416+00:00",
  "counts": {
   "待处理": 0,
-  "执行中": 0,
+  "执行中": 1,
   "会诊中": 0,
-  "需你决定": 1,
+  "需你决定": 0,
   "今日完成": 1,
   "累计完成": 62
  },
@@ -110,8 +110,8 @@
   },
   {
    "name": "Claude Code",
-   "status": "空闲",
-   "running": 0,
+   "status": "忙碌",
+   "running": 1,
    "today_runs": 1,
    "today_ok": 1,
    "today_fail": 0,
@@ -139,6 +139,67 @@
   }
  ],
  "tasks": [
+  {
+   "id": 76,
+   "title": "每日定时：每日工作记忆备份到 GitHub（2026-11-08）",
+   "level": "困难",
+   "status": "步骤执行中",
+   "attempts": 1,
+   "created_at": "2026-11-08T14:17:10",
+   "updated_at": "2026-11-08T14:17:10",
+   "finished_at": null,
+   "summary": null,
+   "path": [
+    {
+     "kind": "step",
+     "ai": "Claude Code",
+     "model": "sonnet",
+     "status": "running",
+     "rejected": false
+    }
+   ],
+   "steps": [
+    {
+     "title": "步骤 1",
+     "ai": "Claude Code",
+     "model": "sonnet",
+     "status": "执行中"
+    }
+   ],
+   "redo_rounds": 0,
+   "detail": {
+    "result": null,
+    "runs": [
+     {
+      "kind": "step",
+      "ai": "Claude Code",
+      "model": "sonnet",
+      "status": "running",
+      "rejected": false,
+      "started_at": "2026-11-08T14:17:10",
+      "ended_at": null,
+      "duration_s": null
+     }
+    ],
+    "events": [
+     {
+      "at": "2026-11-08T14:17:10",
+      "kind": "daily_schedule",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-08T14:17:10",
+      "kind": "step",
+      "label": "流程进度更新"
+     }
+    ],
+    "recovery": {
+     "cycles": 0,
+     "next_at": null,
+     "status": null
+    }
+   }
+  },
   {
    "id": 75,
    "title": "每日定时：每日总站自动上架（2026-11-08）",
@@ -396,11 +457,11 @@
    "id": 72,
    "title": "每日定时：每日工作记忆备份到 GitHub（2026-11-07）",
    "level": "困难",
-   "status": "需你决定",
+   "status": "已放弃",
    "attempts": 2,
    "created_at": "2026-11-07T14:17:13",
    "updated_at": "2026-11-07T14:22:14",
-   "finished_at": null,
+   "finished_at": "2026-11-08T14:17:10",
    "summary": null,
    "path": [
     {
@@ -494,6 +555,16 @@
      },
      {
       "at": "2026-11-07T14:22:14",
+      "kind": "postcheck",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-08T14:17:10",
+      "kind": "superseded",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-08T14:17:11",
       "kind": "postcheck",
       "label": "流程进度更新"
      }
@@ -5728,283 +5799,6 @@
       "at": "2026-10-30T15:21:14",
       "kind": "cleanup",
       "label": "流程进度更新"
-     }
-    ],
-    "recovery": {
-     "cycles": 0,
-     "next_at": null,
-     "status": null
-    }
-   }
-  },
-  {
-   "id": 36,
-   "title": "热词雷达补齐未获取数据：修云端提交失败 + enrich 接入 Tavily",
-   "level": "困难",
-   "status": "已完成",
-   "attempts": 5,
-   "created_at": "2026-10-29T22:54:20",
-   "updated_at": "2026-10-29T23:08:47",
-   "finished_at": "2026-10-29T23:08:47",
-   "summary": "已完成：找到了热词雷达在云端存不下当天数据的原因，已经修好，并推送到 main（提交 abb29dc、be69586，正常推送，没有强推）。还加上了 Tavily 搜索：缺少 SerpAPI、YouTube、Reddit 的密钥时，用它来补搜索结果、视频和帖子这几类证据。修好后在云端跑了一次测速，顺利跑完，补抓的 Steam 列表这次都拿到了。 还没完成：Tavily 现在还用不上，要等工作流补丁打上、密钥配好（Tavily 待工作流补丁和密钥）。修好的保存步骤还没在云端正式跑过，因为测速模式会跳过这一步，要等下一次正式运行才能确认。10-30 当天缺的数据没有补跑，这次的任务清单里没有这一项…",
-   "path": [
-    {
-     "kind": "plan",
-     "ai": "Claude Code",
-     "model": "opus",
-     "status": "ok",
-     "rejected": false
-    },
-    {
-     "kind": "step",
-     "ai": "Claude Code",
-     "model": "opus",
-     "status": "ok",
-     "rejected": false
-    },
-    {
-     "kind": "step",
-     "ai": "Claude Code",
-     "model": "opus",
-     "status": "ok",
-     "rejected": false
-    },
-    {
-     "kind": "step",
-     "ai": "Claude Code",
-     "model": "sonnet",
-     "status": "ok",
-     "rejected": false
-    },
-    {
-     "kind": "step",
-     "ai": "DeepSeek",
-     "model": "deepseek-flash",
-     "status": "ok",
-     "rejected": false
-    },
-    {
-     "kind": "step",
-     "ai": "Claude Code",
-     "model": "opus",
-     "status": "ok",
-     "rejected": false
-    },
-    {
-     "kind": "synthesize",
-     "ai": "Claude Code",
-     "model": "opus",
-     "status": "ok",
-     "rejected": false
-    }
-   ],
-   "steps": [
-    {
-     "title": "步骤 1",
-     "ai": "Claude Code",
-     "model": "opus",
-     "status": "完成"
-    },
-    {
-     "title": "步骤 2",
-     "ai": "Claude Code",
-     "model": "opus",
-     "status": "完成"
-    },
-    {
-     "title": "步骤 3",
-     "ai": "Claude Code",
-     "model": "sonnet",
-     "status": "完成"
-    },
-    {
-     "title": "步骤 4",
-     "ai": "DeepSeek",
-     "model": "deepseek-flash",
-     "status": "完成"
-    },
-    {
-     "title": "步骤 5",
-     "ai": "Claude Code",
-     "model": "opus",
-     "status": "完成"
-    }
-   ],
-   "redo_rounds": 0,
-   "detail": {
-    "result": "已完成：找到了热词雷达在云端存不下当天数据的原因，已经修好，并推送到 main（提交 abb29dc、be69586，正常推送，没有强推）。还加上了 Tavily 搜索：缺少 SerpAPI、YouTube、Reddit 的密钥时，用它来补搜索结果、视频和帖子这几类证据。修好后在云端跑了一次测速，顺利跑完，补抓的 Steam 列表这次都拿到了。\n还没完成：Tavily 现在还用不上，要等工作流补丁打上、密钥配好（Tavily 待工作流补丁和密钥）。修好的保存步骤还没在云端正式跑过，因为测速模式会跳过这一步，要等下一次正式运行才能确认。10-30 当天缺的数据没有补跑，这次的任务清单里没有这一项。GSC：待站主授权。\n需要你做：在 seo-hotwords 仓库的 Settings → Secrets 里新增一个名为 TAVILY_API_KEY 的密钥，填你的 Tavily 搜索 key。工作流补丁由 Claude 在网页上改，你不用动。\n\n技术详情\n\n1）云端保存失败的原因和修复\n- 已验证：run 40989175194 和 40989665761 的「提交快照与日报」一步都只执行了 git add snapshots reports，之后连续三次报 cannot pull with rebase: You have unstaged changes。40989175194 的日志里还有一行 Cache restored from key: radar-cache-40832544911。\n- 根因（推断）：仓库里跟踪着 Steam 名称缓存 cache/steam-names.json。云端每次运行时，缓存恢复步骤会覆盖它，hotwords.py 采集完又会重写它，但提交时从来没把它加进去。日志里没有 git status 输出，所以是哪个文件是从代码推断出来的。执行方说在本地复现过：修复前的代码出现了同样的报错，修复后的代码能推上去。\n- 修复（提交 abb29dc）：名称缓存挪成只读种子 seed/steam-names.json（3935 条）；运行时的缓存只写到 cache/，cache/ 已加进 .gitignore；补了对应测试。工作流文件没有改：执行方说工作流目录最近一次提交是 88c8722，这次两个提交都没碰工作流。\n- 另外看到：feishu-sync.yml 的 pull 也没加 --autostash，这次没要求改，所以没动。\n\n2）Tavily 接入（提交 be69586）\n- 缺 SERPAPI_KEY 时，用 Tavily 搜 serp_query，作为实时搜索结果证据。缺 YouTube 或 Reddit 的密钥时，用 Tavily 分别只搜 youtube.com、reddit.com。来源写成「Tavily 搜索（替补 …）」，并注明这不是原数据源的口径。\n- 规则都遵守了（独立复核读过代码确认）：每个候选的每个数据源最多调用 1 次；原数据源失败时不改用 Tavily；失败照实记录；不改分数；密钥只从环境变量读、只放在请求头里；TAVILY_API_KEY 已加进脱敏列表；integrations 文字照实写。\n- 测试：新增 11 个离线测试，全部用假 HTTP。执行方说 python3 -m unittest 跑了 65 个，全部通过。远端 main 指向 be69586。云端日志里出现了新代码才有的「Tavily 替补也未接入」字样，这说明新代码确实已经推上去并在云端运行了。\n\n3）云端测速（run 40995083180，test=true，结论 success）\n- 采集用时 194 秒，补证约 8 秒。这是测速口径（只跑前 5 名、不写入），和本机正式全量跑的 236 秒、604 秒不能直接比快慢。\n- 「未获取」11 条，按日志里的 grep 计数。同样因为是测速口径，不能和 10-30 本机正式运行的 218 条直接对比；正式运行能少多少，要看下一次正式运行。日志里没有逐条内容，没法拆成详情、评论、公告各几条。\n- 采集到的列表：Steam 在线榜、新品、最新发售各 100 条（上次缺的两个列表这次都有）；Roblox 五个榜分别 95、90、98、87、88 条；趋势 10 条。\n- 补证据各数据源的调用 / 成功次数：X 9/9（其中 3 款返回 0 条）；SerpAPI 0/0、YouTube 0/0、Reddit 0/0，都是缺密钥；Tavily 0/0，Tavily 待工作流补丁和密钥；GSC 0/0。日志里没有明文密钥。\n\n4）GSC：待站主授权。\n\n工作流补丁原文（由 Claude 在网页上改 .github/workflows/radar.yml；执行方说已在本地用 git apply --check 检查过，能干净打上，网页上手工改时请对照前后几行）：\n```diff\n--- a/.github/workflows/radar.yml\n+++ b/.github/workflows/radar.yml\n@@ -42,6 +42,8 @@\n REDDIT_CLIENT_SECRET: ${{ secrets.REDDIT_CLIENT_SECRET }}\n SERPAPI_KEY: ${{ secrets.SERPAPI_KEY }}\n GSC_SERVICE_ACCOUNT_JSON: ${{ secrets.GSC_SERVICE_ACCOUNT_JSON }}\n+ # Tavily：缺 SERPAPI_KEY / YOUTUBE_API_KEY / REDDIT_* 时的替补；没配这个密钥就照旧写「未接入」\n+ TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}\n ENRICH_MAX_ITEMS: '13'\n steps:\n - uses: actions/checkout@v4\n@@ -110,7 +112,12 @@\n git add snapshots reports\n git diff --cached --quiet && { echo \"没有新产物\"; exit 0; }\n git commit -q -m \"radar: ${{ steps.d.outputs.date }} (actions)\"\n- for i in 1 2 3; do git pull -q --rebase origin main && git push -q origin HEAD:main && break; sleep 5; done\n+ pushed=0\n+ for i in 1 2 3; do\n+ git pull -q --rebase --autostash origin main && git push -q origin HEAD:main && { pushed=1; break; }\n+ sleep 5\n+ done\n+ [ \"$pushed\" = 1 ] || { echo \"::error::快照与日报三次都没推上去\"; git status --porcelain; exit 1; }\n - name: 触发飞书同步\n if: steps.d.outputs.exists == '0' && github.event.inputs.test != 'true'\n env:\n```\n\n证据说明：提交号、测试结果、推送结果和云端日志里的数字，都来自执行方的回执，这次验收没有工具调用记录可以直接核对。不过云端运行出现了新代码的文字，各步骤之间的说法也对得上。独立复核只读了代码，确认 Tavily 的规则和脱敏都写到位了。Tavily 的真实返回格式和计费还没实测。\n\n未完成项：Tavily 实际生效（等补丁和密钥）；保存步骤的修复在云端正式运行中实测；11 条「未获取」的分类；10-30 当天缺的数据补跑（不在这次的任务清单里）；GSC 待站主授权。\n\n【回执状态】部分完成：修复和 Tavily 代码已推送（abb29dc、be69586），云端测速 run 40995083180 成功；Tavily 待工作流补丁和密钥；保存步骤待正式运行确认；GSC 待站主授权。",
-    "runs": [
-     {
-      "kind": "plan",
-      "ai": "Claude Code",
-      "model": "opus",
-      "status": "ok",
-      "rejected": false,
-      "started_at": "2026-10-29T22:54:20",
-      "ended_at": "2026-10-29T22:55:08",
-      "duration_s": 48.293
-     },
-     {
-      "kind": "step",
-      "ai": "Claude Code",
-      "model": "opus",
-      "status": "ok",
-      "rejected": false,
-      "started_at": "2026-10-29T22:55:08",
-      "ended_at": "2026-10-29T22:58:36",
-      "duration_s": 207.601
-     },
-     {
-      "kind": "step",
-      "ai": "Claude Code",
-      "model": "opus",
-      "status": "ok",
-      "rejected": false,
-      "started_at": "2026-10-29T22:58:36",
-      "ended_at": "2026-10-29T23:02:00",
-      "duration_s": 204.62
-     },
-     {
-      "kind": "step",
-      "ai": "Claude Code",
-      "model": "sonnet",
-      "status": "ok",
-      "rejected": false,
-      "started_at": "2026-10-29T23:02:00",
-      "ended_at": "2026-10-29T23:06:19",
-      "duration_s": 258.917
-     },
-     {
-      "kind": "step",
-      "ai": "DeepSeek",
-      "model": "deepseek-flash",
-      "status": "ok",
-      "rejected": false,
-      "started_at": "2026-10-29T23:06:19",
-      "ended_at": "2026-10-29T23:07:25",
-      "duration_s": 65.736
-     },
-     {
-      "kind": "step",
-      "ai": "Claude Code",
-      "model": "opus",
-      "status": "ok",
-      "rejected": false,
-      "started_at": "2026-10-29T23:07:25",
-      "ended_at": "2026-10-29T23:08:08",
-      "duration_s": 42.64
-     },
-     {
-      "kind": "synthesize",
-      "ai": "Claude Code",
-      "model": "opus",
-      "status": "ok",
-      "rejected": false,
-      "started_at": "2026-10-29T23:08:08",
-      "ended_at": "2026-10-29T23:08:47",
-      "duration_s": 39.739
-     }
-    ],
-    "events": [
-     {
-      "at": "2026-10-29T22:54:20",
-      "kind": "submit",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-10-29T22:54:20",
-      "kind": "plan",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-10-29T22:55:08",
-      "kind": "step",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-10-29T22:58:36",
-      "kind": "file_audit",
-      "label": "已核对实际文件变更"
-     },
-     {
-      "at": "2026-10-29T22:58:36",
-      "kind": "step",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-10-29T23:02:00",
-      "kind": "file_audit",
-      "label": "已核对实际文件变更"
-     },
-     {
-      "at": "2026-10-29T23:02:00",
-      "kind": "step",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-10-29T23:06:19",
-      "kind": "step",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-10-29T23:06:21",
-      "kind": "tool",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-10-29T23:06:22",
-      "kind": "tool",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-10-29T23:06:22",
-      "kind": "tool",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-10-29T23:06:24",
-      "kind": "tool",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-10-29T23:06:26",
-      "kind": "tool",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-10-29T23:06:27",
-      "kind": "tool",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-10-29T23:06:29",
-      "kind": "tool",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-10-29T23:06:30",
-      "kind": "tool",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-10-29T23:06:35",
-      "kind": "tool",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-10-29T23:07:25",
-      "kind": "step",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-10-29T23:08:08",
-      "kind": "synthesize",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-10-29T23:08:47",
-      "kind": "done",
-      "label": "已完成验收"
      }
     ],
     "recovery": {
