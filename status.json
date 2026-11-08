@@ -46,7 +46,7 @@
     ],
     "next_at": "2026-11-09T10:00:00+08:00",
     "business_date": "2026-11-09",
-    "status": "步骤执行中",
+    "status": "已完成",
     "task_id": 74,
     "test_status": "尚未测试",
     "test_task_id": null
@@ -71,14 +71,14 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-08T02:07:48.759894+00:00",
+ "generated_at": "2026-11-08T02:12:56.419966+00:00",
  "counts": {
   "待处理": 0,
-  "执行中": 1,
+  "执行中": 0,
   "会诊中": 0,
   "需你决定": 1,
-  "今日完成": 2,
-  "累计完成": 60
+  "今日完成": 3,
+  "累计完成": 61
  },
  "providers": [
   {
@@ -110,10 +110,10 @@
   },
   {
    "name": "Claude Code",
-   "status": "忙碌",
-   "running": 1,
-   "today_runs": 4,
-   "today_ok": 4,
+   "status": "空闲",
+   "running": 0,
+   "today_runs": 5,
+   "today_ok": 5,
    "today_fail": 0,
    "only_levels": [
     "困难"
@@ -143,18 +143,18 @@
    "id": 74,
    "title": "每日定时：每日热词雷达 + 游戏机会表同步（2026-11-08）",
    "level": "困难",
-   "status": "步骤执行中",
+   "status": "已完成",
    "attempts": 1,
    "created_at": "2026-11-07T21:00:06",
-   "updated_at": "2026-11-07T21:00:06",
-   "finished_at": null,
-   "summary": null,
+   "updated_at": "2026-11-07T21:12:44",
+   "finished_at": "2026-11-07T21:12:35",
+   "summary": "2026-11-08 的热词雷达和游戏机会表同步已完成。云端一次通过，没有在本机运行 `hotwords.py`。 **采集与同步** - 触发前先核对过：`radar.yml` 存在，当天快照、日报、回执都是 404，也没有别的 run 在跑，所以没有重复。 - radar run `42436694171` 成功，用时约 5 分钟（02:00:59Z 触发）。 - 随后 feishu-sync run `42437071667` 成功，退出码 0。 **产出核对（从 seo-hotwords 远端读回）** - `snapshots/2026-11-08.json` 已入仓，1,099,3…",
    "path": [
     {
      "kind": "step",
      "ai": "Claude Code",
      "model": "sonnet",
-     "status": "running",
+     "status": "ok",
      "rejected": false
     }
    ],
@@ -163,22 +163,22 @@
      "title": "步骤 1",
      "ai": "Claude Code",
      "model": "sonnet",
-     "status": "执行中"
+     "status": "完成"
     }
    ],
    "redo_rounds": 0,
    "detail": {
-    "result": null,
+    "result": "2026-11-08 的热词雷达和游戏机会表同步已完成。云端一次通过，没有在本机运行 `hotwords.py`。\n\n**采集与同步**\n- 触发前先核对过：`radar.yml` 存在，当天快照、日报、回执都是 404，也没有别的 run 在跑，所以没有重复。\n- radar run `42436694171` 成功，用时约 5 分钟（02:00:59Z 触发）。\n- 随后 feishu-sync run `42437071667` 成功，退出码 0。\n\n**产出核对（从 seo-hotwords 远端读回）**\n- `snapshots/2026-11-08.json` 已入仓，1,099,366 字节。\n - 生成时间 2026-11-08T02:04:42Z，`replay=false`。\n - 候选 483 个，评分 373 个，关注榜评分 42 个。\n - 来源 5 个。\n - 采集记录里只有 Steam 详情（请求 250 条）和 Steam 资讯（20/20 成功），没有各榜单明细。我没有逐个榜单核对有没有缺口。\n- `reports/2026-11-08.md` 已入仓，16,630 字节。\n- `runs/2026-11-08-game-sync.json` 的 `status` 为 `complete`，`errors` 为空，`tables_verified=true`，完成于 10:11:59（北京时间）。\n - 游戏主表：更新 255 行，新增 8 行，回读一致 263。\n - 每日观测：写入 415 行，回读一致 415/415，失败 0。\n - 已建站标记：2 个，回读一致 2。这两个是 Steal a Superpower 和 Break Glass If Bored。\n - 变更日志：写入 10 行，回读一致 10/10。\n- 回执里有两个可选字段缺失：「快照链接」和「运行ID/run_id」。这两项不影响同步结果。\n\n**未做的事**\n- 群卡：按规则由工作台核验快照后自己发，我没有运行 `bin/radar-card` 或 `bin/feishu-card`。\n- 飞书表没有直接写，只由 feishu-sync 写入。\n- 没有建站、上架、提审。\n- 没有单独保存回执文件，回执就是这份输出。\n\n【回执状态】完成\n\n【工作台文件核对】最多扫描2000个文件；发生新增、修改或删除的相对路径：[]",
     "runs": [
      {
       "kind": "step",
       "ai": "Claude Code",
       "model": "sonnet",
-      "status": "running",
+      "status": "ok",
       "rejected": false,
       "started_at": "2026-11-07T21:00:06",
-      "ended_at": null,
-      "duration_s": null
+      "ended_at": "2026-11-07T21:12:35",
+      "duration_s": 748.389
      }
     ],
     "events": [
@@ -191,6 +191,16 @@
       "at": "2026-11-07T21:00:06",
       "kind": "step",
       "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-07T21:12:35",
+      "kind": "file_audit",
+      "label": "已核对实际文件变更"
+     },
+     {
+      "at": "2026-11-07T21:12:35",
+      "kind": "done",
+      "label": "已完成验收"
      }
     ],
     "recovery": {
