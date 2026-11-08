@@ -71,7 +71,7 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-08T01:16:34.582250+00:00",
+ "generated_at": "2026-11-08T01:21:41.240382+00:00",
  "counts": {
   "待处理": 0,
   "执行中": 1,
@@ -5978,7 +5978,7 @@
   }
  ],
  "gamesites": {
-  "generated_at": "2026-11-08T00:51:00.523390+00:00",
+  "generated_at": "2026-11-08T01:21:22.066120+00:00",
   "scale": {
    "independent_sites": 5,
    "independent_online": 5,
@@ -5987,45 +5987,45 @@
   },
   "impressions": {
    "status": "ok",
-   "data_end": "2026-11-04",
+   "data_end": "2026-11-05",
    "latest_day": {
     "start": null,
     "end": null,
-    "date": "2026-11-04",
-    "impressions": 2
+    "date": "2026-11-05",
+    "impressions": 5
    },
    "month_to_date": {
     "start": "2026-11-01",
-    "end": "2026-11-04",
+    "end": "2026-11-05",
     "date": null,
-    "impressions": 9
+    "impressions": 14
    },
    "last_7": {
     "current": {
-     "start": "2026-10-29",
-     "end": "2026-11-04",
+     "start": "2026-10-30",
+     "end": "2026-11-05",
      "date": null,
-     "impressions": 18
+     "impressions": 19
     },
     "previous": {
-     "start": "2026-10-22",
-     "end": "2026-10-28",
+     "start": "2026-10-23",
+     "end": "2026-10-29",
      "date": null,
-     "impressions": 25
+     "impressions": 26
     }
    },
    "last_28": {
     "current": {
-     "start": "2026-10-08",
-     "end": "2026-11-04",
+     "start": "2026-10-09",
+     "end": "2026-11-05",
      "date": null,
-     "impressions": 4977
+     "impressions": 2827
     },
     "previous": {
-     "start": "2026-09-10",
-     "end": "2026-10-07",
+     "start": "2026-09-11",
+     "end": "2026-10-08",
      "date": null,
-     "impressions": 31687
+     "impressions": 33842
     }
    }
   },
@@ -6060,11 +6060,11 @@
    {
     "id": "liuliang",
     "name": "流量与收录",
-    "status": "已完成",
-    "last_run": "2026-11-06T20:44:02",
+    "status": "步骤执行中",
+    "last_run": "2026-11-07T20:02:36",
     "alert": false,
-    "output": "Google 数据截止 11-04",
-    "task_id": 69
+    "output": "Google 数据截止 11-05",
+    "task_id": 73
    },
    {
     "id": "tinggeng",
