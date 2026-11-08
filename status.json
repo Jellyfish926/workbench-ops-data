@@ -71,7 +71,7 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-08T20:36:31.210634+00:00",
+ "generated_at": "2026-11-08T20:41:38.319182+00:00",
  "counts": {
   "待处理": 0,
   "执行中": 0,
@@ -92,7 +92,7 @@
   },
   {
    "name": "Claude(中转)",
-   "status": "空闲",
+   "status": "冷却中",
    "running": 0,
    "today_runs": 0,
    "today_ok": 0,
@@ -5830,7 +5830,7 @@
   }
  ],
  "gamesites": {
-  "generated_at": "2026-11-08T20:06:41.267265+00:00",
+  "generated_at": "2026-11-08T20:37:02.466852+00:00",
   "scale": {
    "independent_sites": 5,
    "independent_online": 5,
@@ -5932,9 +5932,9 @@
  },
  "radar": {
   "status": "正常",
-  "checked_at": "2026-11-08T20:31:05.411153+00:00",
-  "last_scan_at": "2026-11-08T20:26:44.550000+00:00",
-  "last_scan_age_min": 4.3,
+  "checked_at": "2026-11-08T20:41:08.975662+00:00",
+  "last_scan_at": "2026-11-08T20:36:45.052000+00:00",
+  "last_scan_age_min": 4.4,
   "venues": 12,
   "live_venues": 11,
   "down_venues": [
