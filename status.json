@@ -28,8 +28,8 @@
     "fallbacks": [
      "Claude Code"
     ],
-    "next_at": "2026-11-09T01:47:00+08:00",
-    "business_date": "2026-11-08",
+    "next_at": "2026-11-10T01:47:00+08:00",
+    "business_date": "2026-11-09",
     "status": "已完成",
     "task_id": 71,
     "test_status": "尚未测试",
@@ -71,7 +71,7 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-08T17:41:03.980070+00:00",
+ "generated_at": "2026-11-08T17:47:10.844372+00:00",
  "counts": {
   "待处理": 0,
   "执行中": 0,
