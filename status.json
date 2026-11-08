@@ -71,7 +71,7 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-08T07:46:59.755391+00:00",
+ "generated_at": "2026-11-08T07:57:08.059445+00:00",
  "counts": {
   "待处理": 0,
   "执行中": 0,
@@ -5996,7 +5996,7 @@
   }
  ],
  "gamesites": {
-  "generated_at": "2026-11-08T07:25:59.130106+00:00",
+  "generated_at": "2026-11-08T07:56:21.954592+00:00",
   "scale": {
    "independent_sites": 5,
    "independent_online": 5,
@@ -6098,17 +6098,15 @@
  },
  "radar": {
   "status": "正常",
-  "checked_at": "2026-11-08T07:46:36.150380+00:00",
-  "last_scan_at": "2026-11-08T07:41:41.651000+00:00",
+  "checked_at": "2026-11-08T07:56:40.759404+00:00",
+  "last_scan_at": "2026-11-08T07:51:42.551000+00:00",
   "last_scan_age_min": 4.9,
   "venues": 12,
-  "live_venues": 11,
-  "down_venues": [
-   "Hyperliquid"
-  ],
+  "live_venues": 12,
+  "down_venues": [],
   "coins": 1254,
-  "pairs": 1667,
-  "qualified": 2,
+  "pairs": 1729,
+  "qualified": 1,
   "page_url": "radar/"
  },
  "orchestrator": {
