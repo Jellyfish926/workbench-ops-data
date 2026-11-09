@@ -44,10 +44,10 @@
     "fallbacks": [
      "Claude Code"
     ],
-    "next_at": "2026-11-09T10:00:00+08:00",
-    "business_date": "2026-11-09",
-    "status": "已完成",
-    "task_id": 74,
+    "next_at": "2026-11-10T10:00:00+08:00",
+    "business_date": "2026-11-10",
+    "status": "步骤执行中",
+    "task_id": 78,
     "test_status": "尚未测试",
     "test_task_id": null
    },
@@ -71,10 +71,10 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-09T01:55:44.098828+00:00",
+ "generated_at": "2026-11-09T02:00:50.629456+00:00",
  "counts": {
   "待处理": 0,
-  "执行中": 0,
+  "执行中": 1,
   "会诊中": 0,
   "需你决定": 0,
   "今日完成": 3,
@@ -110,8 +110,8 @@
   },
   {
    "name": "Claude Code",
-   "status": "空闲",
-   "running": 0,
+   "status": "忙碌",
+   "running": 1,
    "today_runs": 3,
    "today_ok": 3,
    "today_fail": 0,
@@ -139,6 +139,67 @@
   }
  ],
  "tasks": [
+  {
+   "id": 78,
+   "title": "每日定时：每日热词雷达 + 游戏机会表同步（2026-11-09）",
+   "level": "困难",
+   "status": "步骤执行中",
+   "attempts": 1,
+   "created_at": "2026-11-08T21:00:01",
+   "updated_at": "2026-11-08T21:00:02",
+   "finished_at": null,
+   "summary": null,
+   "path": [
+    {
+     "kind": "step",
+     "ai": "Claude Code",
+     "model": "sonnet",
+     "status": "running",
+     "rejected": false
+    }
+   ],
+   "steps": [
+    {
+     "title": "步骤 1",
+     "ai": "Claude Code",
+     "model": "sonnet",
+     "status": "执行中"
+    }
+   ],
+   "redo_rounds": 0,
+   "detail": {
+    "result": null,
+    "runs": [
+     {
+      "kind": "step",
+      "ai": "Claude Code",
+      "model": "sonnet",
+      "status": "running",
+      "rejected": false,
+      "started_at": "2026-11-08T21:00:02",
+      "ended_at": null,
+      "duration_s": null
+     }
+    ],
+    "events": [
+     {
+      "at": "2026-11-08T21:00:01",
+      "kind": "daily_schedule",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-08T21:00:02",
+      "kind": "step",
+      "label": "流程进度更新"
+     }
+    ],
+    "recovery": {
+     "cycles": 0,
+     "next_at": null,
+     "status": null
+    }
+   }
+  },
   {
    "id": 77,
    "title": "每日定时：LootWiki 每日巡检与自查自纠（2026-11-09）",
@@ -5470,179 +5531,6 @@
      "status": null
     }
    }
-  },
-  {
-   "id": 38,
-   "title": "每日定时：每日总站自动上架（2026-10-30）",
-   "level": "困难",
-   "status": "已完成",
-   "attempts": 2,
-   "created_at": "2026-10-30T13:47:09",
-   "updated_at": "2026-11-05T21:24:15",
-   "finished_at": "2026-10-30T14:17:27",
-   "summary": "两款已上线：Realistic Car Destruction 和 Teach Your Sister How To Drive，每款 10 页，都已在 lootwiki.com 逐页核对。飞书写表和浏览器截图按规则交给 feishu-sync 和工作台，本任务没做。 **选款** - 雷达快照 2026-10-30 完整；同业务日没有其他执行者的产出，当天额度 2 款全部用完。 - 淘汰的候选： - Anime Eyes 借用动漫 IP。 - Ragdoll Playground 同名抢注站有 5 个。 - Farming Incremental 是纯挂机玩法。 - Say Cheese 官…",
-   "path": [
-    {
-     "kind": "step",
-     "ai": "GPT",
-     "model": "gpt-6.1-sol",
-     "status": "rate_limited",
-     "rejected": false
-    },
-    {
-     "kind": "step",
-     "ai": "Claude Code",
-     "model": "sonnet",
-     "status": "ok",
-     "rejected": false
-    }
-   ],
-   "steps": [
-    {
-     "title": "步骤 1",
-     "ai": "Claude Code",
-     "model": "sonnet",
-     "status": "完成"
-    }
-   ],
-   "redo_rounds": 0,
-   "detail": {
-    "result": "两款已上线：Realistic Car Destruction 和 Teach Your Sister How To Drive，每款 10 页，都已在 lootwiki.com 逐页核对。飞书写表和浏览器截图按规则交给 feishu-sync 和工作台，本任务没做。\n\n**选款**\n- 雷达快照 2026-10-30 完整；同业务日没有其他执行者的产出，当天额度 2 款全部用完。\n- 淘汰的候选：\n - Anime Eyes 借用动漫 IP。\n - Ragdoll Playground 同名抢注站有 5 个。\n - Farming Incremental 是纯挂机玩法。\n - Say Cheese 官方数据太少（没有通行证、徽章、兑换码和活动），写不出有来源的 8 页。\n- 通过的两款同为 60 分，按在线人数排序。抢注站数量都是 0，从头复测一次结果相同。\n- R.E.P.O. 没核：本机访问 Steam 接口超时。\n- Fandom 接口本机无响应，记为未获取。\n- 两款都不建兑换码页，因为官方描述和更新说明里都没有码。\n\n**构建与部署**\n- 所有内容只用 Roblox 官方接口数据，读取于 30 日 UTC 17:5x。没找到可读的社区 wiki，页面里据实写明，没有仅来自社区的说法。\n- 上线前把页面里的 116 个价格单元格对着实时接口重取的数据逐项比对，没有真实不符；顺手修了 4 处引文拼接或转述不准的地方。\n- lootlore 提交 `8c969e2` 被 Vercel 拦截，因为作者邮箱用了 `[邮箱]`，上次 Farmstead 也踩过这个坑。补了一个空提交 `8cf8f38`，改用 noreply 身份后 Vercel 部署成功。\n- 两个提交的 GitHub 门禁都是 success，本地也复现了 CI 的全部检查。\n\n**线上验证（正式域名 [链接]\n- 两栏目共 20 页都返回 200，sitemap 含这 20 条，未建页返回 404，首页已链到两个新栏目。\n- 每页 title 50–57 字符、description 147–160 字符，canonical 自指、单 H1、JSON-LD 可解析、og:image 200、alt 非空，GA4 只有 `G-NPTYZWM9KD`，无 Adsterra。\n- 特征串（Ultimate Pass、Volt Roadster、Black Hole、Faster Cars）在线上页面里都能找到。\n\n**交接与回读**\n- `seo-hotwords` 的 `built-sites.json` 已登记两款，提交 `8a9f66d`，远端回读确认。\n- 运行记录 `.md`、交接 `.json` 和作者邮箱的新教训已推送到 `claude-skills`，提交 `295b4e2`，远端回读确认（published 2、queued 22、`feishu=\"delegated-to-feishu-sync\"`）。\n- 回执副本保存在 `data/workspace/task-38/handoff/`。\n\n**缺口**\n- 本环境没有子代理工具，独立验收是我自己重跑硬门并用接口数据回核，不是另派的独立验收。已写进运行记录。\n- 排队 22 项沿用 10-29 的记录，今天没新增也没处理旧队列。\n- 没有发飞书卡片：结果正常，按规则由第二天雷达卡带出。\n\n【回执状态】完成\n\n这条通知只是之前那个 `gh run watch` 后台命令超时被停掉了，不影响结果。它盯的是第一个提交 `8c969e2` 的门禁，我已经另外查过：`8c969e2` 和补空提交 `8cf8f38` 的 gates 都是 success，`8cf8f38` 的 Vercel 部署也成功。\n\n没有新的待办，上一条回执结论不变。\n\n【回执状态】完成\n\n【工作台文件核对】最多扫描2000个文件；发生新增、修改或删除的相对路径：[\"claude-skills/automations/README.md\", \"claude-skills/automations/SECRETS.md\", \"claude-skills/automations/archived/README.md\", \"claude-skills/automations/archived/autonomous-relay-check.md\", \"claude-skills/automations/archived/daily-site-report.md\", \"claude-skills/automations/archived/evening-autonomous-work.md\", \"claude-skills/automations/archived/github-token-check.md\", \"claude-skills/automations/archived/supervisor.md\", \"claude-skills/automations/archived/weekend-autonomous-work.md\", \"claude-skills/automations/archived/weekend-work-games.md\", \"claude-skills/automations/fupan/2026-10-09/fleet-2026-10-09-full.md\", \"claude-skills/automations/fupan/2026-10-09/lootwiki-d14-2026-10-09-full.md\", \"claude-skills/automations/fupan/2026-10-09/raw.json\", \"claude-skills/automations/fupan/2026-10-09/raw/adstxt-beastofreincarnation.online.txt\", \"claude-skills/automations/fupan/2026-10-09/raw/adstxt-dragonsword.site.txt\", \"claude-skills/automations/fupan/2026-10-09/raw/adstxt-lootwiki.com.txt\", \"claude-skills/automations/fupan/2026-10-09/raw/adstxt-sephiriawiki.site.txt\", \"claude-skills/automations/fupan/2026-10-09/raw/adstxt-shiftatmidnightwiki.site.txt\", \"claude-skills/automations/fupan/2026-10-09/raw/adstxt-sirwehaveanorcproblem.store.txt\", \"claude-skills/automations/fupan/2026-10-09/raw/adstxt-slay-the-spire-checklist.vercel.app.txt\", \"claude-skills/automations/fupan/2026-10-09/raw/adstxt-vampire-survivors-checklist.vercel.app.txt\", \"claude-skills/automations/fupan/2026-10-09/raw/deadlinks-beastofreincarnation.online.tsv\", \"claude-skills/automations/fupan/2026-10-09/raw/deadlinks-dragonsword.site.tsv\", \"claude-skills/automations/fupan/2026-10-09/raw/deadlinks-lootwiki.com.tsv\", \"claude-skills/automations/fupan/2026-10-09/raw/deadlinks-sephiriawiki.site.tsv\", \"claude-skills/automations/fupan/2026-10-09/raw/deadlinks-shiftatmidnightwiki.site.tsv\", \"claude-skills/automations/fupan/2026-10-09/raw/deadlinks-sirwehaveanorcproblem.store.tsv\", \"claude-skills/automations/fupan/2026-10-09/raw/deadlinks-slay-the-spire-checklist.vercel.app.tsv\", \"claude-skills/automations/fupan/2026-10-09/raw/deadlinks-vampire-survivors-checklist.vercel.app.tsv\", \"claude-skills/automations/fupan/2026-10-09/raw/gsc-beastofreincarnation.online-pages-prior.tsv\", \"claude-skills/automations/fupan",
-    "runs": [
-     {
-      "kind": "step",
-      "ai": "GPT",
-      "model": "gpt-6.1-sol",
-      "status": "rate_limited",
-      "rejected": false,
-      "started_at": "2026-10-30T13:47:09",
-      "ended_at": "2026-10-30T13:47:17",
-      "duration_s": 7.28
-     },
-     {
-      "kind": "step",
-      "ai": "Claude Code",
-      "model": "sonnet",
-      "status": "ok",
-      "rejected": false,
-      "started_at": "2026-10-30T13:47:17",
-      "ended_at": "2026-10-30T14:17:27",
-      "duration_s": 1809.869
-     }
-    ],
-    "events": [
-     {
-      "at": "2026-10-30T13:47:09",
-      "kind": "daily_schedule",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-10-30T13:47:09",
-      "kind": "step",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-10-30T13:47:17",
-      "kind": "file_audit",
-      "label": "已核对实际文件变更"
-     },
-     {
-      "at": "2026-10-30T13:47:17",
-      "kind": "step_rate_limited",
-      "label": "已遇限流，接续其他可用AI或等待恢复"
-     },
-     {
-      "at": "2026-10-30T13:47:17",
-      "kind": "step",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-10-30T14:17:27",
-      "kind": "file_audit",
-      "label": "已核对实际文件变更"
-     },
-     {
-      "at": "2026-10-30T14:17:27",
-      "kind": "done",
-      "label": "已完成验收"
-     },
-     {
-      "at": "2026-10-30T14:17:42",
-      "kind": "postcheck",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-10-30T14:17:59",
-      "kind": "visual",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-10-30T14:21:53",
-      "kind": "visual",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-10-31T02:21:41",
-      "kind": "cleanup",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-10-31T02:21:41",
-      "kind": "cleanup",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-10-31T02:21:41",
-      "kind": "cleanup",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-04T21:21:51",
-      "kind": "visual",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-04T21:21:59",
-      "kind": "visual",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-04T21:32:16",
-      "kind": "visual",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-04T22:06:22",
-      "kind": "visual",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-04T22:06:25",
-      "kind": "visual",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-04T22:15:19",
-      "kind": "visual",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-05T21:14:12",
-      "kind": "visual",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-05T21:24:15",
-      "kind": "visual",
-      "label": "流程进度更新"
-     }
-    ],
-    "recovery": {
-     "cycles": 0,
-     "next_at": null,
-     "status": null
-    }
-   }
   }
  ],
  "gamesites": {
@@ -5748,15 +5636,18 @@
  },
  "radar": {
   "status": "正常",
-  "checked_at": "2026-11-09T01:50:19.690197+00:00",
-  "last_scan_at": "2026-11-09T01:46:43.747000+00:00",
+  "checked_at": "2026-11-09T02:00:23.129582+00:00",
+  "last_scan_at": "2026-11-09T01:56:44.756000+00:00",
   "last_scan_age_min": 3.6,
   "venues": 12,
-  "live_venues": 12,
-  "down_venues": [],
-  "coins": 1254,
-  "pairs": 1723,
-  "qualified": 7,
+  "live_venues": 10,
+  "down_venues": [
+   "OKX",
+   "Hyperliquid"
+  ],
+  "coins": 1210,
+  "pairs": 1355,
+  "qualified": 3,
   "page_url": "radar/"
  },
  "orchestrator": {
