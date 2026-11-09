@@ -75,7 +75,7 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-09T06:28:14.894680+00:00",
+ "generated_at": "2026-11-09T06:29:28.475369+00:00",
  "counts": {
   "待处理": 0,
   "执行中": 0,
@@ -580,6 +580,21 @@
      {
       "at": "2026-11-09T00:33:04",
       "kind": "chat",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-09T01:28:15",
+      "kind": "cleanup",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-09T01:28:15",
+      "kind": "cleanup",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-09T01:28:15",
+      "kind": "cleanup",
       "label": "流程进度更新"
      }
     ],
@@ -5543,7 +5558,7 @@
   }
  ],
  "gamesites": {
-  "generated_at": "2026-11-09T06:10:17.179638+00:00",
+  "generated_at": "2026-11-09T06:28:35.930300+00:00",
   "scale": {
    "independent_sites": 5,
    "independent_online": 5,
@@ -5645,17 +5660,18 @@
  },
  "radar": {
   "status": "正常",
-  "checked_at": "2026-11-09T06:19:52.706181+00:00",
-  "last_scan_at": "2026-11-09T06:16:45.052000+00:00",
-  "last_scan_age_min": 3.1,
+  "checked_at": "2026-11-09T06:28:18.852768+00:00",
+  "last_scan_at": "2026-11-09T06:26:44.874000+00:00",
+  "last_scan_age_min": 1.5,
   "venues": 12,
-  "live_venues": 11,
+  "live_venues": 10,
   "down_venues": [
-   "OKX"
+   "OKX",
+   "Hyperliquid"
   ],
   "coins": 1210,
-  "pairs": 1438,
-  "qualified": 4,
+  "pairs": 1355,
+  "qualified": 5,
   "page_url": "radar/"
  },
  "orchestrator": {
