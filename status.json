@@ -75,7 +75,7 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-09T19:43:36.543811+00:00",
+ "generated_at": "2026-11-09T19:48:44.783758+00:00",
  "counts": {
   "待处理": 0,
   "执行中": 0,
@@ -96,7 +96,7 @@
   },
   {
    "name": "Claude(中转)",
-   "status": "冷却中",
+   "status": "空闲",
    "running": 0,
    "today_runs": 0,
    "today_ok": 0,
@@ -105,7 +105,7 @@
   },
   {
    "name": "GPT",
-   "status": "冷却中",
+   "status": "空闲",
    "running": 0,
    "today_runs": 0,
    "today_ok": 0,
@@ -5573,7 +5573,7 @@
   }
  ],
  "gamesites": {
-  "generated_at": "2026-11-09T19:18:06.095922+00:00",
+  "generated_at": "2026-11-09T19:48:28.848985+00:00",
   "scale": {
    "independent_sites": 5,
    "independent_online": 5,
