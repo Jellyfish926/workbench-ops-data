@@ -75,7 +75,7 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-09T20:13:08.701984+00:00",
+ "generated_at": "2026-11-09T20:19:16.647886+00:00",
  "counts": {
   "待处理": 0,
   "执行中": 0,
@@ -105,7 +105,7 @@
   },
   {
    "name": "GPT",
-   "status": "冷却中",
+   "status": "空闲",
    "running": 0,
    "today_runs": 0,
    "today_ok": 0,
@@ -5573,7 +5573,7 @@
   }
  ],
  "gamesites": {
-  "generated_at": "2026-11-09T19:48:28.848985+00:00",
+  "generated_at": "2026-11-09T20:18:51.611911+00:00",
   "scale": {
    "independent_sites": 5,
    "independent_online": 5,
