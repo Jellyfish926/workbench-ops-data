@@ -14,8 +14,8 @@
     ],
     "next_at": "2026-11-10T09:00:00+08:00",
     "business_date": "2026-11-10",
-    "status": "已完成",
-    "task_id": 73,
+    "status": "步骤执行中",
+    "task_id": 77,
     "test_status": "已放弃",
     "test_task_id": 14
    },
@@ -71,10 +71,10 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-09T01:00:14.206382+00:00",
+ "generated_at": "2026-11-09T01:05:21.991576+00:00",
  "counts": {
   "待处理": 0,
-  "执行中": 0,
+  "执行中": 1,
   "会诊中": 0,
   "需你决定": 0,
   "今日完成": 2,
@@ -110,8 +110,8 @@
   },
   {
    "name": "Claude Code",
-   "status": "空闲",
-   "running": 0,
+   "status": "忙碌",
+   "running": 1,
    "today_runs": 2,
    "today_ok": 2,
    "today_fail": 0,
@@ -139,6 +139,67 @@
   }
  ],
  "tasks": [
+  {
+   "id": 77,
+   "title": "每日定时：LootWiki 每日巡检与自查自纠（2026-11-09）",
+   "level": "困难",
+   "status": "步骤执行中",
+   "attempts": 1,
+   "created_at": "2026-11-08T20:02:28",
+   "updated_at": "2026-11-08T20:02:28",
+   "finished_at": null,
+   "summary": null,
+   "path": [
+    {
+     "kind": "step",
+     "ai": "Claude Code",
+     "model": "opus",
+     "status": "running",
+     "rejected": false
+    }
+   ],
+   "steps": [
+    {
+     "title": "步骤 1",
+     "ai": "Claude Code",
+     "model": "opus",
+     "status": "执行中"
+    }
+   ],
+   "redo_rounds": 0,
+   "detail": {
+    "result": null,
+    "runs": [
+     {
+      "kind": "step",
+      "ai": "Claude Code",
+      "model": "opus",
+      "status": "running",
+      "rejected": false,
+      "started_at": "2026-11-08T20:02:28",
+      "ended_at": null,
+      "duration_s": null
+     }
+    ],
+    "events": [
+     {
+      "at": "2026-11-08T20:02:28",
+      "kind": "daily_schedule",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-08T20:02:28",
+      "kind": "step",
+      "label": "流程进度更新"
+     }
+    ],
+    "recovery": {
+     "cycles": 0,
+     "next_at": null,
+     "status": null
+    }
+   }
+  },
   {
    "id": 76,
    "title": "每日定时：每日工作记忆备份到 GitHub（2026-11-08）",
@@ -5562,271 +5623,6 @@
      "status": null
     }
    }
-  },
-  {
-   "id": 37,
-   "title": "更新上架规则：飞书已建站交给 feishu-sync、截图由工作台做、上线以正式域名为准",
-   "level": "中等",
-   "status": "已完成",
-   "attempts": 3,
-   "created_at": "2026-10-29T23:23:51",
-   "updated_at": "2026-10-30T03:00:37",
-   "finished_at": "2026-10-30T03:00:37",
-   "summary": "已完成：上架和维护规则已修改并推送。飞书写表交给常规同步，截图交给工作台，上线必须访问正式域名确认；停止维护清单已原样入仓，相关规则已同步。 还没完成：无。 需要你做：不用操作。 技术详情 - 已验证：直接读取 GitHub 的 main，确认提交为 [密钥]，远端变更与本地规则一致；修改范围为四份规则文档及用户追加要求的清单，没有代码改动。 - 飞书规则：执行 AI 不写表、不找凭据，只确认 built-sites.json 的平台键、栏目网址和日期；交接字段为 feishu: \"delegated-to-feishu-sync\"，不得列为缺项，旧写表入口已删除。 - 截图规则：工作台交接后…",
-   "path": [
-    {
-     "kind": "plan",
-     "ai": "Claude Code",
-     "model": "opus",
-     "status": "rate_limited",
-     "rejected": false
-    },
-    {
-     "kind": "plan",
-     "ai": "DeepSeek",
-     "model": "deepseek-v4-pro",
-     "status": "ok",
-     "rejected": false
-    },
-    {
-     "kind": "step",
-     "ai": "GPT",
-     "model": "gpt-6.1-sol",
-     "status": "ok",
-     "rejected": false
-    },
-    {
-     "kind": "step",
-     "ai": "GPT",
-     "model": "gpt-6.1-sol",
-     "status": "ok",
-     "rejected": false
-    },
-    {
-     "kind": "step",
-     "ai": "GPT",
-     "model": "gpt-6.1-sol",
-     "status": "ok",
-     "rejected": false
-    },
-    {
-     "kind": "synthesize",
-     "ai": "Claude Code",
-     "model": "opus",
-     "status": "timeout",
-     "rejected": false
-    },
-    {
-     "kind": "synthesize",
-     "ai": "GPT",
-     "model": "gpt-6-astra",
-     "status": "ok",
-     "rejected": false
-    }
-   ],
-   "steps": [
-    {
-     "title": "步骤 1",
-     "ai": "GPT",
-     "model": "gpt-6.1-sol",
-     "status": "完成"
-    },
-    {
-     "title": "步骤 2",
-     "ai": "GPT",
-     "model": "gpt-6.1-sol",
-     "status": "完成"
-    },
-    {
-     "title": "步骤 3",
-     "ai": "GPT",
-     "model": "gpt-6.1-sol",
-     "status": "完成"
-    }
-   ],
-   "redo_rounds": 0,
-   "detail": {
-    "result": "已完成：上架和维护规则已修改并推送。飞书写表交给常规同步，截图交给工作台，上线必须访问正式域名确认；停止维护清单已原样入仓，相关规则已同步。\n还没完成：无。\n需要你做：不用操作。\n\n技术详情\n- 已验证：直接读取 GitHub 的 main，确认提交为 [密钥]，远端变更与本地规则一致；修改范围为四份规则文档及用户追加要求的清单，没有代码改动。\n- 飞书规则：执行 AI 不写表、不找凭据，只确认 built-sites.json 的平台键、栏目网址和日期；交接字段为 feishu: \"delegated-to-feishu-sync\"，不得列为缺项，旧写表入口已删除。\n- 截图规则：工作台交接后自动执行电脑 1280、手机 390 检查，对照 /valheim/；严重问题重开任务且只修反馈问题。执行 AI 只做 HTTP、sitemap、SEO 抽查和门禁，不启动浏览器，不把截图列为缺项。\n- 维护规则：清单与工作台源文件逐字节一致；巡检、加厚、事实更新及上架维护均先查清单，stop 页面只查 HTTP、保持在线，observe 栏目照常维护。记忆与规则索引已同步。\n- 证据边界：本次验收确认规则已入仓，不推测后续同步或截图已经运行；未重新计算 GSC 数据。此前操作的完整日志未全部提供，因此不把“全程未读取密钥”的执行者自述当作独立验证结论。\n\n【回执状态】已完成，验收通过，无需返工。",
-    "runs": [
-     {
-      "kind": "plan",
-      "ai": "Claude Code",
-      "model": "opus",
-      "status": "rate_limited",
-      "rejected": false,
-      "started_at": "2026-10-29T23:23:51",
-      "ended_at": "2026-10-29T23:23:57",
-      "duration_s": 6.083
-     },
-     {
-      "kind": "plan",
-      "ai": "DeepSeek",
-      "model": "deepseek-v4-pro",
-      "status": "ok",
-      "rejected": false,
-      "started_at": "2026-10-29T23:23:57",
-      "ended_at": "2026-10-29T23:25:37",
-      "duration_s": 100.169
-     },
-     {
-      "kind": "step",
-      "ai": "GPT",
-      "model": "gpt-6.1-sol",
-      "status": "ok",
-      "rejected": false,
-      "started_at": "2026-10-30T02:43:21",
-      "ended_at": "2026-10-30T02:45:20",
-      "duration_s": 118.868
-     },
-     {
-      "kind": "step",
-      "ai": "GPT",
-      "model": "gpt-6.1-sol",
-      "status": "ok",
-      "rejected": false,
-      "started_at": "2026-10-30T02:45:20",
-      "ended_at": "2026-10-30T02:51:46",
-      "duration_s": 385.695
-     },
-     {
-      "kind": "step",
-      "ai": "GPT",
-      "model": "gpt-6.1-sol",
-      "status": "ok",
-      "rejected": false,
-      "started_at": "2026-10-30T02:51:46",
-      "ended_at": "2026-10-30T02:54:35",
-      "duration_s": 168.979
-     },
-     {
-      "kind": "synthesize",
-      "ai": "Claude Code",
-      "model": "opus",
-      "status": "timeout",
-      "rejected": false,
-      "started_at": "2026-10-30T02:54:35",
-      "ended_at": "2026-10-30T02:59:35",
-      "duration_s": 300.039
-     },
-     {
-      "kind": "synthesize",
-      "ai": "GPT",
-      "model": "gpt-6-astra",
-      "status": "ok",
-      "rejected": false,
-      "started_at": "2026-10-30T02:59:35",
-      "ended_at": "2026-10-30T03:00:37",
-      "duration_s": 61.63
-     }
-    ],
-    "events": [
-     {
-      "at": "2026-10-29T23:23:51",
-      "kind": "submit",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-10-29T23:23:51",
-      "kind": "plan",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-10-29T23:23:57",
-      "kind": "wait",
-      "label": "等待可用AI接续"
-     },
-     {
-      "at": "2026-10-29T23:23:57",
-      "kind": "director_handoff",
-      "label": "总指挥已交接"
-     },
-     {
-      "at": "2026-10-29T23:23:57",
-      "kind": "plan",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-10-30T02:37:28",
-      "kind": "user_note",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-10-30T02:43:21",
-      "kind": "step",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-10-30T02:45:20",
-      "kind": "file_audit",
-      "label": "已核对实际文件变更"
-     },
-     {
-      "at": "2026-10-30T02:45:20",
-      "kind": "step",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-10-30T02:51:46",
-      "kind": "file_audit",
-      "label": "已核对实际文件变更"
-     },
-     {
-      "at": "2026-10-30T02:51:46",
-      "kind": "step",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-10-30T02:54:35",
-      "kind": "file_audit",
-      "label": "已核对实际文件变更"
-     },
-     {
-      "at": "2026-10-30T02:54:35",
-      "kind": "synthesize",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-10-30T02:59:35",
-      "kind": "director_handoff",
-      "label": "总指挥已交接"
-     },
-     {
-      "at": "2026-10-30T02:59:35",
-      "kind": "synthesize",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-10-30T03:00:37",
-      "kind": "done",
-      "label": "已完成验收"
-     },
-     {
-      "at": "2026-10-30T03:37:38",
-      "kind": "cleanup",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-10-30T03:37:38",
-      "kind": "cleanup",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-10-30T15:21:14",
-      "kind": "cleanup",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-10-30T15:21:14",
-      "kind": "cleanup",
-      "label": "流程进度更新"
-     }
-    ],
-    "recovery": {
-     "cycles": 0,
-     "next_at": null,
-     "status": null
-    }
-   }
   }
  ],
  "gamesites": {
@@ -5932,15 +5728,15 @@
  },
  "radar": {
   "status": "正常",
-  "checked_at": "2026-11-09T00:52:31.191650+00:00",
-  "last_scan_at": "2026-11-09T00:51:44.059000+00:00",
+  "checked_at": "2026-11-09T01:02:34.194590+00:00",
+  "last_scan_at": "2026-11-09T01:01:44.354000+00:00",
   "last_scan_age_min": 0.8,
   "venues": 12,
   "live_venues": 12,
   "down_venues": [],
   "coins": 1254,
-  "pairs": 1727,
-  "qualified": 6,
+  "pairs": 1726,
+  "qualified": 5,
   "page_url": "radar/"
  },
  "orchestrator": {
