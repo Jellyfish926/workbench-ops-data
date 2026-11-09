@@ -71,7 +71,7 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-09T05:32:15.413060+00:00",
+ "generated_at": "2026-11-09T05:37:33.795846+00:00",
  "counts": {
   "待处理": 0,
   "执行中": 0,
@@ -85,8 +85,8 @@
    "name": "DeepSeek",
    "status": "空闲",
    "running": 0,
-   "today_runs": 0,
-   "today_ok": 0,
+   "today_runs": 1,
+   "today_ok": 1,
    "today_fail": 0,
    "only_levels": null
   },
@@ -112,9 +112,9 @@
    "name": "Claude Code",
    "status": "空闲",
    "running": 0,
-   "today_runs": 0,
+   "today_runs": 2,
    "today_ok": 0,
-   "today_fail": 0,
+   "today_fail": 2,
    "only_levels": [
     "困难"
    ]
@@ -139,6 +139,124 @@
   }
  ],
  "tasks": [
+  {
+   "id": 79,
+   "title": "暂停每日总站自动上架的定时排程",
+   "level": "需人工",
+   "status": "已放弃",
+   "attempts": 0,
+   "created_at": "2026-11-09T00:33:15",
+   "updated_at": "2026-11-09T00:33:40",
+   "finished_at": "2026-11-09T00:33:40",
+   "summary": null,
+   "path": [
+    {
+     "kind": "plan",
+     "ai": "Claude Code",
+     "model": "opus",
+     "status": "failed",
+     "rejected": false
+    },
+    {
+     "kind": "plan",
+     "ai": "Claude Code",
+     "model": "opus",
+     "status": "failed",
+     "rejected": false
+    },
+    {
+     "kind": "classify",
+     "ai": "DeepSeek",
+     "model": "deepseek-flash",
+     "status": "ok",
+     "rejected": false
+    }
+   ],
+   "steps": [],
+   "redo_rounds": 0,
+   "detail": {
+    "result": null,
+    "runs": [
+     {
+      "kind": "plan",
+      "ai": "Claude Code",
+      "model": "opus",
+      "status": "failed",
+      "rejected": false,
+      "started_at": "2026-11-09T00:33:15",
+      "ended_at": "2026-11-09T00:33:21",
+      "duration_s": 5.696
+     },
+     {
+      "kind": "plan",
+      "ai": "Claude Code",
+      "model": "opus",
+      "status": "failed",
+      "rejected": false,
+      "started_at": "2026-11-09T00:33:21",
+      "ended_at": "2026-11-09T00:33:27",
+      "duration_s": 5.954
+     },
+     {
+      "kind": "classify",
+      "ai": "DeepSeek",
+      "model": "deepseek-flash",
+      "status": "ok",
+      "rejected": false,
+      "started_at": "2026-11-09T00:33:27",
+      "ended_at": "2026-11-09T00:33:30",
+      "duration_s": 3.256
+     }
+    ],
+    "events": [
+     {
+      "at": "2026-11-09T00:33:15",
+      "kind": "submit",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-09T00:33:15",
+      "kind": "plan",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-09T00:33:21",
+      "kind": "plan_retry",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-09T00:33:21",
+      "kind": "plan",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-09T00:33:27",
+      "kind": "fallback",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-09T00:33:27",
+      "kind": "classify",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-09T00:33:30",
+      "kind": "classify",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-09T00:33:40",
+      "kind": "manual",
+      "label": "流程进度更新"
+     }
+    ],
+    "recovery": {
+     "cycles": 0,
+     "next_at": null,
+     "status": null
+    }
+   }
+  },
   {
    "id": 78,
    "title": "每日定时：每日热词雷达 + 游戏机会表同步（2026-11-09）",
@@ -453,6 +571,11 @@
      {
       "at": "2026-11-08T13:16:26",
       "kind": "postcheck",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-09T00:33:04",
+      "kind": "chat",
       "label": "流程进度更新"
      }
     ],
@@ -5403,139 +5526,6 @@
      },
      {
       "at": "2026-10-31T09:21:58",
-      "kind": "cleanup",
-      "label": "流程进度更新"
-     }
-    ],
-    "recovery": {
-     "cycles": 0,
-     "next_at": null,
-     "status": null
-    }
-   }
-  },
-  {
-   "id": 39,
-   "title": "每日定时：每日工作记忆备份到 GitHub（2026-10-30）",
-   "level": "困难",
-   "status": "已放弃",
-   "attempts": 2,
-   "created_at": "2026-10-30T15:17:03",
-   "updated_at": "2026-10-30T15:21:03",
-   "finished_at": "2026-10-31T15:17:01",
-   "summary": null,
-   "path": [
-    {
-     "kind": "step",
-     "ai": "Claude Code",
-     "model": "sonnet",
-     "status": "ok",
-     "rejected": false
-    },
-    {
-     "kind": "step",
-     "ai": "Claude Code",
-     "model": "sonnet",
-     "status": "ok",
-     "rejected": false
-    }
-   ],
-   "steps": [
-    {
-     "title": "步骤 1",
-     "ai": "Claude Code",
-     "model": "sonnet",
-     "status": "完成"
-    }
-   ],
-   "redo_rounds": 0,
-   "detail": {
-    "result": "本次只补了 Codex 的对话历史，源路径增量扫描和源文件增量包仍没做，所以回执是部分完成。\n\n**开始前核对**\n- `Jellyfish926/claude-skills` 仍是 private，默认分支 `main`。\n- 远端已有 10-30 的备份提交 `cec89d4`，我没有重复提交。\n- 没有其他 AI 在执行。\n\n**本次补做**\n- Codex 在本机的会话记录能读到，我已补备。\n- 取的是北京时间 10-30 窗口内的 2 份会话，共 165 条用户和助手可见消息。\n- 这两份会话是：\n - 10-29 开始的会话（119 条）。\n - 10-30 开始的会话（46 条）。\n- 内容只含用户和助手可见文字，不含思考、工具调用和输出、系统上下文。\n- 凭据模式扫描 0 处命中。\n- 消息没有再截断，里面有 Codex 当时贴出的代码文本。\n- 新提交 `a3050d9` 在 `main` 上，只改了 `memory/`，没有 force push。\n- 提交里有 4 个文件：两份 `sources/delta-2026-10-30/codex-visible-*.md`、更新后的 `SHA256SUMS.txt`，以及改过缺口说明的 `daily/2026-10-30.md`。\n- 回读结果：4 个文件的远端 git blob 哈希与本地全部一致（4/4），回读后远端仍是 `private=true`。\n\n**未完成**\n- 没有做 65k 源路径的增量扫描和源文件增量包。这一步我没有去做。\n- 原 2 个附件、其他 Claude 账号原文、旧本机工作台镜像这三项缺口沿用，没有变化。\n- 没有发卡、写表或创建定时任务。\n\n【回执状态】部分完成：65k 源路径增量扫描与源文件增量包未备份；原2附件、其他Claude账号原文、旧本机工作台镜像缺口沿用\n\n【工作台文件核对】最多扫描2000个文件；发生新增、修改或删除的相对路径：[\"w2/.gitignore\", \"w2/AGENTS.md\", \"w2/CLAUDE.md\", \"w2/README.md\", \"w2/memory/ARTIFACTS.json\", \"w2/memory/AUTOMATIONS.md\", \"w2/memory/CONVERSATIONS.md\", \"w2/memory/CURRENT_STATE.md\", \"w2/memory/GITHUB_PRIVACY.md\", \"w2/memory/PERIOD_CONVERSATIONS.json\", \"w2/memory/RECOVERY.md\", \"w2/memory/REPOSITORIES.md\", \"w2/memory/REQUEST_AUDIT.md\", \"w2/memory/RULES_INDEX.md\", \"w2/memory/SHA256SUMS\", \"w2/memory/SOURCE_COVERAGE.md\", \"w2/memory/START_HERE.md\", \"w2/memory/USER_PREFERENCES.md\", \"w2/memory/artifacts/2026-10-29-05c0868c38df.docx\", \"w2/memory/backup-status.json\", \"w2/memory/conversations/01-01a13e9f-e426-7463-b68c-f4adba10f81b.json\", \"w2/memory/conversations/02-01a14274-4351-7f71-938f-aebb76a77c20.json\", \"w2/memory/conversations/03-01a13d9f-f91e-77e0-9000-8be7e66022f9.json\", \"w2/memory/conversations/04-01a13f2b-c1ff-70b3-88c5-a5909c34bff7.json\", \"w2/memory/conversations/05-01a13986-5bcd-79e3-a43d-30f10dadb144.json\", \"w2/memory/conversations/06-01a13a03-b87d-7a80-b695-fb12cb996cee.json\", \"w2/memory/conversations/07-01a13d47-304e-72c0-948c-24581f75e1fb.json\", \"w2/memory/conversations/08-01a12ea7-cf7c-7d81-b9cb-02137632fda1.json\", \"w2/memory/conversations/index.json\", \"w2/memory/coordination/codex-claude-relay.md\", \"w2/memory/coordination/codex-configs/10-00.toml\", \"w2/memory/coordination/codex-configs/github.toml\", \"w2/memory/coordination/codex-configs/lootwiki-com.toml\", \"w2/memory/coordination/codex-configs/lootwiki.toml\", \"w2/memory/coordination/mirror_workbench_receipts.py\", \"w2/memory/coordination/runs/2026-10-20/lootwiki-com-codex-evidence/README.md\", \"w2/memory/coordination/runs/2026-10-20/lootwiki-com-codex-evidence/artifact-state.json\", \"w2/memory/coordination/runs/2026-10-20/lootwiki-com-codex-evidence/independent-verification.json\", \"w2/memory/coordination/runs/2026-10-20/lootwiki-com-codex-evidence/publication-state.json\", \"w2/memory/coordination/runs/2026-10-20/lootwiki-com-codex-evidence/watchdog-state.json\", \"w2/memory/coordination/runs/2026-10-20/lootwiki-com-codex.json\", \"w2/memory/coordination/runs/2026-10-20/manual-publish-codex.json\", \"w2/memory/coordination/runs/2026-10-20/manual-publish-evidence/dress-facts.md\", \"w2/memory/coordination/runs/2026-10-20/manual-publish-evidence/final-release-verification.json\", \"w2/memory/coordination/runs/2026-10-20/manual-publish-evidence/finalization-plan.json\", \"w2/memory/coordination/runs/2026-10-20/manual-publish-evidence/historical-hardgate-summary.json\", \"w2/memory/coordination/runs/2026-10-20/manual-publish-evidence/it-facts.md\", \"w2/memory/coordination/runs/2026-10-20/manual-publish-evidence/live-layout-dress.json\", \"w2/memory/coordination/runs/2026-10-20/manual-publish-evidence/live-layout-it.json\", \"w2/memory/coordination/runs/2026-10-20/manual-publish-evidence/table-publish-receipt.json\", \"w2/memory/coordination/runs/2026-10-21/10-00-codex-evidence/artifact-state.json\", \"w2/memory/coordination/runs/2026-10-21/10-00-codex-evidence/independent-verification.json\", \"w2/memory/coordination/runs/2026-10-21/10-00-codex-evidence/readonly-audit.json\", \"w2/memory/coordination/runs/2026-10-21/10-00-codex.json\", \"w2/memory/coordination/runs/2026-10-21/lootwiki-",
-    "runs": [
-     {
-      "kind": "step",
-      "ai": "Claude Code",
-      "model": "sonnet",
-      "status": "ok",
-      "rejected": false,
-      "started_at": "2026-10-30T15:17:03",
-      "ended_at": "2026-10-30T15:19:07",
-      "duration_s": 124.401
-     },
-     {
-      "kind": "step",
-      "ai": "Claude Code",
-      "model": "sonnet",
-      "status": "ok",
-      "rejected": false,
-      "started_at": "2026-10-30T15:19:18",
-      "ended_at": "2026-10-30T15:20:49",
-      "duration_s": 90.93
-     }
-    ],
-    "events": [
-     {
-      "at": "2026-10-30T15:17:03",
-      "kind": "daily_schedule",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-10-30T15:17:03",
-      "kind": "step",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-10-30T15:19:07",
-      "kind": "file_audit",
-      "label": "已核对实际文件变更"
-     },
-     {
-      "at": "2026-10-30T15:19:07",
-      "kind": "receipt",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-10-30T15:19:18",
-      "kind": "postcheck",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-10-30T15:19:18",
-      "kind": "step",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-10-30T15:20:49",
-      "kind": "file_audit",
-      "label": "已核对实际文件变更"
-     },
-     {
-      "at": "2026-10-30T15:20:49",
-      "kind": "receipt",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-10-30T15:21:03",
-      "kind": "postcheck",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-10-31T15:17:01",
-      "kind": "superseded",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-10-31T15:22:12",
-      "kind": "cleanup",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-01T03:22:44",
-      "kind": "cleanup",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-01T03:22:44",
       "kind": "cleanup",
       "label": "流程进度更新"
      }
