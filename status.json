@@ -75,7 +75,7 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-09T16:11:48.473375+00:00",
+ "generated_at": "2026-11-09T16:16:57.073567+00:00",
  "counts": {
   "待处理": 0,
   "执行中": 0,
@@ -96,7 +96,7 @@
   },
   {
    "name": "Claude(中转)",
-   "status": "冷却中",
+   "status": "空闲",
    "running": 0,
    "today_runs": 0,
    "today_ok": 0,
@@ -5583,7 +5583,7 @@
   }
  ],
  "gamesites": {
-  "generated_at": "2026-11-09T15:45:33.238514+00:00",
+  "generated_at": "2026-11-09T16:15:55.595979+00:00",
   "scale": {
    "independent_sites": 5,
    "independent_online": 5,
