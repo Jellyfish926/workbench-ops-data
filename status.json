@@ -75,7 +75,7 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-09T13:01:04.076069+00:00",
+ "generated_at": "2026-11-09T13:11:14.148100+00:00",
  "counts": {
   "待处理": 0,
   "执行中": 0,
@@ -5675,17 +5675,18 @@
  },
  "radar": {
   "status": "正常",
-  "checked_at": "2026-11-09T13:00:29.159082+00:00",
-  "last_scan_at": "2026-11-09T12:56:45.504000+00:00",
-  "last_scan_age_min": 3.7,
+  "checked_at": "2026-11-09T13:10:32.416468+00:00",
+  "last_scan_at": "2026-11-09T13:06:45.552000+00:00",
+  "last_scan_age_min": 3.8,
   "venues": 12,
-  "live_venues": 11,
+  "live_venues": 10,
   "down_venues": [
-   "OKX"
+   "OKX",
+   "Backpack"
   ],
-  "coins": 1210,
-  "pairs": 1429,
-  "qualified": 7,
+  "coins": 1192,
+  "pairs": 1424,
+  "qualified": 9,
   "page_url": "radar/"
  },
  "orchestrator": {
