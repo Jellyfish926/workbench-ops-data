@@ -75,7 +75,7 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-09T12:10:00.627499+00:00",
+ "generated_at": "2026-11-09T12:15:08.476940+00:00",
  "counts": {
   "待处理": 0,
   "执行中": 0,
@@ -105,7 +105,7 @@
   },
   {
    "name": "GPT",
-   "status": "空闲",
+   "status": "冷却中",
    "running": 0,
    "today_runs": 0,
    "today_ok": 0,
@@ -5573,7 +5573,7 @@
   }
  ],
  "gamesites": {
-  "generated_at": "2026-11-09T11:42:20.023306+00:00",
+  "generated_at": "2026-11-09T12:12:42.349470+00:00",
   "scale": {
    "independent_sites": 5,
    "independent_online": 5,
@@ -5675,16 +5675,16 @@
  },
  "radar": {
   "status": "正常",
-  "checked_at": "2026-11-09T12:00:06.253595+00:00",
-  "last_scan_at": "2026-11-09T11:56:45.149000+00:00",
-  "last_scan_age_min": 3.3,
+  "checked_at": "2026-11-09T12:10:09.546174+00:00",
+  "last_scan_at": "2026-11-09T12:06:45.653000+00:00",
+  "last_scan_age_min": 3.4,
   "venues": 12,
   "live_venues": 11,
   "down_venues": [
    "OKX"
   ],
   "coins": 1210,
-  "pairs": 1432,
+  "pairs": 1430,
   "qualified": 4,
   "page_url": "radar/"
  },
