@@ -64,10 +64,10 @@
     "fallbacks": [
      "Claude Code"
     ],
-    "next_at": "2026-11-10T03:17:00+08:00",
-    "business_date": "2026-11-09",
-    "status": "已完成",
-    "task_id": 76,
+    "next_at": "2026-11-11T03:17:00+08:00",
+    "business_date": "2026-11-10",
+    "status": "步骤执行中",
+    "task_id": 80,
     "test_status": "尚未测试",
     "test_task_id": null
    }
@@ -75,10 +75,10 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-09T19:13:07.857752+00:00",
+ "generated_at": "2026-11-09T19:18:14.186754+00:00",
  "counts": {
   "待处理": 0,
-  "执行中": 0,
+  "执行中": 1,
   "会诊中": 0,
   "需你决定": 0,
   "今日完成": 0,
@@ -105,7 +105,7 @@
   },
   {
    "name": "GPT",
-   "status": "冷却中",
+   "status": "空闲",
    "running": 0,
    "today_runs": 0,
    "today_ok": 0,
@@ -114,8 +114,8 @@
   },
   {
    "name": "Claude Code",
-   "status": "空闲",
-   "running": 0,
+   "status": "忙碌",
+   "running": 1,
    "today_runs": 2,
    "today_ok": 0,
    "today_fail": 2,
@@ -143,6 +143,67 @@
   }
  ],
  "tasks": [
+  {
+   "id": 80,
+   "title": "每日定时：每日工作记忆备份到 GitHub（2026-11-09）",
+   "level": "困难",
+   "status": "步骤执行中",
+   "attempts": 1,
+   "created_at": "2026-11-09T14:17:14",
+   "updated_at": "2026-11-09T14:17:14",
+   "finished_at": null,
+   "summary": null,
+   "path": [
+    {
+     "kind": "step",
+     "ai": "Claude Code",
+     "model": "sonnet",
+     "status": "running",
+     "rejected": false
+    }
+   ],
+   "steps": [
+    {
+     "title": "步骤 1",
+     "ai": "Claude Code",
+     "model": "sonnet",
+     "status": "执行中"
+    }
+   ],
+   "redo_rounds": 0,
+   "detail": {
+    "result": null,
+    "runs": [
+     {
+      "kind": "step",
+      "ai": "Claude Code",
+      "model": "sonnet",
+      "status": "running",
+      "rejected": false,
+      "started_at": "2026-11-09T14:17:14",
+      "ended_at": null,
+      "duration_s": null
+     }
+    ],
+    "events": [
+     {
+      "at": "2026-11-09T14:17:14",
+      "kind": "daily_schedule",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-09T14:17:14",
+      "kind": "step",
+      "label": "流程进度更新"
+     }
+    ],
+    "recovery": {
+     "cycles": 0,
+     "next_at": null,
+     "status": null
+    }
+   }
+  },
   {
    "id": 79,
    "title": "暂停每日总站自动上架的定时排程",
@@ -5494,96 +5555,10 @@
      "status": null
     }
    }
-  },
-  {
-   "id": 40,
-   "title": "每日定时：LootWiki 每日巡检与自查自纠（2026-10-31）",
-   "level": "困难",
-   "status": "已完成",
-   "attempts": 1,
-   "created_at": "2026-10-30T21:00:13",
-   "updated_at": "2026-10-30T21:10:14",
-   "finished_at": "2026-10-30T21:09:46",
-   "summary": "2026-10-31 的巡检做完了，没有发现坏页面，所以没改任何网站内容。报告已推到 GitHub，我用 gh 回读确认三个文件都在。 **发生了什么、做了什么** - 我检查了总站和 7 个子站的所有页面和链接，一共 3319 个网址，都能正常打开。 - 只有三个子站的 `/ads.txt` 是 404，这是已有规则要求撤掉的，不算坏链。 - 总站页面从昨天的 827 个增加到 847 个，新增了两个游戏栏目（Teach Your Sister、Realistic Car Destruction），新页面都能打开。 **影响和还缺什么** - Shift 站的部署平台还显示\"被拦截\"。但我直…",
-   "path": [
-    {
-     "kind": "step",
-     "ai": "Claude Code",
-     "model": "sonnet",
-     "status": "ok",
-     "rejected": false
-    }
-   ],
-   "steps": [
-    {
-     "title": "步骤 1",
-     "ai": "Claude Code",
-     "model": "sonnet",
-     "status": "完成"
-    }
-   ],
-   "redo_rounds": 0,
-   "detail": {
-    "result": "2026-10-31 的巡检做完了，没有发现坏页面，所以没改任何网站内容。报告已推到 GitHub，我用 gh 回读确认三个文件都在。\n\n**发生了什么、做了什么**\n- 我检查了总站和 7 个子站的所有页面和链接，一共 3319 个网址，都能正常打开。\n- 只有三个子站的 `/ads.txt` 是 404，这是已有规则要求撤掉的，不算坏链。\n- 总站页面从昨天的 827 个增加到 847 个，新增了两个游戏栏目（Teach Your Sister、Realistic Car Destruction），新页面都能打开。\n\n**影响和还缺什么**\n- Shift 站的部署平台还显示\"被拦截\"。但我直接访问正式域名，对比了 3 个页面的内容，和最新提交完全一致，说明线上已经是最新版。\n- 我读了停维护清单。这次没有改任何页面内容，所以没有碰到清单里的页面。\n- Google、GA4、广告后台的数据需要登录，我拿不到，已在报告里记为缺口。\n- 浏览器截图验收这次没做。\n\n**远端证据**\n- 提交：`[密钥]`\n- 报告：[链接]\n- 目录里还有脚本 `patrol.py` 和逐请求记录 `http-evidence.jsonl.gz`。\n\n按要求没有运行 `bin/feishu-card`，群卡由工作台来发。\n\n【回执状态】完成\n\n【工作台文件核对】最多扫描2000个文件；发生新增、修改或删除的相对路径：[\"evidence/bodies/[密钥]\", \"evidence/bodies/[密钥]\", \"evidence/bodies/[密钥]\", \"evidence/bodies/[密钥]\", \"evidence/bodies/[密钥]\", \"evidence/bodies/[密钥]\", \"evidence/bodies/[密钥]\", \"evidence/bodies/[密钥]\", \"evidence/bodies/[密钥]\", \"evidence/bodies/[密钥]\", \"evidence/bodies/[密钥]\", \"evidence/bodies/[密钥]\", \"evidence/bodies/[密钥]\", \"evidence/bodies/[密钥]\", \"evidence/bodies/[密钥]\", \"evidence/bodies/[密钥]\", \"evidence/bodies/[密钥]\", \"evidence/bodies/[密钥]\", \"evidence/bodies/[密钥]\", \"evidence/bodies/[密钥]\", \"evidence/bodies/[密钥]\", \"evidence/bodies/[密钥]\", \"evidence/bodies/[密钥]\", \"evidence/bodies/[密钥]\", \"evidence/bodies/[密钥]\", \"evidence/bodies/[密钥]\", \"evidence/bodies/[密钥]\", \"evidence/bodies/[密钥]\", \"evidence/bodies/[密钥]\", \"evidence/bodies/[密钥]\", \"evidence/bodies/[密钥]\", \"evidence/bodies/[密钥]\", \"evidence/bodies/[密钥]\", \"evidence/bodies/[密钥]\", \"evidence/bodies/[密钥]\", \"evidence/bodies/[密钥]\", \"evidence/bodies/[密钥]\", \"evidence/bodies/[密钥]\", \"evidence/bodies/[密钥]",
-    "runs": [
-     {
-      "kind": "step",
-      "ai": "Claude Code",
-      "model": "sonnet",
-      "status": "ok",
-      "rejected": false,
-      "started_at": "2026-10-30T21:00:13",
-      "ended_at": "2026-10-30T21:09:46",
-      "duration_s": 573.281
-     }
-    ],
-    "events": [
-     {
-      "at": "2026-10-30T21:00:13",
-      "kind": "daily_schedule",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-10-30T21:00:13",
-      "kind": "step",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-10-30T21:09:46",
-      "kind": "file_audit",
-      "label": "已核对实际文件变更"
-     },
-     {
-      "at": "2026-10-30T21:09:46",
-      "kind": "done",
-      "label": "已完成验收"
-     },
-     {
-      "at": "2026-10-30T21:09:58",
-      "kind": "postcheck",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-10-30T21:10:14",
-      "kind": "postcheck",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-10-31T09:21:58",
-      "kind": "cleanup",
-      "label": "流程进度更新"
-     }
-    ],
-    "recovery": {
-     "cycles": 0,
-     "next_at": null,
-     "status": null
-    }
-   }
   }
  ],
  "gamesites": {
-  "generated_at": "2026-11-09T18:47:44.610203+00:00",
+  "generated_at": "2026-11-09T19:18:06.095922+00:00",
   "scale": {
    "independent_sites": 5,
    "independent_online": 5,
