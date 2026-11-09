@@ -71,7 +71,7 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-09T01:10:29.910361+00:00",
+ "generated_at": "2026-11-09T01:15:36.319572+00:00",
  "counts": {
   "待处理": 0,
   "执行中": 1,
@@ -5728,15 +5728,17 @@
  },
  "radar": {
   "status": "正常",
-  "checked_at": "2026-11-09T01:02:34.194590+00:00",
-  "last_scan_at": "2026-11-09T01:01:44.354000+00:00",
-  "last_scan_age_min": 0.8,
+  "checked_at": "2026-11-09T01:12:38.075661+00:00",
+  "last_scan_at": "2026-11-09T01:11:42.455000+00:00",
+  "last_scan_age_min": 0.9,
   "venues": 12,
-  "live_venues": 12,
-  "down_venues": [],
+  "live_venues": 11,
+  "down_venues": [
+   "Hyperliquid"
+  ],
   "coins": 1254,
-  "pairs": 1726,
-  "qualified": 5,
+  "pairs": 1666,
+  "qualified": 7,
   "page_url": "radar/"
  },
  "orchestrator": {
