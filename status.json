@@ -15,8 +15,8 @@
     ],
     "next_at": "2026-11-11T09:00:00+08:00",
     "business_date": "2026-11-11",
-    "status": "已完成",
-    "task_id": 77,
+    "status": "步骤执行中",
+    "task_id": 81,
     "test_status": "已放弃",
     "test_task_id": 14
    },
@@ -75,10 +75,10 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-10T01:02:28.302216+00:00",
+ "generated_at": "2026-11-10T01:07:35.290010+00:00",
  "counts": {
   "待处理": 0,
-  "执行中": 0,
+  "执行中": 1,
   "会诊中": 0,
   "需你决定": 0,
   "今日完成": 1,
@@ -114,8 +114,8 @@
   },
   {
    "name": "Claude Code",
-   "status": "空闲",
-   "running": 0,
+   "status": "忙碌",
+   "running": 1,
    "today_runs": 3,
    "today_ok": 1,
    "today_fail": 2,
@@ -143,6 +143,67 @@
   }
  ],
  "tasks": [
+  {
+   "id": 81,
+   "title": "每日定时：LootWiki 每日巡检与自查自纠（2026-11-10）",
+   "level": "困难",
+   "status": "步骤执行中",
+   "attempts": 1,
+   "created_at": "2026-11-09T20:02:34",
+   "updated_at": "2026-11-09T20:02:34",
+   "finished_at": null,
+   "summary": null,
+   "path": [
+    {
+     "kind": "step",
+     "ai": "Claude Code",
+     "model": "opus",
+     "status": "running",
+     "rejected": false
+    }
+   ],
+   "steps": [
+    {
+     "title": "步骤 1",
+     "ai": "Claude Code",
+     "model": "opus",
+     "status": "执行中"
+    }
+   ],
+   "redo_rounds": 0,
+   "detail": {
+    "result": null,
+    "runs": [
+     {
+      "kind": "step",
+      "ai": "Claude Code",
+      "model": "opus",
+      "status": "running",
+      "rejected": false,
+      "started_at": "2026-11-09T20:02:34",
+      "ended_at": null,
+      "duration_s": null
+     }
+    ],
+    "events": [
+     {
+      "at": "2026-11-09T20:02:34",
+      "kind": "daily_schedule",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-09T20:02:34",
+      "kind": "step",
+      "label": "流程进度更新"
+     }
+    ],
+    "recovery": {
+     "cycles": 0,
+     "next_at": null,
+     "status": null
+    }
+   }
+  },
   {
    "id": 80,
    "title": "每日定时：每日工作记忆备份到 GitHub（2026-11-09）",
@@ -5494,82 +5555,6 @@
      "status": null
     }
    }
-  },
-  {
-   "id": 41,
-   "title": "每日定时：每日热词雷达 + 游戏机会表同步（2026-10-31）",
-   "level": "困难",
-   "status": "已完成",
-   "attempts": 1,
-   "created_at": "2026-10-30T22:00:03",
-   "updated_at": "2026-10-30T22:11:56",
-   "finished_at": "2026-10-30T22:11:47",
-   "summary": "2026-10-31 的热词雷达和游戏机会表同步已全部完成。 **云端采集** - `radar.yml` 存在，我触发了一次。run `41157977839` 成功，用时 5 分 15 秒，一次通过。 - 因此没有在本机运行 `hotwords.py`。 **产出核对（seo-hotwords 远端读回）** - `snapshots/2026-10-31.json` 已入仓（1,095,345 字节）。 - 生成时间 2026-10-31T02:04Z，`replay=false`，不是历史回放。 - 候选 478 个，评分 378 个，关注榜评分 28 个。 - 数据源 5 个，采集记…",
-   "path": [
-    {
-     "kind": "step",
-     "ai": "Claude Code",
-     "model": "sonnet",
-     "status": "ok",
-     "rejected": false
-    }
-   ],
-   "steps": [
-    {
-     "title": "步骤 1",
-     "ai": "Claude Code",
-     "model": "sonnet",
-     "status": "完成"
-    }
-   ],
-   "redo_rounds": 0,
-   "detail": {
-    "result": "2026-10-31 的热词雷达和游戏机会表同步已全部完成。\n\n**云端采集**\n- `radar.yml` 存在，我触发了一次。run `41157977839` 成功，用时 5 分 15 秒，一次通过。\n- 因此没有在本机运行 `hotwords.py`。\n\n**产出核对（seo-hotwords 远端读回）**\n- `snapshots/2026-10-31.json` 已入仓（1,095,345 字节）。\n - 生成时间 2026-10-31T02:04Z，`replay=false`，不是历史回放。\n - 候选 478 个，评分 378 个，关注榜评分 28 个。\n - 数据源 5 个，采集记录 3 项。\n- `reports/2026-10-31.md` 已入仓（19,527 字节）。\n- `runs/2026-10-31-game-sync.json` 的 `status` 是 `complete`，`failed_step` 为空，`errors` 为空。\n - 由 feishu-sync run `41158395896` 写入，各步骤均成功，包括「同步飞书」和「提交回执」。\n - 主表同步前 958 行，更新 240 行、新增 13 行，重复键为 0。\n - 标记「已建站」2 个，回读 2/2 一致。\n- 回执里 `roblox:10495391267` 列在 `missing_rows` 和 `watched_not_created`：它是关注项，表里没有对应行，同步没有新建它。回执仍是 complete，我把它当作提示，不算缺项。\n\n**没做的事**\n- 按要求没有运行 `bin/radar-card` 或 `bin/feishu-card`，群卡由工作台自己发。\n- 没有直接写飞书表、建站、上架或提审。\n- 没有创建其他定时任务。\n\n**说明**\n- 规则文件我只读了部分，没有逐字读完。启动文件 `START_HERE.md` 的开头读了，但 `CURRENT_STATE.md`、`USER_PREFERENCES.md`、`hotword-radar.md` 和 seo-xuanci 技能没有细读。技能文件在受限目录之外，读取被拒。\n- 本次完全按任务书的流程执行，产出的读回结果都满足要求。\n\n【回执状态】完成\n\n【工作台文件核对】最多扫描2000个文件；发生新增、修改或删除的相对路径：[]",
-    "runs": [
-     {
-      "kind": "step",
-      "ai": "Claude Code",
-      "model": "sonnet",
-      "status": "ok",
-      "rejected": false,
-      "started_at": "2026-10-30T22:00:03",
-      "ended_at": "2026-10-30T22:11:47",
-      "duration_s": 703.874
-     }
-    ],
-    "events": [
-     {
-      "at": "2026-10-30T22:00:03",
-      "kind": "daily_schedule",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-10-30T22:00:03",
-      "kind": "step",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-10-30T22:11:47",
-      "kind": "file_audit",
-      "label": "已核对实际文件变更"
-     },
-     {
-      "at": "2026-10-30T22:11:47",
-      "kind": "done",
-      "label": "已完成验收"
-     },
-     {
-      "at": "2026-10-30T22:11:56",
-      "kind": "postcheck",
-      "label": "流程进度更新"
-     }
-    ],
-    "recovery": {
-     "cycles": 0,
-     "next_at": null,
-     "status": null
-    }
-   }
   }
  ],
  "gamesites": {
@@ -5675,17 +5660,17 @@
  },
  "radar": {
   "status": "正常",
-  "checked_at": "2026-11-10T00:54:36.559975+00:00",
-  "last_scan_at": "2026-11-10T00:51:45.401000+00:00",
-  "last_scan_age_min": 2.8,
+  "checked_at": "2026-11-10T01:04:40.023553+00:00",
+  "last_scan_at": "2026-11-10T01:01:44.081000+00:00",
+  "last_scan_age_min": 2.9,
   "venues": 12,
   "live_venues": 11,
   "down_venues": [
-   "OKX"
+   "Hyperliquid"
   ],
-  "coins": 1210,
-  "pairs": 1427,
-  "qualified": 0,
+  "coins": 1254,
+  "pairs": 1660,
+  "qualified": 4,
   "page_url": "radar/"
  },
  "orchestrator": {
