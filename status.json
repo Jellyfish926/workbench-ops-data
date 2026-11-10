@@ -75,7 +75,7 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-10T07:59:02.039841+00:00",
+ "generated_at": "2026-11-10T08:04:09.950034+00:00",
  "counts": {
   "待处理": 0,
   "执行中": 0,
@@ -133,8 +133,8 @@
    "only_levels": null
   },
   {
-   "name": "另一台电脑的 AI",
-   "status": "离线",
+   "name": "Claude（另一台电脑）",
+   "status": "冷却中",
    "running": 0,
    "today_runs": 1,
    "today_ok": 0,
@@ -184,7 +184,7 @@
     },
     {
      "kind": "execute",
-     "ai": "另一台电脑的 AI",
+     "ai": "Claude（另一台电脑）",
      "model": "gpt-6-astra",
      "status": "rate_limited",
      "rejected": false
@@ -251,7 +251,7 @@
      },
      {
       "kind": "execute",
-      "ai": "另一台电脑的 AI",
+      "ai": "Claude（另一台电脑）",
       "model": "gpt-6-astra",
       "status": "rate_limited",
       "rejected": false,
