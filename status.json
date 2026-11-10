@@ -15,7 +15,7 @@
     ],
     "next_at": "2026-11-11T09:00:00+08:00",
     "business_date": "2026-11-11",
-    "status": "步骤执行中",
+    "status": "已完成",
     "task_id": 81,
     "test_status": "已放弃",
     "test_task_id": 14
@@ -75,14 +75,14 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-10T01:35:08.057902+00:00",
+ "generated_at": "2026-11-10T01:40:15.342424+00:00",
  "counts": {
   "待处理": 0,
-  "执行中": 1,
+  "执行中": 0,
   "会诊中": 0,
   "需你决定": 0,
-  "今日完成": 1,
-  "累计完成": 66
+  "今日完成": 2,
+  "累计完成": 67
  },
  "providers": [
   {
@@ -114,10 +114,10 @@
   },
   {
    "name": "Claude Code",
-   "status": "忙碌",
-   "running": 1,
-   "today_runs": 3,
-   "today_ok": 1,
+   "status": "空闲",
+   "running": 0,
+   "today_runs": 4,
+   "today_ok": 2,
    "today_fail": 2,
    "only_levels": [
     "困难"
@@ -147,18 +147,18 @@
    "id": 81,
    "title": "每日定时：LootWiki 每日巡检与自查自纠（2026-11-10）",
    "level": "困难",
-   "status": "步骤执行中",
+   "status": "已完成",
    "attempts": 1,
    "created_at": "2026-11-09T20:02:34",
-   "updated_at": "2026-11-09T20:02:34",
-   "finished_at": null,
-   "summary": null,
+   "updated_at": "2026-11-09T20:37:26",
+   "finished_at": "2026-11-09T20:35:41",
+   "summary": "【给人看的结果】 🔴 Google 流量仍接近归零，6 个主力页面未进搜索结果 **做了什么** - 修正并上线了 Raise A Catboy 的过期价格和活动信息。 - 站点地图里 984 个网址全部能打开，和昨天相同。 - 确认网站本身没有技术故障，并排除了 5 项常见抓取和收录问题。 **有没有问题** - Google 流量仍接近归零，6 个主力页面已读取但没放进搜索结果，主力栏目拿不到 Google 新访客，广告收入机会减少。网站技术检查未发现故障；今天已修正并上线 Raise A Catboy 的过期内容。人工处罚和安全问题还没查看，可能影响原因判断。 **需要你做什么** -…",
    "path": [
     {
      "kind": "step",
      "ai": "Claude Code",
      "model": "opus",
-     "status": "running",
+     "status": "ok",
      "rejected": false
     }
    ],
@@ -167,22 +167,22 @@
      "title": "步骤 1",
      "ai": "Claude Code",
      "model": "opus",
-     "status": "执行中"
+     "status": "完成"
     }
    ],
    "redo_rounds": 0,
    "detail": {
-    "result": null,
+    "result": "【给人看的结果】\n🔴 Google 流量仍接近归零，6 个主力页面未进搜索结果\n\n**做了什么**\n- 修正并上线了 Raise A Catboy 的过期价格和活动信息。\n- 站点地图里 984 个网址全部能打开，和昨天相同。\n- 确认网站本身没有技术故障，并排除了 5 项常见抓取和收录问题。\n\n**有没有问题**\n- Google 流量仍接近归零，6 个主力页面已读取但没放进搜索结果，主力栏目拿不到 Google 新访客，广告收入机会减少。网站技术检查未发现故障；今天已修正并上线 Raise A Catboy 的过期内容。人工处罚和安全问题还没查看，可能影响原因判断。\n\n**需要你做什么**\n- 去谷歌搜索后台对这 6 个主力页面点“请求编入索引”，并查看人工处置和安全问题通知。\n\n**关键数字**（数据截至 2026-11-10）\n- Google 点击：近 7 天 0 次，前 7 天 2 次。\n- Google 展示：近 7 天 25 次，前 7 天 21 次。\n- 6 个主力页面仍未进入搜索结果。\n- 全站访问近 7 天 1027 次，前 7 天 529 次；Raise A Catboy 访问量从 113 万刷新为 506 万。\n\n## 技术详情（原始回执，供排查用）\n🔴 Google 流量仍接近归零：6 个主力页面仍未进入搜索结果，网站本身正常\n\n**一句话结论：** 异常。最直接的原因是 Google 抓取了主力页面，但没有放进搜索结果。网站技术检查没有发现故障。今天修正了第二大入口栏目 Raise A Catboy 的过期价格和活动信息，已上线。\n\n**发生了什么**\n- 10 月 10 日前，每天从 Google 点进网站（点击）约 130 次。最近完整 7 天（11-01～11-07，数据截止 11-07）是 **0 次**，前 7 天是 2 次。\n- Google 把网页给搜索用户看的次数（展示）原来每天约 2300 次，最近 7 天一共只有 **25 次**（前 7 天 21 次）。这种状态已经持续 4 周，没有变坏，也没有恢复。有展示的页面从 26 个降到 19 个，但基数太小，不算新的变化。\n- 网站访问统计后台（GA4）显示，近 7 天全站访问 **1027 次**，前 7 天 529 次，翻了近一倍。增长主要来自 Bing 和新栏目，来自 Google 的只有 1 次。\n- 新加坡的 79 次访问里只有 2 次有互动，平均停留 7 秒；另有 75 次访问没有记录进站页面，互动为 0。**这部分访问可能不是真人，不能当作增长。**\n\n**为什么**\n- **已经确认（高）：** Google 官方的收录检查显示，有 6 页仍然是\"已抓取、尚未收录\"（收录＝页面有资格出现在 Google 搜索结果）：Deep Fishing 的新手、商店、稀有度、装备 4 页，以及 Bongo Cat 活动页、Untitled Wheelie Game 社区页。这 6 页正是 28 天内掉量最多的页面。\n- **最可能（中）：** Google 在 10-10 前后整体调低了对本站的质量评价，所以页面抓了也不放进结果。人工处罚和安全问题没有接口可查，所以这条还不能定为原因。\n- **已经排除（高）：** 网站打不开、robots 禁止抓取、标准网址（canonical＝页面声明的标准网址）指错、页面被标记为不要收录、站点地图读取失败。这 5 项今天重新实测，都已排除。\n\n**会造成什么影响**\nDeep Fishing、Bongo Cat、Untitled Wheelie Game 这几个原来的主力栏目，基本拿不到 Google 新访客，广告收入机会也跟着少了。现在的访问量靠 Bing 和新栏目撑着，比如 Blind but Dangerous 兑换码页（81 次）和 Raise A Catboy（72 次）。\n\n**我做了什么**\n- **已上线：** Raise A Catboy 是近 7 天第二大入口栏目，内容停在 11-03。今天用 Roblox 官方接口重新核对，发现这些内容已经过期：\n - 商品从 31 个增加到 35 个，新增 3 档足球蛋和 1 个跳过档。\n - 有 3 个价格变了：Hatch All 从 80 涨到 179 Robux，两个跳过档从 199、299 降到 79 Robux。\n - 新出现第 12 个稀有度 Celestial。\n - 页面原来写的\"感恩节活动 11-08～11-22\"已被官方撤下。现在官方列的是\"新区域\"（11-08～11-10）和\"交易\"（11-15～11-20）。\n - 访问量从 113 万刷新为 506 万。\n\n 一共改了 7 页，加上栏目简介。重建后本地 11 道门禁全部通过，提交 b2269a2。线上门禁和部署都成功。我在正式域名上核对过：14 个有内容变化的文件和构建结果完全一致，35 个价格也和官方接口逐个对上了。\n- **技术巡检：** 站点地图里 984 个网址全部能打开，和昨天相同，没有新增或删除。最近一次门禁、首页轮播、保鲜审计都成功。\n- **按规定没处理：** 保鲜审计列出 7 个兑换码页超过 7 天没核对。\n - 其中 3 个在停维护清单里，只查了能不能打开（都正常）。\n - 另外 4 个（How To Drift、Mitosis、Roblox Stock Exchange 2、Run Your Own Farmstead）的码表来自第三方网站。今天只能用官方来源刷新，官方没有公开码表，所以没改内容，也没改日期。\n- **尝试失败：** 无。\n- **同步任务延迟：** 子站同步任务（sync-sources）原定 11-09 20:37Z 运行，截至 01:25Z 还没被 GitHub 排程触发。前两天也都晚了约 3 小时才跑，这次属于延迟，不是失败，所以没有手动重跑。\n\n**需要你拍板**\n- **请求重新收录（接口不支持，只能在后台手动做）：** 涉及 deep-fishing/beginner、shop、rarity、gear，bongo-cat/events，untitled-wheelie-game/community 这 6 个网址。\n - A（推荐）：在 Search Console 里对这 6 个网址点\"请求编入索引\"，几分钟能做完。\n - B：暂不处理，等 Google 自己回访。\n - 注意：请求收录不等于已经收录。\n- **查人工处罚和安全问题：** 在 Search Console 打开\"人工处置措施\"和\"安全问题\"两页，看有没有通知。这能排除或确认目前最大的那个未知原因。\n\n**正常项：** 首页、robots.txt、站点地图都能正常访问。HTTPS 证书有效到 2026-12-20，http 和 www 会正确跳到正式网址。没有死链，没有占位词或乱码。抽查 7 个页面的结构化数据和 88 张图片，都正常。\n\n---\n\n**数据依据（给需要细看的人）**\n- **Google 数据文件：** `data/google-daily/2026-11-10.json`，status=ok。\n - Search Console 数据截止 11-07，比业务日早 3 天，在时效内。\n - GA4 窗口是 11-03～11-09 对比 10-27～11-02。两边窗口不同，不能直接对比。\n- **Search Console 全站数据：**\n - 近 7 天：点击 0，展示 25，平均排名 8.4。前 7 天：点击 2，展示 21，排名 5.0。\n - 28 天对比前 28 天：点击 9 对 1604，展示 188 对 36492。\n - 9-30～10-09 平均每天点击 131.5 次、展示 2323 次。\n- **Google 读取站点地图：** 提交 984 条，最后读取 11-09 15:14Z，0 错误。\n- **收录检查：** 6 页\"已抓取 - 尚未编入索引\"，Google 认定的 canonical 和页面声明一致。\n- **掉量前 10 页实测：** 都返回 200，canonical 指向自身，没有 noindex，都在站点地图里。\n- **全站扫描：** 984 页 canonical 不一致 0、noindex 0、缺标题 0、缺描述 0。占位词全是误报：西语 \"todo\" 意思是\"全部\"，\"placeholder\" 也都是正文正常用法。\n- **对抗验证：** 本环境没有派独立验证 agent 的工具，所以本轮没跑。改动换了一条路径复核：上线后重新拉官方接口，和线上价格表逐项比对，35/35 一致。\n- **修复回读证据：**\n - 网站提交 Jellyfish926/lootlore@b2269a2，普通推送，没有强推。\n - gates 42734665617 success（01:18:12Z）；Vercel 生产部署 7670751566 success（01:17:09Z）。\n - 正式域名比对：内容变化文件 14/14 一致；只变版本号的页面抽查 40/40 逐字节一致。\n - 官方原始返回保存在 evidence/catboy/，读取于 2026-11-10T01:07～01:08Z。\n- **完整报告：** [链接] （claude-skills 提交 ee1b0e8，远端回读和本地逐字节一致）\n\n**回执**\n- **已完成：**\n - Google 数据分析：Search Console 和 GA4 都已获取。\n - 诊断，以及掉量前 10 页实测。\n - 全站 984 网址技术巡检。\n - Raise A Catboy 修复：已提交、门禁通过、部署成功、正式域名逐页核对完。\n - 报告和证据已存档并回读。\n- **未完成：** 无。\n- **按规则不做：** 6 个网址请求收录，以及人工处罚/安全问题查看，已列进\"需要你拍板\"。\n- **说明：** sync-sources 是排程延迟，不是失败，不算缺项。\n\n【回执状态】完成\n\n【工作台文件核对】最多扫描2000个文件；发生新增、修改或删除的相对路径：[\"cs/.gitignore\", \"cs/AGENTS.md\", \"cs/CLAUDE.md\", \"cs/README.md\", \"cs/automations/README.md\", \"cs/automations/SECRETS.md\", \"cs/automations/hotword-radar.md\", \"cs/automations/hub-autopublish.md\", \"cs/automations/lootwiki-patrol/2026-11-10/evidence/build.log\", \"cs/automations/lootwiki-patrol/2026-11-10/evidence/catboy/badges.json\", \"cs/automations/lootwiki-patrol/2026-11-10/evidence/catboy/devproducts-recheck.json\", \"cs/automations/lootwiki-patrol/2026-11-10/evidence/catboy/devproducts.json\", \"cs/automations/lootwiki-patrol/2026-11-10/evidence/catboy/events-recheck.json\", \"cs/automations/lootwiki-patrol/2026-11-10/evidence/catboy/events.json\", \"cs/automations/lootwiki-patrol/2026-11-10/evidence/catboy/fetched_at.txt\", \"cs/automations/lootwiki-patrol/2026-11-10/evidence/catboy/games.json\", \"cs/automations/lootwiki-patrol/2026-11-10/evidence/catboy/group.json\", \"cs/automations/lootwiki-patrol/2026-11-10/evidence/catboy/passes.json\", \"cs/automations/lootwiki-patrol/2026-11-10/evidence/catboy/votes.json\", \"cs/automations/lootwiki-patrol/2026-11-10/evidence/content-changed.txt\", \"cs/automations/lootwiki-patrol/2026-11-10/evidence/live-verify.txt\", \"cs/automations/lootwiki-patrol/2026-11-10/evidence/scan-summary.json\", \"cs/automations/lootwiki-patrol/2026-11-10/evidence/scan.py\", \"cs/automations/lootwiki-patrol/2026-11-10/evidence/spot.txt\", \"cs/automations/lootwiki-patrol/2026-11-10/report.md\", \"cs/automations/monday-report.md\", \"cs/automations/no-traffic-pages.json\", \"cs/automations/watchdog.md\", \"cs/automations/weekend-sites.md\", \"cs/automations/weekly-site-review.md\", \"cs/automations/work-report.md\", \"ctx/report-1109.md\", \"ctx/sm-1109.json\", \"ctx/t81_CURRENT_STATE.md\", \"ctx/t81_START_HERE.md\", \"ctx/t81_USER_PREFERENCES.md\", \"ctx/t81_lootwiki.toml.txt\", \"evidence/build.log\", \"evidence/catboy/badges.json\", \"evidence/catboy/devproducts-recheck.json\", \"evidence/catboy/devproducts.json\", \"evidence/catboy/events-recheck.json\", \"evidence/catboy/events.json\", \"evidence/catboy/fetched_at.txt\", \"evidence/catboy/games.json\", \"evidence/catboy/group.json\", \"evidence/catboy/passes.json\", \"evidence/catboy/votes.json\", \"evidence/content-changed.txt\", \"evidence/live-verify.txt\", \"evidence/scan-summary.json\", \"evidence/scan.py\", \"evidence/spot.txt\", \"lootlore/.gitignore\", \"lootlore/AGENTS.md\", \"lootlore/README.md\", \"lootlore/build-stamp.json\", \"lootlore/build.py\", \"lootlore/built-sites.md\", \"lootlore/config/hub.json\", \"lootlore/config/i18n/de.json\", \"lootlore/config/i18n/en.json\", \"lootlore/config/i18n/es.json\", \"lootlore/config/i18n/fr.json\", \"lootlore/config/i18n/it.json\", \"lootlore/config/i18n/ja.json\", \"lootlore/config/i18n/zh-CN.json\", \"lootlore/config/sources.json\", \"lootlore/content/911-dispatch/_images.json\", \"lootlore/content/911-dispatch/en/author.md\", \"lootlore/content/911-dispatch/en/badges.md\", \"lootlore/content/911-dispatch/en/fleet-and-districts.md\", \"lootlore/content/911-dispatch/en/game-passes.md\", \"lootlore/content/911-dispatch/en/guides.md\", \"lootlore/content/911-dispatch/en/how-to-play.md\", \"lootlore/content/911-dispatch/en/index.md\", \"lootlore/content/911-dispatch/en/multiplayer.md\", \"lootlore/content/911-dispatch/en/robux-shop.md\", \"lootlore/content/911-dispatch/en/season-pass.md\", \"lootlore/content/911-dispatch/en/shifts-and-pay.md\", \"lootlore/content/911-dispatch/en/updates.md\", \"lootlore/content/american-plains-mudding/_images.json\", \"lootlore/content/american-plains-mudding/en/author.md\", \"lootlore/content/american-plains-mudding/en/badges.md\", \"lootlore/content/american-plains-mudding/en/community.md\", \"lootlore/content/american-plains-mudding/en/gamepasses.md\", \"lootlore/content/american-plains-mudding/en/guides.md\", \"lootlore/content/american-plains-mudding/en/how-to-play.md\", \"lootlore/content/american-plains-mudding/en/index.md\", \"lootlore/content/american-plains-mudding/en/limited-vehicles.md\", \"lootlore/content/american-plains-mudding/en/private-servers.md\", \"lootlore/content/american-plains-mudding/en/spawning.md\", \"lootlore/content/american-plains-mudding/en/updates.md\", \"lootlore/content/american-plains-mudding/en/vehicles.md\", \"lootlore/content/animal-daycare/_images.json\", \"lootlore/content/animal-daycare/en/author.md\", \"lootlore/content/animal-daycare/en/badges.md\", \"lootlore/content/animal-daycare/en/game-info.md\", \"lootlore/content/animal-daycare/en/guides.md\", \"lootlore/content/animal-daycare/en/how-to-play.md\"]",
     "runs": [
      {
       "kind": "step",
       "ai": "Claude Code",
       "model": "opus",
-      "status": "running",
+      "status": "ok",
       "rejected": false,
       "started_at": "2026-11-09T20:02:34",
-      "ended_at": null,
-      "duration_s": null
+      "ended_at": "2026-11-09T20:35:41",
+      "duration_s": 1987.234
      }
     ],
     "events": [
@@ -194,6 +194,26 @@
      {
       "at": "2026-11-09T20:02:34",
       "kind": "step",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-09T20:35:41",
+      "kind": "file_audit",
+      "label": "已核对实际文件变更"
+     },
+     {
+      "at": "2026-11-09T20:35:41",
+      "kind": "done",
+      "label": "已完成验收"
+     },
+     {
+      "at": "2026-11-09T20:35:53",
+      "kind": "postcheck",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-09T20:36:09",
+      "kind": "postcheck",
       "label": "流程进度更新"
      }
     ],
