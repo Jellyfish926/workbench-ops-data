@@ -47,10 +47,10 @@
     "fallbacks": [
      "Claude Code"
     ],
-    "next_at": "2026-11-10T10:00:00+08:00",
-    "business_date": "2026-11-10",
-    "status": "已完成",
-    "task_id": 78,
+    "next_at": "2026-11-11T10:00:00+08:00",
+    "business_date": "2026-11-11",
+    "status": "步骤执行中",
+    "task_id": 82,
     "test_status": "尚未测试",
     "test_task_id": null
    },
@@ -75,10 +75,10 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-10T01:58:42.083333+00:00",
+ "generated_at": "2026-11-10T02:03:50.704459+00:00",
  "counts": {
   "待处理": 0,
-  "执行中": 0,
+  "执行中": 1,
   "会诊中": 0,
   "需你决定": 0,
   "今日完成": 2,
@@ -114,8 +114,8 @@
   },
   {
    "name": "Claude Code",
-   "status": "空闲",
-   "running": 0,
+   "status": "忙碌",
+   "running": 1,
    "today_runs": 4,
    "today_ok": 2,
    "today_fail": 2,
@@ -143,6 +143,67 @@
   }
  ],
  "tasks": [
+  {
+   "id": 82,
+   "title": "每日定时：每日热词雷达 + 游戏机会表同步（2026-11-10）",
+   "level": "困难",
+   "status": "步骤执行中",
+   "attempts": 1,
+   "created_at": "2026-11-09T21:00:00",
+   "updated_at": "2026-11-09T21:00:00",
+   "finished_at": null,
+   "summary": null,
+   "path": [
+    {
+     "kind": "step",
+     "ai": "Claude Code",
+     "model": "sonnet",
+     "status": "running",
+     "rejected": false
+    }
+   ],
+   "steps": [
+    {
+     "title": "步骤 1",
+     "ai": "Claude Code",
+     "model": "sonnet",
+     "status": "执行中"
+    }
+   ],
+   "redo_rounds": 0,
+   "detail": {
+    "result": null,
+    "runs": [
+     {
+      "kind": "step",
+      "ai": "Claude Code",
+      "model": "sonnet",
+      "status": "running",
+      "rejected": false,
+      "started_at": "2026-11-09T21:00:00",
+      "ended_at": null,
+      "duration_s": null
+     }
+    ],
+    "events": [
+     {
+      "at": "2026-11-09T21:00:00",
+      "kind": "daily_schedule",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-09T21:00:00",
+      "kind": "step",
+      "label": "流程进度更新"
+     }
+    ],
+    "recovery": {
+     "cycles": 0,
+     "next_at": null,
+     "status": null
+    }
+   }
+  },
   {
    "id": 81,
    "title": "每日定时：LootWiki 每日巡检与自查自纠（2026-11-10）",
@@ -5372,199 +5433,6 @@
      },
      {
       "at": "2026-11-01T03:22:44",
-      "kind": "cleanup",
-      "label": "流程进度更新"
-     }
-    ],
-    "recovery": {
-     "cycles": 0,
-     "next_at": null,
-     "status": null
-    }
-   }
-  },
-  {
-   "id": 42,
-   "title": "每日定时：每日总站自动上架（2026-10-31）",
-   "level": "困难",
-   "status": "已完成",
-   "attempts": 2,
-   "created_at": "2026-10-31T13:47:06",
-   "updated_at": "2026-11-04T22:34:21",
-   "finished_at": "2026-11-04T22:28:03",
-   "summary": "已部署本轮加载加固：两个问题页的配图改为站内资源，提交 `c3bf70a`。 - 构建、远端门禁、部署及独立 HTTP/SEO 验收通过；页面和图片均返回 200，与构建一致。 - 回执与证据已推送并回读，归档提交 `b09c796`。 - 未新增游戏、发卡或写飞书表。 历史 45 秒超时未复现，根因仍未证实；浏览器复查由工作台承接。 【回执状态】完成 【工作台文件核对】最多扫描2000个文件；发生新增、修改或删除的相对路径：[\"handoff/2026-10-31-hub-autopublish-repair-remote-readback.json\", \"handoff/2026-10-3…",
-   "path": [
-    {
-     "kind": "step",
-     "ai": "Claude Code",
-     "model": "sonnet",
-     "status": "ok",
-     "rejected": false
-    },
-    {
-     "kind": "step",
-     "ai": "GPT",
-     "model": "gpt-6.1-sol",
-     "status": "ok",
-     "rejected": false
-    }
-   ],
-   "steps": [
-    {
-     "title": "步骤 1",
-     "ai": "GPT",
-     "model": "gpt-6.1-sol",
-     "status": "完成"
-    }
-   ],
-   "redo_rounds": 0,
-   "detail": {
-    "result": "已部署本轮加载加固：两个问题页的配图改为站内资源，提交 `c3bf70a`。\n\n- 构建、远端门禁、部署及独立 HTTP/SEO 验收通过；页面和图片均返回 200，与构建一致。\n- 回执与证据已推送并回读，归档提交 `b09c796`。\n- 未新增游戏、发卡或写飞书表。\n\n历史 45 秒超时未复现，根因仍未证实；浏览器复查由工作台承接。\n\n【回执状态】完成\n【工作台文件核对】最多扫描2000个文件；发生新增、修改或删除的相对路径：[\"handoff/2026-10-31-hub-autopublish-repair-remote-readback.json\", \"handoff/2026-10-31-hub-autopublish-repair.json\", \"handoff/2026-10-31-hub-autopublish-repair.md\", \"repair/claude-skills/.gitignore\", \"repair/claude-skills/AGENTS.md\", \"repair/claude-skills/CLAUDE.md\", \"repair/claude-skills/README.md\", \"repair/claude-skills/automations/README.md\", \"repair/claude-skills/automations/SECRETS.md\", \"repair/claude-skills/automations/hotword-radar.md\", \"repair/claude-skills/automations/hub-autopublish.md\", \"repair/claude-skills/automations/monday-report.md\", \"repair/claude-skills/automations/no-traffic-pages.json\", \"repair/claude-skills/automations/runs/2026-09-22-game-sync.csv\", \"repair/claude-skills/automations/runs/2026-09-24-game-sync.csv\", \"repair/claude-skills/automations/runs/2026-09-25-game-sync.csv\", \"repair/claude-skills/automations/runs/2026-09-26-game-sync.csv\", \"repair/claude-skills/automations/runs/2026-09-27-game-sync.csv\", \"repair/claude-skills/automations/runs/2026-09-28-game-sync.csv\", \"repair/claude-skills/automations/runs/2026-09-28-xuanci-判断表.md\", \"repair/claude-skills/automations/runs/2026-09-28-xuanci-验收.md\", \"repair/claude-skills/automations/runs/2026-09-30-hub-autopublish.md\", \"repair/claude-skills/automations/runs/2026-10-01-hub-autopublish.md\", \"repair/claude-skills/automations/runs/2026-10-02-hub-autopublish.md\", \"repair/claude-skills/automations/runs/2026-10-08-hub-autopublish.md\", \"repair/claude-skills/automations/runs/2026-10-09-hub-autopublish.json\", \"repair/claude-skills/automations/runs/2026-10-09-hub-autopublish.md\", \"repair/claude-skills/automations/runs/2026-10-10-hub-autopublish.json\", \"repair/claude-skills/automations/runs/2026-10-10-hub-autopublish.md\", \"repair/claude-skills/automations/runs/2026-10-10-weekend-notes/README.md\", \"repair/claude-skills/automations/runs/2026-10-10-weekend-notes/b1-bongo-cat-旧页问题清单.md\", \"repair/claude-skills/automations/runs/2026-10-10-weekend-notes/b1-bongo-cat-页面矩阵.md\", \"repair/claude-skills/automations/runs/2026-10-10-weekend-notes/b1-market-prices-取数步骤.md\", \"repair/claude-skills/automations/runs/2026-10-10-weekend-notes/b1-market-prices-未完成草稿.md\", \"repair/claude-skills/automations/runs/2026-10-10-weekend-notes/b2-deep-fishing-旧页问题清单.md\", \"repair/claude-skills/automations/runs/2026-10-10-weekend-notes/b2-deep-fishing-页面矩阵.md\", \"repair/claude-skills/automations/runs/2026-10-10-weekend-notes/b3-stone-skipping-页面矩阵与旧页待修.md\", \"repair/claude-skills/automations/runs/2026-10-10-weekend-notes/b4-blockspin-页面矩阵.md\", \"repair/claude-skills/automations/runs/2026-10-10-weekend-notes/b5-untitled-wheelie-game-页面矩阵.md\", \"repair/claude-skills/automations/runs/2026-10-10-weekend-notes/b6-get-your-drivers-license-页面矩阵.md\", \"repair/claude-skills/automations/runs/2026-10-10-weekend-notes/d1-总站-DOM检查分诊.md\", \"repair/claude-skills/automations/runs/2026-10-10-weekend-notes/d1-总站-逐页检查报告.md\", \"repair/claude-skills/automations/runs/2026-10-10-weekend-notes/d2-shift-事实取证清单.md\", \"repair/claude-skills/automations/runs/2026-10-10-weekend-notes/d2-shift-逐页检查报告.md\", \"repair/claude-skills/automations/runs/2026-10-10-weekend-notes/lootlore-写页与接入规范摘要.md\", \"repair/claude-skills/automations/runs/2026-10-10-weekend-notes/selfcheck.py\", \"repair/claude-skills/automations/runs/2026-10-10-weekend-notes/任务书-事实核验-B4B5通用.md\", \"repair/claude-skills/automations/runs/2026-10-10-weekend-notes/任务书-事实核验-Roblox.md\", \"repair/claude-skills/automations/runs/2026-10-10-weekend-notes/任务书-事实核验.md\", \"repair/claude-skills/automations/runs/2026-10-10-weekend-notes/任务书-写手-B1样例.md\", \"repair/claude-skills/automations/runs/2026-10-10-weekend-notes/任务书-写手-B2样例-Roblox.md\", \"repair/claude-skills/automations/runs/2026-10-10-weekend-notes/任务书-独立验收口径-B4B5通用.md\", \"repair/claude-skills/automations/runs/2026-10-10-weekend-not",
-    "runs": [
-     {
-      "kind": "step",
-      "ai": "Claude Code",
-      "model": "sonnet",
-      "status": "ok",
-      "rejected": false,
-      "started_at": "2026-10-31T13:47:06",
-      "ended_at": "2026-10-31T14:03:19",
-      "duration_s": 972.08
-     },
-     {
-      "kind": "step",
-      "ai": "GPT",
-      "model": "gpt-6.1-sol",
-      "status": "ok",
-      "rejected": false,
-      "started_at": "2026-11-04T22:16:07",
-      "ended_at": "2026-11-04T22:28:03",
-      "duration_s": 715.585
-     }
-    ],
-    "events": [
-     {
-      "at": "2026-10-31T13:47:06",
-      "kind": "daily_schedule",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-10-31T13:47:06",
-      "kind": "step",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-10-31T14:03:19",
-      "kind": "file_audit",
-      "label": "已核对实际文件变更"
-     },
-     {
-      "at": "2026-10-31T14:03:19",
-      "kind": "done",
-      "label": "已完成验收"
-     },
-     {
-      "at": "2026-10-31T14:03:24",
-      "kind": "postcheck",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-10-31T14:03:40",
-      "kind": "visual",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-10-31T14:08:02",
-      "kind": "visual",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-01T02:22:42",
-      "kind": "cleanup",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-01T02:22:42",
-      "kind": "cleanup",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-01T02:22:42",
-      "kind": "cleanup",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-04T21:21:51",
-      "kind": "visual",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-04T21:21:57",
-      "kind": "visual",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-04T21:31:46",
-      "kind": "visual",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-04T22:06:22",
-      "kind": "visual",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-04T22:06:23",
-      "kind": "visual",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-04T22:16:07",
-      "kind": "postcheck",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-04T22:16:07",
-      "kind": "step",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-04T22:28:03",
-      "kind": "file_audit",
-      "label": "已核对实际文件变更"
-     },
-     {
-      "at": "2026-11-04T22:28:03",
-      "kind": "done",
-      "label": "已完成验收"
-     },
-     {
-      "at": "2026-11-04T22:28:13",
-      "kind": "visual",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-04T22:34:21",
-      "kind": "visual",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-04T22:34:21",
-      "kind": "postcheck",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-04T22:34:21",
-      "kind": "postcheck",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-05T10:55:14",
-      "kind": "cleanup",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-05T10:55:14",
       "kind": "cleanup",
       "label": "流程进度更新"
      }
