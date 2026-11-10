@@ -75,7 +75,7 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-10T07:37:23.263338+00:00",
+ "generated_at": "2026-11-10T07:43:33.440749+00:00",
  "counts": {
   "待处理": 0,
   "执行中": 0,
@@ -133,8 +133,8 @@
    "only_levels": null
   },
   {
-   "name": "另一台电脑的 AI",
-   "status": "离线",
+   "name": "Claude（另一台电脑）",
+   "status": "空闲",
    "running": 0,
    "today_runs": 0,
    "today_ok": 0,
