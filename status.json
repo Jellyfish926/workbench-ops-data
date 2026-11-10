@@ -75,13 +75,13 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-10T04:55:16.949124+00:00",
+ "generated_at": "2026-11-10T05:00:24.942307+00:00",
  "counts": {
   "待处理": 0,
   "执行中": 0,
   "会诊中": 0,
   "需你决定": 0,
-  "今日完成": 3,
+  "今日完成": 0,
   "累计完成": 68
  },
  "providers": [
@@ -89,8 +89,8 @@
    "name": "DeepSeek",
    "status": "空闲",
    "running": 0,
-   "today_runs": 1,
-   "today_ok": 1,
+   "today_runs": 0,
+   "today_ok": 0,
    "today_fail": 0,
    "only_levels": null
   },
@@ -116,9 +116,9 @@
    "name": "Claude Code",
    "status": "空闲",
    "running": 0,
-   "today_runs": 5,
-   "today_ok": 3,
-   "today_fail": 2,
+   "today_runs": 0,
+   "today_ok": 0,
+   "today_fail": 0,
    "only_levels": [
     "困难"
    ]
@@ -5563,15 +5563,17 @@
  },
  "radar": {
   "status": "正常",
-  "checked_at": "2026-11-10T04:46:00.870822+00:00",
-  "last_scan_at": "2026-11-10T04:41:44.860000+00:00",
-  "last_scan_age_min": 4.2,
+  "checked_at": "2026-11-10T04:56:04.781418+00:00",
+  "last_scan_at": "2026-11-10T04:51:45.450000+00:00",
+  "last_scan_age_min": 4.3,
   "venues": 12,
-  "live_venues": 12,
-  "down_venues": [],
-  "coins": 1254,
-  "pairs": 1727,
-  "qualified": 6,
+  "live_venues": 11,
+  "down_venues": [
+   "OKX"
+  ],
+  "coins": 1210,
+  "pairs": 1431,
+  "qualified": 3,
   "page_url": "radar/"
  },
  "orchestrator": {
