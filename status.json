@@ -75,12 +75,12 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-10T08:22:11.589239+00:00",
+ "generated_at": "2026-11-10T08:27:44.285594+00:00",
  "counts": {
   "待处理": 0,
   "执行中": 0,
   "会诊中": 0,
-  "需你决定": 1,
+  "需你决定": 0,
   "今日完成": 1,
   "累计完成": 69
  },
@@ -147,11 +147,11 @@
    "id": 86,
    "title": "能看到这些内容吗：",
    "level": "困难",
-   "status": "需你决定",
+   "status": "已放弃",
    "attempts": 1,
    "created_at": "2026-11-10T02:55:49",
-   "updated_at": "2026-11-10T02:58:23",
-   "finished_at": null,
+   "updated_at": "2026-11-10T03:22:19",
+   "finished_at": "2026-11-10T03:22:19",
    "summary": null,
    "path": [
     {
@@ -384,6 +384,11 @@
      {
       "at": "2026-11-10T02:58:23",
       "kind": "decision",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-10T03:22:19",
+      "kind": "manual",
       "label": "流程进度更新"
      }
     ],
@@ -5759,7 +5764,7 @@
   }
  ],
  "gamesites": {
-  "generated_at": "2026-11-10T07:57:42.852283+00:00",
+  "generated_at": "2026-11-10T08:22:35.167583+00:00",
   "scale": {
    "independent_sites": 5,
    "independent_online": 5,
@@ -5861,17 +5866,15 @@
  },
  "radar": {
   "status": "正常",
-  "checked_at": "2026-11-10T08:17:22.952891+00:00",
-  "last_scan_at": "2026-11-10T08:16:46.047000+00:00",
-  "last_scan_age_min": 0.6,
+  "checked_at": "2026-11-10T08:22:15.992101+00:00",
+  "last_scan_at": "2026-11-10T08:21:45.150000+00:00",
+  "last_scan_age_min": 0.5,
   "venues": 12,
-  "live_venues": 11,
-  "down_venues": [
-   "OKX"
-  ],
-  "coins": 1210,
-  "pairs": 1430,
-  "qualified": 3,
+  "live_venues": 12,
+  "down_venues": [],
+  "coins": 1254,
+  "pairs": 1728,
+  "qualified": 4,
   "page_url": "radar/"
  },
  "orchestrator": {
