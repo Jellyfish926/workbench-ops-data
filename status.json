@@ -75,7 +75,7 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-10T08:04:09.950034+00:00",
+ "generated_at": "2026-11-10T08:09:17.564335+00:00",
  "counts": {
   "待处理": 0,
   "执行中": 0,
@@ -133,8 +133,8 @@
    "only_levels": null
   },
   {
-   "name": "Claude（另一台电脑）",
-   "status": "冷却中",
+   "name": "另一台电脑的 AI",
+   "status": "离线",
    "running": 0,
    "today_runs": 1,
    "today_ok": 0,
@@ -184,7 +184,7 @@
     },
     {
      "kind": "execute",
-     "ai": "Claude（另一台电脑）",
+     "ai": "另一台电脑的 AI",
      "model": "gpt-6-astra",
      "status": "rate_limited",
      "rejected": false
@@ -251,7 +251,7 @@
      },
      {
       "kind": "execute",
-      "ai": "Claude（另一台电脑）",
+      "ai": "另一台电脑的 AI",
       "model": "gpt-6-astra",
       "status": "rate_limited",
       "rejected": false,
@@ -5861,18 +5861,17 @@
  },
  "radar": {
   "status": "正常",
-  "checked_at": "2026-11-10T07:57:15.717066+00:00",
-  "last_scan_at": "2026-11-10T07:56:46.465000+00:00",
+  "checked_at": "2026-11-10T08:07:19.181596+00:00",
+  "last_scan_at": "2026-11-10T08:06:45.853000+00:00",
   "last_scan_age_min": 0.5,
   "venues": 12,
-  "live_venues": 10,
+  "live_venues": 11,
   "down_venues": [
-   "OKX",
-   "Hyperliquid"
+   "OKX"
   ],
   "coins": 1210,
-  "pairs": 1341,
-  "qualified": 2,
+  "pairs": 1430,
+  "qualified": 3,
   "page_url": "radar/"
  },
  "orchestrator": {
