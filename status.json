@@ -75,7 +75,7 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-10T08:27:44.285594+00:00",
+ "generated_at": "2026-11-10T08:32:53.295132+00:00",
  "counts": {
   "待处理": 0,
   "执行中": 0,
@@ -133,8 +133,8 @@
    "only_levels": null
   },
   {
-   "name": "另一台电脑的 AI",
-   "status": "离线",
+   "name": "Claude（另一台电脑）",
+   "status": "空闲",
    "running": 0,
    "today_runs": 1,
    "today_ok": 0,
@@ -184,7 +184,7 @@
     },
     {
      "kind": "execute",
-     "ai": "另一台电脑的 AI",
+     "ai": "Claude（另一台电脑）",
      "model": "gpt-6-astra",
      "status": "rate_limited",
      "rejected": false
@@ -251,7 +251,7 @@
      },
      {
       "kind": "execute",
-      "ai": "另一台电脑的 AI",
+      "ai": "Claude（另一台电脑）",
       "model": "gpt-6-astra",
       "status": "rate_limited",
       "rejected": false,
@@ -5866,15 +5866,17 @@
  },
  "radar": {
   "status": "正常",
-  "checked_at": "2026-11-10T08:22:15.992101+00:00",
-  "last_scan_at": "2026-11-10T08:21:45.150000+00:00",
+  "checked_at": "2026-11-10T08:32:19.682302+00:00",
+  "last_scan_at": "2026-11-10T08:31:45.051000+00:00",
   "last_scan_age_min": 0.5,
   "venues": 12,
-  "live_venues": 12,
-  "down_venues": [],
+  "live_venues": 11,
+  "down_venues": [
+   "Hyperliquid"
+  ],
   "coins": 1254,
-  "pairs": 1728,
-  "qualified": 4,
+  "pairs": 1662,
+  "qualified": 3,
   "page_url": "radar/"
  },
  "orchestrator": {
