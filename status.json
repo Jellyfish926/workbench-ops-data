@@ -75,7 +75,7 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-11T01:19:23.275520+00:00",
+ "generated_at": "2026-11-11T01:23:19.484395+00:00",
  "counts": {
   "待处理": 1,
   "执行中": 0,
@@ -6060,54 +6060,54 @@
   }
  ],
  "gamesites": {
-  "generated_at": "2026-11-11T01:14:15.611873+00:00",
+  "generated_at": "2026-11-11T01:20:34.277121+00:00",
   "scale": {
    "independent_sites": 5,
-   "independent_online": 2,
-   "hub_games": null,
+   "independent_online": 5,
+   "hub_games": 49,
    "hub_new_7d": null
   },
   "impressions": {
    "status": "ok",
-   "data_end": "2026-11-07",
+   "data_end": "2026-11-08",
    "latest_day": {
     "start": null,
     "end": null,
-    "date": "2026-11-07",
-    "impressions": 7
+    "date": "2026-11-08",
+    "impressions": 3
    },
    "month_to_date": {
     "start": "2026-11-01",
-    "end": "2026-11-07",
+    "end": "2026-11-08",
     "date": null,
-    "impressions": 25
+    "impressions": 28
    },
    "last_7": {
     "current": {
-     "start": "2026-11-01",
-     "end": "2026-11-07",
+     "start": "2026-11-02",
+     "end": "2026-11-08",
      "date": null,
-     "impressions": 25
+     "impressions": 24
     },
     "previous": {
-     "start": "2026-10-25",
-     "end": "2026-10-31",
+     "start": "2026-10-26",
+     "end": "2026-11-01",
      "date": null,
-     "impressions": 21
+     "impressions": 22
     }
    },
    "last_28": {
     "current": {
-     "start": "2026-10-11",
-     "end": "2026-11-07",
+     "start": "2026-10-12",
+     "end": "2026-11-08",
      "date": null,
-     "impressions": 188
+     "impressions": 157
     },
     "previous": {
-     "start": "2026-09-13",
-     "end": "2026-10-10",
+     "start": "2026-09-14",
+     "end": "2026-10-11",
      "date": null,
-     "impressions": 36492
+     "impressions": 36526
     }
    }
   },
@@ -6142,10 +6142,10 @@
    {
     "id": "liuliang",
     "name": "流量与收录",
-    "status": "步骤执行中",
-    "last_run": "2026-11-10T20:13:10",
+    "status": "待步骤",
+    "last_run": "2026-11-10T20:19:23",
     "alert": false,
-    "output": "Google 数据截止 11-07",
+    "output": "Google 数据截止 11-08",
     "task_id": 88
    },
    {
@@ -6162,7 +6162,7 @@
  },
  "radar": {
   "status": "连不上",
-  "checked_at": "2026-11-11T01:13:26.420422+00:00",
+  "checked_at": "2026-11-11T01:19:43.701324+00:00",
   "last_scan_at": "2026-11-10T09:41:45.049000+00:00",
   "last_scan_age_min": 1.0,
   "venues": 12,
