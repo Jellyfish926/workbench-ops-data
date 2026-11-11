@@ -75,14 +75,14 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-11T04:40:57.370576+00:00",
+ "generated_at": "2026-11-11T04:46:04.159140+00:00",
  "counts": {
   "待处理": 0,
   "执行中": 0,
   "会诊中": 0,
   "需你决定": 0,
-  "今日完成": 3,
-  "累计完成": 71
+  "今日完成": 4,
+  "累计完成": 72
  },
  "providers": [
   {
@@ -143,6 +143,72 @@
   }
  ],
  "tasks": [
+  {
+   "id": 90,
+   "title": "接管测试：每日总站自动上架（2026-11-11）",
+   "level": "困难",
+   "status": "已完成",
+   "attempts": 0,
+   "created_at": "2026-11-10T20:41:06",
+   "updated_at": "2026-11-10T20:41:07",
+   "finished_at": "2026-11-10T20:41:07",
+   "summary": "执行条件检查已结束，用时 1.1 秒；未调用AI。 结论：存在以下阻塞，未启用自动接管。 通过：必要命令 — Git、Python及本任务必要命令均可定位 通过：本机规则资料 — 入口资料存在；这是本机快照，不代表远端最新版 未通过：固定AI登录与已知额度 — 该通道没有已实现的只读登录检查；未调用模型 通过：备选AI登录 — Claude Code已登录；尚未验证模型额度 通过：GitHub目标访问 — {\"default_branch\":\"main\",\"private\":true,\"repository\":\"Jellyfish926/AI\"} 通过：工作记忆仓库隐私 — 私有仓库已确认 尚…",
+   "path": [
+    {
+     "kind": "preflight",
+     "ai": "workbench",
+     "model": "本机检查",
+     "status": "ok",
+     "rejected": false
+    }
+   ],
+   "steps": [
+    {
+     "title": "步骤 1",
+     "ai": "workbench",
+     "model": "本机检查",
+     "status": "完成"
+    }
+   ],
+   "redo_rounds": 0,
+   "detail": {
+    "result": "执行条件检查已结束，用时 1.1 秒；未调用AI。\n结论：存在以下阻塞，未启用自动接管。\n通过：必要命令 — Git、Python及本任务必要命令均可定位\n通过：本机规则资料 — 入口资料存在；这是本机快照，不代表远端最新版\n未通过：固定AI登录与已知额度 — 该通道没有已实现的只读登录检查；未调用模型\n通过：备选AI登录 — Claude Code已登录；尚未验证模型额度\n通过：GitHub目标访问 — {\"default_branch\":\"main\",\"private\":true,\"repository\":\"Jellyfish926/AI\"}\n通过：工作记忆仓库隐私 — 私有仓库已确认\n尚未验证：实际模型调用与当前剩余额度；远端规则版本；其他平台正在执行的任务；GSC/GA4/Vercel业务权限及真实业务产出\n仅检查本机执行条件、登录与仓库只读访问；未调用模型，未运行巡检、发布、写表、备份或通知。",
+    "runs": [
+     {
+      "kind": "preflight",
+      "ai": "workbench",
+      "model": "本机检查",
+      "status": "ok",
+      "rejected": false,
+      "started_at": "2026-11-10T20:41:06",
+      "ended_at": "2026-11-10T20:41:07",
+      "duration_s": 1.107
+     }
+    ],
+    "events": [
+     {
+      "at": "2026-11-10T20:41:06",
+      "kind": "daily_schedule",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-10T20:41:06",
+      "kind": "preflight",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-10T20:41:07",
+      "kind": "preflight_done",
+      "label": "流程进度更新"
+     }
+    ],
+    "recovery": {
+     "cycles": 0,
+     "next_at": null,
+     "status": null
+    }
+   }
+  },
   {
    "id": 89,
    "title": "每日定时：每日热词雷达 + 游戏机会表同步（2026-11-11）",
@@ -5794,198 +5860,6 @@
      {
       "at": "2026-11-03T10:01:08",
       "kind": "cleanup",
-      "label": "流程进度更新"
-     }
-    ],
-    "recovery": {
-     "cycles": 0,
-     "next_at": null,
-     "status": null
-    }
-   }
-  },
-  {
-   "id": 50,
-   "title": "每日定时：每日热词雷达 + 游戏机会表同步（2026-11-02）",
-   "level": "困难",
-   "status": "已完成",
-   "attempts": 4,
-   "created_at": "2026-11-01T21:00:23",
-   "updated_at": "2026-11-05T01:31:47",
-   "finished_at": "2026-11-02T01:01:16",
-   "summary": "【给人看的结果】 ✅ 今日热词雷达采集完成，游戏机会表同步无误。 **做了什么** - 今日采集到候选游戏 474 款，其中完成评分 371 款、关注榜评分 32 款 - 数据来源覆盖 Steam 三个榜单各 100 条、Roblox 五个榜单共 473 条，来源完整无缺口 - 游戏机会表同步完成：更新 248 款、新增 16 款，今日观测写入 403 条，全部回读一致、无失败 **有没有问题** - 没有问题 **需要你做什么** - 不需要，工作台会接着自动跑 **关键数字**（数据截至 2026-11-02） - 候选游戏：474 款 - 完成评分：371 款 - 游戏主表新增：16 款…",
-   "path": [
-    {
-     "kind": "step",
-     "ai": "Claude Code（2号电脑）",
-     "model": "sonnet",
-     "status": "failed",
-     "rejected": false
-    },
-    {
-     "kind": "step",
-     "ai": "Claude Code（2号电脑）",
-     "model": "sonnet",
-     "status": "failed",
-     "rejected": false
-    },
-    {
-     "kind": "step",
-     "ai": "Claude Code（2号电脑）",
-     "model": "sonnet",
-     "status": "rate_limited",
-     "rejected": false
-    },
-    {
-     "kind": "step",
-     "ai": "Claude Code（2号电脑）",
-     "model": "sonnet",
-     "status": "ok",
-     "rejected": false
-    }
-   ],
-   "steps": [
-    {
-     "title": "步骤 1",
-     "ai": "Claude Code（2号电脑）",
-     "model": "sonnet",
-     "status": "完成"
-    }
-   ],
-   "redo_rounds": 0,
-   "detail": {
-    "result": "【给人看的结果】\n✅ 今日热词雷达采集完成，游戏机会表同步无误。\n\n**做了什么**\n- 今日采集到候选游戏 474 款，其中完成评分 371 款、关注榜评分 32 款\n- 数据来源覆盖 Steam 三个榜单各 100 条、Roblox 五个榜单共 473 条，来源完整无缺口\n- 游戏机会表同步完成：更新 248 款、新增 16 款，今日观测写入 403 条，全部回读一致、无失败\n\n**有没有问题**\n- 没有问题\n\n**需要你做什么**\n- 不需要，工作台会接着自动跑\n\n**关键数字**（数据截至 2026-11-02）\n- 候选游戏：474 款\n- 完成评分：371 款\n- 游戏主表新增：16 款，更新：248 款\n- 今日观测写入：403 条，失败：0 条\n\n## 技术详情（原始回执，供排查用）\n【回执】2026-11-02 热词雷达 + 游戏机会表同步\n\n我这次没有重新触发任何采集或同步。上次中断前云端已经跑完，我只读回了远端产出。\n\n我没读到技能文件 `seo-xuanci/SKILL.md`。文件工具被限制在任务目录内，读不到它。我也没读规则和交接文件的全文（`START_HERE.md`、`CURRENT_STATE.md`、`USER_PREFERENCES.md`、`hotword-radar.md`）。我只取了它们的开头，没有逐条核对其中的规则。本步只需核对产出，所以没有影响结论。\n\n**已完成**\n- **云端采集**：`radar.yml` 存在。radar run `41375418964` 成功，用时 5 分 8 秒。\n- **同步**：随后 feishu-sync run `41375865667` 成功，用时 5 分 52 秒。\n- **本机运行**：没有在本机运行 `hotwords.py`，因为云端一次通过。\n- **并发检查**：现在没有 in_progress 或 queued 的 run。\n- **快照**：`snapshots/2026-11-02.json` 已入仓，1,078,602 字节。\n - 生成时间是 2026-11-02T02:04Z，`replay=false`，不是历史回放。\n - 候选 474 个，评分 371 个，关注榜评分 32 个。\n- **日报**：`reports/2026-11-02.md` 已入仓，19,041 字节。来源实测是 Steam 三榜各 100 条、Roblox 五榜共 473 条、Trends 10 条。Steam 没有缺口。\n- **同步回执**：`runs/2026-11-02-game-sync.json` 的 `status=complete`、`tables_verified=true`、`errors=[]`。\n - 游戏主表更新 248、新增 16，回读一致。\n - 每日观测写入 403，回读一致 403/403，失败 0。\n - 变更日志写入 18，回读一致 18/18，失败 0。\n - 已建站标记 2 个，回读一致。\n- **远端提交**：`b7767ba`（radar: 2026-11-02 (actions)）和 `59f4961`（game-sync: 2026-11-02 complete）。\n\n**说明**\n- 回执里缺两个可选字段：快照链接和 run_id。这不影响 `complete` 状态。\n- `roblox:10495391267` 在主表里找不到对应行，同步记为「已关注、未新建」。\n- 按任务要求，我没有运行 `bin/radar-card` 和 `bin/feishu-card`，群卡由工作台发。我也没有直接写飞书表、建站、上架或提审。\n\n**未完成**：无。\n\n【回执状态】完成\n\n【工作台文件核对】最多扫描2000个文件；发生新增、修改或删除的相对路径：[]",
-    "runs": [
-     {
-      "kind": "step",
-      "ai": "Claude Code（2号电脑）",
-      "model": "sonnet",
-      "status": "failed",
-      "rejected": false,
-      "started_at": "2026-11-01T21:00:23",
-      "ended_at": "2026-11-01T21:01:57",
-      "duration_s": null
-     },
-     {
-      "kind": "step",
-      "ai": "Claude Code（2号电脑）",
-      "model": "sonnet",
-      "status": "failed",
-      "rejected": false,
-      "started_at": "2026-11-01T21:01:57",
-      "ended_at": "2026-11-01T21:04:17",
-      "duration_s": null
-     },
-     {
-      "kind": "step",
-      "ai": "Claude Code（2号电脑）",
-      "model": "sonnet",
-      "status": "rate_limited",
-      "rejected": false,
-      "started_at": "2026-11-01T21:47:28",
-      "ended_at": "2026-11-01T21:48:08",
-      "duration_s": 39.841
-     },
-     {
-      "kind": "step",
-      "ai": "Claude Code（2号电脑）",
-      "model": "sonnet",
-      "status": "ok",
-      "rejected": false,
-      "started_at": "2026-11-02T01:00:19",
-      "ended_at": "2026-11-02T01:01:16",
-      "duration_s": 56.533
-     }
-    ],
-    "events": [
-     {
-      "at": "2026-11-01T21:00:23",
-      "kind": "daily_schedule",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-01T21:00:23",
-      "kind": "step",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-01T21:01:57",
-      "kind": "recover",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-01T21:01:57",
-      "kind": "auto_resume",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-01T21:01:57",
-      "kind": "step",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-01T21:04:17",
-      "kind": "recover",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-01T21:04:17",
-      "kind": "postcheck",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-01T21:04:17",
-      "kind": "write_timeout_block",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-01T21:04:17",
-      "kind": "postcheck",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-01T21:47:28",
-      "kind": "quiet_check",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-01T21:47:28",
-      "kind": "write_retry",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-01T21:47:28",
-      "kind": "step",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-01T21:48:08",
-      "kind": "file_audit",
-      "label": "已核对实际文件变更"
-     },
-     {
-      "at": "2026-11-01T21:48:08",
-      "kind": "step_rate_limited",
-      "label": "已遇限流，接续其他可用AI或等待恢复"
-     },
-     {
-      "at": "2026-11-02T01:00:19",
-      "kind": "step",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-02T01:01:16",
-      "kind": "file_audit",
-      "label": "已核对实际文件变更"
-     },
-     {
-      "at": "2026-11-02T01:01:16",
-      "kind": "done",
-      "label": "已完成验收"
-     },
-     {
-      "at": "2026-11-02T01:01:27",
-      "kind": "postcheck",
       "label": "流程进度更新"
      }
     ],
