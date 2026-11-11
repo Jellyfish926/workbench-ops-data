@@ -9,9 +9,9 @@
     "enabled": true,
     "configured": true,
     "paused": false,
-    "primary": "GPT",
+    "primary": "Claude Code（2号电脑）",
     "fallbacks": [
-     "Claude Code"
+     "Claude Code（2号电脑）"
     ],
     "next_at": "2026-11-12T09:00:00+08:00",
     "business_date": "2026-11-12",
@@ -26,9 +26,9 @@
     "enabled": false,
     "configured": true,
     "paused": true,
-    "primary": "GPT",
+    "primary": "Claude Code（2号电脑）",
     "fallbacks": [
-     "Claude Code"
+     "Claude Code（2号电脑）"
     ],
     "next_at": "2026-11-12T01:47:00+08:00",
     "business_date": "2026-11-11",
@@ -43,9 +43,9 @@
     "enabled": true,
     "configured": true,
     "paused": false,
-    "primary": "GPT",
+    "primary": "Claude Code（2号电脑）",
     "fallbacks": [
-     "Claude Code"
+     "Claude Code（2号电脑）"
     ],
     "next_at": "2026-11-12T10:00:00+08:00",
     "business_date": "2026-11-12",
@@ -60,9 +60,9 @@
     "enabled": true,
     "configured": true,
     "paused": false,
-    "primary": "GPT",
+    "primary": "Claude Code（2号电脑）",
     "fallbacks": [
-     "Claude Code"
+     "Claude Code（2号电脑）"
     ],
     "next_at": "2026-11-12T03:17:00+08:00",
     "business_date": "2026-11-11",
@@ -75,7 +75,7 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-11T02:24:40.023454+00:00",
+ "generated_at": "2026-11-11T02:43:10.937525+00:00",
  "counts": {
   "待处理": 2,
   "执行中": 0,
@@ -96,7 +96,7 @@
   },
   {
    "name": "Claude(中转)",
-   "status": "冷却中",
+   "status": "空闲",
    "running": 0,
    "today_runs": 0,
    "today_ok": 0,
@@ -104,16 +104,7 @@
    "only_levels": null
   },
   {
-   "name": "GPT",
-   "status": "冷却中",
-   "running": 0,
-   "today_runs": 0,
-   "today_ok": 0,
-   "today_fail": 0,
-   "only_levels": null
-  },
-  {
-   "name": "Claude Code",
+   "name": "Claude Code（2号电脑）",
    "status": "冷却中",
    "running": 0,
    "today_runs": 9,
@@ -124,7 +115,7 @@
    ]
   },
   {
-   "name": "Gemini",
+   "name": "Gemini（1号电脑）",
    "status": "空闲",
    "running": 0,
    "today_runs": 1,
@@ -133,12 +124,21 @@
    "only_levels": null
   },
   {
-   "name": "Claude（另一台电脑）",
+   "name": "1号电脑的 AI",
    "status": "空闲",
    "running": 0,
    "today_runs": 1,
    "today_ok": 0,
    "today_fail": 1,
+   "only_levels": null
+  },
+  {
+   "name": "Claude（1号电脑）",
+   "status": "空闲",
+   "running": 0,
+   "today_runs": 0,
+   "today_ok": 0,
+   "today_fail": 0,
    "only_levels": null
   }
  ],
@@ -157,7 +157,7 @@
    "steps": [
     {
      "title": "步骤 1",
-     "ai": "GPT",
+     "ai": "GPT（2号电脑，未安装）",
      "model": "gpt-6.1-sol",
      "status": "等待"
     }
@@ -646,14 +646,14 @@
    "path": [
     {
      "kind": "plan",
-     "ai": "Claude Code",
+     "ai": "Claude Code（2号电脑）",
      "model": "opus",
      "status": "failed",
      "rejected": false
     },
     {
      "kind": "plan",
-     "ai": "Claude Code",
+     "ai": "Claude Code（2号电脑）",
      "model": "opus",
      "status": "failed",
      "rejected": false
@@ -667,14 +667,14 @@
     },
     {
      "kind": "execute",
-     "ai": "Claude Code",
+     "ai": "Claude Code（2号电脑）",
      "model": "opus",
      "status": "rate_limited",
      "rejected": false
     },
     {
      "kind": "execute",
-     "ai": "Claude（另一台电脑）",
+     "ai": "1号电脑的 AI",
      "model": "gpt-6-astra",
      "status": "rate_limited",
      "rejected": false
@@ -701,7 +701,7 @@
     "runs": [
      {
       "kind": "plan",
-      "ai": "Claude Code",
+      "ai": "Claude Code（2号电脑）",
       "model": "opus",
       "status": "failed",
       "rejected": false,
@@ -711,7 +711,7 @@
      },
      {
       "kind": "plan",
-      "ai": "Claude Code",
+      "ai": "Claude Code（2号电脑）",
       "model": "opus",
       "status": "failed",
       "rejected": false,
@@ -731,7 +731,7 @@
      },
      {
       "kind": "execute",
-      "ai": "Claude Code",
+      "ai": "Claude Code（2号电脑）",
       "model": "opus",
       "status": "rate_limited",
       "rejected": false,
@@ -741,7 +741,7 @@
      },
      {
       "kind": "execute",
-      "ai": "Claude（另一台电脑）",
+      "ai": "1号电脑的 AI",
       "model": "gpt-6-astra",
       "status": "rate_limited",
       "rejected": false,
@@ -902,14 +902,14 @@
    "path": [
     {
      "kind": "plan",
-     "ai": "Claude Code",
+     "ai": "Claude Code（2号电脑）",
      "model": "opus",
      "status": "failed",
      "rejected": false
     },
     {
      "kind": "plan",
-     "ai": "Claude Code",
+     "ai": "Claude Code（2号电脑）",
      "model": "opus",
      "status": "failed",
      "rejected": false
@@ -930,7 +930,7 @@
     },
     {
      "kind": "review",
-     "ai": "Gemini",
+     "ai": "Gemini（1号电脑）",
      "model": "gemini-3.5-flash-lite",
      "status": "ok",
      "rejected": false
@@ -943,7 +943,7 @@
     "runs": [
      {
       "kind": "plan",
-      "ai": "Claude Code",
+      "ai": "Claude Code（2号电脑）",
       "model": "opus",
       "status": "failed",
       "rejected": false,
@@ -953,7 +953,7 @@
      },
      {
       "kind": "plan",
-      "ai": "Claude Code",
+      "ai": "Claude Code（2号电脑）",
       "model": "opus",
       "status": "failed",
       "rejected": false,
@@ -983,7 +983,7 @@
      },
      {
       "kind": "review",
-      "ai": "Gemini",
+      "ai": "Gemini（1号电脑）",
       "model": "gemini-3.5-flash-lite",
       "status": "ok",
       "rejected": false,
@@ -1109,14 +1109,14 @@
    "path": [
     {
      "kind": "plan",
-     "ai": "Claude Code",
+     "ai": "Claude Code（2号电脑）",
      "model": "opus",
      "status": "failed",
      "rejected": false
     },
     {
      "kind": "plan",
-     "ai": "Claude Code",
+     "ai": "Claude Code（2号电脑）",
      "model": "opus",
      "status": "failed",
      "rejected": false
@@ -1136,7 +1136,7 @@
     "runs": [
      {
       "kind": "plan",
-      "ai": "Claude Code",
+      "ai": "Claude Code（2号电脑）",
       "model": "opus",
       "status": "failed",
       "rejected": false,
@@ -1146,7 +1146,7 @@
      },
      {
       "kind": "plan",
-      "ai": "Claude Code",
+      "ai": "Claude Code（2号电脑）",
       "model": "opus",
       "status": "failed",
       "rejected": false,
@@ -1227,14 +1227,14 @@
    "path": [
     {
      "kind": "plan",
-     "ai": "Claude Code",
+     "ai": "Claude Code（2号电脑）",
      "model": "opus",
      "status": "failed",
      "rejected": false
     },
     {
      "kind": "plan",
-     "ai": "Claude Code",
+     "ai": "Claude Code（2号电脑）",
      "model": "opus",
      "status": "failed",
      "rejected": false
@@ -1254,7 +1254,7 @@
     "runs": [
      {
       "kind": "plan",
-      "ai": "Claude Code",
+      "ai": "Claude Code（2号电脑）",
       "model": "opus",
       "status": "failed",
       "rejected": false,
@@ -1264,7 +1264,7 @@
      },
      {
       "kind": "plan",
-      "ai": "Claude Code",
+      "ai": "Claude Code（2号电脑）",
       "model": "opus",
       "status": "failed",
       "rejected": false,
@@ -1350,7 +1350,7 @@
    "path": [
     {
      "kind": "step",
-     "ai": "Claude Code",
+     "ai": "Claude Code（2号电脑）",
      "model": "sonnet",
      "status": "ok",
      "rejected": false
@@ -1359,7 +1359,7 @@
    "steps": [
     {
      "title": "步骤 1",
-     "ai": "Claude Code",
+     "ai": "Claude Code（2号电脑）",
      "model": "sonnet",
      "status": "完成"
     }
@@ -1370,7 +1370,7 @@
     "runs": [
      {
       "kind": "step",
-      "ai": "Claude Code",
+      "ai": "Claude Code（2号电脑）",
       "model": "sonnet",
       "status": "ok",
       "rejected": false,
@@ -1426,7 +1426,7 @@
    "path": [
     {
      "kind": "step",
-     "ai": "Claude Code",
+     "ai": "Claude Code（2号电脑）",
      "model": "opus",
      "status": "ok",
      "rejected": false
@@ -1435,7 +1435,7 @@
    "steps": [
     {
      "title": "步骤 1",
-     "ai": "Claude Code",
+     "ai": "Claude Code（2号电脑）",
      "model": "opus",
      "status": "完成"
     }
@@ -1446,7 +1446,7 @@
     "runs": [
      {
       "kind": "step",
-      "ai": "Claude Code",
+      "ai": "Claude Code（2号电脑）",
       "model": "opus",
       "status": "ok",
       "rejected": false,
@@ -1517,7 +1517,7 @@
    "path": [
     {
      "kind": "step",
-     "ai": "Claude Code",
+     "ai": "Claude Code（2号电脑）",
      "model": "sonnet",
      "status": "ok",
      "rejected": false
@@ -1526,7 +1526,7 @@
    "steps": [
     {
      "title": "步骤 1",
-     "ai": "Claude Code",
+     "ai": "Claude Code（2号电脑）",
      "model": "sonnet",
      "status": "完成"
     }
@@ -1537,7 +1537,7 @@
     "runs": [
      {
       "kind": "step",
-      "ai": "Claude Code",
+      "ai": "Claude Code（2号电脑）",
       "model": "sonnet",
       "status": "ok",
       "rejected": false,
@@ -1593,14 +1593,14 @@
    "path": [
     {
      "kind": "plan",
-     "ai": "Claude Code",
+     "ai": "Claude Code（2号电脑）",
      "model": "opus",
      "status": "failed",
      "rejected": false
     },
     {
      "kind": "plan",
-     "ai": "Claude Code",
+     "ai": "Claude Code（2号电脑）",
      "model": "opus",
      "status": "failed",
      "rejected": false
@@ -1620,7 +1620,7 @@
     "runs": [
      {
       "kind": "plan",
-      "ai": "Claude Code",
+      "ai": "Claude Code（2号电脑）",
       "model": "opus",
       "status": "failed",
       "rejected": false,
@@ -1630,7 +1630,7 @@
      },
      {
       "kind": "plan",
-      "ai": "Claude Code",
+      "ai": "Claude Code（2号电脑）",
       "model": "opus",
       "status": "failed",
       "rejected": false,
@@ -1711,7 +1711,7 @@
    "path": [
     {
      "kind": "step",
-     "ai": "Claude Code",
+     "ai": "Claude Code（2号电脑）",
      "model": "sonnet",
      "status": "ok",
      "rejected": false
@@ -1720,7 +1720,7 @@
    "steps": [
     {
      "title": "步骤 1",
-     "ai": "Claude Code",
+     "ai": "Claude Code（2号电脑）",
      "model": "sonnet",
      "status": "完成"
     }
@@ -1731,7 +1731,7 @@
     "runs": [
      {
       "kind": "step",
-      "ai": "Claude Code",
+      "ai": "Claude Code（2号电脑）",
       "model": "sonnet",
       "status": "ok",
       "rejected": false,
@@ -1787,7 +1787,7 @@
    "path": [
     {
      "kind": "step",
-     "ai": "Claude Code",
+     "ai": "Claude Code（2号电脑）",
      "model": "opus",
      "status": "ok",
      "rejected": false
@@ -1796,7 +1796,7 @@
    "steps": [
     {
      "title": "步骤 1",
-     "ai": "Claude Code",
+     "ai": "Claude Code（2号电脑）",
      "model": "opus",
      "status": "完成"
     }
@@ -1807,7 +1807,7 @@
     "runs": [
      {
       "kind": "step",
-      "ai": "Claude Code",
+      "ai": "Claude Code（2号电脑）",
       "model": "opus",
       "status": "ok",
       "rejected": false,
@@ -1878,7 +1878,7 @@
    "path": [
     {
      "kind": "step",
-     "ai": "Claude Code",
+     "ai": "Claude Code（2号电脑）",
      "model": "sonnet",
      "status": "ok",
      "rejected": false
@@ -1887,7 +1887,7 @@
    "steps": [
     {
      "title": "步骤 1",
-     "ai": "Claude Code",
+     "ai": "Claude Code（2号电脑）",
      "model": "sonnet",
      "status": "完成"
     }
@@ -1898,7 +1898,7 @@
     "runs": [
      {
       "kind": "step",
-      "ai": "Claude Code",
+      "ai": "Claude Code（2号电脑）",
       "model": "sonnet",
       "status": "ok",
       "rejected": false,
@@ -1959,7 +1959,7 @@
    "path": [
     {
      "kind": "step",
-     "ai": "Claude Code",
+     "ai": "Claude Code（2号电脑）",
      "model": "sonnet",
      "status": "ok",
      "rejected": false
@@ -1968,7 +1968,7 @@
    "steps": [
     {
      "title": "步骤 1",
-     "ai": "Claude Code",
+     "ai": "Claude Code（2号电脑）",
      "model": "sonnet",
      "status": "完成"
     }
@@ -1979,7 +1979,7 @@
     "runs": [
      {
       "kind": "step",
-      "ai": "Claude Code",
+      "ai": "Claude Code（2号电脑）",
       "model": "sonnet",
       "status": "ok",
       "rejected": false,
@@ -2070,7 +2070,7 @@
    "path": [
     {
      "kind": "step",
-     "ai": "Claude Code",
+     "ai": "Claude Code（2号电脑）",
      "model": "sonnet",
      "status": "ok",
      "rejected": false
@@ -2079,7 +2079,7 @@
    "steps": [
     {
      "title": "步骤 1",
-     "ai": "Claude Code",
+     "ai": "Claude Code（2号电脑）",
      "model": "sonnet",
      "status": "完成"
     }
@@ -2090,7 +2090,7 @@
     "runs": [
      {
       "kind": "step",
-      "ai": "Claude Code",
+      "ai": "Claude Code（2号电脑）",
       "model": "sonnet",
       "status": "ok",
       "rejected": false,
@@ -2146,7 +2146,7 @@
    "path": [
     {
      "kind": "step",
-     "ai": "Claude Code",
+     "ai": "Claude Code（2号电脑）",
      "model": "opus",
      "status": "ok",
      "rejected": false
@@ -2155,7 +2155,7 @@
    "steps": [
     {
      "title": "步骤 1",
-     "ai": "Claude Code",
+     "ai": "Claude Code（2号电脑）",
      "model": "opus",
      "status": "完成"
     }
@@ -2166,7 +2166,7 @@
     "runs": [
      {
       "kind": "step",
-      "ai": "Claude Code",
+      "ai": "Claude Code（2号电脑）",
       "model": "opus",
       "status": "ok",
       "rejected": false,
@@ -2232,14 +2232,14 @@
    "path": [
     {
      "kind": "step",
-     "ai": "Claude Code",
+     "ai": "Claude Code（2号电脑）",
      "model": "sonnet",
      "status": "ok",
      "rejected": false
     },
     {
      "kind": "step",
-     "ai": "Claude Code",
+     "ai": "Claude Code（2号电脑）",
      "model": "sonnet",
      "status": "ok",
      "rejected": false
@@ -2248,7 +2248,7 @@
    "steps": [
     {
      "title": "步骤 1",
-     "ai": "Claude Code",
+     "ai": "Claude Code（2号电脑）",
      "model": "sonnet",
      "status": "完成"
     }
@@ -2259,7 +2259,7 @@
     "runs": [
      {
       "kind": "step",
-      "ai": "Claude Code",
+      "ai": "Claude Code（2号电脑）",
       "model": "sonnet",
       "status": "ok",
       "rejected": false,
@@ -2269,7 +2269,7 @@
      },
      {
       "kind": "step",
-      "ai": "Claude Code",
+      "ai": "Claude Code（2号电脑）",
       "model": "sonnet",
       "status": "ok",
       "rejected": false,
@@ -2370,7 +2370,7 @@
    "path": [
     {
      "kind": "step",
-     "ai": "Claude Code",
+     "ai": "Claude Code（2号电脑）",
      "model": "sonnet",
      "status": "ok",
      "rejected": false
@@ -2379,7 +2379,7 @@
    "steps": [
     {
      "title": "步骤 1",
-     "ai": "Claude Code",
+     "ai": "Claude Code（2号电脑）",
      "model": "sonnet",
      "status": "完成"
     }
@@ -2390,7 +2390,7 @@
     "runs": [
      {
       "kind": "step",
-      "ai": "Claude Code",
+      "ai": "Claude Code（2号电脑）",
       "model": "sonnet",
       "status": "ok",
       "rejected": false,
@@ -2466,7 +2466,7 @@
    "path": [
     {
      "kind": "step",
-     "ai": "Claude Code",
+     "ai": "Claude Code（2号电脑）",
      "model": "sonnet",
      "status": "ok",
      "rejected": false
@@ -2475,7 +2475,7 @@
    "steps": [
     {
      "title": "步骤 1",
-     "ai": "Claude Code",
+     "ai": "Claude Code（2号电脑）",
      "model": "sonnet",
      "status": "完成"
     }
@@ -2486,7 +2486,7 @@
     "runs": [
      {
       "kind": "step",
-      "ai": "Claude Code",
+      "ai": "Claude Code（2号电脑）",
       "model": "sonnet",
       "status": "ok",
       "rejected": false,
@@ -2542,14 +2542,14 @@
    "path": [
     {
      "kind": "step",
-     "ai": "GPT",
+     "ai": "GPT（2号电脑，未安装）",
      "model": "gpt-6-astra",
      "status": "rate_limited",
      "rejected": false
     },
     {
      "kind": "step",
-     "ai": "Claude Code",
+     "ai": "Claude Code（2号电脑）",
      "model": "opus",
      "status": "ok",
      "rejected": false
@@ -2558,7 +2558,7 @@
    "steps": [
     {
      "title": "步骤 1",
-     "ai": "Claude Code",
+     "ai": "Claude Code（2号电脑）",
      "model": "opus",
      "status": "完成"
     }
@@ -2569,7 +2569,7 @@
     "runs": [
      {
       "kind": "step",
-      "ai": "GPT",
+      "ai": "GPT（2号电脑，未安装）",
       "model": "gpt-6-astra",
       "status": "rate_limited",
       "rejected": false,
@@ -2579,7 +2579,7 @@
      },
      {
       "kind": "step",
-      "ai": "Claude Code",
+      "ai": "Claude Code（2号电脑）",
       "model": "opus",
       "status": "ok",
       "rejected": false,
@@ -2660,7 +2660,7 @@
    "path": [
     {
      "kind": "step",
-     "ai": "Claude Code",
+     "ai": "Claude Code（2号电脑）",
      "model": "sonnet",
      "status": "ok",
      "rejected": false
@@ -2669,7 +2669,7 @@
    "steps": [
     {
      "title": "步骤 1",
-     "ai": "Claude Code",
+     "ai": "Claude Code（2号电脑）",
      "model": "sonnet",
      "status": "完成"
     }
@@ -2680,7 +2680,7 @@
     "runs": [
      {
       "kind": "step",
-      "ai": "Claude Code",
+      "ai": "Claude Code（2号电脑）",
       "model": "sonnet",
       "status": "ok",
       "rejected": false,
@@ -2746,14 +2746,14 @@
    "path": [
     {
      "kind": "step",
-     "ai": "GPT",
+     "ai": "GPT（2号电脑，未安装）",
      "model": "gpt-6.1-sol",
      "status": "rate_limited",
      "rejected": false
     },
     {
      "kind": "step",
-     "ai": "Claude Code",
+     "ai": "Claude Code（2号电脑）",
      "model": "sonnet",
      "status": "ok",
      "rejected": false
@@ -2762,7 +2762,7 @@
    "steps": [
     {
      "title": "步骤 1",
-     "ai": "Claude Code",
+     "ai": "Claude Code（2号电脑）",
      "model": "sonnet",
      "status": "完成"
     }
@@ -2773,7 +2773,7 @@
     "runs": [
      {
       "kind": "step",
-      "ai": "GPT",
+      "ai": "GPT（2号电脑，未安装）",
       "model": "gpt-6.1-sol",
       "status": "rate_limited",
       "rejected": false,
@@ -2783,7 +2783,7 @@
      },
      {
       "kind": "step",
-      "ai": "Claude Code",
+      "ai": "Claude Code（2号电脑）",
       "model": "sonnet",
       "status": "ok",
       "rejected": false,
@@ -2889,7 +2889,7 @@
    "path": [
     {
      "kind": "step",
-     "ai": "Claude Code",
+     "ai": "Claude Code（2号电脑）",
      "model": "sonnet",
      "status": "ok",
      "rejected": false
@@ -2898,7 +2898,7 @@
    "steps": [
     {
      "title": "步骤 1",
-     "ai": "Claude Code",
+     "ai": "Claude Code（2号电脑）",
      "model": "sonnet",
      "status": "完成"
     }
@@ -2909,7 +2909,7 @@
     "runs": [
      {
       "kind": "step",
-      "ai": "Claude Code",
+      "ai": "Claude Code（2号电脑）",
       "model": "sonnet",
       "status": "ok",
       "rejected": false,
@@ -2965,14 +2965,14 @@
    "path": [
     {
      "kind": "step",
-     "ai": "GPT",
+     "ai": "GPT（2号电脑，未安装）",
      "model": "gpt-6-astra",
      "status": "rate_limited",
      "rejected": false
     },
     {
      "kind": "step",
-     "ai": "Claude Code",
+     "ai": "Claude Code（2号电脑）",
      "model": "opus",
      "status": "ok",
      "rejected": false
@@ -2981,7 +2981,7 @@
    "steps": [
     {
      "title": "步骤 1",
-     "ai": "Claude Code",
+     "ai": "Claude Code（2号电脑）",
      "model": "opus",
      "status": "完成"
     }
@@ -2992,7 +2992,7 @@
     "runs": [
      {
       "kind": "step",
-      "ai": "GPT",
+      "ai": "GPT（2号电脑，未安装）",
       "model": "gpt-6-astra",
       "status": "rate_limited",
       "rejected": false,
@@ -3002,7 +3002,7 @@
      },
      {
       "kind": "step",
-      "ai": "Claude Code",
+      "ai": "Claude Code（2号电脑）",
       "model": "opus",
       "status": "ok",
       "rejected": false,
@@ -3088,7 +3088,7 @@
    "path": [
     {
      "kind": "step",
-     "ai": "Claude Code",
+     "ai": "Claude Code（2号电脑）",
      "model": "sonnet",
      "status": "ok",
      "rejected": false
@@ -3097,7 +3097,7 @@
    "steps": [
     {
      "title": "步骤 1",
-     "ai": "Claude Code",
+     "ai": "Claude Code（2号电脑）",
      "model": "sonnet",
      "status": "完成"
     }
@@ -3108,7 +3108,7 @@
     "runs": [
      {
       "kind": "step",
-      "ai": "Claude Code",
+      "ai": "Claude Code（2号电脑）",
       "model": "sonnet",
       "status": "ok",
       "rejected": false,
@@ -3174,70 +3174,70 @@
    "path": [
     {
      "kind": "step",
-     "ai": "GPT",
+     "ai": "GPT（2号电脑，未安装）",
      "model": "gpt-6.1-sol",
      "status": "timeout",
      "rejected": false
     },
     {
      "kind": "step",
-     "ai": "GPT",
+     "ai": "GPT（2号电脑，未安装）",
      "model": "gpt-6-astra",
      "status": "ok",
      "rejected": false
     },
     {
      "kind": "step",
-     "ai": "GPT",
+     "ai": "GPT（2号电脑，未安装）",
      "model": "gpt-6-astra",
      "status": "ok",
      "rejected": false
     },
     {
      "kind": "synthesize",
-     "ai": "Claude Code",
+     "ai": "Claude Code（2号电脑）",
      "model": "sonnet",
      "status": "failed",
      "rejected": false
     },
     {
      "kind": "synthesize",
-     "ai": "Claude Code",
+     "ai": "Claude Code（2号电脑）",
      "model": "sonnet",
      "status": "failed",
      "rejected": false
     },
     {
      "kind": "diagnose",
-     "ai": "Claude Code",
+     "ai": "Claude Code（2号电脑）",
      "model": "opus",
      "status": "failed",
      "rejected": false
     },
     {
      "kind": "diagnose",
-     "ai": "Claude Code",
+     "ai": "Claude Code（2号电脑）",
      "model": "opus",
      "status": "failed",
      "rejected": false
     },
     {
      "kind": "diagnose",
-     "ai": "Claude Code",
+     "ai": "Claude Code（2号电脑）",
      "model": "opus",
      "status": "failed",
      "rejected": false
     },
     {
      "kind": "step",
-     "ai": "Claude Code",
+     "ai": "Claude Code（2号电脑）",
      "model": "opus",
      "status": "ok",
      "rejected": false
     },
     {
      "kind": "step",
-     "ai": "Claude Code",
+     "ai": "Claude Code（2号电脑）",
      "model": "opus",
      "status": "rate_limited",
      "rejected": false
@@ -3271,7 +3271,7 @@
     "runs": [
      {
       "kind": "step",
-      "ai": "GPT",
+      "ai": "GPT（2号电脑，未安装）",
       "model": "gpt-6.1-sol",
       "status": "timeout",
       "rejected": false,
@@ -3281,7 +3281,7 @@
      },
      {
       "kind": "step",
-      "ai": "GPT",
+      "ai": "GPT（2号电脑，未安装）",
       "model": "gpt-6-astra",
       "status": "ok",
       "rejected": false,
@@ -3291,7 +3291,7 @@
      },
      {
       "kind": "step",
-      "ai": "GPT",
+      "ai": "GPT（2号电脑，未安装）",
       "model": "gpt-6-astra",
       "status": "ok",
       "rejected": false,
@@ -3301,7 +3301,7 @@
      },
      {
       "kind": "synthesize",
-      "ai": "Claude Code",
+      "ai": "Claude Code（2号电脑）",
       "model": "sonnet",
       "status": "failed",
       "rejected": false,
@@ -3311,7 +3311,7 @@
      },
      {
       "kind": "synthesize",
-      "ai": "Claude Code",
+      "ai": "Claude Code（2号电脑）",
       "model": "sonnet",
       "status": "failed",
       "rejected": false,
@@ -3321,7 +3321,7 @@
      },
      {
       "kind": "diagnose",
-      "ai": "Claude Code",
+      "ai": "Claude Code（2号电脑）",
       "model": "opus",
       "status": "failed",
       "rejected": false,
@@ -3331,7 +3331,7 @@
      },
      {
       "kind": "diagnose",
-      "ai": "Claude Code",
+      "ai": "Claude Code（2号电脑）",
       "model": "opus",
       "status": "failed",
       "rejected": false,
@@ -3341,7 +3341,7 @@
      },
      {
       "kind": "diagnose",
-      "ai": "Claude Code",
+      "ai": "Claude Code（2号电脑）",
       "model": "opus",
       "status": "failed",
       "rejected": false,
@@ -3351,7 +3351,7 @@
      },
      {
       "kind": "step",
-      "ai": "Claude Code",
+      "ai": "Claude Code（2号电脑）",
       "model": "opus",
       "status": "ok",
       "rejected": false,
@@ -3361,7 +3361,7 @@
      },
      {
       "kind": "step",
-      "ai": "Claude Code",
+      "ai": "Claude Code（2号电脑）",
       "model": "opus",
       "status": "rate_limited",
       "rejected": false,
@@ -3562,7 +3562,7 @@
    "path": [
     {
      "kind": "step",
-     "ai": "Claude Code",
+     "ai": "Claude Code（2号电脑）",
      "model": "sonnet",
      "status": "ok",
      "rejected": false
@@ -3571,7 +3571,7 @@
    "steps": [
     {
      "title": "步骤 1",
-     "ai": "Claude Code",
+     "ai": "Claude Code（2号电脑）",
      "model": "sonnet",
      "status": "完成"
     }
@@ -3582,7 +3582,7 @@
     "runs": [
      {
       "kind": "step",
-      "ai": "Claude Code",
+      "ai": "Claude Code（2号电脑）",
       "model": "sonnet",
       "status": "ok",
       "rejected": false,
@@ -3638,14 +3638,14 @@
    "path": [
     {
      "kind": "step",
-     "ai": "GPT",
+     "ai": "GPT（2号电脑，未安装）",
      "model": "gpt-6-astra",
      "status": "rate_limited",
      "rejected": false
     },
     {
      "kind": "step",
-     "ai": "Claude Code",
+     "ai": "Claude Code（2号电脑）",
      "model": "opus",
      "status": "ok",
      "rejected": false
@@ -3654,7 +3654,7 @@
    "steps": [
     {
      "title": "步骤 1",
-     "ai": "Claude Code",
+     "ai": "Claude Code（2号电脑）",
      "model": "opus",
      "status": "完成"
     }
@@ -3665,7 +3665,7 @@
     "runs": [
      {
       "kind": "step",
-      "ai": "GPT",
+      "ai": "GPT（2号电脑，未安装）",
       "model": "gpt-6-astra",
       "status": "rate_limited",
       "rejected": false,
@@ -3675,7 +3675,7 @@
      },
      {
       "kind": "step",
-      "ai": "Claude Code",
+      "ai": "Claude Code（2号电脑）",
       "model": "opus",
       "status": "ok",
       "rejected": false,
@@ -3962,7 +3962,7 @@
    "path": [
     {
      "kind": "step",
-     "ai": "GPT",
+     "ai": "GPT（2号电脑，未安装）",
      "model": "gpt-6.1-sol",
      "status": "rate_limited",
      "rejected": false
@@ -3996,7 +3996,7 @@
     "runs": [
      {
       "kind": "step",
-      "ai": "GPT",
+      "ai": "GPT（2号电脑，未安装）",
       "model": "gpt-6.1-sol",
       "status": "rate_limited",
       "rejected": false,
@@ -5526,7 +5526,7 @@
    "path": [
     {
      "kind": "step",
-     "ai": "Claude Code",
+     "ai": "Claude Code（2号电脑）",
      "model": "sonnet",
      "status": "rate_limited",
      "rejected": false
@@ -5560,7 +5560,7 @@
     "runs": [
      {
       "kind": "step",
-      "ai": "Claude Code",
+      "ai": "Claude Code（2号电脑）",
       "model": "sonnet",
       "status": "rate_limited",
       "rejected": false,
@@ -5761,28 +5761,28 @@
    "path": [
     {
      "kind": "step",
-     "ai": "Claude Code",
+     "ai": "Claude Code（2号电脑）",
      "model": "sonnet",
      "status": "failed",
      "rejected": false
     },
     {
      "kind": "step",
-     "ai": "Claude Code",
+     "ai": "Claude Code（2号电脑）",
      "model": "sonnet",
      "status": "failed",
      "rejected": false
     },
     {
      "kind": "step",
-     "ai": "Claude Code",
+     "ai": "Claude Code（2号电脑）",
      "model": "sonnet",
      "status": "rate_limited",
      "rejected": false
     },
     {
      "kind": "step",
-     "ai": "Claude Code",
+     "ai": "Claude Code（2号电脑）",
      "model": "sonnet",
      "status": "ok",
      "rejected": false
@@ -5791,7 +5791,7 @@
    "steps": [
     {
      "title": "步骤 1",
-     "ai": "Claude Code",
+     "ai": "Claude Code（2号电脑）",
      "model": "sonnet",
      "status": "完成"
     }
@@ -5802,7 +5802,7 @@
     "runs": [
      {
       "kind": "step",
-      "ai": "Claude Code",
+      "ai": "Claude Code（2号电脑）",
       "model": "sonnet",
       "status": "failed",
       "rejected": false,
@@ -5812,7 +5812,7 @@
      },
      {
       "kind": "step",
-      "ai": "Claude Code",
+      "ai": "Claude Code（2号电脑）",
       "model": "sonnet",
       "status": "failed",
       "rejected": false,
@@ -5822,7 +5822,7 @@
      },
      {
       "kind": "step",
-      "ai": "Claude Code",
+      "ai": "Claude Code（2号电脑）",
       "model": "sonnet",
       "status": "rate_limited",
       "rejected": false,
@@ -5832,7 +5832,7 @@
      },
      {
       "kind": "step",
-      "ai": "Claude Code",
+      "ai": "Claude Code（2号电脑）",
       "model": "sonnet",
       "status": "ok",
       "rejected": false,
@@ -5942,7 +5942,7 @@
   }
  ],
  "gamesites": {
-  "generated_at": "2026-11-11T02:24:34.378788+00:00",
+  "generated_at": "2026-11-11T02:36:12.481341+00:00",
   "scale": {
    "independent_sites": 5,
    "independent_online": 5,
@@ -6044,26 +6044,25 @@
  },
  "radar": {
   "status": "正常",
-  "checked_at": "2026-11-11T02:23:44.448323+00:00",
-  "last_scan_at": "2026-11-11T02:20:05.610000+00:00",
-  "last_scan_age_min": 3.6,
+  "checked_at": "2026-11-11T02:35:49.319235+00:00",
+  "last_scan_at": "2026-11-11T02:35:03.109000+00:00",
+  "last_scan_age_min": 0.7,
   "venues": 12,
   "live_venues": 11,
   "down_venues": [
    "Hyperliquid"
   ],
   "coins": 1253,
-  "pairs": 1666,
+  "pairs": 1671,
   "qualified": 7,
   "page_url": "radar/"
  },
  "orchestrator": {
   "enabled": true,
-  "provider": "Claude Code",
+  "provider": "Claude Code（2号电脑）",
   "chain": [
-   "Claude Code",
+   "Claude Code（2号电脑）",
    "Claude(中转)",
-   "GPT",
    "DeepSeek"
   ]
  }
