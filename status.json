@@ -15,7 +15,7 @@
     ],
     "next_at": "2026-11-12T09:00:00+08:00",
     "business_date": "2026-11-12",
-    "status": "待步骤",
+    "status": "需你决定",
     "task_id": 88,
     "test_status": "已放弃",
     "test_task_id": 14
@@ -49,7 +49,7 @@
     ],
     "next_at": "2026-11-12T10:00:00+08:00",
     "business_date": "2026-11-12",
-    "status": "待步骤",
+    "status": "步骤执行中",
     "task_id": 89,
     "test_status": "尚未测试",
     "test_task_id": null
@@ -75,12 +75,12 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-11T02:43:10.937525+00:00",
+ "generated_at": "2026-11-11T02:48:44.261852+00:00",
  "counts": {
-  "待处理": 2,
-  "执行中": 0,
+  "待处理": 0,
+  "执行中": 1,
   "会诊中": 0,
-  "需你决定": 1,
+  "需你决定": 2,
   "今日完成": 1,
   "累计完成": 69
  },
@@ -96,7 +96,7 @@
   },
   {
    "name": "Claude(中转)",
-   "status": "空闲",
+   "status": "冷却中",
    "running": 0,
    "today_runs": 0,
    "today_ok": 0,
@@ -105,8 +105,8 @@
   },
   {
    "name": "Claude Code（2号电脑）",
-   "status": "冷却中",
-   "running": 0,
+   "status": "忙碌",
+   "running": 1,
    "today_runs": 9,
    "today_ok": 0,
    "today_fail": 9,
@@ -147,29 +147,53 @@
    "id": 89,
    "title": "每日定时：每日热词雷达 + 游戏机会表同步（2026-11-11）",
    "level": "困难",
-   "status": "待步骤",
-   "attempts": 0,
+   "status": "步骤执行中",
+   "attempts": 1,
    "created_at": "2026-11-10T21:00:13",
-   "updated_at": "2026-11-10T21:00:13",
+   "updated_at": "2026-11-10T18:47:21",
    "finished_at": null,
    "summary": null,
-   "path": [],
+   "path": [
+    {
+     "kind": "step",
+     "ai": "Claude Code（2号电脑）",
+     "model": "sonnet",
+     "status": "running",
+     "rejected": false
+    }
+   ],
    "steps": [
     {
      "title": "步骤 1",
-     "ai": "GPT（2号电脑，未安装）",
-     "model": "gpt-6.1-sol",
-     "status": "等待"
+     "ai": "Claude Code（2号电脑）",
+     "model": "sonnet",
+     "status": "执行中"
     }
    ],
    "redo_rounds": 0,
    "detail": {
     "result": null,
-    "runs": [],
+    "runs": [
+     {
+      "kind": "step",
+      "ai": "Claude Code（2号电脑）",
+      "model": "sonnet",
+      "status": "running",
+      "rejected": false,
+      "started_at": "2026-11-10T18:47:21",
+      "ended_at": null,
+      "duration_s": null
+     }
+    ],
     "events": [
      {
       "at": "2026-11-10T21:00:13",
       "kind": "daily_schedule",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-10T18:47:21",
+      "kind": "step",
       "label": "流程进度更新"
      }
     ],
@@ -184,10 +208,10 @@
    "id": 88,
    "title": "每日定时：LootWiki 每日巡检与自查自纠（2026-11-11）",
    "level": "困难",
-   "status": "待步骤",
+   "status": "需你决定",
    "attempts": 3,
    "created_at": "2026-11-10T20:00:09",
-   "updated_at": "2026-11-10T20:19:23",
+   "updated_at": "2026-11-10T18:47:21",
    "finished_at": null,
    "summary": null,
    "path": [
@@ -216,8 +240,8 @@
    "steps": [
     {
      "title": "步骤 1",
-     "ai": "DeepSeek",
-     "model": "deepseek-v4-pro",
+     "ai": "Claude Code（2号电脑）",
+     "model": "opus",
      "status": "等待"
     }
    ],
@@ -257,21 +281,6 @@
      }
     ],
     "events": [
-     {
-      "at": "2026-11-10T20:10:16",
-      "kind": "postcheck",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-10T20:10:16",
-      "kind": "step",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-10T20:10:16",
-      "kind": "standby",
-      "label": "流程进度更新"
-     },
      {
       "at": "2026-11-10T20:10:46",
       "kind": "tool",
@@ -405,6 +414,21 @@
      {
       "at": "2026-11-10T20:19:23",
       "kind": "recover",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-10T18:47:21",
+      "kind": "postcheck",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-10T18:47:21",
+      "kind": "write_timeout_block",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-10T18:47:26",
+      "kind": "postcheck",
       "label": "流程进度更新"
      }
     ],
@@ -5942,11 +5966,11 @@
   }
  ],
  "gamesites": {
-  "generated_at": "2026-11-11T02:36:12.481341+00:00",
+  "generated_at": "2026-11-11T02:43:45.088774+00:00",
   "scale": {
    "independent_sites": 5,
-   "independent_online": 5,
-   "hub_games": 49,
+   "independent_online": 4,
+   "hub_games": null,
    "hub_new_7d": null
   },
   "impressions": {
@@ -6044,16 +6068,16 @@
  },
  "radar": {
   "status": "正常",
-  "checked_at": "2026-11-11T02:35:49.319235+00:00",
-  "last_scan_at": "2026-11-11T02:35:03.109000+00:00",
-  "last_scan_age_min": 0.7,
+  "checked_at": "2026-11-11T02:43:16.632607+00:00",
+  "last_scan_at": "2026-11-11T02:40:04.319000+00:00",
+  "last_scan_age_min": 3.2,
   "venues": 12,
   "live_venues": 11,
   "down_venues": [
    "Hyperliquid"
   ],
   "coins": 1253,
-  "pairs": 1671,
+  "pairs": 1673,
   "qualified": 7,
   "page_url": "radar/"
  },
