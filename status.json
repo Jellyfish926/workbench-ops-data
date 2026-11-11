@@ -75,7 +75,7 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-11T03:43:41.072726+00:00",
+ "generated_at": "2026-11-11T03:48:46.965023+00:00",
  "counts": {
   "待处理": 0,
   "执行中": 0,
@@ -96,7 +96,7 @@
   },
   {
    "name": "Claude(中转)",
-   "status": "空闲",
+   "status": "冷却中",
    "running": 0,
    "today_runs": 0,
    "today_ok": 0,
@@ -5998,7 +5998,7 @@
   }
  ],
  "gamesites": {
-  "generated_at": "2026-11-11T03:14:08.644340+00:00",
+  "generated_at": "2026-11-11T03:44:54.037719+00:00",
   "scale": {
    "independent_sites": 5,
    "independent_online": 4,
@@ -6100,16 +6100,16 @@
  },
  "radar": {
   "status": "正常",
-  "checked_at": "2026-11-11T03:33:46.715009+00:00",
-  "last_scan_at": "2026-11-11T03:29:13.309000+00:00",
-  "last_scan_age_min": 4.5,
+  "checked_at": "2026-11-11T03:43:48.674981+00:00",
+  "last_scan_at": "2026-11-11T03:39:13.792000+00:00",
+  "last_scan_age_min": 4.6,
   "venues": 12,
   "live_venues": 11,
   "down_venues": [
    "Hyperliquid"
   ],
   "coins": 1253,
-  "pairs": 1665,
+  "pairs": 1667,
   "qualified": 5,
   "page_url": "radar/"
  },
