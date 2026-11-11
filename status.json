@@ -75,7 +75,7 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-11T07:45:13.778060+00:00",
+ "generated_at": "2026-11-11T07:50:19.979582+00:00",
  "counts": {
   "待处理": 1,
   "执行中": 0,
@@ -96,7 +96,7 @@
   },
   {
    "name": "Claude(中转)",
-   "status": "空闲",
+   "status": "冷却中",
    "running": 0,
    "today_runs": 0,
    "today_ok": 0,
@@ -5594,9 +5594,9 @@
  },
  "radar": {
   "status": "正常",
-  "checked_at": "2026-11-11T07:39:34.528263+00:00",
-  "last_scan_at": "2026-11-11T07:39:13.392000+00:00",
-  "last_scan_age_min": 0.3,
+  "checked_at": "2026-11-11T07:49:37.310370+00:00",
+  "last_scan_at": "2026-11-11T07:49:14.099000+00:00",
+  "last_scan_age_min": 0.4,
   "venues": 12,
   "live_venues": 11,
   "down_venues": [
