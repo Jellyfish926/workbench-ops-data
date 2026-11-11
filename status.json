@@ -66,7 +66,7 @@
     ],
     "next_at": "2026-11-12T03:17:00+08:00",
     "business_date": "2026-11-11",
-    "status": "需你决定",
+    "status": "步骤执行中",
     "task_id": 87,
     "test_status": "尚未测试",
     "test_task_id": null
@@ -75,12 +75,12 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-11T03:00:58.511182+00:00",
+ "generated_at": "2026-11-11T03:06:04.921897+00:00",
  "counts": {
   "待处理": 0,
-  "执行中": 0,
+  "执行中": 1,
   "会诊中": 0,
-  "需你决定": 2,
+  "需你决定": 1,
   "今日完成": 2,
   "累计完成": 70
  },
@@ -105,8 +105,8 @@
   },
   {
    "name": "Claude Code（2号电脑）",
-   "status": "空闲",
-   "running": 0,
+   "status": "忙碌",
+   "running": 1,
    "today_runs": 10,
    "today_ok": 1,
    "today_fail": 9,
@@ -458,10 +458,10 @@
    "id": 87,
    "title": "每日定时：每日工作记忆备份到 GitHub（2026-11-10）",
    "level": "困难",
-   "status": "需你决定",
-   "attempts": 2,
+   "status": "步骤执行中",
+   "attempts": 3,
    "created_at": "2026-11-10T14:17:00",
-   "updated_at": "2026-11-10T14:41:32",
+   "updated_at": "2026-11-10T19:05:26",
    "finished_at": null,
    "summary": null,
    "path": [
@@ -478,14 +478,21 @@
      "model": "deepseek-flash",
      "status": "ok",
      "rejected": false
+    },
+    {
+     "kind": "step",
+     "ai": "Claude Code（2号电脑）",
+     "model": "sonnet",
+     "status": "running",
+     "rejected": false
     }
    ],
    "steps": [
     {
      "title": "步骤 1",
-     "ai": "DeepSeek",
-     "model": "deepseek-flash",
-     "status": "完成"
+     "ai": "Claude Code（2号电脑）",
+     "model": "sonnet",
+     "status": "执行中"
     }
    ],
    "redo_rounds": 0,
@@ -511,19 +518,19 @@
       "started_at": "2026-11-10T14:35:17",
       "ended_at": "2026-11-10T14:41:20",
       "duration_s": 363.165
+     },
+     {
+      "kind": "step",
+      "ai": "Claude Code（2号电脑）",
+      "model": "sonnet",
+      "status": "running",
+      "rejected": false,
+      "started_at": "2026-11-10T19:05:26",
+      "ended_at": null,
+      "duration_s": null
      }
     ],
     "events": [
-     {
-      "at": "2026-11-10T14:35:17",
-      "kind": "standby",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-10T14:35:18",
-      "kind": "tool",
-      "label": "流程进度更新"
-     },
      {
       "at": "2026-11-10T14:35:25",
       "kind": "tool",
@@ -662,6 +669,16 @@
      {
       "at": "2026-11-10T14:41:32",
       "kind": "postcheck",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-10T19:05:26",
+      "kind": "postcheck",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-10T19:05:26",
+      "kind": "step",
       "label": "流程进度更新"
      }
     ],
@@ -6083,17 +6100,17 @@
  },
  "radar": {
   "status": "正常",
-  "checked_at": "2026-11-11T02:53:23.860816+00:00",
-  "last_scan_at": "2026-11-11T02:50:04.105000+00:00",
-  "last_scan_age_min": 3.3,
+  "checked_at": "2026-11-11T03:03:29.321652+00:00",
+  "last_scan_at": "2026-11-11T03:00:05.321000+00:00",
+  "last_scan_age_min": 3.4,
   "venues": 12,
   "live_venues": 11,
   "down_venues": [
    "Hyperliquid"
   ],
   "coins": 1253,
-  "pairs": 1670,
-  "qualified": 7,
+  "pairs": 1669,
+  "qualified": 6,
   "page_url": "radar/"
  },
  "orchestrator": {
