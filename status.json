@@ -47,10 +47,10 @@
     "fallbacks": [
      "Claude Code"
     ],
-    "next_at": "2026-11-11T10:00:00+08:00",
-    "business_date": "2026-11-11",
-    "status": "已完成",
-    "task_id": 82,
+    "next_at": "2026-11-12T10:00:00+08:00",
+    "business_date": "2026-11-12",
+    "status": "待步骤",
+    "task_id": 89,
     "test_status": "尚未测试",
     "test_task_id": null
    },
@@ -75,9 +75,9 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-11T01:55:56.626615+00:00",
+ "generated_at": "2026-11-11T02:01:18.912960+00:00",
  "counts": {
-  "待处理": 1,
+  "待处理": 2,
   "执行中": 0,
   "会诊中": 0,
   "需你决定": 1,
@@ -143,6 +143,43 @@
   }
  ],
  "tasks": [
+  {
+   "id": 89,
+   "title": "每日定时：每日热词雷达 + 游戏机会表同步（2026-11-11）",
+   "level": "困难",
+   "status": "待步骤",
+   "attempts": 0,
+   "created_at": "2026-11-10T21:00:13",
+   "updated_at": "2026-11-10T21:00:13",
+   "finished_at": null,
+   "summary": null,
+   "path": [],
+   "steps": [
+    {
+     "title": "步骤 1",
+     "ai": "GPT",
+     "model": "gpt-6.1-sol",
+     "status": "等待"
+    }
+   ],
+   "redo_rounds": 0,
+   "detail": {
+    "result": null,
+    "runs": [],
+    "events": [
+     {
+      "at": "2026-11-10T21:00:13",
+      "kind": "daily_schedule",
+      "label": "流程进度更新"
+     }
+    ],
+    "recovery": {
+     "cycles": 0,
+     "next_at": null,
+     "status": null
+    }
+   }
+  },
   {
    "id": 88,
    "title": "每日定时：LootWiki 每日巡检与自查自纠（2026-11-11）",
@@ -5893,161 +5930,6 @@
      {
       "at": "2026-11-02T01:01:27",
       "kind": "postcheck",
-      "label": "流程进度更新"
-     }
-    ],
-    "recovery": {
-     "cycles": 0,
-     "next_at": null,
-     "status": null
-    }
-   }
-  },
-  {
-   "id": 49,
-   "title": "后台试跑：LootWiki 每日巡检与自查自纠（2026-11-02）",
-   "level": "困难",
-   "status": "已完成",
-   "attempts": 3,
-   "created_at": "2026-11-01T21:00:21",
-   "updated_at": "2026-11-01T21:44:56",
-   "finished_at": "2026-11-01T21:44:56",
-   "summary": "🔴 Google 流量仍接近归零：5 个主力页面仍被挡在搜索结果外，网站本身正常 **一句话结论：** 异常。最直接原因是 Google 抓取了主力页面，却不放进搜索结果；网站技术没有发现故障。今天修了 6 个重点页的过期内容，已上线。 **发生了什么** 10 月 10 日前，每天约 140 人从 Google 点进网站（点击）；最近 7 天一共只有 2 人。Google 把网页给搜索用户看的次数（展示）也从每天约 2400 次降到约 5 次。这已持续 3 周，没有继续跌，也没有恢复。现在真实访客主要靠 Bing，一周约 270 次访问，基本持平。 **为什么** - **已经确认（高）：*…",
-   "path": [
-    {
-     "kind": "step",
-     "ai": "Claude Code",
-     "model": "opus",
-     "status": "failed",
-     "rejected": false
-    },
-    {
-     "kind": "step",
-     "ai": "Claude Code",
-     "model": "opus",
-     "status": "failed",
-     "rejected": false
-    },
-    {
-     "kind": "step",
-     "ai": "Claude Code",
-     "model": "opus",
-     "status": "ok",
-     "rejected": false
-    }
-   ],
-   "steps": [
-    {
-     "title": "步骤 1",
-     "ai": "Claude Code",
-     "model": "opus",
-     "status": "完成"
-    }
-   ],
-   "redo_rounds": 0,
-   "detail": {
-    "result": "🔴 Google 流量仍接近归零：5 个主力页面仍被挡在搜索结果外，网站本身正常\n\n**一句话结论：** 异常。最直接原因是 Google 抓取了主力页面，却不放进搜索结果；网站技术没有发现故障。今天修了 6 个重点页的过期内容，已上线。\n\n**发生了什么**\n10 月 10 日前，每天约 140 人从 Google 点进网站（点击）；最近 7 天一共只有 2 人。Google 把网页给搜索用户看的次数（展示）也从每天约 2400 次降到约 5 次。这已持续 3 周，没有继续跌，也没有恢复。现在真实访客主要靠 Bing，一周约 270 次访问，基本持平。\n\n**为什么**\n- **已经确认（高）：** 抽查发现 Deep Fishing 4 页和 Bongo Cat 活动页都是“已抓取、尚未收录”（收录＝有资格出现在 Google 搜索结果）。这 5 页占近 28 天点击的 64%。\n- **最可能（中）：** Google 下调了对全站的整体评价，因为流量两天内跨栏目一起消失，技术又查不出问题。这是推测。10 月 8–10 日全站改网址格式并集中改页面（低），时间接近不等于原因。\n- **已经排除（高）：** 网站打不开、禁止抓取、标准网址（canonical，页面声明的标准网址）冲突、给 Google 看的内容不同、站点地图读取失败。\n- **尚未排除：** Google 人工处罚，要在后台看。\n\n**会造成什么影响**\nDeep Fishing、Bongo Cat、Sephiria、Orc Problem 等栏目基本失去 Google 新访客，广告机会也减少；具体收入今天未获取。网站访问统计后台（GA4）总访问降 34%，主要是新加坡直接访问减少，它们几乎没有互动。这部分访问可能不是真人，不能当作增长。\n\n**我做了什么**\n- **已上线：** 按官方数据更新 Deep Fishing 商店、通行证、装备、新手、稀有度 5 页（商品 112→120 个，通行证 9→10 个）；Bongo Cat 活动页补上 11 月 1 日公布的秋季活动。门禁全过，已在正式域名逐页核对。\n- **已提交待生效：** 新日期已进站点地图。Google 是否重新收录，要看后续数据。\n- **尝试失败：** 页面体验评分接口今天额度用尽，明天巡检再试。收录总表、人工处罚、安全问题没有官方接口，未获取。\n\n**需要你拍板**\n1. 是否对这 5 页请求编入索引（接口不支持，需你在后台操作）。选项：做 / 暂不做。建议做，内容今天刚更新。操作时顺便看一眼“人工处置”页，可确认或排除上面未查清的原因。\n - [链接]\n - [链接]\n - [链接]\n - [链接]\n - [链接]\n\n**正常项：** 全部页面可访问，HTTPS 证书有效，站内没有死链，未发现模板错误；安全问题未获取。\n\n---\n\n**数据依据（给需要细看的人）**\n\n**Search Console（实测，文件生成 2026-11-02 01:58 UTC，数据截止 2026-10-30，延迟未超限）**\n- 最近两个完整日：10-29 为 0 点击 / 4 展示；10-30 为 0 / 0。\n- 近 7 天（10-24 至 10-30）：2 点击、36 展示、排名 4.3、22 页有展示。前 7 天（10-17 至 10-23）：2 点击、34 展示、排名 6.6、13 页有展示。\n- 断崖：10-03 至 10-09 共 1007 点击（日均 144）、16916 展示（日均 2417）；10-09 为 146 点击；10-10 为 19；10-11 起每天 0–2。\n- 近 28 天 1063 点击对前 28 天 585，是断崖前 7 天把总数抬高了，不代表恢复。文件里的 28 天“掉量榜”（Orc 5.2、Sephiria 等）也不是断崖主角，所以我同时按断崖前点击最高的页诊断：deep-fishing/beginner 208、shop 199、rarity 140、gear 84、bongo-cat/events 46，合计 677。\n- 7 天拆分：页面只有首页有点击（2）；查询只返回 1 条，样本太小；国家为美国 1、荷兰 1；设备为电脑 1、手机 1。搜索呈现无数据。\n- 收录检查 10 个网址：6 个已抓取未编入（上述 5 页和 orc-problem/levels/level-5-2-the-lips，最后抓取 10-22 至 10-24，Orc 页为 09-22），4 个已编入；Google 标准网址都与页面声明一致。这只是抽样，不代表全站比例。\n- 站点地图：最后读取 11-01 01:25 UTC，0 错误，提交 865。接口里“indexed 0”不作为收录证据。线上现为 883，Google 尚未读到新版。\n- 未获取：收录总表、核心网页指标、人工处置、安全问题（无官方接口）；PageSpeed 接口返回当日配额用尽。\n\n**GA4（10-26 至 11-01 对 10-19 至 10-25，最后 1–2 天可能未入库完整）**\n- 会话 495 对 747（−34%），用户 424 对 675，互动率 43% 对 28%，每次会话 1.26 页对 1.14 页。\n- 渠道：Organic 307 对 309；Direct 167 对 416（互动率 9.6% 对 3.6%）；AI Assistant 20 对 17。\n- 来源：cn.bing 158 对 142，bing 115 对 133，google 5 对 9，chatgpt 20 对 17。\n- 国家：新加坡 102 对 336（互动率 2.9% 对 0.6%），中国 189 对 158，美国 89 对 94。设备：电脑 437 对 695，手机 51 对 47。\n\n**技术巡检（修复上线后复查，02:35–02:42 UTC）**\n- 共 1552 个网址，非 200 只有 3 条：sephiria、dragonsword、orc 的 /ads.txt，按现行规则已撤除，不算死链。范围是总站全部页面和站内引用，加子站 sitemap 与首页；比 #48 的 3359 个少，因为没有递归子站内链。\n- 站点地图：总站 883（昨天 865，+18 为 +1 Spider Arm、Create A Disaster），今日更新 4 条；子站 9 / 51 / 43 / 294 / 51 / 22 / 22。\n- 总站：重定向 0；canonical 差异 0；站点地图内 noindex 0（33 个 /all/ 目录页按设计 noindex，不在站点地图）；结构化数据错误 0；标题、描述齐全，H1 各 1 个。\n- http→https、www→主域、无尾斜杠→带尾斜杠均为 308；不存在的网址返回 404；Googlebot 与普通浏览器取到的内容逐字节相同；robots.txt 为 Allow: /。\n- HTTPS 证书有效期到 2026-12-20。模板词命中 48 页，抽查判定为误报：西语单词 todo、正文里的 placeholder。\n- 三语 Nushi 页标题相同，但在停维护清单内，只记录不改。\n- 响应时间：抽样总耗时约 2–3.6 秒，但本机访问 google.com 也要约 2 秒，主要是本机网络；真实用户速度未获取。\n\n**内容与来源（2026-11-02 官方接口实测）**\n- Deep Fishing：120 个开发者商品（新增 8 个：[Gift] Extra Pet Equip、4 种 Exclusive Pharo Bottle、3 个 [Exclusive] 皮肤），10 个通行证（新增 Extra Pet Equip，全买 2840 Robux），13 个徽章，13 条活动，游戏更新时间 11-01 19:52 UTC。\n- Bongo Cat：Steam 官方公告 11-01 的 Bongos and Autumn Event、INDIE TREASURES SALE。Steam 新闻 API 超时，改用官方 RSS 取得。\n- 未改：/deep-fishing/updates、Deep Fishing 首页、Bongo 的 halloween 和 paw-pass（均在停维护清单）。/deep-fishing/codes 上次核对为 10-24，兑换码只有社区来源，本次规则只允许官方来源刷新，所以没动。\n\n**修改与验证**\n- lootlore 提交：f88ef9d、939ee35（补线上核对发现的 3 处漏改）、6ef0f62（修正 1 处日期）。\n- 3 次推送前本地门禁全过（check_content、check_i18n ×2、check_snapshot、check_ga、check_sitemap、link_check、url_consistency_audit、editorial_inventory、no_untested_claims、hero_spotlight）；GitHub gates 全部 success；部署状态 success。\n- 正式域名逐页比对通过，结果见 task49/live-verify.json。\n- 对抗验证：独立 AI（claude-sonnet-5-5）只拿命题和数据路径，9 条全部 CONFIRMED，见 task49/verify-result.md。\n\n**本次未做或受限**\n- 浏览器控制台检查未做（本任务没有已登录浏览器）。\n- seo-yunying、seo-jianzhan 两份技能文件分别约 130KB、203KB，只读了现行规则部分和目录，未读完全文；website-standards、docs/website-standard.md 读了现行部分。\n- 后台试跑：未发送任何飞书消息。本文件替换了同日 #48 的旧报告（写的是 Google 数据未获取），旧版在提交 d3fe8022。\n\n完整报告：[链接]\n\n**回执（回读证据）**\n- **已完成：** Google 数据诊断、技术巡检、6 页修复上线、正式域名核对、对抗验证、报告保存。\n- **未完成：** 收录总表、人工处置、安全问题、核心网页指标、浏览器控制台（原因见上）；5 个网址请求编入索引待站主拍板。\n- **网站提交：** lootlore main 回读为 6ef0f62；gates 运行 41377314097、41378223095、41378417209 均 success。\n- **报告保存：** claude-skills 提交 ec9acb6；report.md 回读校验值与本地一致（f60191156b98）；回执在 automations/lootwiki-patrol/2026-11-02/task49/receipt.json。\n- **飞书：** 未发送，符合后台试跑要求。\n\n【回执状态】完成\n\n【工作台文件核对】最多扫描2000个文件；发生新增、修改或删除的相对路径：[\"evidence/dup.json\", \"evidence/handoff-run270.md\", \"evidence/handoff-run272.md\", \"evidence/live-verify.json\", \"evidence/official/bongo-rss.xml\", \"evidence/official/deep-fishing-events.json\", \"evidence/official/deep-fishing-passes.json\", \"evidence/official/deep-fishing-products.json\", \"evidence/official/facts.json\", \"evidence/pd/patrol-data-2026-11-02/actions.json\", \"evidence/pd/patrol-data-2026-11-02/covered.json\", \"evidence/pd/patrol-data-2026-11-02/freshness.md\", \"evidence/pd/patrol-data-2026-11-02/index.json\", \"evidence/pd/patrol-data-2026-11-02/live.json\", \"evidence/pd/patrol-data-2026-11-02/live.md\", \"evidence/post/http-results.json\", \"evidence/post/run.log\", \"scripts/apply_fixes.py\", \"scripts/dup.py\", \"scripts/facts.py\", \"scripts/facts2.py\", \"scripts/verify_live.py\", \"tmp/lootlore/.github/workflows/freshness.yml\", \"tmp/lootlore/.github/workflows/gates.yml\", \"tmp/lootlore/.github/workflows/intake-data.yml\", \"tmp/lootlore/.github/workflows/patrol-data.yml\", \"tmp/lootlore/.github/workflows/refresh-homepage-spotlight.yml\", \"tmp/lootlore/.github/workflows/sync-sources.yml\", \"tmp/lootlore/.gitignore\", \"tmp/lootlore/AGENTS.md\", \"tmp/lootlore/README.md\", \"tmp/lootlore/build-stamp.json\", \"tmp/lootlore/build.py\", \"tmp/lootlore/built-sites.md\", \"tmp/lootlore/config/hub.json\", \"tmp/lootlore/config/i18n/de.json\", \"tmp/lootlore/config/i18n/en.json\", \"tmp/lootlore/config/i18n/es.json\", \"tmp/lootlore/config/i18n/fr.json\", \"tmp/lootlore/config/i18n/it.json\", \"tmp/lootlore/config/i18n/ja.json\", \"tmp/lootlore/config/i18n/zh-CN.json\", \"tmp/lootlore/config/sources.json\", \"tmp/lootlore/content/american-plains-mudding/_images.json\", \"tmp/lootlore/content/american-plains-mudding/en/author.md\", \"tmp/lootlore/content/american-plains-mudding/en/badges.md\", \"tmp/lootlore/content/american-plains-mudding/en/community.md\", \"tmp/lootlore/content/american-plains-mudding/en/gamepasses.md\", \"tmp/lootlore/content/american-plains-mudding/en/guides.md\", \"tmp/lootlore/content/american-plains-mudding/en/how-to-play.md\", \"tmp/lootlore/content/american-plains-mudding/en/index.md\", \"tmp/lootlore/content/american-plains-mudding/en/limited-vehicles.md\", \"tmp/lootlore/content/american-plains-mudding/en/private-servers.md\", \"tmp/lootlore/content/american-plains-mudding/en/spawning.md\", \"tmp/lootlore/content/american-plains-mudding/en/updates.md\", \"tmp/lootlore/content/american-plains-mudding/en/vehicles.md\", \"tmp/lootlore/content/animal-daycare/_images.json\", \"tmp/lootlore/content/animal-daycare/en/author.md\", \"tmp/lootlore/content/animal-daycare/en/badges.md\", \"tmp/lootlore/content/animal-daycare/en/game-info.md\", \"tmp/lootlore/content/animal-daycare/en/guides.md\", \"tmp/lootlore/content/animal-daycare/en/how-to-play.md\", \"tmp/lootlore/content/animal-daycare/en/impostors.md\", \"tmp/lootlore/content/animal-daycare/en/index.md\", \"tmp/lootlore/content/animal-daycare/en/night-events.md\", \"tmp/lootlore/content/animal-daycare/en/shop.md\", \"tmp/lootlore/content/blockspin/_images.json\", \"tmp/lootlore/content/blockspin/en/author.md\", \"tmp/lootlore/content/blockspin/en/beginner.md\", \"tmp/lootlore/content/blockspin/en/cheats-bans.md\", \"tmp/lootlore/content/blockspin/en/codes.md\", \"tmp/lootlore/content/blockspin/en/game-info.md\", \"tmp/lootlore/content/blockspin/en/getting-started.md\", \"tmp/lootlore/content/blockspin/en/index.md\", \"tmp/lootlore/content/blockspin/en/jobs.md\", \"tmp/lootlore/content/blockspin/en/mansion-upgrades.md\", \"tmp/lootlore/content/blockspin/en/map-locations.md\", \"tmp/lootlore/content/blockspin/en/money-gear.md\", \"tmp/lootlore/content/blockspin/en/robux-shop.md\", \"tmp/lootlore/content/blockspin/en/vehicles.md\", \"tmp/lootlore/content/blockspin/en/weapon-packs.md\", \"tmp/lootlore/content/blockspin/en/weapons.md\", \"tmp/lootlore/content/bongo-cat/_images.json\", \"tmp/lootlore/content/bongo-cat/en/achievements.md\", \"tmp/lootlore/content/bongo-cat/en/author.md\", \"tmp/lootlore/content/bongo-cat/en/auto-clicker.md\", \"tmp/lootlore/content/bongo-cat/en/collection.md\", \"tmp/lootlore/content/bongo-cat/en/emotes.md\", \"tmp/lootlore/content/bongo-cat/en/events.md\", \"tmp/lootlore/content/bongo-cat/en/exchange-trading.md\", \"tmp/lootlore/content/bongo-cat/en/free-items.md\", \"tmp/lootlore/content/bongo-cat/en/getting-started.md\", \"tmp/lootlore/content/bongo-cat/en/halloween.md\", \"tmp/lootlore/content/bongo-cat/en/hats-skins.md\", \"tmp/lootlore/content/bongo-cat/en/how-to-play.md\", \"tmp/lootlore/content/bongo-cat/en/index.md\", \"tmp/lootlore/content/bongo-cat/en/is-it-safe.md\", \"tmp/lootlore/content/bongo-cat/en/legendary-odds.md\", \"tmp/lootlore/content/bongo-cat/en/mac-linux-steam-deck.md\", \"tmp/lootlore/content/bongo-cat/en/multiplayer.md\"]",
-    "runs": [
-     {
-      "kind": "step",
-      "ai": "Claude Code",
-      "model": "opus",
-      "status": "failed",
-      "rejected": false,
-      "started_at": "2026-11-01T21:00:21",
-      "ended_at": "2026-11-01T21:01:57",
-      "duration_s": null
-     },
-     {
-      "kind": "step",
-      "ai": "Claude Code",
-      "model": "opus",
-      "status": "failed",
-      "rejected": false,
-      "started_at": "2026-11-01T21:01:57",
-      "ended_at": "2026-11-01T21:04:17",
-      "duration_s": null
-     },
-     {
-      "kind": "step",
-      "ai": "Claude Code",
-      "model": "opus",
-      "status": "ok",
-      "rejected": false,
-      "started_at": "2026-11-01T21:10:38",
-      "ended_at": "2026-11-01T21:44:56",
-      "duration_s": 2057.932
-     }
-    ],
-    "events": [
-     {
-      "at": "2026-11-01T21:00:21",
-      "kind": "daily_schedule",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-01T21:00:21",
-      "kind": "manual",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-01T21:00:21",
-      "kind": "step",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-01T21:01:57",
-      "kind": "recover",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-01T21:01:57",
-      "kind": "auto_resume",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-01T21:01:57",
-      "kind": "step",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-01T21:04:17",
-      "kind": "recover",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-01T21:04:17",
-      "kind": "write_timeout_block",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-01T21:10:38",
-      "kind": "write_retry",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-01T21:10:38",
-      "kind": "step",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-01T21:44:56",
-      "kind": "file_audit",
-      "label": "已核对实际文件变更"
-     },
-     {
-      "at": "2026-11-01T21:44:56",
-      "kind": "done",
-      "label": "已完成验收"
-     },
-     {
-      "at": "2026-11-02T09:45:07",
-      "kind": "cleanup",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-02T09:45:07",
-      "kind": "cleanup",
       "label": "流程进度更新"
      }
     ],
