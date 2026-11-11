@@ -75,13 +75,13 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-11T07:55:25.517902+00:00",
+ "generated_at": "2026-11-11T08:00:33.122888+00:00",
  "counts": {
   "待处理": 1,
   "执行中": 0,
   "会诊中": 0,
   "需你决定": 0,
-  "今日完成": 6,
+  "今日完成": 0,
   "累计完成": 74
  },
  "providers": [
@@ -89,9 +89,9 @@
    "name": "DeepSeek",
    "status": "空闲",
    "running": 0,
-   "today_runs": 13,
-   "today_ok": 9,
-   "today_fail": 4,
+   "today_runs": 0,
+   "today_ok": 0,
+   "today_fail": 0,
    "only_levels": null
   },
   {
@@ -107,9 +107,9 @@
    "name": "Claude Code（2号电脑）",
    "status": "冷却中",
    "running": 0,
-   "today_runs": 14,
-   "today_ok": 4,
-   "today_fail": 10,
+   "today_runs": 0,
+   "today_ok": 0,
+   "today_fail": 0,
    "only_levels": [
     "困难"
    ]
@@ -118,8 +118,8 @@
    "name": "Gemini（1号电脑）",
    "status": "空闲",
    "running": 0,
-   "today_runs": 1,
-   "today_ok": 1,
+   "today_runs": 0,
+   "today_ok": 0,
    "today_fail": 0,
    "only_levels": null
   },
@@ -127,9 +127,9 @@
    "name": "GPT（1号电脑）",
    "status": "空闲",
    "running": 0,
-   "today_runs": 1,
+   "today_runs": 0,
    "today_ok": 0,
-   "today_fail": 1,
+   "today_fail": 0,
    "only_levels": null
   },
   {
@@ -5594,8 +5594,8 @@
  },
  "radar": {
   "status": "正常",
-  "checked_at": "2026-11-11T07:49:37.310370+00:00",
-  "last_scan_at": "2026-11-11T07:49:14.099000+00:00",
+  "checked_at": "2026-11-11T07:59:39.731694+00:00",
+  "last_scan_at": "2026-11-11T07:59:14.893000+00:00",
   "last_scan_age_min": 0.4,
   "venues": 12,
   "live_venues": 11,
@@ -5603,7 +5603,7 @@
    "Hyperliquid"
   ],
   "coins": 1253,
-  "pairs": 1673,
+  "pairs": 1675,
   "qualified": 5,
   "page_url": "radar/"
  },
