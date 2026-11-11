@@ -75,7 +75,7 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-11T21:09:06.078908+00:00",
+ "generated_at": "2026-11-11T21:19:12.011194+00:00",
  "counts": {
   "待处理": 0,
   "执行中": 0,
@@ -5454,12 +5454,12 @@
   }
  ],
  "gamesites": {
-  "generated_at": "2026-11-11T20:48:32.725190+00:00",
+  "generated_at": "2026-11-11T21:18:49.221175+00:00",
   "scale": {
    "independent_sites": 5,
    "independent_online": 5,
-   "hub_games": null,
-   "hub_new_7d": null
+   "hub_games": 49,
+   "hub_new_7d": 7
   },
   "impressions": {
    "status": "ok",
@@ -5556,9 +5556,9 @@
  },
  "radar": {
   "status": "正常",
-  "checked_at": "2026-11-11T21:08:43.328192+00:00",
-  "last_scan_at": "2026-11-11T21:04:16.991000+00:00",
-  "last_scan_age_min": 4.4,
+  "checked_at": "2026-11-11T21:18:44.944708+00:00",
+  "last_scan_at": "2026-11-11T21:14:16.797000+00:00",
+  "last_scan_age_min": 4.5,
   "venues": 12,
   "live_venues": 11,
   "down_venues": [
