@@ -15,7 +15,7 @@
     ],
     "next_at": "2026-11-12T09:00:00+08:00",
     "business_date": "2026-11-12",
-    "status": "需你决定",
+    "status": "已放弃",
     "task_id": 88,
     "test_status": "已放弃",
     "test_task_id": 14
@@ -75,12 +75,12 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-11T04:14:07.442170+00:00",
+ "generated_at": "2026-11-11T04:19:14.903952+00:00",
  "counts": {
   "待处理": 0,
   "执行中": 0,
   "会诊中": 0,
-  "需你决定": 1,
+  "需你决定": 0,
   "今日完成": 3,
   "累计完成": 71
  },
@@ -223,11 +223,11 @@
    "id": 88,
    "title": "每日定时：LootWiki 每日巡检与自查自纠（2026-11-11）",
    "level": "困难",
-   "status": "需你决定",
+   "status": "已放弃",
    "attempts": 3,
    "created_at": "2026-11-10T20:00:09",
-   "updated_at": "2026-11-10T18:47:21",
-   "finished_at": null,
+   "updated_at": "2026-11-10T20:14:48",
+   "finished_at": "2026-11-10T20:14:48",
    "summary": null,
    "path": [
     {
@@ -296,21 +296,6 @@
      }
     ],
     "events": [
-     {
-      "at": "2026-11-10T20:10:46",
-      "kind": "tool",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-10T20:10:46",
-      "kind": "tool",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-10T20:11:16",
-      "kind": "tool",
-      "label": "流程进度更新"
-     },
      {
       "at": "2026-11-10T20:11:32",
       "kind": "tool",
@@ -443,6 +428,21 @@
      },
      {
       "at": "2026-11-10T18:47:26",
+      "kind": "postcheck",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-10T20:14:48",
+      "kind": "manual",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-10T20:14:48",
+      "kind": "postcheck",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-10T20:14:48",
       "kind": "postcheck",
       "label": "流程进度更新"
      }
@@ -5998,11 +5998,11 @@
   }
  ],
  "gamesites": {
-  "generated_at": "2026-11-11T03:44:54.037719+00:00",
+  "generated_at": "2026-11-11T04:15:28.028128+00:00",
   "scale": {
    "independent_sites": 5,
    "independent_online": 4,
-   "hub_games": 49,
+   "hub_games": null,
    "hub_new_7d": null
   },
   "impressions": {
@@ -6080,8 +6080,8 @@
    {
     "id": "liuliang",
     "name": "流量与收录",
-    "status": "需你决定",
-    "last_run": "2026-11-10T18:47:21",
+    "status": "已放弃",
+    "last_run": "2026-11-10T20:14:48",
     "alert": false,
     "output": "Google 数据截止 11-08",
     "task_id": 88
