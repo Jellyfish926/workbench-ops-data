@@ -64,10 +64,10 @@
     "fallbacks": [
      "Claude Code（2号电脑）"
     ],
-    "next_at": "2026-11-12T03:17:00+08:00",
-    "business_date": "2026-11-11",
-    "status": "已完成",
-    "task_id": 87,
+    "next_at": "2026-11-13T03:17:00+08:00",
+    "business_date": "2026-11-12",
+    "status": "步骤执行中",
+    "task_id": 94,
     "test_status": "尚未测试",
     "test_task_id": null
    }
@@ -75,10 +75,10 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-11T19:08:30.960960+00:00",
+ "generated_at": "2026-11-11T19:17:36.991888+00:00",
  "counts": {
   "待处理": 0,
-  "执行中": 0,
+  "执行中": 1,
   "会诊中": 0,
   "需你决定": 0,
   "今日完成": 1,
@@ -105,8 +105,8 @@
   },
   {
    "name": "Claude Code（2号电脑）",
-   "status": "空闲",
-   "running": 0,
+   "status": "忙碌",
+   "running": 1,
    "today_runs": 1,
    "today_ok": 1,
    "today_fail": 0,
@@ -143,6 +143,67 @@
   }
  ],
  "tasks": [
+  {
+   "id": 94,
+   "title": "每日定时：每日工作记忆备份到 GitHub（2026-11-11）",
+   "level": "困难",
+   "status": "步骤执行中",
+   "attempts": 1,
+   "created_at": "2026-11-11T11:17:04",
+   "updated_at": "2026-11-11T11:17:04",
+   "finished_at": null,
+   "summary": null,
+   "path": [
+    {
+     "kind": "step",
+     "ai": "Claude Code（2号电脑）",
+     "model": "sonnet",
+     "status": "running",
+     "rejected": false
+    }
+   ],
+   "steps": [
+    {
+     "title": "步骤 1",
+     "ai": "Claude Code（2号电脑）",
+     "model": "sonnet",
+     "status": "执行中"
+    }
+   ],
+   "redo_rounds": 0,
+   "detail": {
+    "result": null,
+    "runs": [
+     {
+      "kind": "step",
+      "ai": "Claude Code（2号电脑）",
+      "model": "sonnet",
+      "status": "running",
+      "rejected": false,
+      "started_at": "2026-11-11T11:17:04",
+      "ended_at": null,
+      "duration_s": null
+     }
+    ],
+    "events": [
+     {
+      "at": "2026-11-11T11:17:04",
+      "kind": "daily_schedule",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-11T11:17:04",
+      "kind": "step",
+      "label": "流程进度更新"
+     }
+    ],
+    "recovery": {
+     "cycles": 0,
+     "next_at": null,
+     "status": null
+    }
+   }
+  },
   {
    "id": 93,
    "title": "接管测试：每日热词雷达 + 游戏机会表同步（2026-11-11）",
@@ -5375,171 +5436,15 @@
      "status": null
     }
    }
-  },
-  {
-   "id": 54,
-   "title": "每日定时：每日热词雷达 + 游戏机会表同步（2026-11-03）",
-   "level": "困难",
-   "status": "已完成",
-   "attempts": 1,
-   "created_at": "2026-11-02T21:00:04",
-   "updated_at": "2026-11-05T01:29:41",
-   "finished_at": "2026-11-02T21:18:05",
-   "summary": "【给人看的结果】 ✅ 今日热词雷达正常跑完，游戏机会表同步成功。 **做了什么** - 今日热词扫描完成，收集到 385 个候选游戏，其中 32 个进入重点关注榜 - 游戏主表完成同步，更新了 257 款游戏信息，新增了 4 款新游戏 - 每日观测数据写入 417 条，核对无误 **有没有问题** 没有问题。 **需要你做什么** 不需要，工作台会接着自动跑。 **关键数字**（数据截至 2026-11-03） - 候选游戏：385 个 - 重点关注：32 个 - 游戏主表新增：4 款 - 每日观测写入：417 条 ## 技术详情（原始回执，供排查用） --- **回执：每日热词雷达 + 游戏…",
-   "path": [
-    {
-     "kind": "step",
-     "ai": "Claude(中转)",
-     "model": "claude-sonnet-4-6",
-     "status": "ok",
-     "rejected": false
-    }
-   ],
-   "steps": [
-    {
-     "title": "步骤 1",
-     "ai": "Claude(中转)",
-     "model": "claude-sonnet-4-6",
-     "status": "完成"
-    }
-   ],
-   "redo_rounds": 0,
-   "detail": {
-    "result": "【给人看的结果】\n✅ 今日热词雷达正常跑完，游戏机会表同步成功。\n\n**做了什么**\n- 今日热词扫描完成，收集到 385 个候选游戏，其中 32 个进入重点关注榜\n- 游戏主表完成同步，更新了 257 款游戏信息，新增了 4 款新游戏\n- 每日观测数据写入 417 条，核对无误\n\n**有没有问题**\n没有问题。\n\n**需要你做什么**\n不需要，工作台会接着自动跑。\n\n**关键数字**（数据截至 2026-11-03）\n- 候选游戏：385 个\n- 重点关注：32 个\n- 游戏主表新增：4 款\n- 每日观测写入：417 条\n\n## 技术详情（原始回执，供排查用）\n---\n\n**回执：每日热词雷达 + 游戏机会表同步（2026-11-03）**\n\n**已完成**\n- `radar.yml` 存在，触发云端 radar run `41563974829`，5 分钟成功（一次通过）\n- feishu-sync run `41564511333`，6 分钟成功\n- 未在本机运行 `hotwords.py`\n\n**产出核对（seo-hotwords 远端读回）**\n- `snapshots/2026-11-03.json`：1,099,854 字节，`replay=False`，生成于 2026-11-03T02:09Z，候选 385 个，关注榜 32 个 ✅\n- `reports/2026-11-03.md`：18,891 字节 ✅\n- `runs/2026-11-03-game-sync.json`：`status=complete`，游戏主表更新 257/新增 4，每日观测写入 417 回读全一致 ✅\n\n群卡不发（2026-10-30 起由工作台自动处理）。\n\n【回执状态】完成\n\n---\n【工作台记录的工具调用（真实发生，非模型自述）】\n- run_command({\"command\": \"bin/gh api repos/Jellyfish926/seo-hotwords/contents/snapshots/2026-11-03.json --silent …) → 返回 64 字\n- run_command({\"command\": \"export PATH=\\\"[本机路径]\" && gh api repos/Jellyfish…) → 返回 1608 字\n- run_command({\"command\": \"export PATH=\\\"[本机路径]\" && gh api repos/Jellyfish…) → 返回 175 字\n- run_command({\"command\": \"export PATH=\\\"[本机路径]\" && gh api repos/Jellyfish…) → 返回 23 字\n- run_command({\"command\": \"export PATH=\\\"[本机路径]\" && gh run list -R Jellyfi…) → 返回 523 字\n- run_command({\"command\": \"export PATH=\\\"[本机路径]\" && gh workflow run radar.…) → 返回 83 字\n- run_command({\"command\": \"export PATH=\\\"[本机路径]\" && gh run watch 415639748…) → 返回 10031 字\n- run_command({\"command\": \"export PATH=\\\"[本机路径]\" && sleep 10 && gh run lis…) → 返回 385 字\n- run_command({\"command\": \"export PATH=\\\"[本机路径]\" && gh run watch 415645113…) → 返回 10031 字\n- run_command({\"command\": \"export PATH=\\\"[本机路径]\" && gh api repos/Jellyfish…) → 返回 32 字\n- run_command({\"command\": \"export PATH=\\\"[本机路径]\" && gh api repos/Jellyfish…) → 返回 935 字\n- run_command({\"command\": \"export PATH=\\\"[本机路径]\" && gh api repos/Jellyfish…) → 返回 935 字\n- run_command({\"command\": \"export PATH=\\\"[本机路径]\" && DL=$(gh api repos/Jell…) → 返回 102 字\n- run_command({\"command\": \"export PATH=\\\"[本机路径]\" && gh api repos/Jellyfish…) → 返回 1857 字\n- write_file({\"content\": \"# 回执：每日热词雷达 + 游戏机会表同步（2026-11-03）\\n\\n业务日：2026-11-03（北京时间） \\n执行时间：2026-11-03T02:06Z – 2…) → 返回 66 字\n【工作台文件核对】最多扫描2000个文件；发生新增、修改或删除的相对路径：[\"receipts/2026-11-03-hotword-radar.md\"]",
-    "runs": [
-     {
-      "kind": "step",
-      "ai": "Claude(中转)",
-      "model": "claude-sonnet-4-6",
-      "status": "ok",
-      "rejected": false,
-      "started_at": "2026-11-02T21:05:41",
-      "ended_at": "2026-11-02T21:18:05",
-      "duration_s": 744.754
-     }
-    ],
-    "events": [
-     {
-      "at": "2026-11-02T21:00:04",
-      "kind": "daily_schedule",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-02T21:05:41",
-      "kind": "step",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-02T21:05:41",
-      "kind": "standby",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-02T21:05:44",
-      "kind": "tool",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-02T21:05:48",
-      "kind": "tool",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-02T21:05:53",
-      "kind": "tool",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-02T21:05:58",
-      "kind": "tool",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-02T21:06:03",
-      "kind": "tool",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-02T21:06:10",
-      "kind": "tool",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-02T21:11:15",
-      "kind": "tool",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-02T21:11:32",
-      "kind": "tool",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-02T21:17:17",
-      "kind": "tool",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-02T21:17:25",
-      "kind": "tool",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-02T21:17:31",
-      "kind": "tool",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-02T21:17:36",
-      "kind": "tool",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-02T21:17:45",
-      "kind": "tool",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-02T21:17:50",
-      "kind": "tool",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-02T21:18:00",
-      "kind": "tool",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-02T21:18:05",
-      "kind": "file_audit",
-      "label": "已核对实际文件变更"
-     },
-     {
-      "at": "2026-11-02T21:18:05",
-      "kind": "done",
-      "label": "已完成验收"
-     },
-     {
-      "at": "2026-11-02T21:18:21",
-      "kind": "postcheck",
-      "label": "流程进度更新"
-     }
-    ],
-    "recovery": {
-     "cycles": 0,
-     "next_at": null,
-     "status": null
-    }
-   }
   }
  ],
  "gamesites": {
-  "generated_at": "2026-11-11T18:46:19.329523+00:00",
+  "generated_at": "2026-11-11T19:16:51.605202+00:00",
   "scale": {
    "independent_sites": 5,
-   "independent_online": 5,
-   "hub_games": 49,
-   "hub_new_7d": 7
+   "independent_online": 4,
+   "hub_games": null,
+   "hub_new_7d": null
   },
   "impressions": {
    "status": "ok",
