@@ -75,7 +75,7 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-11T02:19:11.391882+00:00",
+ "generated_at": "2026-11-11T02:24:40.023454+00:00",
  "counts": {
   "待处理": 2,
   "执行中": 0,
@@ -5942,7 +5942,7 @@
   }
  ],
  "gamesites": {
-  "generated_at": "2026-11-11T01:54:08.910368+00:00",
+  "generated_at": "2026-11-11T02:24:34.378788+00:00",
   "scale": {
    "independent_sites": 5,
    "independent_online": 5,
@@ -5997,11 +5997,11 @@
    {
     "id": "xuanci",
     "name": "选词",
-    "status": "已完成",
-    "last_run": "2026-11-09T21:12:59",
+    "status": "待步骤",
+    "last_run": "2026-11-10T21:00:13",
     "alert": false,
     "output": "11-10：≥50 分 15 个",
-    "task_id": 82
+    "task_id": 89
    },
    {
     "id": "shangjia",
@@ -6044,18 +6044,17 @@
  },
  "radar": {
   "status": "正常",
-  "checked_at": "2026-11-11T02:13:40.786515+00:00",
-  "last_scan_at": "2026-11-11T02:10:05.606000+00:00",
-  "last_scan_age_min": 3.5,
+  "checked_at": "2026-11-11T02:23:44.448323+00:00",
+  "last_scan_at": "2026-11-11T02:20:05.610000+00:00",
+  "last_scan_age_min": 3.6,
   "venues": 12,
-  "live_venues": 10,
+  "live_venues": 11,
   "down_venues": [
-   "OKX",
    "Hyperliquid"
   ],
-  "coins": 1209,
-  "pairs": 1341,
-  "qualified": 2,
+  "coins": 1253,
+  "pairs": 1666,
+  "qualified": 7,
   "page_url": "radar/"
  },
  "orchestrator": {
