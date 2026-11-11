@@ -15,7 +15,7 @@
     ],
     "next_at": "2026-11-12T09:00:00+08:00",
     "business_date": "2026-11-12",
-    "status": "步骤执行中",
+    "status": "已完成",
     "task_id": 92,
     "test_status": "已放弃",
     "test_task_id": 14
@@ -75,14 +75,14 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-11T10:41:18.557209+00:00",
+ "generated_at": "2026-11-11T10:46:32.456657+00:00",
  "counts": {
   "待处理": 0,
-  "执行中": 1,
+  "执行中": 0,
   "会诊中": 0,
   "需你决定": 0,
-  "今日完成": 0,
-  "累计完成": 74
+  "今日完成": 1,
+  "累计完成": 75
  },
  "providers": [
   {
@@ -105,10 +105,10 @@
   },
   {
    "name": "Claude Code（2号电脑）",
-   "status": "忙碌",
-   "running": 1,
-   "today_runs": 0,
-   "today_ok": 0,
+   "status": "空闲",
+   "running": 0,
+   "today_runs": 1,
+   "today_ok": 1,
    "today_fail": 0,
    "only_levels": [
     "困难"
@@ -213,12 +213,12 @@
    "id": 92,
    "title": "每日定时：LootWiki 每日巡检与自查自纠（2026-11-11）",
    "level": "困难",
-   "status": "步骤执行中",
+   "status": "已完成",
    "attempts": 2,
    "created_at": "2026-11-10T20:59:05",
-   "updated_at": "2026-11-11T02:30:12",
-   "finished_at": null,
-   "summary": null,
+   "updated_at": "2026-11-11T02:45:43",
+   "finished_at": "2026-11-11T02:44:38",
+   "summary": "【给人看的结果】 🔴 Google 流量仍接近归零，6 个主力页面未进搜索结果。 **做了什么** - 给访问量前三的栏目 Sweep The Moon 补上官方新公布的“UPDATE 3”活动，已上线。 - 重新核对了 Sweep The Moon 的价格、商品和徽章，没有变化。 - 首页轮播今天已成功运行并上线。 - 技术巡检确认站点地图里的网址都能正常打开，比昨天多 1 页，没有删除。 **有没有问题** - Google 流量接近归零，6 个主力页面仍未进入搜索结果；Deep Fishing、Bongo Cat、Untitled Wheelie Game 等主力栏目基本拿不到 Goog…",
    "path": [
     {
      "kind": "step",
@@ -231,7 +231,7 @@
      "kind": "step",
      "ai": "Claude Code（2号电脑）",
      "model": "opus",
-     "status": "running",
+     "status": "ok",
      "rejected": false
     }
    ],
@@ -240,12 +240,12 @@
      "title": "步骤 1",
      "ai": "Claude Code（2号电脑）",
      "model": "opus",
-     "status": "执行中"
+     "status": "完成"
     }
    ],
    "redo_rounds": 0,
    "detail": {
-    "result": null,
+    "result": "【给人看的结果】\n🔴 Google 流量仍接近归零，6 个主力页面未进搜索结果。\n\n**做了什么**\n- 给访问量前三的栏目 Sweep The Moon 补上官方新公布的“UPDATE 3”活动，已上线。\n- 重新核对了 Sweep The Moon 的价格、商品和徽章，没有变化。\n- 首页轮播今天已成功运行并上线。\n- 技术巡检确认站点地图里的网址都能正常打开，比昨天多 1 页，没有删除。\n\n**有没有问题**\n- Google 流量接近归零，6 个主力页面仍未进入搜索结果；Deep Fishing、Bongo Cat、Untitled Wheelie Game 等主力栏目基本拿不到 Google 新访客，广告收入机会变少。网站技术故障已排除，Sweep The Moon 活动已补上。\n\n**需要你做什么**\n- 到谷歌搜索后台处理收录异常：给这 6 个页面点“请求编入索引”，并查看“人工处置措施”和“安全问题”两页。\n\n**关键数字**（数据截至 2026-11-11）\n- Google 点击：最近完整 7 天 0 次，前 7 天 2 次。\n- Google 展示：最近 7 天 24 次，前 7 天 22 次。\n- 全站访问：近 7 天 1097 次，前 7 天 530 次；Bing 带来 414 次，Google 仅 2 次。\n- 可疑访问：新加坡 75 次中仅 3 次有互动；另有 85 次无进站记录且无互动。\n\n## 技术详情（原始回执，供排查用）\n🔴 Google 流量仍接近归零：6 个主力页面仍未进入搜索结果，网站本身正常\n\n**一句话结论：** 异常。最直接的原因是 Google 抓取了主力页面，却没有放进搜索结果。网站技术检查没有发现故障。今天给访问量前三的栏目 Sweep The Moon 补上了官方新公布的活动，已上线。\n\n**发生了什么**\n- 10 月 10 日前，每天从 Google 点进网站（点击＝从 Google 点进网站的次数）约 130 次。最近完整 7 天（11-02～11-08，数据截止 11-08）是 **0 次**，前 7 天是 2 次。\n- Google 把网页给搜索用户看的次数（展示）原来每天约 2300 次，最近 7 天一共只有 **24 次**（前 7 天 22 次）。这种情况已经持续 4 周，没有变坏，也没有恢复。有展示的页面从 27 个降到 8 个，但基数太小，不算新的下跌。\n- 网站访问统计后台（GA4）显示，近 7 天全站访问 **1097 次**，前 7 天 530 次，翻了一倍。增长主要来自 Bing：从 Bing 来的访问有 414 次，前 7 天是 133 次。从 Google 来的只有 2 次。\n- 有两批访问很可疑：新加坡的 75 次访问里只有 3 次有互动；另有 85 次访问没有记录进站页面，也没有任何互动。**这部分访问可能不是真人，不能当作增长。**\n\n**为什么**\n- **已经确认（高）：** Google 官方收录检查显示，有 6 页仍然是“已抓取、尚未收录”（收录＝页面有资格出现在 Google 搜索结果）：Deep Fishing 的新手、商店、稀有度、装备 4 页，Bongo Cat 活动页，以及 Untitled Wheelie Game 社区页。这 6 页正是 28 天内掉量最多的页面。\n- **最可能（中）：** Google 在 10-10 前后整体调低了对本站的质量评价，所以页面抓了也不放进结果。人工处罚和安全问题没有接口可查，所以这条还不能定为原因。\n- **已经排除（高）：** 今天重新实测，排除了 5 项：网站打不开、robots 禁止抓取、标准网址（canonical＝页面声明的标准网址）指错、页面被标为不要收录、站点地图读取失败。\n\n**会造成什么影响**\nDeep Fishing、Bongo Cat、Untitled Wheelie Game 这几个原来的主力栏目基本拿不到 Google 新访客，广告收入机会也少了。现在的访问量靠 Bing 和新栏目撑着，比如 Raise A Catboy（85 次）、Blind but Dangerous 兑换码页（75 次）、Sweep The Moon（46 次）。\n\n**我做了什么**\n- **已上线：** 用 Roblox 官方接口重新核对了 Sweep The Moon 的首页和自动化页。官方新排了“UPDATE 3”活动（11-14～11-18），页面还没写，今天已补上。价格、商品、徽章也全部重新核对，没有变化。\n - 重建后本地 12 道门禁全部通过，提交 bb63081。\n - 线上门禁和部署都成功；7 个变化文件和正式网站上的内容逐字节一致。\n- **首页轮播：** 这个自动任务迁到新仓库后，今天没有按时自动运行。我手动触发了一次，已成功并上线。\n- **技术巡检：** 站点地图里 985 个网址全部能打开。比昨天多 1 页（Break Glass If Bored 新页），没有删除。\n- **尝试失败：** 无。\n\n**需要你拍板**\n- **请求重新收录（只能在后台手动点，接口不支持）：** deep-fishing/beginner、shop、rarity、gear，bongo-cat/events，untitled-wheelie-game/community。\n - A. 在 Search Console 里对这 6 个网址点“请求编入索引”（推荐，几分钟能做完）。\n - B. 暂不处理，等 Google 自己回来抓。\n - 注意：请求收录≠已经收录。\n- **查人工处罚和安全问题：** 在 Search Console 打开“人工处置措施”和“安全问题”两页，看有没有通知。这样能确认或排除目前最大的那个未知原因。\n\n**正常项：** 首页、robots.txt、站点地图都能正常打开。HTTPS 证书有效到 2026-12-20，http 和 www 都会正确跳到正式网址。抽查没有发现死链、坏图、占位词或乱码。\n\n**数据依据（给需要细看的人）**\n- **数据截止：** Search Console 数据截止 11-08，在时效内。GA4 窗口是 11-04～11-10 对比 10-28～11-03。\n- **Search Console：** 近 28 天点击 8 次，前 28 天 1605 次；展示 157 次对 36526 次。10-09 点击 146 → 10-10 点击 19 → 10-11 点击 1。\n- **技术巡检（11-11 10:31～10:42 UTC 实测）：** 985 个网址都正常打开，没有一页标准网址指错，也没有一页被标为不要收录。抽查 8 页、419 个链接和图片，全部正常。\n- **修复证据：** 提交 Jellyfish926/AI@bb63081；门禁运行 43005358994 成功；Vercel lootlore 部署成功（10:39:58Z）。正式网站回读 7/7 一致。\n- **首页轮播：** 手动触发运行 43004314241，成功，提交 3400d0a。\n- **其他自动任务：** patrol-data / intake-data 上午多次失败，06:18Z 已自己恢复成功，不在本任务修复范围，我没有动。\n- **报告存档：** 已保存到 claude-skills（提交 d45918b），回读逐字节一致：[链接]\n\n【回执状态】完成\n\n【工作台文件核对】最多扫描2000个文件；发生新增、修改或删除的相对路径：[\"docs/prev.md\", \"docs/spec.txt\", \"ev2/links.json\", \"ev2/scan.json\", \"put.json\", \"repo/AGENTS.md\", \"repo/CLAUDE.md\", \"repo/README.md\", \"repo/游戏站/README.md\", \"repo/游戏站/总站/.gitignore\", \"repo/游戏站/总站/AGENTS.md\", \"repo/游戏站/总站/README.md\", \"repo/游戏站/总站/build-stamp.json\", \"repo/游戏站/总站/build.py\", \"repo/游戏站/总站/built-sites.md\", \"repo/游戏站/总站/config/hub.json\", \"repo/游戏站/总站/config/i18n/de.json\", \"repo/游戏站/总站/config/i18n/en.json\", \"repo/游戏站/总站/config/i18n/es.json\", \"repo/游戏站/总站/config/i18n/fr.json\", \"repo/游戏站/总站/config/i18n/it.json\", \"repo/游戏站/总站/config/i18n/ja.json\", \"repo/游戏站/总站/config/i18n/zh-CN.json\", \"repo/游戏站/总站/config/sources.json\", \"repo/游戏站/总站/content/911-dispatch/_images.json\", \"repo/游戏站/总站/content/911-dispatch/en/author.md\", \"repo/游戏站/总站/content/911-dispatch/en/badges.md\", \"repo/游戏站/总站/content/911-dispatch/en/fleet-and-districts.md\", \"repo/游戏站/总站/content/911-dispatch/en/game-passes.md\", \"repo/游戏站/总站/content/911-dispatch/en/guides.md\", \"repo/游戏站/总站/content/911-dispatch/en/how-to-play.md\", \"repo/游戏站/总站/content/911-dispatch/en/index.md\", \"repo/游戏站/总站/content/911-dispatch/en/multiplayer.md\", \"repo/游戏站/总站/content/911-dispatch/en/robux-shop.md\", \"repo/游戏站/总站/content/911-dispatch/en/season-pass.md\", \"repo/游戏站/总站/content/911-dispatch/en/shifts-and-pay.md\", \"repo/游戏站/总站/content/911-dispatch/en/updates.md\", \"repo/游戏站/总站/content/american-plains-mudding/_images.json\", \"repo/游戏站/总站/content/american-plains-mudding/en/author.md\", \"repo/游戏站/总站/content/american-plains-mudding/en/badges.md\", \"repo/游戏站/总站/content/american-plains-mudding/en/community.md\", \"repo/游戏站/总站/content/american-plains-mudding/en/gamepasses.md\", \"repo/游戏站/总站/content/american-plains-mudding/en/guides.md\", \"repo/游戏站/总站/content/american-plains-mudding/en/how-to-play.md\", \"repo/游戏站/总站/content/american-plains-mudding/en/index.md\", \"repo/游戏站/总站/content/american-plains-mudding/en/limited-vehicles.md\", \"repo/游戏站/总站/content/american-plains-mudding/en/private-servers.md\", \"repo/游戏站/总站/content/american-plains-mudding/en/spawning.md\", \"repo/游戏站/总站/content/american-plains-mudding/en/updates.md\", \"repo/游戏站/总站/content/american-plains-mudding/en/vehicles.md\", \"repo/游戏站/总站/content/animal-daycare/_images.json\", \"repo/游戏站/总站/content/animal-daycare/en/author.md\", \"repo/游戏站/总站/content/animal-daycare/en/badges.md\", \"repo/游戏站/总站/content/animal-daycare/en/game-info.md\", \"repo/游戏站/总站/content/animal-daycare/en/guides.md\", \"repo/游戏站/总站/content/animal-daycare/en/how-to-play.md\", \"repo/游戏站/总站/content/animal-daycare/en/impostors.md\", \"repo/游戏站/总站/content/animal-daycare/en/index.md\", \"repo/游戏站/总站/content/animal-daycare/en/night-events.md\", \"repo/游戏站/总站/content/animal-daycare/en/shop.md\", \"repo/游戏站/总站/content/blind-but-dangerous/_images.json\", \"repo/游戏站/总站/content/blind-but-dangerous/en/author.md\", \"repo/游戏站/总站/content/blind-but-dangerous/en/badges.md\", \"repo/游戏站/总站/content/blind-but-dangerous/en/codes.md\", \"repo/游戏站/总站/content/blind-but-dangerous/en/game-passes.md\", \"repo/游戏站/总站/content/blind-but-dangerous/en/guides.md\", \"repo/游戏站/总站/content/blind-but-dangerous/en/how-to-play.md\", \"repo/游戏站/总站/content/blind-but-dangerous/en/index.md\", \"repo/游戏站/总站/content/blind-but-dangerous/en/robux-shop.md\", \"repo/游戏站/总站/content/blind-but-dangerous/en/updates.md\", \"repo/游戏站/总站/content/blockspin/_images.json\", \"repo/游戏站/总站/content/blockspin/en/author.md\", \"repo/游戏站/总站/content/blockspin/en/beginner.md\", \"repo/游戏站/总站/content/blockspin/en/cheats-bans.md\", \"repo/游戏站/总站/content/blockspin/en/codes.md\", \"repo/游戏站/总站/content/blockspin/en/game-info.md\", \"repo/游戏站/总站/content/blockspin/en/getting-started.md\", \"repo/游戏站/总站/content/blockspin/en/index.md\", \"repo/游戏站/总站/content/blockspin/en/jobs.md\", \"repo/游戏站/总站/content/blockspin/en/mansion-upgrades.md\", \"repo/游戏站/总站/content/blockspin/en/map-locations.md\", \"repo/游戏站/总站/content/blockspin/en/money-gear.md\", \"repo/游戏站/总站/content/blockspin/en/robux-shop.md\", \"repo/游戏站/总站/content/blockspin/en/vehicles.md\", \"repo/游戏站/总站/content/blockspin/en/weapon-packs.md\", \"repo/游戏站/总站/content/blockspin/en/weapons.md\", \"repo/游戏站/总站/content/bongo-cat/_images.json\", \"repo/游戏站/总站/content/bongo-cat/en/achievements.md\", \"repo/游戏站/总站/content/bongo-cat/en/author.md\", \"repo/游戏站/总站/content/bongo-cat/en/auto-clicker.md\", \"repo/游戏站/总站/content/bongo-cat/en/collection.md\", \"repo/游戏站/总站/content/bongo-cat/en/emotes.md\", \"repo/游戏站/总站/content/bongo-cat/en/events.md\", \"repo/游戏站/总站/content/bongo-cat/en/exchange-trading.md\", \"repo/游戏站/总站/content/bongo-cat/en/free-items.md\", \"repo/游戏站/总站/content/bongo-cat/en/getting-started.md\", \"repo/游戏站/总站/content/bongo-cat/en/halloween.md\", \"repo/游戏站/总站/content/bongo-cat/en/hats-skins.md\", \"repo/游戏站/总站/content/bongo-cat/en/how-to-play.md\", \"repo/游戏站/总站/content/bongo-cat/en/index.md\"]",
     "runs": [
      {
       "kind": "step",
@@ -261,11 +261,11 @@
       "kind": "step",
       "ai": "Claude Code（2号电脑）",
       "model": "opus",
-      "status": "running",
+      "status": "ok",
       "rejected": false,
       "started_at": "2026-11-11T02:30:12",
-      "ended_at": null,
-      "duration_s": null
+      "ended_at": "2026-11-11T02:44:38",
+      "duration_s": 865.011
      }
     ],
     "events": [
@@ -297,6 +297,26 @@
      {
       "at": "2026-11-11T02:30:12",
       "kind": "step",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-11T02:44:38",
+      "kind": "file_audit",
+      "label": "已核对实际文件变更"
+     },
+     {
+      "at": "2026-11-11T02:44:38",
+      "kind": "done",
+      "label": "已完成验收"
+     },
+     {
+      "at": "2026-11-11T02:44:42",
+      "kind": "postcheck",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-11T02:44:59",
+      "kind": "postcheck",
       "label": "流程进度更新"
      }
     ],
