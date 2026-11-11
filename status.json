@@ -75,7 +75,7 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-11T02:48:44.261852+00:00",
+ "generated_at": "2026-11-11T02:53:51.822606+00:00",
  "counts": {
   "待处理": 0,
   "执行中": 1,
@@ -124,7 +124,7 @@
    "only_levels": null
   },
   {
-   "name": "1号电脑的 AI",
+   "name": "GPT（1号电脑）",
    "status": "空闲",
    "running": 0,
    "today_runs": 1,
@@ -698,7 +698,7 @@
     },
     {
      "kind": "execute",
-     "ai": "1号电脑的 AI",
+     "ai": "GPT（1号电脑）",
      "model": "gpt-6-astra",
      "status": "rate_limited",
      "rejected": false
@@ -765,7 +765,7 @@
      },
      {
       "kind": "execute",
-      "ai": "1号电脑的 AI",
+      "ai": "GPT（1号电脑）",
       "model": "gpt-6-astra",
       "status": "rate_limited",
       "rejected": false,
@@ -6068,16 +6068,16 @@
  },
  "radar": {
   "status": "正常",
-  "checked_at": "2026-11-11T02:43:16.632607+00:00",
-  "last_scan_at": "2026-11-11T02:40:04.319000+00:00",
-  "last_scan_age_min": 3.2,
+  "checked_at": "2026-11-11T02:53:23.860816+00:00",
+  "last_scan_at": "2026-11-11T02:50:04.105000+00:00",
+  "last_scan_age_min": 3.3,
   "venues": 12,
   "live_venues": 11,
   "down_venues": [
    "Hyperliquid"
   ],
   "coins": 1253,
-  "pairs": 1673,
+  "pairs": 1670,
   "qualified": 7,
   "page_url": "radar/"
  },
