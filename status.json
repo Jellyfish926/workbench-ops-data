@@ -13,8 +13,8 @@
     "fallbacks": [
      "Claude Code（2号电脑）"
     ],
-    "next_at": "2026-11-12T09:00:00+08:00",
-    "business_date": "2026-11-12",
+    "next_at": "2026-11-13T09:00:00+08:00",
+    "business_date": "2026-11-13",
     "status": "已完成",
     "task_id": 92,
     "test_status": "已放弃",
@@ -75,7 +75,7 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-12T00:56:02.391174+00:00",
+ "generated_at": "2026-11-12T01:01:07.749669+00:00",
  "counts": {
   "待处理": 0,
   "执行中": 0,
@@ -5561,16 +5561,16 @@
  },
  "radar": {
   "status": "正常",
-  "checked_at": "2026-11-12T00:49:59.098189+00:00",
-  "last_scan_at": "2026-11-12T00:49:13.795000+00:00",
-  "last_scan_age_min": 0.7,
+  "checked_at": "2026-11-12T01:00:02.235519+00:00",
+  "last_scan_at": "2026-11-12T00:59:14.399000+00:00",
+  "last_scan_age_min": 0.8,
   "venues": 12,
   "live_venues": 11,
   "down_venues": [
    "Hyperliquid"
   ],
   "coins": 1255,
-  "pairs": 1665,
+  "pairs": 1663,
   "qualified": 6,
   "page_url": "radar/"
  },
