@@ -75,7 +75,7 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-12T15:06:43.682862+00:00",
+ "generated_at": "2026-11-12T15:11:48.833499+00:00",
  "counts": {
   "待处理": 0,
   "执行中": 0,
@@ -4930,12 +4930,12 @@
   }
  ],
  "gamesites": {
-  "generated_at": "2026-11-12T14:39:08.198593+00:00",
+  "generated_at": "2026-11-12T15:09:42.673522+00:00",
   "scale": {
    "independent_sites": 5,
-   "independent_online": 1,
-   "hub_games": null,
-   "hub_new_7d": null
+   "independent_online": 3,
+   "hub_games": 49,
+   "hub_new_7d": 7
   },
   "impressions": {
    "status": "ok",
@@ -4988,7 +4988,7 @@
     "status": "已完成",
     "last_run": "2026-11-11T22:07:13",
     "alert": false,
-    "output": "11-11：≥50 分 20 个",
+    "output": "11-12：≥50 分 12 个",
     "task_id": 96
    },
    {
