@@ -75,7 +75,7 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-12T11:58:43.676881+00:00",
+ "generated_at": "2026-11-12T12:05:07.401733+00:00",
  "counts": {
   "待处理": 0,
   "执行中": 0,
@@ -134,7 +134,7 @@
   },
   {
    "name": "Claude（1号电脑）",
-   "status": "冷却中",
+   "status": "空闲",
    "running": 0,
    "today_runs": 0,
    "today_ok": 0,
