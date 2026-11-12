@@ -49,7 +49,7 @@
     ],
     "next_at": "2026-11-13T10:00:00+08:00",
     "business_date": "2026-11-13",
-    "status": "步骤执行中",
+    "status": "已完成",
     "task_id": 96,
     "test_status": "尚未测试",
     "test_task_id": null
@@ -75,14 +75,14 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-12T06:05:27.600337+00:00",
+ "generated_at": "2026-11-12T06:11:53.743524+00:00",
  "counts": {
   "待处理": 0,
-  "执行中": 1,
+  "执行中": 0,
   "会诊中": 0,
   "需你决定": 0,
-  "今日完成": 3,
-  "累计完成": 77
+  "今日完成": 4,
+  "累计完成": 78
  },
  "providers": [
   {
@@ -105,10 +105,10 @@
   },
   {
    "name": "Claude Code（2号电脑）",
-   "status": "忙碌",
-   "running": 1,
-   "today_runs": 4,
-   "today_ok": 3,
+   "status": "空闲",
+   "running": 0,
+   "today_runs": 5,
+   "today_ok": 4,
    "today_fail": 1,
    "only_levels": [
     "困难"
@@ -147,12 +147,12 @@
    "id": 96,
    "title": "每日定时：每日热词雷达 + 游戏机会表同步（2026-11-12）",
    "level": "困难",
-   "status": "步骤执行中",
+   "status": "已完成",
    "attempts": 2,
    "created_at": "2026-11-11T18:00:13",
-   "updated_at": "2026-11-11T22:00:13",
-   "finished_at": null,
-   "summary": null,
+   "updated_at": "2026-11-11T22:08:16",
+   "finished_at": "2026-11-11T22:07:13",
+   "summary": "【给人看的结果】 🟡 热词雷达和游戏机会表同步完成，但未核对 Steam 榜缺口 **做了什么** - 完成今日热词雷达采集，并生成当日报告。 - 游戏机会表同步成功，主表更新 266 行、新建 4 行，无重复。 **有没有问题** - 榜单完整性未确认：未核对是否存在 Steam 榜缺口；尚未补查。 **需要你做什么** - 请让工作台补查 Steam 榜缺口。 **关键数字**（数据截至 2026-11-12） - 主表更新 266 行 - 新建 4 行 ## 技术详情（原始回执，供排查用） 2026-11-12 的热词雷达和游戏机会表同步已完成,云端一次通过,没有在本机运行 `hotwo…",
    "path": [
     {
      "kind": "step",
@@ -165,7 +165,7 @@
      "kind": "step",
      "ai": "Claude Code（2号电脑）",
      "model": "sonnet",
-     "status": "running",
+     "status": "ok",
      "rejected": false
     }
    ],
@@ -174,12 +174,12 @@
      "title": "步骤 1",
      "ai": "Claude Code（2号电脑）",
      "model": "sonnet",
-     "status": "执行中"
+     "status": "完成"
     }
    ],
    "redo_rounds": 0,
    "detail": {
-    "result": null,
+    "result": "【给人看的结果】\n🟡 热词雷达和游戏机会表同步完成，但未核对 Steam 榜缺口\n**做了什么**\n- 完成今日热词雷达采集，并生成当日报告。\n- 游戏机会表同步成功，主表更新 266 行、新建 4 行，无重复。\n**有没有问题**\n- 榜单完整性未确认：未核对是否存在 Steam 榜缺口；尚未补查。\n**需要你做什么**\n- 请让工作台补查 Steam 榜缺口。\n**关键数字**（数据截至 2026-11-12）\n- 主表更新 266 行\n- 新建 4 行\n\n## 技术详情（原始回执，供排查用）\n2026-11-12 的热词雷达和游戏机会表同步已完成,云端一次通过,没有在本机运行 `hotwords.py`。\n\n**采集与同步**(旧仓库已并入,按指示改用 AI 仓库的新工作流)\n- 触发前,当日快照、日报、回执都是 404,也没有别的 run 在跑,所以没有重复。\n- `hotwords-radar.yml` 存在。我触发了 run `43165126688`(`-f date=2026-11-12`),成功,用时约 5 分钟。\n- 随后的 `hotwords-feishu-sync` run `43165749815` 也成功。\n\n**产出读回**(`Jellyfish926/AI` 的 `游戏站/热词skill/热词雷达/`)\n- `snapshots/2026-11-12.json` 已入仓,1,091,618 字节。\n- `reports/2026-11-12.md` 已入仓,16,328 字节。\n- `runs/2026-11-12-game-sync.json` 的 `status` 为 `complete`,`failed_step` 为 null,`errors` 为空。\n- 回执里主表更新 266 行,新建 4 行,与计划一致,没有重复键。\n\n**未做的事**\n- 我没有读快照内容,所以没核对它有没有 Steam 榜缺口。\n- 我没有发群卡,也没有运行 `bin/radar-card` 或 `bin/feishu-card`,按任务要求由工作台核验后自己发。\n- 我没有直接写飞书表,也没有建站、上架或提审。\n\n【回执状态】完成\n\n【工作台文件核对】最多扫描2000个文件；发生新增、修改或删除的相对路径：[]",
     "runs": [
      {
       "kind": "step",
@@ -195,11 +195,11 @@
       "kind": "step",
       "ai": "Claude Code（2号电脑）",
       "model": "sonnet",
-      "status": "running",
+      "status": "ok",
       "rejected": false,
       "started_at": "2026-11-11T22:00:13",
-      "ended_at": null,
-      "duration_s": null
+      "ended_at": "2026-11-11T22:07:13",
+      "duration_s": 420.526
      }
     ],
     "events": [
@@ -226,6 +226,21 @@
      {
       "at": "2026-11-11T22:00:13",
       "kind": "step",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-11T22:07:13",
+      "kind": "file_audit",
+      "label": "已核对实际文件变更"
+     },
+     {
+      "at": "2026-11-11T22:07:13",
+      "kind": "done",
+      "label": "已完成验收"
+     },
+     {
+      "at": "2026-11-11T22:08:16",
+      "kind": "postcheck",
       "label": "流程进度更新"
      }
     ],
