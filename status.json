@@ -75,7 +75,7 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-12T21:38:41.427479+00:00",
+ "generated_at": "2026-11-12T21:47:46.588061+00:00",
  "counts": {
   "待处理": 0,
   "执行中": 0,
@@ -450,11 +450,6 @@
     "events": [
      {
       "at": "2026-11-12T01:26:59",
-      "kind": "write_timeout",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-12T01:26:59",
       "kind": "handoff",
       "label": "流程进度更新"
      },
@@ -597,6 +592,11 @@
       "at": "2026-11-12T01:30:51",
       "kind": "done",
       "label": "已完成验收"
+     },
+     {
+      "at": "2026-11-12T13:46:59",
+      "kind": "cleanup",
+      "label": "流程进度更新"
      }
     ],
     "recovery": {
@@ -4655,12 +4655,12 @@
   }
  ],
  "gamesites": {
-  "generated_at": "2026-11-12T21:16:34.603240+00:00",
+  "generated_at": "2026-11-12T21:47:15.645417+00:00",
   "scale": {
    "independent_sites": 5,
    "independent_online": 5,
-   "hub_games": 49,
-   "hub_new_7d": 5
+   "hub_games": null,
+   "hub_new_7d": null
   },
   "impressions": {
    "status": "ok",
