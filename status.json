@@ -75,7 +75,7 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-12T02:01:16.126184+00:00",
+ "generated_at": "2026-11-12T02:11:23.705827+00:00",
  "counts": {
   "待处理": 1,
   "执行中": 0,
@@ -5293,10 +5293,10 @@
   "note": "公开页只显示曝光（Google 展示次数）；点击等其他流量数字只在站主本机看板。"
  },
  "radar": {
-  "status": "连不上",
-  "checked_at": "2026-11-12T02:00:27.592370+00:00",
-  "last_scan_at": "2026-11-12T01:49:14.590000+00:00",
-  "last_scan_age_min": 1.1,
+  "status": "正常",
+  "checked_at": "2026-11-12T02:10:31.007726+00:00",
+  "last_scan_at": "2026-11-12T02:09:14.199000+00:00",
+  "last_scan_age_min": 1.2,
   "venues": 12,
   "live_venues": 11,
   "down_venues": [
@@ -5304,7 +5304,7 @@
   ],
   "coins": 1255,
   "pairs": 1658,
-  "qualified": 8,
+  "qualified": 4,
   "page_url": "radar/"
  },
  "orchestrator": {
