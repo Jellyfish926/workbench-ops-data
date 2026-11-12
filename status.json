@@ -30,8 +30,8 @@
     "fallbacks": [
      "Claude Code（2号电脑）"
     ],
-    "next_at": "2026-11-13T01:47:00+08:00",
-    "business_date": "2026-11-12",
+    "next_at": "2026-11-14T01:47:00+08:00",
+    "business_date": "2026-11-13",
     "status": "已完成",
     "task_id": 75,
     "test_status": "尚未测试",
@@ -75,7 +75,7 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-12T17:43:27.727862+00:00",
+ "generated_at": "2026-11-12T17:48:34.410696+00:00",
  "counts": {
   "待处理": 0,
   "执行中": 0,
@@ -5032,16 +5032,16 @@
  },
  "radar": {
   "status": "正常",
-  "checked_at": "2026-11-12T17:36:59.841842+00:00",
-  "last_scan_at": "2026-11-12T17:34:17.689000+00:00",
-  "last_scan_age_min": 2.6,
+  "checked_at": "2026-11-12T17:47:04.219688+00:00",
+  "last_scan_at": "2026-11-12T17:44:18.603000+00:00",
+  "last_scan_age_min": 2.7,
   "venues": 12,
   "live_venues": 11,
   "down_venues": [
    "OKX"
   ],
   "coins": 1211,
-  "pairs": 1442,
+  "pairs": 1441,
   "qualified": 4,
   "page_url": "radar/"
  },
