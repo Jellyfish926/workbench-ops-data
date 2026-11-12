@@ -64,10 +64,10 @@
     "fallbacks": [
      "Claude Code（2号电脑）"
     ],
-    "next_at": "2026-11-13T03:17:00+08:00",
-    "business_date": "2026-11-12",
+    "next_at": "2026-11-14T03:17:00+08:00",
+    "business_date": "2026-11-13",
     "status": "已完成",
-    "task_id": 94,
+    "task_id": 103,
     "test_status": "尚未测试",
     "test_task_id": null
    }
@@ -75,14 +75,14 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-12T19:15:47.458690+00:00",
+ "generated_at": "2026-11-12T19:20:52.431313+00:00",
  "counts": {
   "待处理": 0,
   "执行中": 0,
   "会诊中": 0,
   "需你决定": 0,
-  "今日完成": 2,
-  "累计完成": 84
+  "今日完成": 3,
+  "累计完成": 85
  },
  "providers": [
   {
@@ -107,8 +107,8 @@
    "name": "Claude Code（2号电脑）",
    "status": "空闲",
    "running": 0,
-   "today_runs": 0,
-   "today_ok": 0,
+   "today_runs": 2,
+   "today_ok": 2,
    "today_fail": 0,
    "only_levels": [
     "困难"
@@ -143,6 +143,114 @@
   }
  ],
  "tasks": [
+  {
+   "id": 103,
+   "title": "每日定时：每日工作记忆备份到 GitHub（2026-11-12）",
+   "level": "困难",
+   "status": "已完成",
+   "attempts": 2,
+   "created_at": "2026-11-12T11:17:07",
+   "updated_at": "2026-11-12T11:20:34",
+   "finished_at": "2026-11-12T11:20:34",
+   "summary": "2026-11-12 的备份缺项已补做，Codex 窗口内无会话和其他账号会话读不到这两项是数据源缺口，不是我这边漏做。补做的 7 个文件已推送到 `Jellyfish926/AI` 的 `main`（提交 `f9af7ff`，没有 force push），远端回读逐文件核对 sha256 全部一致。 **开始前核对** - 实测 `Jellyfish926/AI` 是私有仓库。 - 远端已有上次的提交 `007be2b`（Claude 可见对话和当日记录），我没有重复提交。 - 没有其他 AI 在执行。 **本次补做** - **源路径增量扫描：** 扫描了 AI工作台、workflow 和…",
+   "path": [
+    {
+     "kind": "step",
+     "ai": "Claude Code（2号电脑）",
+     "model": "sonnet",
+     "status": "ok",
+     "rejected": false
+    },
+    {
+     "kind": "step",
+     "ai": "Claude Code（2号电脑）",
+     "model": "sonnet",
+     "status": "ok",
+     "rejected": false
+    }
+   ],
+   "steps": [
+    {
+     "title": "步骤 1",
+     "ai": "Claude Code（2号电脑）",
+     "model": "sonnet",
+     "status": "完成"
+    }
+   ],
+   "redo_rounds": 0,
+   "detail": {
+    "result": "2026-11-12 的备份缺项已补做，Codex 窗口内无会话和其他账号会话读不到这两项是数据源缺口，不是我这边漏做。补做的 7 个文件已推送到 `Jellyfish926/AI` 的 `main`（提交 `f9af7ff`，没有 force push），远端回读逐文件核对 sha256 全部一致。\n\n**开始前核对**\n- 实测 `Jellyfish926/AI` 是私有仓库。\n- 远端已有上次的提交 `007be2b`（Claude 可见对话和当日记录），我没有重复提交。\n- 没有其他 AI 在执行。\n\n**本次补做**\n- **源路径增量扫描：** 扫描了 AI工作台、workflow 和 `[本机路径] 技能与配置，共 2526 个路径，0 读取错误。11-11 15:42Z 之后有 196 个文件变化，只记路径、大小、修改时间和 sha256。结果写在 `sources/source-scan-2026-11-12.json`。这次范围比 11-11 的 6.5 万路径窄，已在记录里写明，不冒充全量扫描。\n- **原生记忆核验：** 4 个文件的哈希已记，截止时间之后 0 个变化。结果写在 `sources/native-memory-check-2026-11-12.json`。\n- **Git 副本清单：** 本机 3 个 Git 工作副本，记录了 HEAD、origin 和未提交文件数，origin 已去掉凭据。结果写在 `sources/git-copies-2026-11-12.json`。11-11 的 89 个副本清单没有重跑。\n- **入口更新：** `START_HERE.md`、`CURRENT_STATE.md`、`backup-status.json` 已更新到 11-12，当日记录 `daily/2026-11-12.md` 也追加了补做段。这些入口之前还指向 11-11。\n- 新生成的三个 JSON 里没有扫到凭据特征。\n\n**仍缺（已写进当日记录）**\n- Codex：本机没有 `[本机路径]，窗口内无会话可备份。\n- 另一台电脑和其他账号的会话读不到。\n- 没有源文件增量包，只有哈希清单。\n- 11-11 的 6.5 万路径全量扫描和 89 个 Git 副本清单这次没有重跑。\n\n【回执状态】完成\n\n【工作台文件核对】最多扫描2000个文件；发生新增、修改或删除的相对路径：[\"w/AGENTS.md\", \"w/CLAUDE.md\", \"w/README.md\", \"w/规则/AGENTS.md\", \"w/规则/CLAUDE.md\", \"w/规则/README.md\", \"w/规则/data/原始资料/工作记忆备份/ARTIFACTS.json\", \"w/规则/data/原始资料/工作记忆备份/AUTOMATIONS.md\", \"w/规则/data/原始资料/工作记忆备份/CONVERSATIONS.md\", \"w/规则/data/原始资料/工作记忆备份/CURRENT_STATE.md\", \"w/规则/data/原始资料/工作记忆备份/GITHUB_PRIVACY.md\", \"w/规则/data/原始资料/工作记忆备份/PERIOD_CONVERSATIONS.json\", \"w/规则/data/原始资料/工作记忆备份/RECOVERY.md\", \"w/规则/data/原始资料/工作记忆备份/REPOSITORIES.md\", \"w/规则/data/原始资料/工作记忆备份/REQUEST_AUDIT.md\", \"w/规则/data/原始资料/工作记忆备份/RULES_INDEX.md\", \"w/规则/data/原始资料/工作记忆备份/SHA256SUMS\", \"w/规则/data/原始资料/工作记忆备份/SOURCE_COVERAGE.md\", \"w/规则/data/原始资料/工作记忆备份/START_HERE.md\", \"w/规则/data/原始资料/工作记忆备份/USER_PREFERENCES.md\", \"w/规则/data/原始资料/工作记忆备份/artifacts/2026-10-29-05c0868c38df.docx\", \"w/规则/data/原始资料/工作记忆备份/artifacts/2026-11-11-AI-13833138532.zip\", \"w/规则/data/原始资料/工作记忆备份/artifacts/2026-11-11-AI-13833760880.zip\", \"w/规则/data/原始资料/工作记忆备份/backup-status.json\", \"w/规则/data/原始资料/工作记忆备份/conversations/01-01a13e9f-e426-7463-b68c-f4adba10f81b.json\", \"w/规则/data/原始资料/工作记忆备份/conversations/02-01a14274-4351-7f71-938f-aebb76a77c20.json\", \"w/规则/data/原始资料/工作记忆备份/conversations/03-01a13d9f-f91e-77e0-9000-8be7e66022f9.json\", \"w/规则/data/原始资料/工作记忆备份/conversations/04-01a13f2b-c1ff-70b3-88c5-a5909c34bff7.json\", \"w/规则/data/原始资料/工作记忆备份/conversations/05-01a13986-5bcd-79e3-a43d-30f10dadb144.json\", \"w/规则/data/原始资料/工作记忆备份/conversations/06-01a13a03-b87d-7a80-b695-fb12cb996cee.json\", \"w/规则/data/原始资料/工作记忆备份/conversations/07-01a13d47-304e-72c0-948c-24581f75e1fb.json\", \"w/规则/data/原始资料/工作记忆备份/conversations/08-01a12ea7-cf7c-7d81-b9cb-02137632fda1.json\", \"w/规则/data/原始资料/工作记忆备份/conversations/2026-11-12-claude-visible.md\", \"w/规则/data/原始资料/工作记忆备份/conversations/index.json\", \"w/规则/data/原始资料/工作记忆备份/daily/2026-10-16.md\", \"w/规则/data/原始资料/工作记忆备份/daily/2026-10-17.md\", \"w/规则/data/原始资料/工作记忆备份/daily/2026-10-18.md\", \"w/规则/data/原始资料/工作记忆备份/daily/2026-10-19.md\", \"w/规则/data/原始资料/工作记忆备份/daily/2026-10-20.md\", \"w/规则/data/原始资料/工作记忆备份/daily/2026-10-21.md\", \"w/规则/data/原始资料/工作记忆备份/daily/2026-10-22-claude.md\", \"w/规则/data/原始资料/工作记忆备份/daily/2026-10-22.md\", \"w/规则/data/原始资料/工作记忆备份/daily/2026-10-23-claude.md\", \"w/规则/data/原始资料/工作记忆备份/daily/2026-10-23.md\", \"w/规则/data/原始资料/工作记忆备份/daily/2026-10-24.md\", \"w/规则/data/原始资料/工作记忆备份/daily/2026-10-25.md\", \"w/规则/data/原始资料/工作记忆备份/daily/2026-10-26.md\", \"w/规则/data/原始资料/工作记忆备份/daily/2026-10-27.md\", \"w/规则/data/原始资料/工作记忆备份/daily/2026-10-28.md\", \"w/规则/data/原始资料/工作记忆备份/daily/2026-10-29.md\", \"w/规则/data/原始资料/工作记忆备份/daily/2026-10-30.md\", \"w/规则/data/原始资料/工作记忆备份/daily/2026-10-31.md\", \"w/规则/data/原始资料/工作记忆备份/daily/2026-11-01.md\", \"w/规则/data/原始资料/工作记忆备份/daily/2026-11-02.md\", \"w/规则/data/原始资料/工作记忆备份/daily/2026-11-03.md\", \"w/规则/data/原始资料/工作记忆备份/daily/2026-11-04.md\", \"w/规则/data/原始资料/工作记忆备份/daily/2026-11-05.md\", \"w/规则/data/原始资料/工作记忆备份/daily/2026-11-06.md\", \"w/规则/data/原始资料/工作记忆备份/daily/2026-11-07.md\", \"w/规则/data/原始资料/工作记忆备份/daily/2026-11-08.md\", \"w/规则/data/原始资料/工作记忆备份/daily/2026-11-09.md\", \"w/规则/data/原始资料/工作记忆备份/daily/2026-11-10.md\", \"w/规则/data/原始资料/工作记忆备份/daily/2026-11-11.md\", \"w/规则/data/原始资料/工作记忆备份/daily/2026-11-12.md\", \"w/规则/data/原始资料/工作记忆备份/decisions/README.md\", \"w/规则/data/原始资料/工作记忆备份/decisions/已定的事.md\", \"w/规则/data/原始资料/工作记忆备份[本机路径]\", \"w/规则/data/原始资料/工作记忆备份[本机路径]\", \"w/规则/data/原始资料/工作记忆备份[本机路径]\", \"w/规则/data/原始资料/工作记忆备份[本机路径]\", \"w/规则/data/原始资料/工作记忆备份[本机路径]\", \"w/规则/data/原始资料/工作记忆备份[本机路径]\", \"w/规则/data/原始资料/工作记忆备份[本机路径]\", \"w/规则/data/原始资料/工作记忆备份[本机路径]\", \"w/规则/data/原始资料/工作记忆备份[本机路径]\", \"w/规则/data/原始资料/工作记忆备份[本机路径]\", \"w/规则/data/原始资料/工作记忆备份[本机路径]\", \"w/规则/data/原始资料/工作记忆备份[本机路径]\", \"w/规则/data/原始资料/工作记忆备份[本机路径]\", \"w/规则/data/原始资料/工作记忆备份[本机路径]\", \"w/规则/data/原始资料/工作记忆备份[本机路径]\", \"w/规则/data/原始资料/工作记忆备份[本机路径]\", \"w/规则/data/原始资料/工作记忆备份[本机路径]\", \"w/规则/data/原始资料/工作记忆备份[本机路径]\", \"w/规则/data/原始资料/工作记忆备份[本机路径]\", \"w/规则/data/原始资料/工作记忆备份/related-conversations/01a14305-2eb0-7bf2-9c82-8cb5d82bcfdf.json\", \"w/规则/data/原始资料/工作记忆备份/related-conversations/01a14334-d9f1-75b1-828e-0a4c12618ba5.json\", \"w/规则/data/原始资料/工作记忆备份/related-conversations/01a14338-8a01-7850-ba05-534923ee3da4.json\", \"w/规则/data/原始资料/工作记忆备份/related-conversations/01a14377-1077-7a71-bdf2-d8e110e40621.json\", \"w/规则/data/原始资料/工作记忆备份/related-conversations/01a14378-0422-7251-98e7-afbe17a89b46.json\", \"w/规则/data/原始资料/工作记忆备份/related-conversations/01a14451-c044-7d43-907c-1215a533f2c9.json\", \"w/规则/data/原始资料/工作记忆备份/related-conversations/01a14796-97ef-79e3-afef-f9519bb2bdea.json\", \"w/规则/data/原始资料/工作记忆备份/related-conversations/01a14977-462c-7e41-8bb5-2b2285c61f0a.json\", \"w/规则/data/原始资料/工作记忆备份/related-conversations/01a14cb9-d35a-76f0-89e1-9e8ec27b37d3.json\", \"w/规则/data/原始资料/工作记忆备份/related-conversations/01a14e9e-2c00-7f23-be78-1cd26c049a6e.json\", \"w/规则/data/原始资料/工作记忆备份/related-conversations/01a151e1-a39a-7160-a3c7-a44f591a6b60.json\", \"w/规则/data/原始资料/工作记忆备份/related-conversations/01a15355-1432-7122-9d5c-e01f6892a2f4.json\", \"w/规则/data/原始资料/工作记忆备份/related-conversations/01a1572e-e089-7da1-b6d7-32460dddeca8.json\", \"w/规则/data/原始资料/工作记忆备份/related-conversations/01a1572f-ee9f-7033-ac43-2a9a2c8bc6a1.json\", \"w/规则/data/原始资料/工作记忆备份/related-conversations/01a15742-2261-72b0-8fcd-b94ea150306c.json\"]",
+    "runs": [
+     {
+      "kind": "step",
+      "ai": "Claude Code（2号电脑）",
+      "model": "sonnet",
+      "status": "ok",
+      "rejected": false,
+      "started_at": "2026-11-12T11:17:07",
+      "ended_at": "2026-11-12T11:18:12",
+      "duration_s": 64.191
+     },
+     {
+      "kind": "step",
+      "ai": "Claude Code（2号电脑）",
+      "model": "sonnet",
+      "status": "ok",
+      "rejected": false,
+      "started_at": "2026-11-12T11:18:23",
+      "ended_at": "2026-11-12T11:20:34",
+      "duration_s": 131.355
+     }
+    ],
+    "events": [
+     {
+      "at": "2026-11-12T11:17:07",
+      "kind": "daily_schedule",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-12T11:17:07",
+      "kind": "step",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-12T11:18:12",
+      "kind": "file_audit",
+      "label": "已核对实际文件变更"
+     },
+     {
+      "at": "2026-11-12T11:18:12",
+      "kind": "receipt",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-12T11:18:23",
+      "kind": "postcheck",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-12T11:18:23",
+      "kind": "step",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-12T11:20:34",
+      "kind": "file_audit",
+      "label": "已核对实际文件变更"
+     },
+     {
+      "at": "2026-11-12T11:20:34",
+      "kind": "done",
+      "label": "已完成验收"
+     }
+    ],
+    "recovery": {
+     "cycles": 0,
+     "next_at": null,
+     "status": null
+    }
+   }
+  },
   {
    "id": 102,
    "title": "实测给1号电脑派一单",
@@ -4539,394 +4647,6 @@
      "status": null
     }
    }
-  },
-  {
-   "id": 63,
-   "title": "每日定时：每日总站自动上架（2026-11-05）",
-   "level": "困难",
-   "status": "已放弃",
-   "attempts": 7,
-   "created_at": "2026-11-05T12:47:03",
-   "updated_at": "2026-11-05T21:36:15",
-   "finished_at": "2026-11-05T21:36:15",
-   "summary": null,
-   "path": [
-    {
-     "kind": "step",
-     "ai": "GPT（2号电脑，未安装）",
-     "model": "gpt-6.1-sol",
-     "status": "timeout",
-     "rejected": false
-    },
-    {
-     "kind": "step",
-     "ai": "GPT（2号电脑，未安装）",
-     "model": "gpt-6-astra",
-     "status": "ok",
-     "rejected": false
-    },
-    {
-     "kind": "step",
-     "ai": "GPT（2号电脑，未安装）",
-     "model": "gpt-6-astra",
-     "status": "ok",
-     "rejected": false
-    },
-    {
-     "kind": "synthesize",
-     "ai": "Claude Code（2号电脑）",
-     "model": "sonnet",
-     "status": "failed",
-     "rejected": false
-    },
-    {
-     "kind": "synthesize",
-     "ai": "Claude Code（2号电脑）",
-     "model": "sonnet",
-     "status": "failed",
-     "rejected": false
-    },
-    {
-     "kind": "diagnose",
-     "ai": "Claude Code（2号电脑）",
-     "model": "opus",
-     "status": "failed",
-     "rejected": false
-    },
-    {
-     "kind": "diagnose",
-     "ai": "Claude Code（2号电脑）",
-     "model": "opus",
-     "status": "failed",
-     "rejected": false
-    },
-    {
-     "kind": "diagnose",
-     "ai": "Claude Code（2号电脑）",
-     "model": "opus",
-     "status": "failed",
-     "rejected": false
-    },
-    {
-     "kind": "step",
-     "ai": "Claude Code（2号电脑）",
-     "model": "opus",
-     "status": "ok",
-     "rejected": false
-    },
-    {
-     "kind": "step",
-     "ai": "Claude Code（2号电脑）",
-     "model": "opus",
-     "status": "rate_limited",
-     "rejected": false
-    },
-    {
-     "kind": "step",
-     "ai": "Claude(中转)",
-     "model": "claude-opus-5-5",
-     "status": "rate_limited",
-     "rejected": false
-    },
-    {
-     "kind": "step",
-     "ai": "DeepSeek",
-     "model": "deepseek-v4-pro",
-     "status": "ok",
-     "rejected": false
-    }
-   ],
-   "steps": [
-    {
-     "title": "步骤 1",
-     "ai": "DeepSeek",
-     "model": "deepseek-v4-pro",
-     "status": "完成"
-    }
-   ],
-   "redo_rounds": 0,
-   "detail": {
-    "result": "【给人看的结果】\n✅ 正常完成：两款游戏已上线并核对无误\n**做了什么**\n- 完成 2026-11-05 总站自动上架，共上线 2 款游戏：Escape Prison with a Toothpick、911 Dispatch。\n- 两款游戏均已上线到栏目，页面可正常访问、正文内容完整。\n- 已核对线上栏目可访问，网站地图收录正常。\n**有没有问题**\n- 没有问题\n**需要你做什么**\n- 不需要，工作台会接着自动跑\n**关键数字**（数据截至 2026-11-05）\n- 已发布游戏：2 款\n- 候选排队：19 款\n\n## 技术详情（原始回执，供排查用）\n已独立核验完毕，任务真实完成，无需重复操作。\n\n## 核验结论\n\n按幂等规则先查线上同日产出：**同业务日 2026-11-05 的两款已全部上线并完成全链路交接**，故跳过重复发布，只做远端回读复核。\n\n**两款已发布（合计 2 款，未超上限）：**\n- Escape Prison with a Toothpick（roblox:10770404227）\n- 911 Dispatch（roblox:10769593960）\n\n## 独立回读证据\n\n| 项 | 远端实测结果 |\n|---|---|\n| 线上栏目 | 两栏目首页均 HTTP 200；抽页正文 1760–2012 词非空壳；首页多路链入两款 |\n| sitemap | 两栏目各 12 条 URL、共 24 条；robots.txt、ads.txt 均 200 |\n| lootlore main | 提交 46269b13（escape-prison）、49619613（911-dispatch）在 main；gates 42145352505、42147021700 均 `success` |\n| seo-hotwords | built-sites.json 已登记 roblox:10770404227、roblox:10769593960（提交 1b7aa88c/a1b8c985），栏目 URL 与业务日正确 |\n| claude-skills | automations/runs/2026-11-05-hub-autopublish.{json,md} 在 main（提交 391d7df），JSON 内容 `published=2 / queued=19` 与远端一致 |\n\n## 未重复/未越界项\n\n未重新上架、未发群卡（交工作台浏览器检查后同业务日发一次）、未写飞书表（feishu=delegated-to-feishu-sync）、未截图（交工作台）、未启动子进程或中转 API（按用户中途指令直接核验）。\n\n**小观察**：`lootwiki.com/all/` 现为 404，但 hub.json 导航本无 /all/ 页，非本次上架栏目，不影响完成判定。\n\n回执已保存至 `receipt-2026-11-05.json`。\n\n【回执状态】完成\n\n---\n【工作台记录的工具调用（真实发生，非模型自述）】\n- workspace_list({}) → 返回 12019 字\n- run_command({\"command\": \"pwd && ls -la\"}) → 返回 2009 字\n- library_search({\"query\": \"hub-autopublish 总站自动上架 流程\"}) → 返回 12019 字\n- run_command({\"command\": \"cat receipt-2026-11-05.json; echo \\\"=====CHECKPOINT=====\\\"; cat receipt-2026-11-05.chec…) → 返回 5035 字\n- run_command({\"command\": \"cat commander-task.txt; echo \\\"=====CONTINUE=====\\\"; cat commander-continue.txt; echo \\…) → 返回 4571 字\n- run_command({\"command\": \"echo \\\"===== production-check.json =====\\\"; cat retry-4-evidence/production-check.json …) → 返回 6130 字\n- run_command({\"command\": \"echo \\\"===== rules/automations/hub-autopublish.md =====\\\"; wc -l rules/automations/hub-…) → 返回 232 字\n- run_command({\"command\": \"echo \\\"===== work/lootlore/config/hub.json =====\\\"; cat work/lootlore/config/hub.json 2…) → 返回 10032 字\n- run_command({\"command\": \"cd [本机路径] \\\"=== 线上两款栏目首页 HTTP…) → 返回 580 字\n- run_command({\"command\": \"cd [本机路径]) → 返回 209 字\n- run_command({\"command\": \"cd [本机路径]) → 返回 1605 字\n- run_command({\"command\": \"cd [本机路径]) → 返回 1038 字\n- run_command({\"command\": \"cd [本机路径]) → 返回 574 字\n- run_command({\"command\": \"cd [本机路径] \\\"=== sitemap 含两款 =…) → 返回 1649 字\n- run_command({\"command\": \"cd [本机路径] \\\"=== 抽页内容体量（正文字符数）…) → 返回 857 字\n- write_file({\"path\": \"receipt-2026-11-05.json\", \"content\": \"{\\n \\\"task_id\\\": 63,\\n \\\"business_date\\\": \\\"2026-1…) → 返回 53 字\n【工作台文件核对】最多扫描2000个文件；发生新增、修改或删除的相对路径：[\"receipt-2026-11-05.json\"]",
-    "runs": [
-     {
-      "kind": "step",
-      "ai": "GPT（2号电脑，未安装）",
-      "model": "gpt-6.1-sol",
-      "status": "timeout",
-      "rejected": false,
-      "started_at": "2026-11-05T12:47:03",
-      "ended_at": "2026-11-05T14:17:04",
-      "duration_s": 5400.189
-     },
-     {
-      "kind": "step",
-      "ai": "GPT（2号电脑，未安装）",
-      "model": "gpt-6-astra",
-      "status": "ok",
-      "rejected": false,
-      "started_at": "2026-11-05T14:17:04",
-      "ended_at": "2026-11-05T14:19:00",
-      "duration_s": 116.258
-     },
-     {
-      "kind": "step",
-      "ai": "GPT（2号电脑，未安装）",
-      "model": "gpt-6-astra",
-      "status": "ok",
-      "rejected": false,
-      "started_at": "2026-11-05T14:19:26",
-      "ended_at": "2026-11-05T14:21:21",
-      "duration_s": 114.753
-     },
-     {
-      "kind": "synthesize",
-      "ai": "Claude Code（2号电脑）",
-      "model": "sonnet",
-      "status": "failed",
-      "rejected": false,
-      "started_at": "2026-11-05T20:21:30",
-      "ended_at": "2026-11-05T20:21:47",
-      "duration_s": 17.263
-     },
-     {
-      "kind": "synthesize",
-      "ai": "Claude Code（2号电脑）",
-      "model": "sonnet",
-      "status": "failed",
-      "rejected": false,
-      "started_at": "2026-11-05T20:21:47",
-      "ended_at": "2026-11-05T20:22:19",
-      "duration_s": 32.011
-     },
-     {
-      "kind": "diagnose",
-      "ai": "Claude Code（2号电脑）",
-      "model": "opus",
-      "status": "failed",
-      "rejected": false,
-      "started_at": "2026-11-05T20:22:34",
-      "ended_at": "2026-11-05T20:22:48",
-      "duration_s": 13.072
-     },
-     {
-      "kind": "diagnose",
-      "ai": "Claude Code（2号电脑）",
-      "model": "opus",
-      "status": "failed",
-      "rejected": false,
-      "started_at": "2026-11-05T20:23:18",
-      "ended_at": "2026-11-05T20:23:47",
-      "duration_s": 28.957
-     },
-     {
-      "kind": "diagnose",
-      "ai": "Claude Code（2号电脑）",
-      "model": "opus",
-      "status": "failed",
-      "rejected": false,
-      "started_at": "2026-11-05T20:24:47",
-      "ended_at": "2026-11-05T20:25:05",
-      "duration_s": 18.765
-     },
-     {
-      "kind": "step",
-      "ai": "Claude Code（2号电脑）",
-      "model": "opus",
-      "status": "ok",
-      "rejected": false,
-      "started_at": "2026-11-05T20:33:48",
-      "ended_at": "2026-11-05T21:01:54",
-      "duration_s": 1685.687
-     },
-     {
-      "kind": "step",
-      "ai": "Claude Code（2号电脑）",
-      "model": "opus",
-      "status": "rate_limited",
-      "rejected": false,
-      "started_at": "2026-11-05T21:23:48",
-      "ended_at": "2026-11-05T21:23:58",
-      "duration_s": 9.688
-     },
-     {
-      "kind": "step",
-      "ai": "Claude(中转)",
-      "model": "claude-opus-5-5",
-      "status": "rate_limited",
-      "rejected": false,
-      "started_at": "2026-11-05T21:23:58",
-      "ended_at": "2026-11-05T21:24:02",
-      "duration_s": 3.761
-     },
-     {
-      "kind": "step",
-      "ai": "DeepSeek",
-      "model": "deepseek-v4-pro",
-      "status": "ok",
-      "rejected": false,
-      "started_at": "2026-11-05T21:24:02",
-      "ended_at": "2026-11-05T21:27:56",
-      "duration_s": 233.5
-     }
-    ],
-    "events": [
-     {
-      "at": "2026-11-05T21:23:58",
-      "kind": "standby",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-05T21:24:02",
-      "kind": "file_audit",
-      "label": "已核对实际文件变更"
-     },
-     {
-      "at": "2026-11-05T21:24:02",
-      "kind": "step_rate_limited",
-      "label": "已遇限流，接续其他可用AI或等待恢复"
-     },
-     {
-      "at": "2026-11-05T21:24:02",
-      "kind": "step",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-05T21:24:02",
-      "kind": "standby",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-05T21:24:14",
-      "kind": "tool",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-05T21:24:14",
-      "kind": "tool",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-05T21:24:14",
-      "kind": "tool",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-05T21:24:24",
-      "kind": "tool",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-05T21:24:24",
-      "kind": "tool",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-05T21:25:17",
-      "kind": "tool",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-05T21:25:17",
-      "kind": "tool",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-05T21:25:17",
-      "kind": "tool",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-05T21:25:38",
-      "kind": "tool",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-05T21:25:38",
-      "kind": "tool",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-05T21:25:58",
-      "kind": "tool",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-05T21:26:01",
-      "kind": "tool",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-05T21:26:23",
-      "kind": "tool",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-05T21:26:30",
-      "kind": "tool",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-05T21:27:17",
-      "kind": "tool",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-05T21:27:47",
-      "kind": "tool",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-05T21:27:56",
-      "kind": "file_audit",
-      "label": "已核对实际文件变更"
-     },
-     {
-      "at": "2026-11-05T21:27:56",
-      "kind": "done",
-      "label": "已完成验收"
-     },
-     {
-      "at": "2026-11-05T21:28:23",
-      "kind": "visual",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-05T21:35:52",
-      "kind": "visual",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-05T21:35:52",
-      "kind": "postcheck",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-05T21:36:15",
-      "kind": "manual",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-06T01:13:37",
-      "kind": "postcheck",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-06T01:13:37",
-      "kind": "postcheck",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-06T10:20:43",
-      "kind": "cleanup",
-      "label": "流程进度更新"
-     }
-    ],
-    "recovery": {
-     "cycles": 3,
-     "next_at": null,
-     "status": null
-    }
-   }
   }
  ],
  "gamesites": {
@@ -5032,8 +4752,8 @@
  },
  "radar": {
   "status": "正常",
-  "checked_at": "2026-11-12T19:07:27.412160+00:00",
-  "last_scan_at": "2026-11-12T19:04:16.899000+00:00",
+  "checked_at": "2026-11-12T19:17:29.297840+00:00",
+  "last_scan_at": "2026-11-12T19:14:17.499000+00:00",
   "last_scan_age_min": 3.2,
   "venues": 12,
   "live_venues": 11,
@@ -5041,8 +4761,8 @@
    "Hyperliquid"
   ],
   "coins": 1255,
-  "pairs": 1669,
-  "qualified": 6,
+  "pairs": 1672,
+  "qualified": 5,
   "page_url": "radar/"
  },
  "orchestrator": {
