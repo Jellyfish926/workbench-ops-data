@@ -75,10 +75,10 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-12T09:22:34.989453+00:00",
+ "generated_at": "2026-11-12T09:27:41.739844+00:00",
  "counts": {
-  "待处理": 1,
-  "执行中": 1,
+  "待处理": 0,
+  "执行中": 2,
   "会诊中": 0,
   "需你决定": 0,
   "今日完成": 0,
@@ -87,8 +87,8 @@
  "providers": [
   {
    "name": "DeepSeek",
-   "status": "空闲",
-   "running": 0,
+   "status": "忙碌",
+   "running": 1,
    "today_runs": 0,
    "today_ok": 0,
    "today_fail": 0,
@@ -134,7 +134,7 @@
   },
   {
    "name": "Claude（1号电脑）",
-   "status": "忙碌",
+   "status": "冷却中",
    "running": 0,
    "today_runs": 0,
    "today_ok": 0,
@@ -147,10 +147,10 @@
    "id": 102,
    "title": "实测给1号电脑派一单",
    "level": "中等",
-   "status": "待步骤",
-   "attempts": 1,
+   "status": "步骤执行中",
+   "attempts": 2,
    "created_at": "2026-11-11T23:55:40",
-   "updated_at": "2026-11-11T23:56:45",
+   "updated_at": "2026-11-12T01:26:59",
    "finished_at": null,
    "summary": null,
    "path": [
@@ -165,87 +165,6 @@
      "kind": "delegate",
      "ai": "Claude（1号电脑）",
      "model": "sonnet",
-     "status": "rate_limited",
-     "rejected": false
-    }
-   ],
-   "steps": [
-    {
-     "title": "步骤 1",
-     "ai": "GPT（1号电脑）",
-     "model": "gpt-6-astra",
-     "status": "等待"
-    }
-   ],
-   "redo_rounds": 0,
-   "detail": {
-    "result": null,
-    "runs": [
-     {
-      "kind": "step",
-      "ai": "Claude Code（2号电脑）",
-      "model": "opus",
-      "status": "rate_limited",
-      "rejected": false,
-      "started_at": "2026-11-11T23:55:40",
-      "ended_at": "2026-11-11T23:56:45",
-      "duration_s": 64.638
-     },
-     {
-      "kind": "delegate",
-      "ai": "Claude（1号电脑）",
-      "model": "sonnet",
-      "status": "rate_limited",
-      "rejected": false,
-      "started_at": "2026-11-11T23:55:48",
-      "ended_at": "2026-11-11T23:56:44",
-      "duration_s": 45.119
-     }
-    ],
-    "events": [
-     {
-      "at": "2026-11-11T23:55:40",
-      "kind": "submit",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-11T23:55:40",
-      "kind": "step",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-11T23:55:48",
-      "kind": "delegate",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-11T23:56:45",
-      "kind": "step_rate_limited",
-      "label": "已遇限流，接续其他可用AI或等待恢复"
-     }
-    ],
-    "recovery": {
-     "cycles": 0,
-     "next_at": null,
-     "status": null
-    }
-   }
-  },
-  {
-   "id": 101,
-   "title": "记忆备份写入 AI 库试跑：补齐 2026-11-11",
-   "level": "中等",
-   "status": "步骤执行中",
-   "attempts": 2,
-   "created_at": "2026-11-11T23:55:04",
-   "updated_at": "2026-11-11T23:56:36",
-   "finished_at": null,
-   "summary": null,
-   "path": [
-    {
-     "kind": "step",
-     "ai": "Claude Code（2号电脑）",
-     "model": "opus",
      "status": "rate_limited",
      "rejected": false
     },
@@ -275,6 +194,116 @@
       "model": "opus",
       "status": "rate_limited",
       "rejected": false,
+      "started_at": "2026-11-11T23:55:40",
+      "ended_at": "2026-11-11T23:56:45",
+      "duration_s": 64.638
+     },
+     {
+      "kind": "delegate",
+      "ai": "Claude（1号电脑）",
+      "model": "sonnet",
+      "status": "rate_limited",
+      "rejected": false,
+      "started_at": "2026-11-11T23:55:48",
+      "ended_at": "2026-11-11T23:56:44",
+      "duration_s": 45.119
+     },
+     {
+      "kind": "step",
+      "ai": "GPT（1号电脑）",
+      "model": "gpt-6-astra",
+      "status": "running",
+      "rejected": false,
+      "started_at": "2026-11-12T01:26:59",
+      "ended_at": null,
+      "duration_s": null
+     }
+    ],
+    "events": [
+     {
+      "at": "2026-11-11T23:55:40",
+      "kind": "submit",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-11T23:55:40",
+      "kind": "step",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-11T23:55:48",
+      "kind": "delegate",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-11T23:56:45",
+      "kind": "step_rate_limited",
+      "label": "已遇限流，接续其他可用AI或等待恢复"
+     },
+     {
+      "at": "2026-11-12T01:26:59",
+      "kind": "step",
+      "label": "流程进度更新"
+     }
+    ],
+    "recovery": {
+     "cycles": 0,
+     "next_at": null,
+     "status": null
+    }
+   }
+  },
+  {
+   "id": 101,
+   "title": "记忆备份写入 AI 库试跑：补齐 2026-11-11",
+   "level": "中等",
+   "status": "步骤执行中",
+   "attempts": 3,
+   "created_at": "2026-11-11T23:55:04",
+   "updated_at": "2026-11-12T01:26:59",
+   "finished_at": null,
+   "summary": null,
+   "path": [
+    {
+     "kind": "step",
+     "ai": "Claude Code（2号电脑）",
+     "model": "opus",
+     "status": "rate_limited",
+     "rejected": false
+    },
+    {
+     "kind": "step",
+     "ai": "GPT（1号电脑）",
+     "model": "gpt-6-astra",
+     "status": "timeout",
+     "rejected": false
+    },
+    {
+     "kind": "step",
+     "ai": "DeepSeek",
+     "model": "deepseek-v4-pro",
+     "status": "running",
+     "rejected": false
+    }
+   ],
+   "steps": [
+    {
+     "title": "步骤 1",
+     "ai": "DeepSeek",
+     "model": "deepseek-v4-pro",
+     "status": "执行中"
+    }
+   ],
+   "redo_rounds": 0,
+   "detail": {
+    "result": null,
+    "runs": [
+     {
+      "kind": "step",
+      "ai": "Claude Code（2号电脑）",
+      "model": "opus",
+      "status": "rate_limited",
+      "rejected": false,
       "started_at": "2026-11-11T23:55:05",
       "ended_at": "2026-11-11T23:56:36",
       "duration_s": 91.728
@@ -283,9 +312,19 @@
       "kind": "step",
       "ai": "GPT（1号电脑）",
       "model": "gpt-6-astra",
-      "status": "running",
+      "status": "timeout",
       "rejected": false,
       "started_at": "2026-11-11T23:56:36",
+      "ended_at": "2026-11-12T01:26:59",
+      "duration_s": 5413.869
+     },
+     {
+      "kind": "step",
+      "ai": "DeepSeek",
+      "model": "deepseek-v4-pro",
+      "status": "running",
+      "rejected": false,
+      "started_at": "2026-11-12T01:26:59",
       "ended_at": null,
       "duration_s": null
      }
@@ -309,6 +348,66 @@
      {
       "at": "2026-11-11T23:56:36",
       "kind": "step",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-12T01:26:59",
+      "kind": "write_timeout",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-12T01:26:59",
+      "kind": "handoff",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-12T01:26:59",
+      "kind": "step_failure",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-12T01:26:59",
+      "kind": "auto_resume",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-12T01:26:59",
+      "kind": "step",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-12T01:26:59",
+      "kind": "standby",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-12T01:27:04",
+      "kind": "tool",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-12T01:27:04",
+      "kind": "tool",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-12T01:27:09",
+      "kind": "tool",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-12T01:27:23",
+      "kind": "tool",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-12T01:27:23",
+      "kind": "tool",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-12T01:27:31",
+      "kind": "tool",
       "label": "流程进度更新"
      }
     ],
@@ -4853,16 +4952,16 @@
  },
  "radar": {
   "status": "正常",
-  "checked_at": "2026-11-12T09:16:54.400199+00:00",
-  "last_scan_at": "2026-11-12T09:14:15.888000+00:00",
-  "last_scan_age_min": 2.6,
+  "checked_at": "2026-11-12T09:26:56.594497+00:00",
+  "last_scan_at": "2026-11-12T09:24:16.400000+00:00",
+  "last_scan_age_min": 2.7,
   "venues": 12,
   "live_venues": 11,
   "down_venues": [
    "Hyperliquid"
   ],
   "coins": 1255,
-  "pairs": 1657,
+  "pairs": 1655,
   "qualified": 11,
   "page_url": "radar/"
  },
