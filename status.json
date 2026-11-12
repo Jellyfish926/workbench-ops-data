@@ -75,7 +75,7 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-12T20:52:06.294699+00:00",
+ "generated_at": "2026-11-12T20:58:11.368817+00:00",
  "counts": {
   "待处理": 0,
   "执行中": 0,
@@ -4757,17 +4757,18 @@
  },
  "radar": {
   "status": "正常",
-  "checked_at": "2026-11-12T20:47:53.254882+00:00",
-  "last_scan_at": "2026-11-12T20:44:17.599000+00:00",
+  "checked_at": "2026-11-12T20:57:55.030513+00:00",
+  "last_scan_at": "2026-11-12T20:54:17.700000+00:00",
   "last_scan_age_min": 3.6,
   "venues": 12,
-  "live_venues": 11,
+  "live_venues": 10,
   "down_venues": [
-   "OKX"
+   "OKX",
+   "Hyperliquid"
   ],
   "coins": 1211,
-  "pairs": 1431,
-  "qualified": 2,
+  "pairs": 1341,
+  "qualified": 1,
   "page_url": "radar/"
  },
  "orchestrator": {
