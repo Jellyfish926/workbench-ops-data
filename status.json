@@ -15,8 +15,8 @@
     ],
     "next_at": "2026-11-13T09:00:00+08:00",
     "business_date": "2026-11-13",
-    "status": "已完成",
-    "task_id": 92,
+    "status": "步骤执行中",
+    "task_id": 95,
     "test_status": "已放弃",
     "test_task_id": 14
    },
@@ -75,10 +75,10 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-12T01:01:07.749669+00:00",
+ "generated_at": "2026-11-12T01:06:14.317043+00:00",
  "counts": {
   "待处理": 0,
-  "执行中": 0,
+  "执行中": 1,
   "会诊中": 0,
   "需你决定": 0,
   "今日完成": 2,
@@ -105,8 +105,8 @@
   },
   {
    "name": "Claude Code（2号电脑）",
-   "status": "空闲",
-   "running": 0,
+   "status": "忙碌",
+   "running": 1,
    "today_runs": 2,
    "today_ok": 2,
    "today_fail": 0,
@@ -143,6 +143,67 @@
   }
  ],
  "tasks": [
+  {
+   "id": 95,
+   "title": "每日定时：LootWiki 每日巡检与自查自纠（2026-11-12）",
+   "level": "困难",
+   "status": "步骤执行中",
+   "attempts": 1,
+   "created_at": "2026-11-11T17:01:12",
+   "updated_at": "2026-11-11T17:01:12",
+   "finished_at": null,
+   "summary": null,
+   "path": [
+    {
+     "kind": "step",
+     "ai": "Claude Code（2号电脑）",
+     "model": "opus",
+     "status": "running",
+     "rejected": false
+    }
+   ],
+   "steps": [
+    {
+     "title": "步骤 1",
+     "ai": "Claude Code（2号电脑）",
+     "model": "opus",
+     "status": "执行中"
+    }
+   ],
+   "redo_rounds": 0,
+   "detail": {
+    "result": null,
+    "runs": [
+     {
+      "kind": "step",
+      "ai": "Claude Code（2号电脑）",
+      "model": "opus",
+      "status": "running",
+      "rejected": false,
+      "started_at": "2026-11-11T17:01:12",
+      "ended_at": null,
+      "duration_s": null
+     }
+    ],
+    "events": [
+     {
+      "at": "2026-11-11T17:01:12",
+      "kind": "daily_schedule",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-11T17:01:12",
+      "kind": "step",
+      "label": "流程进度更新"
+     }
+    ],
+    "recovery": {
+     "cycles": 0,
+     "next_at": null,
+     "status": null
+    }
+   }
+  },
   {
    "id": 94,
    "title": "每日定时：每日工作记忆备份到 GitHub（2026-11-11）",
@@ -5229,224 +5290,6 @@
      {
       "at": "2026-11-03T14:24:40",
       "kind": "postcheck",
-      "label": "流程进度更新"
-     }
-    ],
-    "recovery": {
-     "cycles": 0,
-     "next_at": null,
-     "status": null
-    }
-   }
-  },
-  {
-   "id": 55,
-   "title": "每日定时：每日总站自动上架（2026-11-03）",
-   "level": "困难",
-   "status": "已完成",
-   "attempts": 2,
-   "created_at": "2026-11-03T12:47:14",
-   "updated_at": "2026-11-05T01:28:36",
-   "finished_at": "2026-11-03T13:44:05",
-   "summary": "【给人看的结果】 ✅ 今天成功上架 2 款游戏，一切正常。 **做了什么** - 上架了 Raise A Catboy（lootwiki.com/raise-a-catboy/）和 Can You Pass A Driving Test?（lootwiki.com/can-you-pass-a-driving-test/），两个栏目共 19 个网址全部可以正常打开，页面信息核对无误。 - Tesla Roadster Chase 因借用 Tesla 品牌被淘汰，Moon Sweepers 因同名抢注站过多被淘汰，今日额度恰好用满。 - Doodle Basketball 和 Scrubs to…",
-   "path": [
-    {
-     "kind": "step",
-     "ai": "Claude(中转)",
-     "model": "claude-sonnet-4-6",
-     "status": "failed",
-     "rejected": false
-    },
-    {
-     "kind": "step",
-     "ai": "Claude(中转)",
-     "model": "claude-opus-5-5",
-     "status": "ok",
-     "rejected": false
-    }
-   ],
-   "steps": [
-    {
-     "title": "步骤 1",
-     "ai": "Claude(中转)",
-     "model": "claude-opus-5-5",
-     "status": "完成"
-    }
-   ],
-   "redo_rounds": 0,
-   "detail": {
-    "result": "【给人看的结果】\n✅ 今天成功上架 2 款游戏，一切正常。\n\n**做了什么**\n- 上架了 Raise A Catboy（lootwiki.com/raise-a-catboy/）和 Can You Pass A Driving Test?（lootwiki.com/can-you-pass-a-driving-test/），两个栏目共 19 个网址全部可以正常打开，页面信息核对无误。\n- Tesla Roadster Chase 因借用 Tesla 品牌被淘汰，Moon Sweepers 因同名抢注站过多被淘汰，今日额度恰好用满。\n- Doodle Basketball 和 Scrubs to Surgeon 已进入候补排队，排队共 24 款。\n\n**有没有问题**\n有一个需要你决定的事：有两款游戏——Ragdoll Sandbox 和 Ragdoll MMA——被错误登记为已建站，但实际上对应页面是 404，内容从未上线。这条错误登记没有被删除，导致雷达会一直跳过这两款、不再把它们列为候选。下一个工作日你可以选择：正式给它们建站上架，或者删掉这两条错误登记。\n\n**需要你做什么**\n请决定 Ragdoll Sandbox 和 Ragdoll MMA 的处理方式：是下次正式上架，还是直接删掉那两条登记。\n\n**关键数字**（数据截至 2026-11-03）\n- 今日上架：2 款\n- 新增可索引页面：17 页（两个栏目合计）\n- 候补排队：24 款\n\n## 技术详情（原始回执，供排查用）\n2026-11-03 的上架做完了：上线 2 款，构建、部署、正式域名检查和交接都有回读证据。\n\n另外有一个问题要你决定。seo-hotwords 里有一个提交 `c1d3103`（18:00Z，作者显示 \"Jellyfish\"），时间上看像是本任务第 1 次尝试留下的，没法确认。它把 Ragdoll Sandbox（roblox:10771155665）和 Ragdoll MMA（roblox:10772041805）登记成了已建站，但 lootlore 没有对应提交，两个栏目线上是 404。所以当天实际上线的只有下面 2 款，没超出每天 2 款的额度。这两条登记删除不在本次授权内，我没动，写进了回执的「待处理」。不改的话雷达会一直排除这两款。下一个业务日可以把它们正式上架，或者你决定删掉这两条。\n\n**上架结果**\n| 栏目 | 已发布页 | draft |\n|---|---|---|\n| [链接] | 9（8 页可索引，加 /all/ 目录页） | 0 |\n| [链接] | 10（9 页可索引，加 /all/ 目录页） | 0 |\n\n**选款**\n- 用了 11-03 雷达快照，同一业务日 lootlore 和 claude-skills 都没有其他执行者的产出。\n- Tesla Roadster Chase 借用 Tesla 品牌，淘汰。Moon Sweepers 同名抢注站有 11 个，其中一个挂了 PUB 广告号，淘汰。\n- Raise A Catboy 和 Can You Pass A Driving Test? 抢注站都是 0：各有一个 .wiki 域名在 11-02 或 11-03 刚注册，打开是停放页，不算。Fandom 都没有。\n- Doodle Basketball 和 Scrubs to Surgeon 进排队，排队共 24 款。\n\n**证据**\n- **lootlore 提交 `41862dc`**：作者 Jellyfish926（noreply 邮箱）；门禁 run 41695440124 通过，Vercel 显示成功。本地也重跑了全部门禁，都通过。\n- **正式域名检查**：新栏目 19 个网址都返回 200，其中 sitemap 里 17 个，另有两个 /all/ 目录页按规则不收录。title、description 长度都在范围内；canonical 指向自身，每页一个 H1，JSON-LD 能解析，og:image 返回 200。站内链接每页 13–15 个，图片都有 alt。GA4 只有 G-NPTYZWM9KD，没有 Adsterra，首页能链到两个新栏目。本次的特征串已经在线上，不存在的路径返回 404。\n- **事实核对**：重新拉了 Roblox 接口，逐项比对通行证、商品价格和描述、徽章、日期和活动，没有不符。两款都没有兑换码来源，所以没做 codes 页。商品或通行证没写描述的，页面只说是按名字推断。\n- **seo-hotwords `d6b769a`**：built-sites.json 已登记两款的平台键（roblox:10770707307、roblox:10771680162）、栏目网址和日期，远端已回读。\n- **claude-skills `048bed9`**：回执 `automations/runs/2026-11-03-hub-autopublish.md` 和交接文件 `.json` 已入仓，远端回读正常。交接里 status=published，feishu=delegated-to-feishu-sync。\n\n**说明**\n- 飞书写表按规则交给 feishu-sync，浏览器截图由工作台做，本任务都没做。结果是 published，按规则不发卡。\n- 到期维护：今天不是 1 号；Roblox 图片都没超过 50 天，没有到期项。no-traffic-pages.json 本次没读，因为新栏目和它无关。\n- GPT 没调用：命令行连不到接口。本次没改前端和模板，内容是我自己写、自己审的。\n- 本轮没有另派独立的验收 Agent。事实复核改用了重新拉接口这条不同的取证路径，但写稿和复核是同一个执行者。\n- 搜索量未获取（自动任务不查 Semrush）。\n\n【回执状态】完成\n\n---\n【工作台记录的工具调用（真实发生，非模型自述）】\n- run_command({\"command\": \"pwd; ls -la; which gh git; gh api repos/Jellyfish926/claude-skills/contents/automations…) → 返回 458 字\n- run_command({\"command\": \"mkdir -p rules && gh api repos/Jellyfish926/claude-skills/contents/automations/hub-auto…) → 返回 143 字\n- workspace_read({\"path\": \"rules/hub-autopublish.md\"}) → 返回 10214 字\n- run_command({\"command\": \"python3 - <<'E'\\ns=open('rules/hub-autopublish.md').read()\\ni=s.find('【规范来源】'); print(s…) → 返回 4488 字\n- run_command({\"command\": \"gh api \\\"repos/Jellyfish926/seo-hotwords/contents/snapshots\\\" --jq '.[].name' | tail -4…) → 返回 1496 字\n- run_command({\"command\": \"mkdir -p data; gh api repos/Jellyfish926/claude-skills/contents/automations/runs/2026-1…) → 返回 3343 字\n- run_command({\"command\": \"head -c 6000 data/report.md\"}) → 返回 4054 字\n- run_command({\"command\": \"cd data; python3 - <<'E'\\nimport json\\ns=json.load(open('snap.json'));print(s.keys())\\n…) → 返回 1654 字\n- run_command({\"command\": \"cd data; gh api repos/Jellyfish926/lootlore/contents/config/hub.json -H \\\"Accept: appli…) → 返回 1373 字\n- run_command({\"command\": \"cd data; python3 - <<'E'\\nimport json,re\\ns=json.load(open('snap.json'));b=json.load(op…) → 返回 7822 字\n- run_command({\"command\": \"cd data; for d in 2026-10-30 2026-10-31 2026-11-01; do gh api repos/Jellyfish926/claude…) → 返回 951 字\n- run_command({\"command\": \"cd data; for f in $(gh api \\\"repos/Jellyfish926/claude-skills/contents/automations/runs…) → 返回 41 字\n- run_command({\"command\": \"cd data; for n in \\\"Tesla Roadster\\\" \\\"Moon Sweepers\\\" \\\"Catboy\\\" \\\"Driving Test\\\" \\\"Do…) → 返回 1522 字\n- run_command({\"command\": \"cd data; python3 - <<'E'\\nimport json\\ns=json.load(open('snap.json'))\\nq=[\\\"roblox:1076…) → 返回 502 字\n- write_file({\"content\": \"#!/usr/bin/env python3\\n\\\"\\\"\\\"Light hard-gate check: squatter domains (DoH + body fetch…) → 返回 43 字\n- run_command({\"command\": \"cd tools; for n in \\\"Tesla Roadster Chase|Tesla Roadster\\\" \\\"Moon Sweepers|Moon Sweeper…) → 返回 8086 字\n- run_command({\"command\": \"curl -s \\\"[链接] -H…) → 返回 529 字\n- run_command({\"comman",
-    "runs": [
-     {
-      "kind": "step",
-      "ai": "Claude(中转)",
-      "model": "claude-sonnet-4-6",
-      "status": "failed",
-      "rejected": false,
-      "started_at": "2026-11-03T12:47:14",
-      "ended_at": "2026-11-03T13:05:07",
-      "duration_s": 1073.713
-     },
-     {
-      "kind": "step",
-      "ai": "Claude(中转)",
-      "model": "claude-opus-5-5",
-      "status": "ok",
-      "rejected": false,
-      "started_at": "2026-11-03T13:05:07",
-      "ended_at": "2026-11-03T13:44:05",
-      "duration_s": 2337.802
-     }
-    ],
-    "events": [
-     {
-      "at": "2026-11-03T13:34:21",
-      "kind": "tool",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-03T13:34:41",
-      "kind": "tool",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-03T13:34:53",
-      "kind": "tool",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-03T13:35:03",
-      "kind": "tool",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-03T13:35:19",
-      "kind": "tool",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-03T13:35:50",
-      "kind": "tool",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-03T13:36:03",
-      "kind": "tool",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-03T13:36:40",
-      "kind": "tool",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-03T13:37:14",
-      "kind": "tool",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-03T13:37:52",
-      "kind": "tool",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-03T13:39:23",
-      "kind": "tool",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-03T13:39:36",
-      "kind": "tool",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-03T13:39:59",
-      "kind": "tool",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-03T13:40:21",
-      "kind": "tool",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-03T13:40:47",
-      "kind": "tool",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-03T13:41:17",
-      "kind": "tool",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-03T13:41:52",
-      "kind": "tool",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-03T13:42:09",
-      "kind": "tool",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-03T13:43:01",
-      "kind": "tool",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-03T13:43:09",
-      "kind": "tool",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-03T13:43:33",
-      "kind": "tool",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-03T13:43:45",
-      "kind": "tool",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-03T13:44:05",
-      "kind": "file_audit",
-      "label": "已核对实际文件变更"
-     },
-     {
-      "at": "2026-11-03T13:44:05",
-      "kind": "done",
-      "label": "已完成验收"
-     },
-     {
-      "at": "2026-11-03T13:44:20",
-      "kind": "postcheck",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-03T13:44:37",
-      "kind": "visual",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-03T13:49:19",
-      "kind": "visual",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-04T02:01:47",
-      "kind": "cleanup",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-04T02:01:47",
-      "kind": "cleanup",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-04T02:01:47",
-      "kind": "cleanup",
       "label": "流程进度更新"
      }
     ],
