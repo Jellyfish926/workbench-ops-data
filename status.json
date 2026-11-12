@@ -75,7 +75,7 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-12T14:56:20.064645+00:00",
+ "generated_at": "2026-11-12T15:06:43.682862+00:00",
  "counts": {
   "待处理": 0,
   "执行中": 0,
@@ -5031,17 +5031,17 @@
   "note": "公开页只显示曝光（Google 展示次数）；点击等其他流量数字只在站主本机看板。"
  },
  "radar": {
-  "status": "连不上",
-  "checked_at": "2026-11-12T14:55:44.857512+00:00",
-  "last_scan_at": "2026-11-12T14:44:17.490000+00:00",
-  "last_scan_age_min": 0.7,
+  "status": "正常",
+  "checked_at": "2026-11-12T15:05:45.903302+00:00",
+  "last_scan_at": "2026-11-12T15:04:17.700000+00:00",
+  "last_scan_age_min": 1.5,
   "venues": 12,
   "live_venues": 11,
   "down_venues": [
    "OKX"
   ],
   "coins": 1211,
-  "pairs": 1448,
+  "pairs": 1447,
   "qualified": 6,
   "page_url": "radar/"
  },
