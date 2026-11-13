@@ -75,13 +75,13 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-13T07:57:32.267375+00:00",
+ "generated_at": "2026-11-13T08:02:39.785867+00:00",
  "counts": {
   "待处理": 0,
   "执行中": 0,
   "会诊中": 0,
   "需你决定": 0,
-  "今日完成": 6,
+  "今日完成": 0,
   "累计完成": 88
  },
  "providers": [
@@ -89,8 +89,8 @@
    "name": "DeepSeek",
    "status": "空闲",
    "running": 0,
-   "today_runs": 1,
-   "today_ok": 1,
+   "today_runs": 0,
+   "today_ok": 0,
    "today_fail": 0,
    "only_levels": null
   },
@@ -107,8 +107,8 @@
    "name": "Claude Code（2号电脑）",
    "status": "空闲",
    "running": 0,
-   "today_runs": 5,
-   "today_ok": 5,
+   "today_runs": 0,
+   "today_ok": 0,
    "today_fail": 0,
    "only_levels": [
     "困难"
@@ -127,8 +127,8 @@
    "name": "GPT（1号电脑）",
    "status": "空闲",
    "running": 0,
-   "today_runs": 1,
-   "today_ok": 1,
+   "today_runs": 0,
+   "today_ok": 0,
    "today_fail": 0,
    "only_levels": null
   },
@@ -136,8 +136,8 @@
    "name": "Claude（1号电脑）",
    "status": "空闲",
    "running": 0,
-   "today_runs": 1,
-   "today_ok": 1,
+   "today_runs": 0,
+   "today_ok": 0,
    "today_fail": 0,
    "only_levels": null
   }
@@ -4722,9 +4722,9 @@
  },
  "radar": {
   "status": "正常",
-  "checked_at": "2026-11-13T07:48:38.889863+00:00",
-  "last_scan_at": "2026-11-13T07:44:16.901000+00:00",
-  "last_scan_age_min": 4.4,
+  "checked_at": "2026-11-13T07:58:47.358316+00:00",
+  "last_scan_at": "2026-11-13T07:54:16+00:00",
+  "last_scan_age_min": 4.5,
   "venues": 12,
   "live_venues": 11,
   "down_venues": [
@@ -4732,7 +4732,7 @@
   ],
   "coins": 1255,
   "pairs": 1666,
-  "qualified": 10,
+  "qualified": 11,
   "page_url": "radar/"
  },
  "orchestrator": {
