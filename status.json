@@ -75,7 +75,7 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-13T10:51:28.505058+00:00",
+ "generated_at": "2026-11-13T11:00:35.021232+00:00",
  "counts": {
   "待处理": 0,
   "执行中": 0,
@@ -105,7 +105,7 @@
   },
   {
    "name": "Claude Code（2号电脑）",
-   "status": "冷却中",
+   "status": "空闲",
    "running": 0,
    "today_runs": 1,
    "today_ok": 0,
@@ -4699,9 +4699,9 @@
  },
  "radar": {
   "status": "正常",
-  "checked_at": "2026-11-13T10:50:25.210015+00:00",
-  "last_scan_at": "2026-11-13T10:49:15.094000+00:00",
-  "last_scan_age_min": 1.1,
+  "checked_at": "2026-11-13T11:00:27.344816+00:00",
+  "last_scan_at": "2026-11-13T10:59:15.292000+00:00",
+  "last_scan_age_min": 1.2,
   "venues": 12,
   "live_venues": 11,
   "down_venues": [
@@ -4709,7 +4709,7 @@
   ],
   "coins": 1254,
   "pairs": 1660,
-  "qualified": 9,
+  "qualified": 10,
   "page_url": "radar/"
  },
  "orchestrator": {
