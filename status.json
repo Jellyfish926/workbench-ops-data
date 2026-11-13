@@ -75,7 +75,7 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-13T01:19:48.431116+00:00",
+ "generated_at": "2026-11-13T01:24:53.393600+00:00",
  "counts": {
   "待处理": 0,
   "执行中": 1,
@@ -4630,54 +4630,54 @@
   }
  ],
  "gamesites": {
-  "generated_at": "2026-11-13T00:50:20.977469+00:00",
+  "generated_at": "2026-11-13T01:20:56.350269+00:00",
   "scale": {
    "independent_sites": 5,
-   "independent_online": 3,
-   "hub_games": 49,
-   "hub_new_7d": 5
+   "independent_online": 5,
+   "hub_games": null,
+   "hub_new_7d": null
   },
   "impressions": {
    "status": "ok",
-   "data_end": "2026-11-09",
+   "data_end": "2026-11-10",
    "latest_day": {
     "start": null,
     "end": null,
-    "date": "2026-11-09",
+    "date": "2026-11-10",
     "impressions": 3
    },
    "month_to_date": {
     "start": "2026-11-01",
-    "end": "2026-11-09",
+    "end": "2026-11-10",
     "date": null,
-    "impressions": 31
+    "impressions": 34
    },
    "last_7": {
     "current": {
-     "start": "2026-11-03",
-     "end": "2026-11-09",
+     "start": "2026-11-04",
+     "end": "2026-11-10",
      "date": null,
      "impressions": 27
     },
     "previous": {
-     "start": "2026-10-27",
-     "end": "2026-11-02",
+     "start": "2026-10-28",
+     "end": "2026-11-03",
      "date": null,
-     "impressions": 19
+     "impressions": 18
     }
    },
    "last_28": {
     "current": {
-     "start": "2026-10-13",
-     "end": "2026-11-09",
+     "start": "2026-10-14",
+     "end": "2026-11-10",
      "date": null,
-     "impressions": 133
+     "impressions": 121
     },
     "previous": {
-     "start": "2026-09-15",
-     "end": "2026-10-12",
+     "start": "2026-09-16",
+     "end": "2026-10-13",
      "date": null,
-     "impressions": 36553
+     "impressions": 36568
     }
    }
   },
@@ -4712,11 +4712,11 @@
    {
     "id": "liuliang",
     "name": "流量与收录",
-    "status": "已完成",
-    "last_run": "2026-11-11T17:45:20",
+    "status": "步骤执行中",
+    "last_run": "2026-11-12T17:00:50",
     "alert": false,
-    "output": "Google 数据截止 11-09",
-    "task_id": 95
+    "output": "Google 数据截止 11-10",
+    "task_id": 104
    },
    {
     "id": "tinggeng",
