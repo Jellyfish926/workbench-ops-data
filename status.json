@@ -75,7 +75,7 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-13T15:19:06.523154+00:00",
+ "generated_at": "2026-11-13T15:29:14.361340+00:00",
  "counts": {
   "待处理": 0,
   "执行中": 0,
@@ -4703,18 +4703,16 @@
   "note": "公开页只显示曝光（Google 展示次数）；点击等其他流量数字只在站主本机看板。"
  },
  "radar": {
-  "status": "连不上",
-  "checked_at": "2026-11-13T15:18:30.827778+00:00",
-  "last_scan_at": "2026-11-13T14:54:18.610000+00:00",
-  "last_scan_age_min": 2.9,
+  "status": "正常",
+  "checked_at": "2026-11-13T15:28:33.796364+00:00",
+  "last_scan_at": "2026-11-13T15:23:48.617000+00:00",
+  "last_scan_age_min": 4.7,
   "venues": 12,
-  "live_venues": 11,
-  "down_venues": [
-   "Hyperliquid"
-  ],
+  "live_venues": 12,
+  "down_venues": [],
   "coins": 1254,
-  "pairs": 1653,
-  "qualified": 6,
+  "pairs": 1715,
+  "qualified": 12,
   "page_url": "radar/"
  },
  "orchestrator": {
