@@ -75,7 +75,7 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-13T13:14:09.016728+00:00",
+ "generated_at": "2026-11-13T13:25:51.384492+00:00",
  "counts": {
   "待处理": 0,
   "执行中": 0,
@@ -4597,10 +4597,10 @@
   }
  ],
  "gamesites": {
-  "generated_at": "2026-11-13T12:51:26.195121+00:00",
+  "generated_at": "2026-11-13T13:25:07.841075+00:00",
   "scale": {
    "independent_sites": 5,
-   "independent_online": 3,
+   "independent_online": 0,
    "hub_games": null,
    "hub_new_7d": null
   },
@@ -4655,7 +4655,7 @@
     "status": "已完成",
     "last_run": "2026-11-12T18:07:58",
     "alert": false,
-    "output": "11-13：≥50 分 26 个",
+    "output": "11-12：≥50 分 12 个",
     "task_id": 106
    },
    {
@@ -4698,16 +4698,18 @@
   "note": "公开页只显示曝光（Google 展示次数）；点击等其他流量数字只在站主本机看板。"
  },
  "radar": {
-  "status": "连不上",
-  "checked_at": "2026-11-13T13:13:48.014826+00:00",
-  "last_scan_at": "2026-11-13T12:59:14.994000+00:00",
-  "last_scan_age_min": 3.6,
+  "status": "正常",
+  "checked_at": "2026-11-13T13:23:50.637078+00:00",
+  "last_scan_at": "2026-11-13T13:19:15.388000+00:00",
+  "last_scan_age_min": 4.5,
   "venues": 12,
-  "live_venues": 12,
-  "down_venues": [],
+  "live_venues": 11,
+  "down_venues": [
+   "Hyperliquid"
+  ],
   "coins": 1254,
-  "pairs": 1720,
-  "qualified": 9,
+  "pairs": 1656,
+  "qualified": 7,
   "page_url": "radar/"
  },
  "orchestrator": {
