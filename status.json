@@ -47,10 +47,10 @@
     "fallbacks": [
      "Claude Code（2号电脑）"
     ],
-    "next_at": "2026-11-13T10:00:00+08:00",
-    "business_date": "2026-11-13",
-    "status": "已完成",
-    "task_id": 96,
+    "next_at": "2026-11-14T10:00:00+08:00",
+    "business_date": "2026-11-14",
+    "status": "步骤执行中",
+    "task_id": 106,
     "test_status": "尚未测试",
     "test_task_id": null
    },
@@ -75,14 +75,14 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-13T01:56:20.143377+00:00",
+ "generated_at": "2026-11-13T02:01:47.397103+00:00",
  "counts": {
   "待处理": 0,
-  "执行中": 0,
+  "执行中": 1,
   "会诊中": 0,
   "需你决定": 0,
-  "今日完成": 4,
-  "累计完成": 86
+  "今日完成": 5,
+  "累计完成": 87
  },
  "providers": [
   {
@@ -105,10 +105,10 @@
   },
   {
    "name": "Claude Code（2号电脑）",
-   "status": "空闲",
-   "running": 0,
-   "today_runs": 3,
-   "today_ok": 3,
+   "status": "忙碌",
+   "running": 1,
+   "today_runs": 4,
+   "today_ok": 4,
    "today_fail": 0,
    "only_levels": [
     "困难"
@@ -136,13 +136,162 @@
    "name": "Claude（1号电脑）",
    "status": "空闲",
    "running": 0,
-   "today_runs": 0,
-   "today_ok": 0,
+   "today_runs": 1,
+   "today_ok": 1,
    "today_fail": 0,
    "only_levels": null
   }
  ],
  "tasks": [
+  {
+   "id": 106,
+   "title": "每日定时：每日热词雷达 + 游戏机会表同步（2026-11-13）",
+   "level": "困难",
+   "status": "步骤执行中",
+   "attempts": 1,
+   "created_at": "2026-11-12T18:00:06",
+   "updated_at": "2026-11-12T18:00:06",
+   "finished_at": null,
+   "summary": null,
+   "path": [
+    {
+     "kind": "step",
+     "ai": "Claude Code（2号电脑）",
+     "model": "sonnet",
+     "status": "running",
+     "rejected": false
+    }
+   ],
+   "steps": [
+    {
+     "title": "步骤 1",
+     "ai": "Claude Code（2号电脑）",
+     "model": "sonnet",
+     "status": "执行中"
+    }
+   ],
+   "redo_rounds": 0,
+   "detail": {
+    "result": null,
+    "runs": [
+     {
+      "kind": "step",
+      "ai": "Claude Code（2号电脑）",
+      "model": "sonnet",
+      "status": "running",
+      "rejected": false,
+      "started_at": "2026-11-12T18:00:06",
+      "ended_at": null,
+      "duration_s": null
+     }
+    ],
+    "events": [
+     {
+      "at": "2026-11-12T18:00:06",
+      "kind": "daily_schedule",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-12T18:00:06",
+      "kind": "step",
+      "label": "流程进度更新"
+     }
+    ],
+    "recovery": {
+     "cycles": 0,
+     "next_at": null,
+     "status": null
+    }
+   }
+  },
+  {
+   "id": 105,
+   "title": "实测给1号电脑派一单（本机派）",
+   "level": "中等",
+   "status": "已完成",
+   "attempts": 1,
+   "created_at": "2026-11-12T17:56:43",
+   "updated_at": "2026-11-12T17:58:17",
+   "finished_at": "2026-11-12T17:58:17",
+   "summary": "已完成：我在工作台这台电脑上直接派单给 1 号电脑的 Claude（mac2_claude），对方跑完三条命令并把输出原样传了回来。 还没完成：无 需要你做：不用操作 **结果（实测时间 2026-11-13 01:56–01:58 UTC，北京时间 09:56–09:58）** | 项目 | 结果 | |---|---| | 本机名字 | `ericdeMac-mini.local` | | 派单前查可用的 AI | mac2（1号电脑上的 GPT）和 mac2_claude（1号电脑上的 Claude）都显示「能用」 | | 派给了谁 | **mac2_claude**，就是 1 号电脑上…",
+   "path": [
+    {
+     "kind": "step",
+     "ai": "Claude Code（2号电脑）",
+     "model": "opus",
+     "status": "ok",
+     "rejected": false
+    },
+    {
+     "kind": "delegate",
+     "ai": "Claude（1号电脑）",
+     "model": "sonnet",
+     "status": "ok",
+     "rejected": false
+    }
+   ],
+   "steps": [
+    {
+     "title": "步骤 1",
+     "ai": "Claude Code（2号电脑）",
+     "model": "opus",
+     "status": "完成"
+    }
+   ],
+   "redo_rounds": 0,
+   "detail": {
+    "result": "已完成：我在工作台这台电脑上直接派单给 1 号电脑的 Claude（mac2_claude），对方跑完三条命令并把输出原样传了回来。\n还没完成：无\n需要你做：不用操作\n\n**结果（实测时间 2026-11-13 01:56–01:58 UTC，北京时间 09:56–09:58）**\n\n| 项目 | 结果 |\n|---|---|\n| 本机名字 | `ericdeMac-mini.local` |\n| 派单前查可用的 AI | mac2（1号电脑上的 GPT）和 mac2_claude（1号电脑上的 Claude）都显示「能用」 |\n| 派给了谁 | **mac2_claude**，就是 1 号电脑上的 Claude Code（对方署名 sonnet） |\n| 往返用时 | **66 秒**（01:56:52 发出，01:57:58 收到回复） |\n| 两台电脑名字是否不同 | **不同**：本机是 `ericdeMac-mini.local`，对方是 `zhaoshengnans-Mac-mini.local` |\n\n**对方原样贴回的输出**\n```\nhostname\nzhaoshengnans-Mac-mini.local\n\ndate -u\nFri Nov 13 01:57:29 UTC 2026\n\ngit --version\ngit version 2.39.5 (Apple Git-154)\n```\n对方说明没有改任何文件，也没有提交或推送任何东西。\n\n**我怎么确认这单确实是 1 号电脑做的**\n- **电脑名字：** 对方报的名字和本机不一样，说明不是本机自己答的。\n- **对方报的时间：** 01:57:29，正好在发出和收到之间，所以这份输出是这次现跑的，不是以前留下的。\n- **派单箱记录：** 我查看了派单箱 Jellyfish926/workbench-remote-queue 的记录（只看，没写入）。这一单编号 20261112-175655-ab9124：01:57:37 有 1 号电脑交回的结果，前后都有 1 号电脑报平安的记录，01:57:50–01:57:56 有收尾清理。\n\n上次 #102 失败，是因为那次不在工作台这台电脑上运行，连不上本机工作台，单子没发出去。这次在工作台本机派单，整条流程一次走通。\n\n我没有往 GitHub 提交任何文件。对方的原始回复存在本任务的工作目录 `reply.txt`。",
+    "runs": [
+     {
+      "kind": "step",
+      "ai": "Claude Code（2号电脑）",
+      "model": "opus",
+      "status": "ok",
+      "rejected": false,
+      "started_at": "2026-11-12T17:56:44",
+      "ended_at": "2026-11-12T17:58:17",
+      "duration_s": 93.374
+     },
+     {
+      "kind": "delegate",
+      "ai": "Claude（1号电脑）",
+      "model": "sonnet",
+      "status": "ok",
+      "rejected": false,
+      "started_at": "2026-11-12T17:56:52",
+      "ended_at": "2026-11-12T17:57:58",
+      "duration_s": 55.124
+     }
+    ],
+    "events": [
+     {
+      "at": "2026-11-12T17:56:43",
+      "kind": "submit",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-12T17:56:44",
+      "kind": "step",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-12T17:56:52",
+      "kind": "delegate",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-12T17:58:17",
+      "kind": "done",
+      "label": "已完成验收"
+     }
+    ],
+    "recovery": {
+     "cycles": 0,
+     "next_at": null,
+     "status": null
+    }
+   }
+  },
   {
    "id": 104,
    "title": "每日定时：LootWiki 每日巡检与自查自纠（2026-11-13）",
@@ -4448,209 +4597,10 @@
      "status": null
     }
    }
-  },
-  {
-   "id": 66,
-   "title": "每日定时：每日热词雷达 + 游戏机会表同步（2026-11-06）",
-   "level": "困难",
-   "status": "已完成",
-   "attempts": 1,
-   "created_at": "2026-11-05T21:00:05",
-   "updated_at": "2026-11-05T21:14:08",
-   "finished_at": "2026-11-05T21:13:08",
-   "summary": "【给人看的结果】 ✅ 正常完成，热词雷达和游戏机会表同步已完成。 **做了什么** - 今天收集到 484 个候选游戏，评分 386 个，关注榜评分 39 个。 - 游戏主表更新 249 个，新增 10 行，现共 1009 行。 - 每日观测和变更日志同步成功；911 Dispatch、Escape Prison with a Toothpick 改为已建站，Roblox Stock Exchange 2 自动新建。 **有没有问题** - 没有问题 **需要你做什么** - 不需要，工作台会接着自动跑 **关键数字**（数据截至 2026-11-06） - 候选游戏 484 个 - 游戏主表…",
-   "path": [
-    {
-     "kind": "step",
-     "ai": "Claude Code（2号电脑）",
-     "model": "sonnet",
-     "status": "ok",
-     "rejected": false
-    }
-   ],
-   "steps": [
-    {
-     "title": "步骤 1",
-     "ai": "Claude Code（2号电脑）",
-     "model": "sonnet",
-     "status": "完成"
-    }
-   ],
-   "redo_rounds": 0,
-   "detail": {
-    "result": "【给人看的结果】\n✅ 正常完成，热词雷达和游戏机会表同步已完成。\n**做了什么**\n- 今天收集到 484 个候选游戏，评分 386 个，关注榜评分 39 个。\n- 游戏主表更新 249 个，新增 10 行，现共 1009 行。\n- 每日观测和变更日志同步成功；911 Dispatch、Escape Prison with a Toothpick 改为已建站，Roblox Stock Exchange 2 自动新建。\n**有没有问题**\n- 没有问题\n**需要你做什么**\n- 不需要，工作台会接着自动跑\n**关键数字**（数据截至 2026-11-06）\n- 候选游戏 484 个\n- 游戏主表更新 249 个，新增 10 行，共 1009 行\n- 每日观测 425 条，变更日志 13 条\n- 已建站标记 3 个\n\n## 技术详情（原始回执，供排查用）\n2026-11-06 的热词雷达和游戏机会表同步已完成，云端一次通过，没有在本机运行 `hotwords.py`。\n\n**触发前核对**\n- `radar.yml` 存在。\n- 这一天的快照、日报、回执都是 404，也没有别的 run 在跑。\n\n**云端采集和同步**\n- radar run `42147547274` 成功，用时 5 分 42 秒。\n- feishu-sync run `42148171248` 成功。\n\n**产出核对**(从 seo-hotwords 远端读回)\n- `snapshots/2026-11-06.json` 已入仓，1,133,991 字节。生成时间 2026-11-06T02:04Z，`replay=false`，不是历史回放。\n- 快照里候选 484 个，评分 386 个，关注榜评分 39 个。\n- `reports/2026-11-06.md` 已入仓，16,661 字节。\n- `runs/2026-11-06-game-sync.json` 的 status 是 complete，`errors` 为空，`field_issues` 为空。\n- 回执的 run_id 是 `2026-11-06-radar-and-game-sync-v2`。\n\n**三张表**\n- **游戏主表：**更新 249 个，回读一致 249 个。新增 10 行，回读一致 10 行。写入后共 1009 行。\n- **每日观测：**写入 425 条，回读 425 条，失败 0。\n- **变更日志：**写入 13 条，回读 13 条，失败 0。\n- **已建站标记：**标了 3 个，回读 3 个，主表缺行为 0。\n - 911 Dispatch 和 Escape Prison with a Toothpick 由「待复核」改为已建站。\n - Roblox Stock Exchange 2 之前主表没有这一行，已自动新建。\n\n**没做的事**\n- 我没有运行 `bin/radar-card` 或 `bin/feishu-card`，群卡由工作台核验后自己发。\n- 我没有直接写飞书表，三张表都是 feishu-sync 写的。\n- 本机的 `hotwords.py` 没跑，因为不需要。\n\n没有未完成项。\n\n【回执状态】完成\n\n【工作台文件核对】最多扫描2000个文件；发生新增、修改或删除的相对路径：[]",
-    "runs": [
-     {
-      "kind": "step",
-      "ai": "Claude Code（2号电脑）",
-      "model": "sonnet",
-      "status": "ok",
-      "rejected": false,
-      "started_at": "2026-11-05T21:00:05",
-      "ended_at": "2026-11-05T21:13:08",
-      "duration_s": 783.149
-     }
-    ],
-    "events": [
-     {
-      "at": "2026-11-05T21:00:05",
-      "kind": "daily_schedule",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-05T21:00:05",
-      "kind": "step",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-05T21:13:08",
-      "kind": "file_audit",
-      "label": "已核对实际文件变更"
-     },
-     {
-      "at": "2026-11-05T21:13:08",
-      "kind": "done",
-      "label": "已完成验收"
-     },
-     {
-      "at": "2026-11-05T21:13:28",
-      "kind": "postcheck",
-      "label": "流程进度更新"
-     }
-    ],
-    "recovery": {
-     "cycles": 0,
-     "next_at": null,
-     "status": null
-    }
-   }
-  },
-  {
-   "id": 65,
-   "title": "每日定时：LootWiki 每日巡检与自查自纠（2026-11-06）",
-   "level": "困难",
-   "status": "已完成",
-   "attempts": 2,
-   "created_at": "2026-11-05T20:02:39",
-   "updated_at": "2026-11-05T20:31:01",
-   "finished_at": "2026-11-05T20:30:19",
-   "summary": "【给人看的结果】 🔴 谷歌流量仍接近归零，6 个主力页面未进搜索结果 **做了什么** - 修正了 Deep Fishing 装备页和通行证页的过期价格：Auto Sell 通行证从 149 Robux 调到 175，十个通行证总价从 2,840 改为 2,866，赠礼版仍是 149，已上线。 - 核对商店、新手、稀有度、Bongo Cat 活动、Untitled Wheelie Game 社区、Blind but Dangerous 兑换码等页面，与官方来源一致，不用改。 - 站点地图 927 个网址全部能打开，没有异常页面；三个自动任务最近几次都成功。 **有没有问题** - 有。谷歌已经…",
-   "path": [
-    {
-     "kind": "step",
-     "ai": "GPT（2号电脑，未安装）",
-     "model": "gpt-6-astra",
-     "status": "rate_limited",
-     "rejected": false
-    },
-    {
-     "kind": "step",
-     "ai": "Claude Code（2号电脑）",
-     "model": "opus",
-     "status": "ok",
-     "rejected": false
-    }
-   ],
-   "steps": [
-    {
-     "title": "步骤 1",
-     "ai": "Claude Code（2号电脑）",
-     "model": "opus",
-     "status": "完成"
-    }
-   ],
-   "redo_rounds": 0,
-   "detail": {
-    "result": "【给人看的结果】\n🔴 谷歌流量仍接近归零，6 个主力页面未进搜索结果\n\n**做了什么**\n- 修正了 Deep Fishing 装备页和通行证页的过期价格：Auto Sell 通行证从 149 Robux 调到 175，十个通行证总价从 2,840 改为 2,866，赠礼版仍是 149，已上线。\n- 核对商店、新手、稀有度、Bongo Cat 活动、Untitled Wheelie Game 社区、Blind but Dangerous 兑换码等页面，与官方来源一致，不用改。\n- 站点地图 927 个网址全部能打开，没有异常页面；三个自动任务最近几次都成功。\n\n**有没有问题**\n- 有。谷歌已经抓取 Deep Fishing 新手、商店、稀有度、装备 4 页，以及 Bongo Cat 活动页、Untitled Wheelie Game 社区页，但没有放进搜索结果；已确认网站本身没故障（能打开、没被禁止抓取、站点地图读取 0 错误）。影响：这几个主力栏目基本收不到谷歌新访客，广告收入机会跟着变少，现在主要靠 Bing 撑着。已处理：查清原因、修好 Deep Fishing 的价格页；请求收录只能在后台手动做。\n- 新加坡来的 105 次访问只有 3 次有互动，平均停留不到 20 秒，可能不是真人，不能当作增长。\n\n**需要你做什么**\n- 登录谷歌搜索后台：对这 7 个网址点「请求编入索引」，并打开「人工处置措施」和「安全问题」两页看有没有通知。提醒：请求收录不等于已经被收录。\n\n**关键数字**（数据截至 2026-11-06）\n- 近 7 天谷歌点击 0 次（前 7 天 4 次），展示 7 天共 18 次\n- 近 7 天全站访问 644 次（前 7 天 504 次）\n- 站点地图提交 927 个网址，0 错误\n- 6 个主力页面未收录，7 个网址待请求收录\n\n## 技术详情（原始回执，供排查用）\n🔴 Google 流量仍接近归零：6 个主力页面仍被挡在搜索结果外，网站本身正常\n\n**一句话结论：** 异常。最直接的原因是：Google 抓取了主力页面，但没有放进搜索结果。网站技术没有故障。今天修正了 Deep Fishing 两页过期的通行证价格，已上线。\n\n**发生了什么**\n- 10 月 10 日前，从 Google 点进网站（点击）每天约 140 次。最近完整 7 天（10-28～11-03，数据截止 11-03）是 **0 次**，前 7 天是 4 次。\n- Google 把网页给搜索用户看的次数（展示）从每天约 2400 次降到 7 天共 **18 次**（前 7 天 28 次）。基数已经极小，这个比例不代表新一轮下跌。11-02 和 11-03 的数据可能还没完全入库。\n- 网站访问统计后台（GA4）显示，近 7 天全站访问 **644 次**，前 7 天 504 次。\n - 增长来自 Bing（约 322 次，前 7 天约 283 次）、直接访问和 AI 助手，不代表 Google 恢复了。\n - 来自 Google 的访问已经掉出来源前列。\n- 新加坡来的 **105 次**访问中只有 3 次有互动，平均停留不到 20 秒。**这部分访问可能不是真人，不能当作增长。**\n\n**为什么**\n- **已经确认（高）：** Google 官方收录检查显示，这 6 页都是\"已抓取、尚未收录\"（收录＝页面有资格出现在 Google 搜索结果里）：\n - Deep Fishing 新手、商店、稀有度、装备 4 页；\n - Bongo Cat 活动页；\n - Untitled Wheelie Game 社区页。\n\n 它们正是 28 天内掉量最多的页面。首页显示已收录，最后抓取时间是 11-05。\n- **最可能（中）：** Google 在 10-10 前后整体降低了对本站的质量评价，所以抓了也不放进结果。人工处罚和安全问题没有接口可查，原因还不能定。\n- **已经排除（高）：** 这些都不是原因：\n - 网站打不开；\n - robots 禁止抓取；\n - 标准网址（canonical＝页面声明的标准网址）指错；\n - 页面被标成不要收录；\n - 站点地图读取失败。Google 在 11-05 读取了站点地图，0 错误。\n\n**会造成什么影响**\nDeep Fishing、Bongo Cat、Untitled Wheelie Game 这几个原来的主力栏目，基本收不到 Google 带来的新访客。广告收入机会也跟着少了。现在主要靠 Bing 撑着访问量。\n\n**我做了什么**\n- **已上线：** 修正了 Deep Fishing 装备页和通行证页的过期价格。\n - 官方把 Auto Sell 通行证从 149 Robux 调到 **175**（官方接口实测，11-06 01:11 UTC）。赠礼版还是 149。\n - 两页的价格改成 175；十个通行证总价从 2,840 改成 2,866；\"赠礼版同价\"改成写明 Auto Sell 不同价。实体数据也同步改了。\n - 重建后本地 11 道门禁全部通过，提交 6bb21aa。线上 CI 门禁通过，生产部署成功。\n - 我在正式域名逐页核对过，两页与构建产物逐字节一致，站点地图日期已更新为 11-06。\n- **已核对，不需要修改：** 商店、新手、稀有度、Bongo Cat 活动、Wheelie 社区、Blind but Dangerous 兑换码这几页，与当天的官方来源一致。\n- **技术巡检：** 站点地图 927 个网址全部能打开，没有异常页面。三个自动任务最近几次都成功，不需要修复或重跑。\n- **尝试失败：** 无。\n\n**需要你拍板**\n- **请求重新收录（只能在后台手动做，接口不支持）：** 涉及 7 个网址：deep-fishing 的 beginner、shop、rarity、gear、gamepasses，bongo-cat/events，untitled-wheelie-game/community。\n - A. 在 Search Console 里对这 7 个网址点\"请求编入索引\"（推荐，几分钟就能做完）。\n - B. 暂不处理，等 Google 自己回访。\n\n 注意：请求收录≠已经收录。\n- **查人工处罚和安全问题：** 在 Search Console 打开\"人工处置措施\"和\"安全问题\"两页，看有没有通知。建议今天就看，这能排除或确认最大的未知原因。\n\n**正常项：** 首页、robots.txt、站点地图都能正常访问。HTTPS 证书有效到 2026-12-20。http 和 www 会正确跳到正式网址。没有死链，图片正常，没有占位词或乱码。\n\n**数据依据（给需要细看的人）**\n- **数据截止日：** Google 数据文件 status=ok。Search Console 截止 11-03；GA4 当前窗口 10-30～11-05，前窗口 10-23～10-29。两边窗口不同，不能直接对比。\n- **Search Console：**\n - 近 7 天点击 0、展示 18、平均排名 8.5；前 7 天点击 4、展示 28、排名 5.2。\n - 9-30～10-09 平均每天约 131 次点击、约 2320 次展示。10-09 点击 146 → 10-10 点击 19 → 之后每天 0～2 次。\n - 近 28 天对比前 28 天：点击 455 对 1158，展示 7159 对 29503。\n - 站点地图提交 927 条，11-05 被读取，0 错误。接口里的\"indexed 0\"是统计口径，不能当收录证据。\n- **技术巡检：**\n - 927 条全部 200，canonical、noindex、标题、描述、占位词检查异常 0 处；76 张图片全部 200。\n - 从本机（中国网络）单次请求约 2～4 秒。这个速度不代表海外用户。\n - 独立对抗验证 3 条主命题，0 条被推翻。\n- **修复回读证据：**\n - 提交 Jellyfish926/lootlore@6bb21aa（普通推送，没有强推）。\n - gates 运行 42142260339 成功；部署 7589655326 状态 success。\n - 正式域名回读：gear 页有 175、2,866、\"still 149 Robux\"，旧的\"2,840\"已经没有；gamepasses 页有 175，赠礼表是 149。\n- **报告：** 已推送到 claude-skills（提交 cac4f23），远端回读 report.md 大小 9312 字节。同目录有 receipt.md 和 evidence/。\n 完整报告：[链接]\n\n【回执状态】完成\n\n【工作台文件核对】最多扫描2000个文件；发生新增、修改或删除的相对路径：[\"lootlore-fix/.gitignore\", \"lootlore-fix/AGENTS.md\", \"lootlore-fix/README.md\", \"lootlore-fix/build-stamp.json\", \"lootlore-fix/build.py\", \"lootlore-fix/built-sites.md\", \"lootlore-fix/config/hub.json\", \"lootlore-fix/config/i18n/de.json\", \"lootlore-fix/config/i18n/en.json\", \"lootlore-fix/config/i18n/es.json\", \"lootlore-fix/config/i18n/fr.json\", \"lootlore-fix/config/i18n/it.json\", \"lootlore-fix/config/i18n/ja.json\", \"lootlore-fix/config/i18n/zh-CN.json\", \"lootlore-fix/config/sources.json\", \"lootlore-fix/content/american-plains-mudding/_images.json\", \"lootlore-fix/content/american-plains-mudding/en/author.md\", \"lootlore-fix/content/american-plains-mudding/en/badges.md\", \"lootlore-fix/content/american-plains-mudding/en/community.md\", \"lootlore-fix/content/american-plains-mudding/en/gamepasses.md\", \"lootlore-fix/content/american-plains-mudding/en/guides.md\", \"lootlore-fix/content/american-plains-mudding/en/how-to-play.md\", \"lootlore-fix/content/american-plains-mudding/en/index.md\", \"lootlore-fix/content/american-plains-mudding/en/limited-vehicles.md\", \"lootlore-fix/content/american-plains-mudding/en/private-servers.md\", \"lootlore-fix/content/american-plains-mudding/en/spawning.md\", \"lootlore-fix/content/american-plains-mudding/en/updates.md\", \"lootlore-fix/content/american-plains-mudding/en/vehicles.md\", \"lootlore-fix/content/animal-daycare/_images.json\", \"lootlore-fix/content/animal-daycare/en/author.md\", \"lootlore-fix/content/animal-daycare/en/badges.md\", \"lootlore-fix/content/animal-daycare/en/game-info.md\", \"lootlore-fix/content/animal-daycare/en/guides.md\", \"lootlore-fix/content/animal-daycare/en/how-to-play.md\", \"lootlore-fix/content/animal-daycare/en/impostors.md\", \"lootlore-fix/content/animal-daycare/en/index.md\", \"lootlore-fix/content/animal-daycare/en/night-events.md\", \"lootlore-fix/content/animal-daycare/en/shop.md\", \"lootlore-fix/content/bongo-cat/_images.json\", \"lootlore-fix/content/bongo-cat/en/achievements.md\", \"lootlore-fix/content/bongo-cat/en/author.md\", \"lootlore-fix/content/bongo-cat/en/auto-clicker.md\", \"lootlore-fix/content/bongo-cat/en/collection.md\", \"lootlore-fix/content/bongo-cat/en/emotes.md\", \"lootlore-fix/content/bongo-cat/en/events.md\", \"lootlore-fix/content/bongo-cat/en/exchange-trading.md\", \"lootlore-fix/content/bongo-cat/en/free-items.md\", \"lootlore-fix/content/bongo-cat/en/getting-started.md\", \"lootlore-fix/content/bongo-cat/en/halloween.md\", \"lootlore-fix/content/bongo-cat/en/hats-skins.md\", \"lootlore-fix/content/bongo-cat/en/how-to-play.md\", \"lootlore-fix/content/bongo-cat/en/index.md\", \"lootlore-fix/content/bongo-cat/en/is-it-safe.md\", \"lootlore-fix/content/bongo-cat/en/legendary-odds.md\", \"lootlore-fix/content/bongo-cat/en/mac-linux-steam-deck.md\", \"lootlore-fix/content/bongo-cat/en/multiplayer.md\", \"lootlore-fix/content/bongo-cat/en/paw-pass.md\", \"lootlore-fix/content/bongo-cat/en/steam-error.md\", \"lootlore-fix/content/can-you-pass-a-driving-test/_images.json\", \"lootlore-fix/content/can-you-pass-a-driving-test/en/author.md\", \"lootlore-fix/content/can-you-pass-a-driving-test/en/badges.md\", \"lootlore-fix/content/can-you-pass-a-driving-test/en/game-passes.md\", \"lootlore-fix/content/can-you-pass-a-driving-test/en/guides.md\", \"lootlore-fix/content/can-you-pass-a-driving-test/en/how-to-play.md\", \"lootlore-fix/content/can-you-pass-a-driving-test/en/index.md\", \"lootlore-fix/content/can-you-pass-a-driving-test/en/licenses.md\", \"lootlore-fix/content/can-you-pass-a-driving-test/en/robux-shop.md\", \"lootlore-fix/content/can-you-pass-a-driving-test/en/updates.md\", \"lootlore-fix/content/clean-all-the-balls/_images.json\", \"lootlore-fix/content/clean-all-the-balls/en/author.md\", \"lootlore-fix/content/clean-all-the-balls/en/gamepasses.md\", \"lootlore-fix/content/clean-all-the-balls/en/guides.md\", \"lootlore-fix/content/clean-all-the-balls/en/how-to-play.md\", \"lootlore-fix/content/clean-all-the-balls/en/index.md\", \"lootlore-fix/content/clean-all-the-balls/en/shop.md\", \"lootlore-fix/content/clean-all-the-balls/en/tools.md\", \"lootlore-fix/content/clean-all-the-balls/en/updates.md\", \"lootlore-fix/content/clean-the-moon/_images.json\", \"lootlore-fix/content/clean-the-moon/assets/art01-480.png\", \"lootlore-fix/content/clean-the-moon/assets/art01-768.png\", \"lootlore-fix/content/clean-the-moon/assets/art02-480.png\", \"lootlore-fix/content/clean-the-moon/assets/art02-768.png\", \"lootlore-fix/content/clean-the-moon/en/author.md\", \"lootlore-fix/content/clean-the-moon/en/badges.md\", \"lootlore-fix/content/clean-the-moon/en/gamepasses.md\", \"lootlore-fix/content/clean-the-moon/en/guides.md\", \"lootlore-fix/content/clean-the-moon/en/halloween-update.md\", \"lootlore-fix/content/clean-the-moon/en/how-to-play.md\", \"lootlore-fix/content/clean-the-moon/en/index.md\", \"lootlore-fix/content/clean-the-moon/en/robux-shop.md\", \"lootlore-fix/content/clean-the-moon/en/tools-and-upgrades.md\", \"lootlore-fix/content/get-your-drivers-license/_images.json\", \"lootlore-fix/content/get-your-drivers-license/en/author.md\", \"lootlore-fix/content/get-your-drivers-license/en/beginner.md\", \"lootlore-fix/content/get-your-drivers-license/en/cars.md\", \"lootlore-fix/content/get-your-drivers-license/en/community.md\", \"lootlore-fix/content/get-your-drivers-license/en/driving-test.md\", \"lootlore-fix/content/get-your-drivers-license/en/gamepasses.md\", \"lootlore-fix/content/get-your-drivers-license/en/how-to-play.md\", \"lootlore-fix/content/get-your-drivers-license/en/index.md\"]",
-    "runs": [
-     {
-      "kind": "step",
-      "ai": "GPT（2号电脑，未安装）",
-      "model": "gpt-6-astra",
-      "status": "rate_limited",
-      "rejected": false,
-      "started_at": "2026-11-05T20:02:39",
-      "ended_at": "2026-11-05T20:09:58",
-      "duration_s": 439.629
-     },
-     {
-      "kind": "step",
-      "ai": "Claude Code（2号电脑）",
-      "model": "opus",
-      "status": "ok",
-      "rejected": false,
-      "started_at": "2026-11-05T20:09:58",
-      "ended_at": "2026-11-05T20:30:19",
-      "duration_s": 1220.062
-     }
-    ],
-    "events": [
-     {
-      "at": "2026-11-05T20:02:39",
-      "kind": "daily_schedule",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-05T20:02:39",
-      "kind": "step",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-05T20:09:58",
-      "kind": "file_audit",
-      "label": "已核对实际文件变更"
-     },
-     {
-      "at": "2026-11-05T20:09:58",
-      "kind": "step_rate_limited",
-      "label": "已遇限流，接续其他可用AI或等待恢复"
-     },
-     {
-      "at": "2026-11-05T20:09:58",
-      "kind": "step",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-05T20:30:19",
-      "kind": "file_audit",
-      "label": "已核对实际文件变更"
-     },
-     {
-      "at": "2026-11-05T20:30:19",
-      "kind": "done",
-      "label": "已完成验收"
-     },
-     {
-      "at": "2026-11-05T20:30:26",
-      "kind": "postcheck",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-05T20:31:01",
-      "kind": "postcheck",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-06T09:20:40",
-      "kind": "cleanup",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-06T09:20:40",
-      "kind": "cleanup",
-      "label": "流程进度更新"
-     }
-    ],
-    "recovery": {
-     "cycles": 0,
-     "next_at": null,
-     "status": null
-    }
-   }
   }
  ],
  "gamesites": {
-  "generated_at": "2026-11-13T01:51:30.307575+00:00",
+  "generated_at": "2026-11-13T01:56:54.291576+00:00",
   "scale": {
    "independent_sites": 5,
    "independent_online": 5,
@@ -4752,15 +4702,15 @@
  },
  "radar": {
   "status": "正常",
-  "checked_at": "2026-11-13T01:49:07.885479+00:00",
-  "last_scan_at": "2026-11-13T01:44:16.893000+00:00",
-  "last_scan_age_min": 4.8,
+  "checked_at": "2026-11-13T01:56:24.582210+00:00",
+  "last_scan_at": "2026-11-13T01:54:17.503000+00:00",
+  "last_scan_age_min": 2.1,
   "venues": 12,
   "live_venues": 12,
   "down_venues": [],
   "coins": 1255,
-  "pairs": 1726,
-  "qualified": 6,
+  "pairs": 1728,
+  "qualified": 7,
   "page_url": "radar/"
  },
  "orchestrator": {
