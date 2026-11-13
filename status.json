@@ -49,7 +49,7 @@
     ],
     "next_at": "2026-11-14T10:00:00+08:00",
     "business_date": "2026-11-14",
-    "status": "步骤执行中",
+    "status": "已完成",
     "task_id": 106,
     "test_status": "尚未测试",
     "test_task_id": null
@@ -75,14 +75,14 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-13T02:06:52.414073+00:00",
+ "generated_at": "2026-11-13T02:11:58.196033+00:00",
  "counts": {
   "待处理": 0,
-  "执行中": 1,
+  "执行中": 0,
   "会诊中": 0,
   "需你决定": 0,
-  "今日完成": 5,
-  "累计完成": 87
+  "今日完成": 6,
+  "累计完成": 88
  },
  "providers": [
   {
@@ -105,10 +105,10 @@
   },
   {
    "name": "Claude Code（2号电脑）",
-   "status": "忙碌",
-   "running": 1,
-   "today_runs": 4,
-   "today_ok": 4,
+   "status": "空闲",
+   "running": 0,
+   "today_runs": 5,
+   "today_ok": 5,
    "today_fail": 0,
    "only_levels": [
     "困难"
@@ -147,18 +147,18 @@
    "id": 106,
    "title": "每日定时：每日热词雷达 + 游戏机会表同步（2026-11-13）",
    "level": "困难",
-   "status": "步骤执行中",
+   "status": "已完成",
    "attempts": 1,
    "created_at": "2026-11-12T18:00:06",
-   "updated_at": "2026-11-12T18:00:06",
-   "finished_at": null,
-   "summary": null,
+   "updated_at": "2026-11-12T18:08:50",
+   "finished_at": "2026-11-12T18:07:58",
+   "summary": "【给人看的结果】 ✅ 热词雷达与游戏机会表同步正常完成 **做了什么** - 今天的热词雷达收集已完成，当天的结果已全部保存下来。 - 游戏机会主表已同步，一共更新 269 行，新增 9 行游戏。 - 新增的游戏里有 Blood Lab、Run a Christmas Tree Lot 等，可以留意。 **有没有问题** - 没有问题 **需要你做什么** - 不需要，工作台会接着自动跑 **关键数字**（数据截至 2026-11-13） - 热词评分 379 条 - 重点关注 43 条 - 游戏机会表更新 269 行 - 新增游戏 9 款 ## 技术详情（原始回执，供排查用） 2026-11…",
    "path": [
     {
      "kind": "step",
      "ai": "Claude Code（2号电脑）",
      "model": "sonnet",
-     "status": "running",
+     "status": "ok",
      "rejected": false
     }
    ],
@@ -167,22 +167,22 @@
      "title": "步骤 1",
      "ai": "Claude Code（2号电脑）",
      "model": "sonnet",
-     "status": "执行中"
+     "status": "完成"
     }
    ],
    "redo_rounds": 0,
    "detail": {
-    "result": null,
+    "result": "【给人看的结果】\n✅ 热词雷达与游戏机会表同步正常完成\n\n**做了什么**\n- 今天的热词雷达收集已完成，当天的结果已全部保存下来。\n- 游戏机会主表已同步，一共更新 269 行，新增 9 行游戏。\n- 新增的游戏里有 Blood Lab、Run a Christmas Tree Lot 等，可以留意。\n\n**有没有问题**\n- 没有问题\n\n**需要你做什么**\n- 不需要，工作台会接着自动跑\n\n**关键数字**（数据截至 2026-11-13）\n- 热词评分 379 条\n- 重点关注 43 条\n- 游戏机会表更新 269 行\n- 新增游戏 9 款\n\n## 技术详情（原始回执，供排查用）\n2026-11-13 的热词雷达和游戏机会表同步已完成。云端一次通过，没有在本机运行 `hotwords.py`。\n\n**采集与同步**\n- 触发前这一天的快照、日报和回执都是 404，也没有别的 run 在跑，所以不是重复触发。\n- `hotwords-radar.yml` 存在。run `43349007773`（workflow_dispatch，date=2026-11-13）成功，用时 6 分 1 秒。\n- 随后 `hotwords-feishu-sync` run `43349741611` 成功。\n\n**产出核对**（从 AI 库 `游戏站/热词skill/热词雷达/` 读回）\n- `snapshots/2026-11-13.json` 已入仓，1,137,930 字节。生成时间 2026-11-13T02:04Z，`replay=false`，不是历史回放。`scores` 有 379 个，`watched_scores` 有 43 个。\n- `reports/2026-11-13.md` 已入仓，16,216 字节。\n- `runs/2026-11-13-game-sync.json` 的 status 是 `complete`，`errors` 为空，执行者是 GitHub Actions feishu-sync。\n- 主表更新 269 行，新增 9 行（Blood Lab、Run a Christmas Tree Lot 等，都在回执里）。\n- 回执里每日观测表和变更日志表的回读我没有逐项看，只看了开头的主表部分。整体状态以回执的 `complete` 为准。\n\n**没做的事**\n- 按要求没运行 `bin/radar-card` 和 `bin/feishu-card`，群卡由工作台自己发，不算缺项。\n- 没有直接写飞书表，没有建站、上架或提审。\n\n【回执状态】完成\n\n【工作台文件核对】最多扫描2000个文件；发生新增、修改或删除的相对路径：[]",
     "runs": [
      {
       "kind": "step",
       "ai": "Claude Code（2号电脑）",
       "model": "sonnet",
-      "status": "running",
+      "status": "ok",
       "rejected": false,
       "started_at": "2026-11-12T18:00:06",
-      "ended_at": null,
-      "duration_s": null
+      "ended_at": "2026-11-12T18:07:58",
+      "duration_s": 472.257
      }
     ],
     "events": [
@@ -194,6 +194,21 @@
      {
       "at": "2026-11-12T18:00:06",
       "kind": "step",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-12T18:07:58",
+      "kind": "file_audit",
+      "label": "已核对实际文件变更"
+     },
+     {
+      "at": "2026-11-12T18:07:58",
+      "kind": "done",
+      "label": "已完成验收"
+     },
+     {
+      "at": "2026-11-12T18:08:27",
+      "kind": "postcheck",
       "label": "流程进度更新"
      }
     ],
