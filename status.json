@@ -75,7 +75,7 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-13T08:57:15.892436+00:00",
+ "generated_at": "2026-11-13T09:02:23.049489+00:00",
  "counts": {
   "待处理": 0,
   "执行中": 1,
@@ -105,11 +105,11 @@
   },
   {
    "name": "Claude Code（2号电脑）",
-   "status": "忙碌",
-   "running": 1,
-   "today_runs": 0,
+   "status": "冷却中",
+   "running": 0,
+   "today_runs": 1,
    "today_ok": 0,
-   "today_fail": 0,
+   "today_fail": 1,
    "only_levels": [
     "困难"
    ]
@@ -125,8 +125,8 @@
   },
   {
    "name": "GPT（1号电脑）",
-   "status": "空闲",
-   "running": 0,
+   "status": "忙碌",
+   "running": 1,
    "today_runs": 0,
    "today_ok": 0,
    "today_fail": 0,
@@ -134,7 +134,7 @@
   },
   {
    "name": "Claude（1号电脑）",
-   "status": "空闲",
+   "status": "忙碌",
    "running": 0,
    "today_runs": 0,
    "today_ok": 0,
@@ -148,9 +148,9 @@
    "title": "新增每周定时：素材库评审（真人素材库 + 外部库评估，用工作台 AI 判断）",
    "level": "中等",
    "status": "步骤执行中",
-   "attempts": 1,
+   "attempts": 2,
    "created_at": "2026-11-13T00:57:06",
-   "updated_at": "2026-11-13T00:57:06",
+   "updated_at": "2026-11-13T00:57:18",
    "finished_at": null,
    "summary": null,
    "path": [
@@ -158,6 +158,13 @@
      "kind": "step",
      "ai": "Claude Code（2号电脑）",
      "model": "opus",
+     "status": "rate_limited",
+     "rejected": false
+    },
+    {
+     "kind": "step",
+     "ai": "GPT（1号电脑）",
+     "model": "gpt-6-astra",
      "status": "running",
      "rejected": false
     }
@@ -165,8 +172,8 @@
    "steps": [
     {
      "title": "步骤 1",
-     "ai": "Claude Code（2号电脑）",
-     "model": "opus",
+     "ai": "GPT（1号电脑）",
+     "model": "gpt-6-astra",
      "status": "执行中"
     }
    ],
@@ -178,9 +185,19 @@
       "kind": "step",
       "ai": "Claude Code（2号电脑）",
       "model": "opus",
-      "status": "running",
+      "status": "rate_limited",
       "rejected": false,
       "started_at": "2026-11-13T00:57:06",
+      "ended_at": "2026-11-13T00:57:17",
+      "duration_s": 11.193
+     },
+     {
+      "kind": "step",
+      "ai": "GPT（1号电脑）",
+      "model": "gpt-6-astra",
+      "status": "running",
+      "rejected": false,
+      "started_at": "2026-11-13T00:57:18",
       "ended_at": null,
       "duration_s": null
      }
@@ -193,6 +210,16 @@
      },
      {
       "at": "2026-11-13T00:57:06",
+      "kind": "step",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-13T00:57:17",
+      "kind": "step_rate_limited",
+      "label": "已遇限流，接续其他可用AI或等待恢复"
+     },
+     {
+      "at": "2026-11-13T00:57:18",
       "kind": "step",
       "label": "流程进度更新"
      }
@@ -4640,17 +4667,17 @@
  },
  "radar": {
   "status": "正常",
-  "checked_at": "2026-11-13T08:49:18.691274+00:00",
-  "last_scan_at": "2026-11-13T08:49:15.893000+00:00",
-  "last_scan_age_min": 0.0,
+  "checked_at": "2026-11-13T08:59:22.511651+00:00",
+  "last_scan_at": "2026-11-13T08:59:15.599000+00:00",
+  "last_scan_age_min": 0.1,
   "venues": 12,
   "live_venues": 11,
   "down_venues": [
    "Hyperliquid"
   ],
   "coins": 1255,
-  "pairs": 1658,
-  "qualified": 13,
+  "pairs": 1656,
+  "qualified": 12,
   "page_url": "radar/"
  },
  "orchestrator": {
