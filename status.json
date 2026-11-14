@@ -75,7 +75,7 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-14T16:52:33.910639+00:00",
+ "generated_at": "2026-11-14T16:57:43.849036+00:00",
  "counts": {
   "待处理": 0,
   "执行中": 0,
@@ -4694,28 +4694,15 @@
  },
  "radar": {
   "status": "正常",
-  "checked_at": "2026-11-14T16:47:07.505387+00:00",
-  "last_scan_at": "2026-11-14T16:43:52.603000+00:00",
-  "last_scan_age_min": 3.2,
+  "checked_at": "2026-11-14T16:57:10.074398+00:00",
+  "last_scan_at": "2026-11-14T16:53:48.720000+00:00",
+  "last_scan_age_min": 3.3,
   "venues": 12,
-  "live_venues": 0,
-  "down_venues": [
-   "Binance",
-   "OKX",
-   "Backpack",
-   "Hyperliquid",
-   "Lighter",
-   "Aster",
-   "dYdX v4",
-   "Variational",
-   "Nado",
-   "Extended",
-   "Hibachi",
-   "Pacifica"
-  ],
-  "coins": 0,
-  "pairs": 0,
-  "qualified": 0,
+  "live_venues": 12,
+  "down_venues": [],
+  "coins": 1254,
+  "pairs": 1727,
+  "qualified": 14,
   "page_url": "radar/"
  },
  "orchestrator": {
