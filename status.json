@@ -15,7 +15,7 @@
     ],
     "next_at": "2026-11-15T09:00:00+08:00",
     "business_date": "2026-11-15",
-    "status": "步骤执行中",
+    "status": "需你决定",
     "task_id": 109,
     "test_status": "已放弃",
     "test_task_id": 14
@@ -75,12 +75,12 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-14T01:42:21.593710+00:00",
+ "generated_at": "2026-11-14T01:47:27.008256+00:00",
  "counts": {
   "待处理": 0,
-  "执行中": 1,
+  "执行中": 0,
   "会诊中": 0,
-  "需你决定": 0,
+  "需你决定": 1,
   "今日完成": 2,
   "累计完成": 90
  },
@@ -105,10 +105,10 @@
   },
   {
    "name": "Claude Code（2号电脑）",
-   "status": "忙碌",
-   "running": 1,
-   "today_runs": 2,
-   "today_ok": 1,
+   "status": "空闲",
+   "running": 0,
+   "today_runs": 4,
+   "today_ok": 3,
    "today_fail": 1,
    "only_levels": [
     "困难"
@@ -147,10 +147,10 @@
    "id": 109,
    "title": "每日定时：LootWiki 每日巡检与自查自纠（2026-11-14）",
    "level": "困难",
-   "status": "步骤执行中",
-   "attempts": 1,
+   "status": "需你决定",
+   "attempts": 2,
    "created_at": "2026-11-13T17:00:45",
-   "updated_at": "2026-11-13T17:00:45",
+   "updated_at": "2026-11-13T17:45:22",
    "finished_at": null,
    "summary": null,
    "path": [
@@ -158,7 +158,14 @@
      "kind": "step",
      "ai": "Claude Code（2号电脑）",
      "model": "opus",
-     "status": "running",
+     "status": "ok",
+     "rejected": false
+    },
+    {
+     "kind": "step",
+     "ai": "Claude Code（2号电脑）",
+     "model": "opus",
+     "status": "ok",
      "rejected": false
     }
    ],
@@ -167,22 +174,32 @@
      "title": "步骤 1",
      "ai": "Claude Code（2号电脑）",
      "model": "opus",
-     "status": "执行中"
+     "status": "完成"
     }
    ],
    "redo_rounds": 0,
    "detail": {
-    "result": null,
+    "result": "🔴 Google 搜索/访问数据未获取，今天无法判断流量是否正常；Run Your Own Farmstead 兑换码已改成新码并上线\n\n**一句话结论：** 异常（数据未获取），今天没法判断 Google 流量是否正常。Google 搜索后台（Search Console）的正式数据只到 11-10，比今天早 4 天，超过规定时效。今天一共取了 4 次，最近一次在 01:45Z，截止日都还是 11-10。网站访问统计后台（GA4）的数据拿到了。网站技术检查没有发现故障。\n\n**发生了什么**\n- **Google 正式数据今天没有。** Google 给了 11-11～11-13 的初步数字，还没定稿，以后可能会改：这 3 天点进网站 0 次，被搜索用户看到的次数（展示）每天 2～7 次。这和前 6 天差不多，没看到恢复，也没看到新的下跌。这些数字只作参考，不作结论。\n- **6 个主力页仍然不在搜索结果里。** 今天实时查了收录状态（收录＝页面有资格出现在 Google 搜索结果），和昨天一样。\n- **全站访问量涨了，主要靠 Bing。** 近 7 天全站访问 **1267 次**，前 7 天 720 次。从搜索引擎进来的 798 次，几乎都是 Bing、Yahoo、DuckDuckGo 带来的。从 Google 进来的只有 2 次。\n- **有一部分访问可能不是真人。** 新加坡的约 230 次访问，加上“直接访问”的约 414 次，平均只停 6～7 秒，几乎没有任何操作。**这部分访问可能不是真人，不能当作增长。**\n\n**为什么**\n- **已经确认（高）：** 数据没更新的问题在 Google 那边。接口连得上，正式数据最后一天就是 11-10。6 个主力页的状态都是“已抓取、尚未收录”，也就是 Google 看过页面，但没放进搜索结果。\n- **最可能（中）：** Google 这次出正式数据比平时晚了 1 天。主力页不收录，最可能是 10 月 10 日前后 Google 调低了对整站的评价。\n- **已经排除（高）：** 网站打不开、robots 禁止抓取、标准网址指错（canonical＝页面声明的标准网址）、页面被标成不要收录、站点地图读取失败、死链、坏图。今天全站 985 页都实测过，这些问题都没有。\n\n**会造成什么影响**\nDeep Fishing、Bongo Cat 这些原来的主力栏目，还是基本拿不到 Google 新访客，广告收入机会也少了。现在的访客主要从 Bing 来，落在 Raise A Catboy、Sweep The Moon、Break Glass If Bored 这些栏目。\n\n**我做了什么**\n- **已上线：** Run Your Own Farmstead 改了 4 处：兑换码页、栏目首页、万圣节页、首页卡片。已撤下的 RELEASE、HALLOWEEN、JAPAN 换成了现在能用的 FARMSTEAD 和新码 BEES。\n- **已上线：** Roblox Stock Exchange 2 和 Mitosis 两个兑换码页，更新了核对日期和点赞数。首页轮播我手动补跑了一次，也已上线。\n- **核对结果：** 本地 13 项门禁全部通过，线上门禁也通过。全站 985 页的线上内容和构建结果逐页一致。\n- **重试补记（这一轮）：** 重新查了 Google 正式数据，截止日还是 11-10，补不上。已把初步数字补写进报告并推送，回读和本地文件一致。这一轮没有重复改页面，也没有发卡。\n- **没做完：** Google 数据要等 Google 出正式数据，明天巡检会重新取。How To Drift 兑换码页的社区来源今天没有复核，留到下一轮。\n\n**需要你拍板**\n- **请求重新收录：** 接口不支持，只能你在后台手动点。涉及 6 个网址：deep-fishing 的 beginner、shop、rarity、gear 4 页，bongo-cat/events，untitled-wheelie-game/community。\n - A. 在 Search Console 对这 6 个网址点“请求编入索引”（推荐）。\n - B. 不处理，等 Google 自己再来抓。\n - 点了请求不等于已经收录。\n- **查人工处罚和安全问题：** 在 Search Console 打开“人工处置措施”和“安全问题”两页，看有没有通知。\n - A. 去看一眼（推荐，能确认或排除现在最大的未知原因）。\n - B. 暂不看。\n\n**正常项：** 首页、robots.txt、站点地图都能正常打开，HTTPS 正常。1030 个站内链接、718 张图片没有坏的，页面上没有占位词或乱码。\n\n---\n\n**数据依据**\n\n**Search Console**\n- 工作台文件：status=ok，01:01:16Z 生成，data_end=2026-11-10。\n- 01:45Z 按日直接查询：\n - 正式数据（final）11-05～11-10：点击都是 0，展示 5/4/7/3/3/3。\n - 初步数据（all）11-11～11-13：点击都是 0，展示 7/3/2。\n- 已超时效的近 28 天对比，只作记录：点击 6 对 1607，展示 121 对 36568。\n- 站点地图：985 条，Google 最后读取在 11-13，0 错误。\n\n**GA4**\n- 时间窗口：11-07～11-13 对比 10-31～11-06。\n- 会话 1267 对 720，自然搜索 798 对 339，google 来源 2。\n\n**技术巡检**\n- hub-patrol-data 运行 43538672531 和 43541622423：985 页全部 200，坏链、坏图都是 0，响应中位数 152 ms。\n\n**修复证据**\n- 内容提交 92b511b。部署由空提交 6826ebb 重新触发，Vercel 部署 success。\n- 首页轮播提交 2eb7a96，部署 success。\n- hub-gates 43539282899 success。\n- 报告首版提交 1fd39fd。重试补记提交 188f29f，已用 API 回读，和本地文件逐字节一致。\n\n完整报告：[链接]\n\n【回执状态】部分完成：Google 数据未获取\n\n【工作台文件核对】最多扫描2000个文件；发生新增、修改或删除的相对路径：[]",
     "runs": [
      {
       "kind": "step",
       "ai": "Claude Code（2号电脑）",
       "model": "opus",
-      "status": "running",
+      "status": "ok",
       "rejected": false,
       "started_at": "2026-11-13T17:00:45",
-      "ended_at": null,
-      "duration_s": null
+      "ended_at": "2026-11-13T17:44:05",
+      "duration_s": 2599.921
+     },
+     {
+      "kind": "step",
+      "ai": "Claude Code（2号电脑）",
+      "model": "opus",
+      "status": "ok",
+      "rejected": false,
+      "started_at": "2026-11-13T17:44:07",
+      "ended_at": "2026-11-13T17:45:21",
+      "duration_s": 74.092
      }
     ],
     "events": [
@@ -194,6 +211,41 @@
      {
       "at": "2026-11-13T17:00:45",
       "kind": "step",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-13T17:44:05",
+      "kind": "file_audit",
+      "label": "已核对实际文件变更"
+     },
+     {
+      "at": "2026-11-13T17:44:05",
+      "kind": "receipt",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-13T17:44:07",
+      "kind": "postcheck",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-13T17:44:07",
+      "kind": "step",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-13T17:45:21",
+      "kind": "file_audit",
+      "label": "已核对实际文件变更"
+     },
+     {
+      "at": "2026-11-13T17:45:21",
+      "kind": "receipt",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-13T17:45:22",
+      "kind": "postcheck",
       "label": "流程进度更新"
      }
     ],
@@ -4535,12 +4587,12 @@
   }
  ],
  "gamesites": {
-  "generated_at": "2026-11-14T01:15:36.675808+00:00",
+  "generated_at": "2026-11-14T01:46:11.869469+00:00",
   "scale": {
    "independent_sites": 5,
    "independent_online": 4,
-   "hub_games": 49,
-   "hub_new_7d": 4
+   "hub_games": null,
+   "hub_new_7d": null
   },
   "impressions": {
    "status": "ok",
@@ -4617,8 +4669,8 @@
    {
     "id": "liuliang",
     "name": "流量与收录",
-    "status": "步骤执行中",
-    "last_run": "2026-11-13T17:00:45",
+    "status": "需你决定",
+    "last_run": "2026-11-13T17:45:22",
     "alert": false,
     "output": "Google 数据截止 11-10",
     "task_id": 109
