@@ -64,10 +64,10 @@
     "fallbacks": [
      "Claude Code（2号电脑）"
     ],
-    "next_at": "2026-11-15T03:17:00+08:00",
-    "business_date": "2026-11-14",
-    "status": "已完成",
-    "task_id": 108,
+    "next_at": "2026-11-16T03:17:00+08:00",
+    "business_date": "2026-11-15",
+    "status": "步骤执行中",
+    "task_id": 111,
     "test_status": "尚未测试",
     "test_task_id": null
    }
@@ -75,10 +75,10 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-14T19:08:45.618911+00:00",
+ "generated_at": "2026-11-14T19:17:53.948832+00:00",
  "counts": {
   "待处理": 0,
-  "执行中": 0,
+  "执行中": 1,
   "会诊中": 0,
   "需你决定": 1,
   "今日完成": 0,
@@ -105,8 +105,8 @@
   },
   {
    "name": "Claude Code（2号电脑）",
-   "status": "空闲",
-   "running": 0,
+   "status": "忙碌",
+   "running": 1,
    "today_runs": 0,
    "today_ok": 0,
    "today_fail": 0,
@@ -143,6 +143,67 @@
   }
  ],
  "tasks": [
+  {
+   "id": 111,
+   "title": "每日定时：每日工作记忆备份到 GitHub（2026-11-14）",
+   "level": "困难",
+   "status": "步骤执行中",
+   "attempts": 1,
+   "created_at": "2026-11-14T11:17:19",
+   "updated_at": "2026-11-14T11:17:19",
+   "finished_at": null,
+   "summary": null,
+   "path": [
+    {
+     "kind": "step",
+     "ai": "Claude Code（2号电脑）",
+     "model": "sonnet",
+     "status": "running",
+     "rejected": false
+    }
+   ],
+   "steps": [
+    {
+     "title": "步骤 1",
+     "ai": "Claude Code（2号电脑）",
+     "model": "sonnet",
+     "status": "执行中"
+    }
+   ],
+   "redo_rounds": 0,
+   "detail": {
+    "result": null,
+    "runs": [
+     {
+      "kind": "step",
+      "ai": "Claude Code（2号电脑）",
+      "model": "sonnet",
+      "status": "running",
+      "rejected": false,
+      "started_at": "2026-11-14T11:17:19",
+      "ended_at": null,
+      "duration_s": null
+     }
+    ],
+    "events": [
+     {
+      "at": "2026-11-14T11:17:19",
+      "kind": "daily_schedule",
+      "label": "流程进度更新"
+     },
+     {
+      "at": "2026-11-14T11:17:19",
+      "kind": "step",
+      "label": "流程进度更新"
+     }
+    ],
+    "recovery": {
+     "cycles": 0,
+     "next_at": null,
+     "status": null
+    }
+   }
+  },
   {
    "id": 110,
    "title": "每日定时：每日热词雷达 + 游戏机会表同步（2026-11-14）",
@@ -4483,102 +4544,6 @@
      },
      {
       "at": "2026-11-09T02:38:17",
-      "kind": "cleanup",
-      "label": "流程进度更新"
-     }
-    ],
-    "recovery": {
-     "cycles": 0,
-     "next_at": null,
-     "status": null
-    }
-   }
-  },
-  {
-   "id": 71,
-   "title": "每日定时：每日总站自动上架（2026-11-07）",
-   "level": "困难",
-   "status": "已完成",
-   "attempts": 1,
-   "created_at": "2026-11-07T12:47:02",
-   "updated_at": "2026-11-07T13:29:52",
-   "finished_at": "2026-11-07T13:22:18",
-   "summary": "【给人看的结果】 ✅ 正常完成：两款游戏已上线并核对无误 **做了什么** - 上架了 Steal a Superpower（[链接] Break Glass If Bored（[链接] - 未上的：Cut a Rock 因同类站已有 5 个，Bike For Egg 因关联到广告账号专铺站，Unstable SMP FFA 因借用 Minecraft 相关版权内容，Probably Stolen 因平台数据不可访问、无法核对风险。 - 两款内容来自官方数据；官方没有兑换码，所以没建兑换码页。 **有没有问题** - 没有问题 **需要你做什么** - 不需要，工作台会接着自动跑 **关键数字…",
-   "path": [
-    {
-     "kind": "step",
-     "ai": "Claude Code（2号电脑）",
-     "model": "sonnet",
-     "status": "ok",
-     "rejected": false
-    }
-   ],
-   "steps": [
-    {
-     "title": "步骤 1",
-     "ai": "Claude Code（2号电脑）",
-     "model": "sonnet",
-     "status": "完成"
-    }
-   ],
-   "redo_rounds": 0,
-   "detail": {
-    "result": "【给人看的结果】\n✅ 正常完成：两款游戏已上线并核对无误\n\n**做了什么**\n- 上架了 Steal a Superpower（[链接] Break Glass If Bored（[链接]\n- 未上的：Cut a Rock 因同类站已有 5 个，Bike For Egg 因关联到广告账号专铺站，Unstable SMP FFA 因借用 Minecraft 相关版权内容，Probably Stolen 因平台数据不可访问、无法核对风险。\n- 两款内容来自官方数据；官方没有兑换码，所以没建兑换码页。\n\n**有没有问题**\n- 没有问题\n\n**需要你做什么**\n- 不需要，工作台会接着自动跑\n\n**关键数字**（数据截至 2026-11-07）\n- 上架 2 款，满额\n- 线上内容页 14 个、汇总页 2 个，均可访问\n- 排队候选 22 款\n\n## 技术详情（原始回执，供排查用）\n2026-11-07 的总站上架已完成：两款上线，网站和登记都已回读核对。\n\n**上架（2 款，满额）**\n- **Steal a Superpower**：[链接] ，7 个源页加自动汇总页，0 个草稿。\n- **Break Glass If Bored**：[链接] ，7 个源页加自动汇总页，0 个草稿。\n- 内容来源全部是 Roblox 官方接口，2026-11-07 UTC 取数。官方记录里没有兑换码，所以没建兑换码页。\n\n**选款**\n- 淘汰 Cut a Rock：抢注站有 5 个。\n- 淘汰 Bike For Egg：命中专铺 AdSense 账号的站。\n- 淘汰 Unstable SMP FFA：借用 Minecraft 相关 IP。\n- 未上 Probably Stolen（Steam 游戏）：本机访问不了 Steam 接口，没法查「发售不久评论暴增」这类风险，所以没上。\n- 当天雷达快照完整，同业务日没有其他执行者的产出。\n\n**证据**\n- **网站提交**：lootlore 的 1eec5391 已推送，GitHub 上的 gates 检查通过；本地跑的 9 项门禁也全部通过。\n- **线上页面**：正式域名 lootwiki.com 上 14 个源页和 2 个汇总页都返回 200。\n- **页面规格**：标题 40–60 字符、描述 140–160 字符，canonical 指向自身，每页一个 H1，JSON-LD 能解析，og:image 返回 200，站内链接至少 3 条，图片都有 alt 文字。统计代码只有 G-NPTYZWM9KD，没有 Adsterra。\n- **sitemap 与首页**：sitemap 已包含新页面，首页链到了两个新栏目，不存在的页面返回 404。\n- **已建站登记**：seo-hotwords 的 built-sites.json 已加入这两款（提交 94a05648）。\n- **交接记录**：2026-11-07-hub-autopublish 的 json 和 md 已推送到 claude-skills，回读确认 status=published，feishu=delegated-to-feishu-sync。\n- **未做的部分**：飞书写表交给 feishu-sync，浏览器截图交给工作台，本任务没做。\n\n**已知局限**\n- 两款内容只来自 Roblox 官方接口，没有社区来源。\n- Fandom 上这两款都没有站点；Steam 接口不可达。\n- 这次没有独立的核对子任务可用，我自己对着接口原始数据逐表核对数字，改了两处错误措辞：一处是 128x 价格倍数，一处是战斗描述。\n- 排队 22 款：前一天遗留的 20 款，加上 13 Days to Escape 和 Cozy Lucky Scoop Order，后两款只通过了抢注站初筛。\n\n【回执状态】完成\n\n【工作台文件核对】最多扫描2000个文件；发生新增、修改或删除的相对路径：[\"gen/bgb.py\", \"gen/gen.py\", \"gen/live.py\", \"gen/sas.py\", \"gen/seo.py\", \"in/2026-11-07.json\", \"in/2026-11-07.md\", \"in/bs_meta.json\", \"in/bs_new.json\", \"in/built-sites.json\", \"in/h.json\", \"in/h.md\", \"in/hub.json\", \"in/ll-built.md\", \"in/ntp.json\", \"in/put.json\", \"in/put_json.json\", \"in/put_md.json\", \"in/xc-built.md\", \"lootlore/.gitignore\", \"lootlore/AGENTS.md\", \"lootlore/README.md\", \"lootlore/build-stamp.json\", \"lootlore/build.py\", \"lootlore/built-sites.md\", \"lootlore/config/hub.json\", \"lootlore/config/i18n/de.json\", \"lootlore/config/i18n/en.json\", \"lootlore/config/i18n/es.json\", \"lootlore/config/i18n/fr.json\", \"lootlore/config/i18n/it.json\", \"lootlore/config/i18n/ja.json\", \"lootlore/config/i18n/zh-CN.json\", \"lootlore/config/sources.json\", \"lootlore/content/911-dispatch/_images.json\", \"lootlore/content/911-dispatch/en/author.md\", \"lootlore/content/911-dispatch/en/badges.md\", \"lootlore/content/911-dispatch/en/fleet-and-districts.md\", \"lootlore/content/911-dispatch/en/game-passes.md\", \"lootlore/content/911-dispatch/en/guides.md\", \"lootlore/content/911-dispatch/en/how-to-play.md\", \"lootlore/content/911-dispatch/en/index.md\", \"lootlore/content/911-dispatch/en/multiplayer.md\", \"lootlore/content/911-dispatch/en/robux-shop.md\", \"lootlore/content/911-dispatch/en/season-pass.md\", \"lootlore/content/911-dispatch/en/shifts-and-pay.md\", \"lootlore/content/911-dispatch/en/updates.md\", \"lootlore/content/american-plains-mudding/_images.json\", \"lootlore/content/american-plains-mudding/en/author.md\", \"lootlore/content/american-plains-mudding/en/badges.md\", \"lootlore/content/american-plains-mudding/en/community.md\", \"lootlore/content/american-plains-mudding/en/gamepasses.md\", \"lootlore/content/american-plains-mudding/en/guides.md\", \"lootlore/content/american-plains-mudding/en/how-to-play.md\", \"lootlore/content/american-plains-mudding/en/index.md\", \"lootlore/content/american-plains-mudding/en/limited-vehicles.md\", \"lootlore/content/american-plains-mudding/en/private-servers.md\", \"lootlore/content/american-plains-mudding/en/spawning.md\", \"lootlore/content/american-plains-mudding/en/updates.md\", \"lootlore/content/american-plains-mudding/en/vehicles.md\", \"lootlore/content/animal-daycare/_images.json\", \"lootlo",
-    "runs": [
-     {
-      "kind": "step",
-      "ai": "Claude Code（2号电脑）",
-      "model": "sonnet",
-      "status": "ok",
-      "rejected": false,
-      "started_at": "2026-11-07T12:47:02",
-      "ended_at": "2026-11-07T13:22:18",
-      "duration_s": 2115.824
-     }
-    ],
-    "events": [
-     {
-      "at": "2026-11-07T12:47:02",
-      "kind": "daily_schedule",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-07T12:47:02",
-      "kind": "step",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-07T13:22:18",
-      "kind": "file_audit",
-      "label": "已核对实际文件变更"
-     },
-     {
-      "at": "2026-11-07T13:22:18",
-      "kind": "done",
-      "label": "已完成验收"
-     },
-     {
-      "at": "2026-11-07T13:22:23",
-      "kind": "postcheck",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-07T13:22:40",
-      "kind": "visual",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-07T13:29:13",
-      "kind": "visual",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-07T13:29:52",
-      "kind": "postcheck",
-      "label": "流程进度更新"
-     },
-     {
-      "at": "2026-11-08T01:22:26",
       "kind": "cleanup",
       "label": "流程进度更新"
      }
