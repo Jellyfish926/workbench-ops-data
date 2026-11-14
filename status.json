@@ -75,13 +75,13 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-14T07:55:42.324356+00:00",
+ "generated_at": "2026-11-14T08:00:48.816038+00:00",
  "counts": {
   "待处理": 0,
   "执行中": 0,
   "会诊中": 0,
   "需你决定": 1,
-  "今日完成": 3,
+  "今日完成": 0,
   "累计完成": 91
  },
  "providers": [
@@ -107,9 +107,9 @@
    "name": "Claude Code（2号电脑）",
    "status": "空闲",
    "running": 0,
-   "today_runs": 5,
-   "today_ok": 4,
-   "today_fail": 1,
+   "today_runs": 0,
+   "today_ok": 0,
+   "today_fail": 0,
    "only_levels": [
     "困难"
    ]
@@ -127,17 +127,17 @@
    "name": "GPT（1号电脑）",
    "status": "空闲",
    "running": 0,
-   "today_runs": 1,
+   "today_runs": 0,
    "today_ok": 0,
-   "today_fail": 1,
+   "today_fail": 0,
    "only_levels": null
   },
   {
    "name": "Claude（1号电脑）",
    "status": "空闲",
    "running": 0,
-   "today_runs": 1,
-   "today_ok": 1,
+   "today_runs": 0,
+   "today_ok": 0,
    "today_fail": 0,
    "only_levels": null
   }
