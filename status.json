@@ -30,8 +30,8 @@
     "fallbacks": [
      "Claude Code（2号电脑）"
     ],
-    "next_at": "2026-11-15T01:47:00+08:00",
-    "business_date": "2026-11-14",
+    "next_at": "2026-11-16T01:47:00+08:00",
+    "business_date": "2026-11-15",
     "status": "已完成",
     "task_id": 75,
     "test_status": "尚未测试",
@@ -75,7 +75,7 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-14T17:38:20.368446+00:00",
+ "generated_at": "2026-11-14T17:47:33.100359+00:00",
  "counts": {
   "待处理": 0,
   "执行中": 0,
