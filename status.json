@@ -75,7 +75,7 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-14T09:56:44.954898+00:00",
+ "generated_at": "2026-11-14T10:01:52.301404+00:00",
  "counts": {
   "待处理": 0,
   "执行中": 0,
@@ -4592,10 +4592,10 @@
   }
  ],
  "gamesites": {
-  "generated_at": "2026-11-14T09:27:13.267062+00:00",
+  "generated_at": "2026-11-14T09:57:48.761251+00:00",
   "scale": {
    "independent_sites": 5,
-   "independent_online": 4,
+   "independent_online": 5,
    "hub_games": 49,
    "hub_new_7d": 4
   },
