@@ -75,7 +75,7 @@
   "ready": true,
   "hold_reason": ""
  },
- "generated_at": "2026-11-14T16:06:48.571818+00:00",
+ "generated_at": "2026-11-14T16:16:57.421154+00:00",
  "counts": {
   "待处理": 0,
   "执行中": 0,
@@ -4694,15 +4694,15 @@
  },
  "radar": {
   "status": "正常",
-  "checked_at": "2026-11-14T16:06:42.473499+00:00",
-  "last_scan_at": "2026-11-14T16:03:48.115000+00:00",
+  "checked_at": "2026-11-14T16:16:46.247139+00:00",
+  "last_scan_at": "2026-11-14T16:13:48.312000+00:00",
   "last_scan_age_min": 2.9,
   "venues": 12,
   "live_venues": 12,
   "down_venues": [],
   "coins": 1254,
   "pairs": 1727,
-  "qualified": 11,
+  "qualified": 13,
   "page_url": "radar/"
  },
  "orchestrator": {
